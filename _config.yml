@@ -1,0 +1,10 @@
+title: FIT IoT-LAB
+description: The Very Large Scale Testbed for the IoT and WSN
+url: https://www.iot-lab.info
+timezone: Europe/Paris
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji
