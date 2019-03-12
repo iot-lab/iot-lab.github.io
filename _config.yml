@@ -3,6 +3,12 @@ description: The Very Large Scale Testbed for the IoT and WSN
 url: https://www.iot-lab.info
 timezone: Europe/Paris
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed
