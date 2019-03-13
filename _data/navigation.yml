@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Hardware
+  link: /hardware/
+- name: Software
+  link: /software/
+- name: Tutorials
+  link: /tutorials/
+- name: News
+  link: /news/

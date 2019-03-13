@@ -4,14 +4,18 @@
         {% include header.html %}
     </head>
     <body>
-    {% if page.style != "fullwidth" %}
-        <section class="container py-md-3">
+        <header>
+            {% include navigation.html %}
+        </header>
+        <main role="main">
+        {% if page.style != "fullwidth" %}
+            <section class="container py-md-3">
+                {{ content }}
+            </section>
+        {% else %}
             {{ content }}
-        </section>
-    {% else %}
-        {{ content }}
-    {% endif %}
-
+        {% endif %}
+        </main>
         {% include scripts.html %}
     </body>
 </html>

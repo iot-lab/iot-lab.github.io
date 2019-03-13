@@ -9,6 +9,8 @@ defaults:
     values:
       layout: "default"
 
+permalink: pretty
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed

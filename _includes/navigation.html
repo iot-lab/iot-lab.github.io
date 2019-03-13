@@ -1,0 +1,23 @@
+<nav class="navbar navbar-light bg-white border-bottom navbar-expand-md">
+    <div class="container">
+        <a class="navbar-brand" href="{{ "/" | relative_url "" }}">
+            <img src="{{ "/assets/images/logo-fit-iotlab.png" | relative_url }}" alt="FIT IoT-LAB" height="47px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mr-auto">
+                {% for item in site.data.navigation %}
+                <a href="{{ item.link | relative_url }}" class="nav-item nav-link{% if page.url == item.link %} active{% endif %}">
+                    {{ item.name }}
+                </a>
+                {% endfor%}
+            </div>
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link">Right</a>
+                <a class="btn btn-primary" href="#" role="button">Access</a>
+            </div>
+        </div>
+    </div>
+</nav>
