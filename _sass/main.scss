@@ -8,3 +8,23 @@ footer {
 footer .logo {
   height: 70px;
 }
+
+.carousel-item > img {
+  max-height: 512px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.nav-items .nav-link {
+    color: #666;
+    border-bottom: 1px solid #d6d6d6;
+
+    &:hover {
+        color: #007bff;
+    }
+
+    &.active {
+        color: #333;
+        border-color: #333;
+    }
+}
