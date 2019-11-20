@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% if page.style == "fullwidth" %}
+<div class="container">
+{% endif %}
+    {% include testbed_navigation.html %}
+{% if page.style == "fullwidth" %}
+</div>
+{% endif %}
+
+{{ content }}

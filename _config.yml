@@ -5,6 +5,10 @@ timezone: Europe/Paris
 
 defaults:
   - scope:
+      path: "testbed/*"
+    values:
+      layout: "testbed"
+  - scope:
       path: ""
     values:
       layout: "default"
