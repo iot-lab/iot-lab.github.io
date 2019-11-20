@@ -1,0 +1,208 @@
+---
+title: Testbed
+style: fullwidth
+---
+
+<section>
+    <div class="container my-5 py-5">
+        <div class="mb-5">
+            <h1 class="display-2 text-muted text-center mb-0"><strong>Multi-platform</strong></h1>
+            <h1 class="display-4 text-center mt-0">A large choice of hardware boards</h1>
+        </div>
+        <div class="row">
+            <div class=" col-sm-6 col-md-4 offset-md-4 col-lg-3 offset-lg-3">
+                <p>
+                    <span class="display-2">{{ site.data.boards.size }}</span><br>
+                    <span class="display-4"> boards available</span>
+                </p>
+                <p class="text-muted">described as follow <span class="small"><i class="fas fa-arrow-right"></i></span></p>
+            </div>
+            <div class=" col-sm-6 col-md-4 col-lg-3">
+                <div class="my-3 card border-info text-info">
+                    <svg class="img-fluid" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 400x300">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#24A2B7"></rect>
+                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">board picture</text>
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Common name</h5>
+                        <h6 class="card-subtitle mt-0 mb-2 text-monospace">iot-lab name</h6>
+                        <p class="card-text">
+                            <small>list and number of nodes deployed accross sites</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% assign sorted_boards = site.data.boards | sort: "name" %}
+            {% for board in sorted_boards %}
+            {% capture color-style %}{% if board.name contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
+            <div class=" col-sm-6 col-md-4 col-lg-3">
+                <div class="my-3 card border-{{ color-style }}">
+                    <svg class="card-img-top" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 400x300">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">400x300</text>
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#"{% unless board.name contains "IoT-LAB" %} class="text-reset"{% endunless %}>{{ board.name}}</a></h5>
+                        <h6 class="card-subtitle mt-0 mb-2 text-monospace">{{ board.iotlab-name }}</h6>
+                        <p class="card-text">
+                            <span class="badge badge-pill badge-{{ color-style }}" href="#">802.15.4</span>
+                            <span class="badge badge-pill badge-{{ color-style }}" href="#">Sub-1GHz</span>
+                            <span class="badge badge-pill badge-{{ color-style }}" href="#">Bluetooth</span>
+                            <span class="badge badge-pill badge-{{ color-style }}" href="#">LoRa</span>
+                        </p>
+                        <p class="card-text">
+                            <a class="badge badge-light" href="#">grenoble <span class="badge badge-{{ color-style }}">380</span></a>
+                            <a class="badge badge-light" href="#">lille <span class="badge badge-{{ color-style }}">256</span></a>
+                            <a class="badge badge-light" href="#">saclay <span class="badge badge-{{ color-style }}">36</span></a>
+                            <a class="badge badge-light" href="#">strasbourg <span class="badge badge-{{ color-style }}">256</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="bg-light">
+    <div class="container my-5 py-5">
+        <div class="mb-5">
+            <h1 class="display-2 text-muted text-center mb-0"><strong>Multi-radio</strong></h1>
+            <h1 class="display-4 text-center mt-0">Different communication technologies</h1>
+        </div>
+        <svg class="bd-placeholder-img" width="100%" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+        <p class="my-4 lead text-center mx-auto w-75">The different boards available bring users several radio technologies. Test radio scenarios with isolation, coexistence, cooperation, interoperability.</p>
+        <div class="card-deck">
+            <div class="card card-body">
+                <div class="flex-grow-1">
+                    <h3>802.15.4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="card card-body">
+                <div class="flex-grow-1">
+                    <h3>Sub-1GHz</h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="card card-body">
+                <div class="flex-grow-1">
+                    <h3>Bluetooth</h3>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+            <div class="card card-body">
+                <div class="flex-grow-1">
+                    <h3>LoRa</h3>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container my-5 py-5">
+        <p class="text-muted" role="alert">
+            <i class="fas fa-drafting-compass"></i> <strong>Layout C1</strong> - horizontal scrolling.
+        </p>
+
+        <div class="mb-5">
+            <h1 class="display-2 text-muted text-center mb-0"><strong>Multi-OS</strong></h1>
+            <h1 class="display-4 text-center mt-0">Develop your firmware with your favorite OS</h1>
+        </div>
+        <p class="lead text-center mx-auto w-75">Since your just need to bring your firmware for your experiment, you are free to choose your Operating System. Boards from the market may be supported by one or several. Some OS also supports IoT-LAB boards.</p>
+
+        <p class="text-center"><a href="#"> Learn more about OS usage <span class="small text-decoration-none"> <i class="fas fa-chevron-right"></i></span></a></p>
+
+        <div class="d-flex flex-row flex-nowrap overflow-auto mt-5">
+            {% for os in site.data.oses %}
+            <div class="col-10 col-sm-8 col-lg-5 p-3">
+                <div class="card border-0 shadow">
+                    <img class="card-img-top pt-3 px-3" src="{{ "/assets/images/oses/" | relative_url }}{{ os.img }}" class="card-img" title="{{ os.name }}" alt="{{ os.name }}">
+                    <div class="card-body">
+                        <hr>
+                        <p class="card-text">{{ os.short-desc }} <a href="#"><i class="fas fa-info-circle text-secondary"></i></a></p>
+                    </div>
+                    {% if os.iotlab-support %}
+                    <div class="card-footer badge badge-primary">
+                        IoT-LAB board support
+                        {% for board in os.iotlab-support %}
+                        <span class="badge badge-light">{{ board }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container my-5 py-5">
+        <p class="text-muted" role="alert">
+            <i class="fas fa-drafting-compass"></i> <strong>Layout C2</strong> - card-columns.
+        </p>
+
+        <div class="mb-5">
+            <h1 class="display-2 text-muted text-center mb-0"><strong>Multi-OS</strong></h1>
+            <h1 class="display-4 text-center mt-0">Develop your firmware with your favorite OS</h1>
+        </div>
+        <p class="lead text-center mx-auto w-75">Since your just need to bring your firmware for your experiment, you are free to choose your Operating System. Boards from the market may be supported by one or several. Some OS also supports IoT-LAB boards.</p>
+
+        <p class="text-center"><a href="#"> Learn more about OS usage <span class="small text-decoration-none"> <i class="fas fa-chevron-right"></i></span></a></p>
+
+        <div class="card-columns mt-5">
+        {% for os in site.data.oses %}
+            <div class="card border-0 shadow m-3">
+                <img class="card-img-top pt-3 px-3" src="{{ "/assets/images/oses/" | relative_url }}{{ os.img }}" class="card-img" title="{{ os.name }}" alt="{{ os.name }}">
+                <div class="card-body">
+                    <hr>
+                    <p class="card-text">{{ os.short-desc }}</p>
+                </div>
+                {% if os.iotlab-support %}
+                <div class="card-footer w-100 badge badge-primary">
+                    IoT-LAB board support
+                    {% for board in os.iotlab-support %}
+                    <span class="badge badge-light">{{ board }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <div class="container my-5 py-5">
+        <div class="mb-5">
+            <h1 class="display-2 text-muted text-center mb-0"><strong>Multi-topology</strong></h1>
+            <h1 class="display-4 text-center mt-0">Run your experiment on different physical topologies</h1>
+        </div>
+        <div class="row py-5">
+            <div class=" col-sm-6 col-md-4 col-lg-3">
+                <h1>Several deployments.<br>Several possibilities.</h1><br>
+            </div>
+            {% assign sites = "Grenoble, Lille, Lyon, Paris, Munich, Nantes, Saclay, Santiago du Chili, Strasbourg" | split: ", " %}
+            {% for site in sites %}
+            <div class="col-sm-6 col-md-4 col-lg-3 text-center mb-2">
+                <img class="img-fluid mb-2" style="filter:hue-rotate({{ forloop.index | times: 50 }}deg)" src="{{ "/assets/images/" | relative_url }}inria-lille-building.png">
+                <h5>{{ site }}</h5>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,3 +1,15 @@
+/*
+html {
+  // Margin top by navbar height, used with .fixed-top navbar
+  padding-top: 4.5rem
+}
+
+:target {
+  // Padding top bottom by navabar height, used with .fixed-top navbar
+  padding-top: 4.5rem;
+  margin-top: -4.5rem;
+}
+*/
 header nav .navbar-brand img {
      height: 47px;
 }
@@ -27,4 +39,8 @@ footer .logo {
         color: #333;
         border-color: #333;
     }
+}
+
+#os.card-columns {
+    column-count: 2;
 }
