@@ -1,0 +1,52 @@
+---
+-
+    name: IoT-LAB WSN430
+    iotlab-name: wsn430
+    mcu-soc: TI MSP430
+    radio: "15.4"
+    deployment:
+        - site: strasbourg
+          number: 256
+-
+    name: IoT-LAB M3
+    iotlab-name: m3
+    mcu-soc: Cortex M3
+    radio: "15.4"
+    deployment:
+        - site: grenoble
+          number: 384
+        - site: lille
+          number: 259
+        - site: saclay
+          number: 12
+        - site: strasbourg
+          number: 120
+        - site: paris
+          number: 90
+        - site: strasbourg
+          number: 18
+-
+    name: IoT-LAB A8
+    iotlab-name: a8
+    mcu-soc: Cortex A8
+    radio: "15.4"
+-
+    name: Atmel SAMR21
+    iotlab-name: samr21
+    mcu-soc: CortexM0
+    radio: "15.4"
+-
+    name: Zolertia Firefly
+    iotlab-name: firefly
+    mcu-soc: Cortex M3
+    radio: 15.4, sub
+-
+    name: STM32L0 LoRa
+    iotlab-name: st-lrwan1
+    mcu-soc: STM32L0
+    radio: lora
+-
+    name: BBC micro:bit
+    iotlab-name: microbit
+    mcu-soc: NRF51
+    radio: ble
