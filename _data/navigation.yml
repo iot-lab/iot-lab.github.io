@@ -1,10 +1,12 @@
 - name: Home
   link: /
-- name: Hardware
-  link: /hardware/
-- name: Software
-  link: /software/
+- name: Testbed
+  link: /testbed/
+- name: Documentation
+  link: /docs/
 - name: Tutorials
   link: /tutorials/
+- name: Community
+  link: /community/
 - name: News
   link: /news/
