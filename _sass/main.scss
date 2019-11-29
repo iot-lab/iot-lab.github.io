@@ -27,20 +27,46 @@ footer .logo {
   object-fit: cover;
 }
 
-.nav-items .nav-link {
-    color: #666;
-    border-bottom: 1px solid #d6d6d6;
+#os.card-columns {
+    column-count: 2;
+}
+
+/* Sidebar navigation */
+.sidenav .nav-item>.nav-link {
+    color: rgba(0,0,0,.65);
+    padding: .25rem 0rem;
 
     &:hover {
-        color: #007bff;
+        color: rgba(0,0,0,.85);
     }
 
     &.active {
-        color: #333;
-        border-color: #333;
+        color: rgba(0,0,0,.85);
     }
 }
 
-#os.card-columns {
-    column-count: 2;
+.sidenav {
+    border-right: 1px solid rgba(0,0,0,.05);
+}
+
+.sidenav > nav > .nav-item.active {
+    margin-bottom: 1rem;
+    &:not(:first-child) {
+        margin-top: 1rem;
+    }
+}
+
+.sidenav > nav > .nav-item>ul {
+    display:none;
+}
+
+.sidenav > nav > .nav-item.active>ul {
+    display:block;
+}
+
+.sidenav .nav>li>a {
+    font-size: 90%;
+    &.active {
+        font-weight: 600;
+    }
 }

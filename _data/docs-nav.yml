@@ -1,0 +1,52 @@
+- title: Getting started
+  pages:
+    - title: Introduction
+    - title: User account
+    - title: ...
+    - title: Tutorials
+
+- title: Boards
+  pages:
+    - title: Overview
+    - title: Extend
+    - title: IoT-LAB WSN430
+    - title: IoT-LAB M3
+    - title: IoT-LAB A8-M3
+    - title: Atmel SAMR21
+    - title: LoRa
+    - title: Arduino Zero
+    - title: Zolertia Firefly
+
+- title: Deployment
+  pages:
+    - title: Grenoble
+    - title: Lille
+    - title: Lyon
+    - title: Paris
+    - title: Saclay
+    - title: Strasbourg
+
+- title: Development
+  pages:
+    - title: Drivers
+    - title: Libraries
+    - title: OS
+    - title: RIOT
+    - title: Contiki-NG
+    - title: Zephyr
+    - title: FreeRTOS
+
+- title: Tools
+  pages:
+    - title: API
+    - title: Python Client
+    - title: CLI
+    - title: SSH CLI
+    - title: Script
+    - title: Websocket Client
+    - title: Serial Aggregator
+    - title: Sniffer Aggregator
+    - title: Plot
+    - title: Debug
+    - title: MQTT
+    - title: Radio Test

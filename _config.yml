@@ -9,6 +9,10 @@ defaults:
     values:
       layout: "testbed"
   - scope:
+      path: "docs/*"
+    values:
+      layout: "docs"
+  - scope:
       path: ""
     values:
       layout: "default"

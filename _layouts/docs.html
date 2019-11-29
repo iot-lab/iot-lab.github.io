@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="col-12 col-md-3 col-xl-2 sidenav">
+        {% include docs-sidebar.html %}
+    </div>
+
+    <main class="col-12 col-md-9 col-xl-10 pl-md-5" role="main">
+        <h1>{{ page.title }}</h1>
+        <p class="lead">{{ page.description }}</p>
+        {{ content }}
+    </main>
+
+    <!-- <div class="d-none d-xl-block col-xl-2" style="background-color:#f3f3f3;">
+        * TOC
+        {:toc}
+    </div> -->
+</div>
