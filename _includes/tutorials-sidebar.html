@@ -1,0 +1,35 @@
+<nav class="nav flex-column">
+    {%- assign page_slug = page.url | split: '/' | last -%}
+    {%- for group in site.data.tutorials-nav -%}
+    {%- assign link = group.pages | first -%}
+    {%- assign link_slug = link.title | slugify -%}
+    {%- assign group_slug = group.title | slugify -%}
+    {%- assign active = nil -%}
+
+    {%- if page.group == group_slug -%}
+    {%- assign active = 'active' -%}
+    {%- endif -%}
+
+    <div class="nav-item{% unless active == nil %} {{ active }}{% endunless %}">
+        <a class="nav-link{% unless active == nil %} {{ active }}{% endunless %}" href="{{ site.baseurl }}/tutorials/{{ group_slug }}/{% if link_slug %}{{ link_slug }}/{% endif %}">
+            <strong>{{ group.title }}</strong>
+        </a>
+        <ul class="nav flex-column">
+            {%- for tuto in group.pages -%}
+            {%- assign tuto_slug = tuto.title | slugify -%}
+            {%- assign active = nil -%}
+
+            {%- if page.group == group_slug and page_slug == tuto_slug -%}
+            {%- assign active = 'active' -%}
+            {%- endif -%}
+
+            <li class="nav-item{% unless active == nil %} {{ active }}{% endunless %}">
+                <a class="nav-link{% unless active == nil %} {{ active }}{% endunless %}" href="{{ site.baseurl }}/tutorials/{{ group_slug }}/{{ tuto_slug }}">
+                    {{ tuto.title }}
+                </a>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    {%- endfor -%}
+</nav>

@@ -13,6 +13,10 @@ defaults:
     values:
       layout: "docs"
   - scope:
+      path: "tutorials/*"
+    values:
+      layout: "tutorials"
+  - scope:
       path: ""
     values:
       layout: "default"
