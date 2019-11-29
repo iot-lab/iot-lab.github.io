@@ -1,5 +1,3 @@
-- name: Home
-  link: /
 - name: Testbed
   link: /testbed/
 - name: Docs
