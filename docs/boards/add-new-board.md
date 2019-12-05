@@ -1,6 +1,6 @@
 ---
-title: Extend
-description: The IoT-LAB Gateway board runs a Python module providing Open Node management. Its implementation is based on a system of plugin. Thus, if you want to add support for a new node, you just have to write a specific file to interface with the application.
+title: Add new board
+description: The IoT-LAB Gateway board runs a Python module providing Open Node management. Its implementation is based on a system of plugin. Thus, if you want to add support for a new board, you just have to write a specific file to interface with the application.
 group: boards
 ---
 ## 1. Develop

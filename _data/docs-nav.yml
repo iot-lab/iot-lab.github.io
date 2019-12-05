@@ -2,18 +2,21 @@
   pages:
     - title: Introduction
     - title: User account
-    - title: ...
-    - title: Tutorials
+    - title: Terms of use
+    - title: Design
+    - title: IPv6
+    - title: SSH access
+    - title: Virtual machine
 
 - title: Boards
   pages:
     - title: Overview
-    - title: Extend
+    - title: Add new board
     - title: IoT-LAB WSN430
     - title: IoT-LAB M3
     - title: IoT-LAB A8-M3
     - title: Atmel SAMR21
-    - title: LoRa
+    - title: STM32L0 LoRa
     - title: Arduino Zero
     - title: Zolertia Firefly
 
@@ -26,27 +29,27 @@
     - title: Saclay
     - title: Strasbourg
 
-- title: Development
+- title: OS
   pages:
-    - title: Drivers
-    - title: Libraries
-    - title: OS
     - title: RIOT
     - title: Contiki-NG
     - title: Zephyr
     - title: FreeRTOS
+    - title: ARM mbed
+    - title: MicroPython
+    - title: Yocto
 
 - title: Tools
   pages:
     - title: API
-    - title: Python Client
     - title: CLI
     - title: SSH CLI
-    - title: Script
-    - title: Websocket Client
-    - title: Serial Aggregator
-    - title: Sniffer Aggregator
-    - title: Plot
-    - title: Debug
-    - title: MQTT
-    - title: Radio Test
+    - title: Run Script
+    - title: Consumption monitoring
+    - title: Radio monitoring
+    - title: Websocket client
+    - title: Serial aggregator
+    - title: On-chip debugging
+    - title: Radio characterization
+    - title: MQTT broker
+    - title: Leshan broker
