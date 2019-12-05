@@ -1,63 +1,12 @@
 - title: Getting started
   pages:
-    - title: Testbed overview
     - title: The 1st tutorial for beginners
-    - title: SSH access
-    - title: IPv6
-
-- title: Hardware
-  pages:
-    - title: IoT-LAB WSN430
-    - title: IoT-LAB M3
-    - title: IoT-LAB A8-M3
-    - title: Atmel SAMR21
-    - title: LoRa
-    - title: Arduino Zero
-    - title: Zolertia Firefly
-    - title: Mobile M3
-    - title: Build IoT-LAB WSN430 firmware
-    - title: Build IoT-LAB M3 and A8-M3 firmware
-
-- title: Monitoring
-  pages:
-    - title: Consumption
-    - title: Radio
-    - title: Packet sniffing
-
-- title: Tools
-  pages:
-    - title: CLI
-    - title: SSH CLI
-    - title: Script
-    - title: Serial Aggregator
-    - title: Plot
-    - title: Debug
-    - title: Websocket
+    - title: CLI tools
 
 - title: Contiki-ng
   pages:
-    - title: Build firmware for IoT-LAB boards
-    - title: Private IPv6
-    - title: Public IPv6
-    - title: CoAP
-    - title: TSCH
-    - title: LwM2M
-
-- title: OpenWSN
-  pages:
-    - title: Build firmware for IoT-LAB boards
-    - title: Shell
-    - title: IPv6 / RPL /TSCH
+    - title: Getting started
 
 - title: RIOT
   pages:
-    - title: Build firmware for IoT-LAB boards
-    - title: Networking
-    - title: RPL
-    - title: Public IPv6
-    - title: CoAP
-    - title: MQTT-SN
-
-- title: Zephyr
-  pages:
-    - title: Build firmware
+    - title: Getting started
