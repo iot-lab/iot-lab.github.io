@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="0;URL=/docs/getting-started/introduction">
+<meta http-equiv="refresh" content="0;URL={{ site.baseurl}}/docs/getting-started/introduction">
