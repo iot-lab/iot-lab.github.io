@@ -1,5 +1,5 @@
-- name: Testbed
-  link: /testbed/
+- name: Home
+  link: /
 - name: Docs
   link: /docs/
 - name: Tutorials

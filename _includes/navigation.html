@@ -9,7 +9,13 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav mr-auto">
                 {% for item in site.data.navigation %}
-                <a href="{{ item.link | relative_url }}" class="nav-item nav-link{% if page.url contains item.link %} active{% endif %}">
+                {% assign active = nil %}
+                {% if item.name == "Home" and page.url == item.link %}
+                {% assign active = true %}
+                {% elsif item.name != "Home" and page.url contains item.link) %}
+                {% assign active = true %}
+                {% endif %}
+                <a href="{{ item.link | relative_url }}" class="nav-item nav-link{% if active %} active{% endif %}">
                     {{ item.name }}
                 </a>
                 {% endfor%}
