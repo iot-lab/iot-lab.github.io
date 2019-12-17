@@ -26,7 +26,7 @@
 - year: 2018
   publications:
     -
-        link:
+        link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6164607/
         title: Extensive Experimentations on Opportunistic Routing in Wireless Sensor Networks
         authors: Ichrak Amdouni, Cédric Adjih, Nadjib Aitsaadi, Paul Muhlethaler
         reference: Sensors, MDPI, 2018, 18 (9), pp.3031.
@@ -82,7 +82,7 @@
         reference: European Wireless Sensor Networks (EWSN), Madrid, Spain, February 2018
     -
         title: "Poster: FIT IoT-LAB Testbed, to interoperability and Beyond"
-        link:
+        link: https://ecc153fc-a-3b850097-s-sites.googlegroups.com/a/ewsn.org/ewsn/file-repository/ewsn-2018/181_182_vandaele.pdf
         authors: J. Vandaële
         reference: International Conference on Embedded Wireless Systems and Networks (EWSN), Madrid, Spain, February 2018
 
@@ -95,7 +95,7 @@
         authors: R. Teles Hermeto, A. Gallais, F. Theoleyre
         reference: IEEE Multimedia Communications Technical Committee, Institute of Electrical and Electronics Engineers (IEEE), pages 43-46, Volume 12, n° 6, November 2017
     -
-        link: https://icube-publis.unistra.fr/4-KPCTxx
+        link: https://icube-publis.unistra.fr/4-KPCT17a
         title: "LABeL: Link-based Adaptive BLacklisting Technique for 6TiSCH Wireless Industrial Network"
         authors: V. Kotsiou, G. Papadopoulos, P. Chatzimisios, F. Theoleyre
         reference: International Conference on Modelling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM), Miami, United States, November 2017
@@ -224,7 +224,7 @@
         authors: R. Petrolo, V. Loscri, N. Mitton
         reference: In Proceedings of IFIP Wireless Days (WD), Toulouse, France, March 2016
     -
-        link: http://control.ee.ethz.ch/~bsaverio/papers/randsync.pdf
+        link: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7270258
         title: A randomized linear algorithm for clock synchronization in multi-agent systems
         authors: S. Bolognani, R. Carli, E. Lovisari &amp; S. Zampieri
         reference: IEEE Transactions on Automatic Control, 61(7), 2016
@@ -253,7 +253,7 @@
         authors: H-J. Audéoud, M. Krol, M. Heusse, A. Duda
         reference: In proceedings of the WiMob 2015, Abu Dhabi, UAE
     -
-        link: http://www.ieee-wf-iot.org/
+        link: https://ieeexplore.ieee.org/document/7389098
         title: "FIT IoT-LAB: A Large Scale Open Experimental IoT Testbed"
         authors: C. Adjih, E. Baccelli, E. Fleury, G. Harter, N. Mitton, T. Noel, R. Pissard-Gibollet, F. Saint-Marcel, G. Schreiner, J. Vandaele, T. Watteyne
         reference: IEEE World Forum on Internet of Things (IEEE WF-IoT), Milan, Italy, December 2015
@@ -268,7 +268,7 @@
         authors: T. Watteyne, C. Adjih, X. Vilajosana
         reference: IEEE International Conference on Automation Science and Engineering (CASE 2015), Gothenburg, Sweden, 24-28 August 2015
     -
-        link:
+        link: https://research.tue.nl/en/publications/adaptive-broadcast-suppression-for-trickle-based-protocols
         title: Adaptive Broadcast Supression for Trickle-Based Protocols
         authors: Thomas M. M. Meyfroyt, M. Stolikj, and Johan J. Lukkien
         reference: IEEE Internationa Symposium on a World of Wireless Mobile and Multimedia Networks (WoWMoM), June 2015.
@@ -332,12 +332,12 @@
 - year: 2014
   publications:
     -
-        link:
+        link: https://dblp.org/rec/html/conf/vtc/MorralD14
         title: "Cooperative RSSI-based indoor localization: B-MLE and distributed stochastic approximation"
         authors: G. Morral*, N.A. Dieng
         reference: 80th IEEE International Conference on Vehicular Technology (VTC-Fall), pp. 1-5, Vancouver in September 2014 (Canada)
     -
-        link: http://perso.telecom-paristech.fr/~morralad/paper_icassp.pdf
+        link: https://hal.archives-ouvertes.fr/hal-00960694/
         title: Distributed on-line multidimensional scaling for self-localization in wireless sensor networks
         authors: G. Morral*, N.A. Dieng, P. Bianchi
         reference: 39th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 1110-1114, Florence in May 2014 (Italy)
@@ -347,7 +347,7 @@
         authors: F. Javier Acosta Padilla (INRIA Rennes), F. Weis, J. Bourcier (IRISA, Université de Rennes 1)
         reference: MW4NG '14 Proceedings of the 9th Workshop on Middleware for Next Generation Internet Computing
     -
-        link: http://mass2014.eecs.utk.edu/index.htm
+        link: https://hal.inria.fr/hal-01093974
         title: "Scientific Experiments with the Large Scale Open Testbed IoT-LAB: Broadcast with Network Coding"
         authors: C. Adjih, I. Amdouni, H. Baccouch, and A. Masucci
         reference: IEEE International Conference on Mobile Ad hoc and Sensor Systems (MASS) 2014, Philadelphia, Oct 27-30, 2014
@@ -372,7 +372,7 @@
         authors: T. Ducrocq, M. Hauspie, N. Mitton, S. Pizzi
         reference: International Workshop on the Performance Analysis and Enhancement of Wireless Networks (PAEWN) - Victoria, Canada, May 2014
     -
-        link: http://clarinet.u-strasbg.fr/~beaudaux/docs/IEEESensors13.pdf
+        link: https://icube-publis.unistra.fr/2-BGMN14
         title: Thorough Empirical Analysis of X-MAC over a Large Scale Internet of Things Testbed
         authors: J. Beaudeaux and al.
         reference: IEEE Sensors Journal, vol 14, 2014
@@ -426,7 +426,7 @@
         authors: P. Gonizzi, G Ferrari, V. Gay, J. Leguay
         reference: Information Fusion, 2013
     -
-        link: http://conferences.computer.org/wimob2013/
+        link: https://icube-publis.unistra.fr/appli.php/4-PGN13
         title: Adding value to WSN simulation using the IoT-LAB experimental platform
         authors: G. Papadopoulos, J. Beaudaux, A. Gallais, T. Noel and G. Schreiner
         reference: In Proc. IEEE WiMob'13 - Lyon, France, October 2013
@@ -446,12 +446,12 @@
         authors: N. Berthier, F. Maraninchi, L. Mounier
         reference: ACM Transactions on Embedded Computing Systems, 2013
     -
-        link: http://www.theses.fr/s93527
+        link: https://tel.archives-ouvertes.fr/tel-01167272/
         title: Qualité des liens dans les réseaux de capteurs sans fil. Conception de métriques de qualité de liens pour réseaux de capteurs sans fil en intérieur et à large échelle
         authors: A. Bildea
         reference: Doctorat Grenoble, November 2013
     -
-        link:
+        link: https://hal.archives-ouvertes.fr/hal-01199098
         title: Link Quality Metrics in Large Scale Indoor Wireless Sensor Networks
         authors: A. Bildea, O. Alphand, F. Rousseau, and A. Duda
         reference: In Proceedings of the 24th IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC’13). London, England, Sept 2013</li>
@@ -485,7 +485,7 @@
 - year: 2012
   publications:
     -
-        link:
+        link: https://link.springer.com/chapter/10.1007/978-3-642-29273-6_19
         title: SensLAB
         authors: C. Burin des Rosiers, G. Chelius, E. Fleury, A. Fraboulet, A. Gallais, N. Mitton, T. Noel
         reference: Testbeds and Research Infrastructure. Development of Networks and Communities, Springer, pp 239-254, 2012
@@ -520,7 +520,7 @@
         authors: G. Zaibi
         reference: Doctorat Université de Toulouse co-tutelle Ecole Nationale d'ingénieur de Sfax, Université de Sfax Tunisie, Déc 2012
     -
-        link:
+        link: http://www.tlc.unipr.it/ferrari/Publications/Book_chapters/BC_GoFeLeMe_CRC13.pdf
         title: Distributed Data Storage and Retrieval Schemes in RPL/IPv6-based networks
         authors: P. Gonizzi, G. Ferrari, Vincent Gay, Jeremie Leguay
         reference: "A chapter contribution in Wireless Sensor Networks: From Theory to Applications, edited by I. M. M. El Emary and S. Ramakrishnan, CRC Press, Taylor and Francis Group, accepted, 2012. ISBN: 9781466518100"
