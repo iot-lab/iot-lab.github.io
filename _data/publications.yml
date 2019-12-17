@@ -1,0 +1,634 @@
+# Add NEW publication on top of the list
+- year: 2019
+  publications:
+    -
+        title: "CoCoA++: Delay gradient based congestion control for Internet of Things."
+        link: https://www.sciencedirect.com/science/article/pii/S0167739X18308677
+        authors: Vishal Rathod, Natasha Jeppu, Samanvita Sastry, Shruti Singala and Mohit P. Tahiliani
+        reference: Future Generation Computer Systems, volume 100, pages 1053-1072, issn 0167-739X, 2019
+    -
+        title: "ALICE: Autonomous Link-based Cell Scheduling for TSCH."
+        link: https://doi.org/10.1145/3302506.3310394
+        authors: Seohyang Kim, Hyung-Sin Kim, and Chongkwon Kim.
+        reference: IPSN’19 - 18th ACM/IEEE International Conference on Information Processing in Sensor Networks, April 16–18, 2019, Montreal, Canada. ACM, New York, NY, USA, 12 pages.
+    -
+        title: "Blacklisting-based Channel Hopping Approaches in Low-power and Lossy Networks"
+        link: https://icube-publis.unistra.fr/2-KPZC19
+        authors: V. Kotsiou, G. Papadopoulos , D. Zorbas , P. Chatzimisios , F. Theoleyre
+        reference: "IEEE Communications Magazine, Institute of Electrical and Electronics Engineers (IEEE), pages 48-53, Volume 57, n° 2, February 2019"
+    -
+        title: "Sharing is caring: a cooperation scheme for RPL network resilience and efficiency."
+        link: https://hal.inria.fr/hal-02095410
+        authors: Brandon Foubert, Julien Montavont
+        reference: ISCC 2019 - 24th Symposium on Computers and Communications, Jun 2019, Barcelona, Spain.
+
+
+- year: 2018
+  publications:
+    -
+        link:
+        title: Extensive Experimentations on Opportunistic Routing in Wireless Sensor Networks
+        authors: Ichrak Amdouni, Cédric Adjih, Nadjib Aitsaadi, Paul Muhlethaler
+        reference: Sensors, MDPI, 2018, 18 (9), pp.3031.
+    -
+        link: https://icube-publis.unistra.fr/4-KPCT18
+        title: Adaptive Multi - Channel Offset Assignment for Reliable IEEE 802.15.4 TSCH Networks
+        authors: V. Kotsiou, G. Papadopoulos , P. Chatzimisios , F. Theoleyre
+        reference: Global Information Infrastructure and Networking Symposium (GIIS), Thessaloniki, Greece, November 2018
+    -
+        link: https://icube-publis.unistra.fr/4-TGT18
+        title: On the (over)-Reactions and the Stability of a 6TiSCH Network in an Indoor Environment
+        authors: R. Teles Hermeto, A. Gallais, F. Theoleyre
+        reference: International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM), Montreal, Canada, November 2018
+    -
+        link: http://w3.cran.univ-lorraine.fr/perso/moufida.maimour/SenseVid/sensevid.html
+        title: "SenseVid: A traffic trace based tool for QoE Video transmission assessment dedicated to Wireless Video Sensor Networks"
+        authors: Moufida Maimour
+        reference: Simulation Modelling Practice and Theory, Volume 87, Pages 120-137, September 2018.
+    -
+        link: http://hal.univ-grenoble-alpes.fr/hal-01796508v1/
+        title: Quick and Efficient Link Quality Estimation in Wireless Sensors Networks
+        authors: Henry-Joseph Audéoud, Martin Heusse
+        reference: 14th IEEE Annual Conference on Wireless On-demand Network Systems and Services (WONS), France, Feb 2018
+    -
+        link: https://hal.inria.fr/hal-01851713
+        title: "Multiple Instances QoS Routing In RPL: Application To Smart Grids"
+        authors: J. Nassar, M. Berthomé, J. Dubrulle, N. Gouvy, N. Mitton, B. Quoitin
+        reference: MDPI Sensors, July 2018
+    -
+        link: http://www.mdpi.com/1424-8220/18/8/2611
+        title: Performance Analysis of Latency-Aware Data Management in Industrial IoT Networks
+        authors: T. P. Raptis, A. Passarella, M. Conti
+        reference: MDPI Sensors, July 2018
+    -
+        link: https://ieeexplore.ieee.org/document/8390794/
+        title: Maximizing Industrial IoT Network Lifetime under Latency Constraints through Edge Data Distribution
+        authors:  T. P. Raptis, A. Passarella, M. Conti
+        reference: 1st IEEE International Conference on Industrial Cyber-Physical Systems (ICPS), Saint Petersburg, Russia, May 2018
+    -
+        link: https://icube-publis.unistra.fr/4-BTB18
+        title: Experimental Analysis of the Efficiency of Shared Access in IEEE802.15.4-TSCH Networks with Sporadic Traffic
+        authors: S. Ben Yaala, F. Theoleyre, R. Bouallegue
+        reference: International Conference on Advanced Information Networking and Applications (AINA), Cracovie, Poland, May 2018
+    -
+        link: https://hal.inria.fr/hal-01677687
+        title: From Outage Probability to ALOHA MAC Layer Performance Analysis in Distributed WSNs
+        authors: M. El Amine Seddik, V. Toldov, L. Clavier, N.  Mitton
+        reference: IEEE Wireless Communications and Networking Conference (WCNC), Barcelona, Spain. Apr 2018
+    -
+        link: https://icube-publis.unistra.fr/4-TGVT18
+        title: Passive Link Quality Estimation for Accurate and Stable Parent Selection in Dense 6TiSCH Networks
+        authors: R. Teles Hermeto, A. Gallais, K. Van Laerhoven , F. Theoleyre
+        reference: European Wireless Sensor Networks (EWSN), Madrid, Spain, February 2018
+    -
+        title: "Poster: FIT IoT-LAB Testbed, to interoperability and Beyond"
+        link:
+        authors: J. Vandaële
+        reference: International Conference on Embedded Wireless Systems and Networks (EWSN), Madrid, Spain, February 2018
+
+
+- year: 2017
+  publications:
+    -
+        link: https://icube-publis.unistra.fr/7-TGT17
+        title: Impact of the Initial Preferred Parent Choice in Wireless Industrial Low - Power Networks
+        authors: R. Teles Hermeto, A. Gallais, F. Theoleyre
+        reference: IEEE Multimedia Communications Technical Committee, Institute of Electrical and Electronics Engineers (IEEE), pages 43-46, Volume 12, n° 6, November 2017
+    -
+        link: https://icube-publis.unistra.fr/4-KPCTxx
+        title: "LABeL: Link-based Adaptive BLacklisting Technique for 6TiSCH Wireless Industrial Network"
+        authors: V. Kotsiou, G. Papadopoulos, P. Chatzimisios, F. Theoleyre
+        reference: International Conference on Modelling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM), Miami, United States, November 2017
+    -
+        link: https://hal.inria.fr/hal-01620373
+        title: A Bayesian approach for an efficient data reduction in IoT
+        authors: C. Razafimandimby, V. Loscri, AM. Vegni, D. Aourir, A. Neri
+        reference: InterIoT 2017 - 3rd EAI International Conference on Interoperability in IoT, Nov 2017, Valencia, Spain, September 2017
+    -
+        link: https://icube-publis.unistra.fr/2-BTB17
+        title: Cooperative Resynchronization to Improve the Reliability of Colocated IEEE 802.15.4-TSCH Networks in Dense Deployments
+        authors: S. Ben Yaala, F. Theoleyre, R. Bouallegue
+        reference: "Ad Hoc Networks, Elsevier ( IF : 1.66, SNIP : 2.144, SJR : 0.967 ), pages 112-126, Volume 64, September 2017"
+    -
+        link: https://icube-publis.unistra.fr/2-HT17
+        title: Self-Healing Distributed Scheduling for End-to-End Delay Optimization in Multihop Wireless Networks with 6TiSCH
+        authors:  I. Hosni , F. Theoleyre
+        reference: "Computer Communications, Elsevier ( IF : 2.099, SNIP : 2.002, SJR : 0.889 ), pages 103-119, Volume 110, September 2017"
+    -
+        link: http://www.sciencedirect.com/science/article/pii/S1389128617300804
+        title: "Thorough IoT testbed Characterization: from Proof-of-concept to Repeatable Experimentations"
+        authors: G. Z. Papadopoulos, A. Gallais, G. Schreiner, E. Jou and T. Noel
+        reference: Elsevier Computer Networks - vol. 119, pp. 86–101, June 2017
+    -
+        link: https://icube-publis.unistra.fr/4-KPCT17
+        title: Is Local Blacklisting Relevant in Slow Channel Hopping Low-Power Wireless Networks?
+        authors: G. Papadopoulos, P. Chatzimisios,F. Theoleyre
+        reference: International Conference on Communications (ICC), Paris, France, May 2017
+    -
+        link: https://www.openscience.fr/Plateforme-de-prototypage-rapide-d-objets-connectes-avec-la-famille-WiNo
+        title: Enabling Fast‐prototyping of Connected Things using the WiNo family
+        authors: A. van den Bossche, R. Dalcé, T. Val
+        reference: ISTE OpenScience - Internet des objets, ISTE editions, France, Mars 2017
+    -
+        link: http://www.infocommunications.hu/documents/169298/3555819/InfocomJ_2017_1_1_Kalmar.pdf
+        title: "CAEsAR: Making the RPL routing protocol context-aware"
+        authors: Andras Kalmar, Rolland Vida
+        reference: Infocommunications Journal 9(1):1-1, March 2017
+    -
+        link: https://hal.archives-ouvertes.fr/hal-01465395
+        title: "Demo: Large-scale Sensing, Mobility, and Monitoring with the FIT IoT-LAB Testbed"
+        authors: J. Vandaële, S. Duquennoy, N. Mitton
+        reference: International Conference on Embedded Wireless Systems and Networks (EWSN), Uppsala, Sweden, February 2017
+
+
+- year: 2016
+  publications:
+    -
+        link: https://icube-publis.unistra.fr/2-CMN16
+        title: "MT-RPL: a cross-layer approach for mobility support in RPL"
+        authors: C. Cobârzan, J. Montavont, T. Noël
+        reference: EAI Endorsed Transactions on Internet of Things, EAI, Volume 2, n° 5, December 2016
+    -
+        link: https://named-data.net/wp-content/uploads/2016/07/ndn-0043-1-ndn-riot.pdf
+        title: The Design and Implementation of the NDN Protocol Stack for RIOT-OS
+        authors: W. Shang, A. Afanasyev, L. Zhang
+        reference: IEEE GLOBECOM Workshop on Named Data Networking for Challenged Communication Environments, Washington DC, United States, December 2016
+    -
+        link: https://hal.inria.fr/hal-01369698v1
+        title: A Named Data Network Approach to Energy Efficiency in IoT
+        authors: O. Hahm, E. Baccelli, T. Schmidt, M. Waehlisch, C. Adjih
+        reference: IEEE GLOBECOM Workshop on Named Data Networking for Challenged Communication Environments, Washington DC, United States, December 2016
+    -
+        link: https://icube-publis.unistra.fr/4-PKGO16
+        title: A Mobility-Supporting MAC Scheme for Bursty Traffic in IoT and WSNs
+        authors: G. Papadopoulos, V. Kotsiou, A. Gallais, G. Oikonomou, P. Chatzimisios, T. Tryfonas, T. Noël
+        reference: IEEE Global Communications Conference (Globecom), Washington DC, United States, December 2016
+    -
+        link: https://hal.inria.fr/hal-01407525v1
+        title: "Experiments with ODYSSE: Opportunistic Duty cYcle based routing for wirelesS Sensor nEtworks"
+        authors: Ichrak Amdouni, Cedric Adjih, Nadjib Aitsaadi, Paul Muhlethaler
+        reference: "IEEE LCN 2016: The 41st IEEE Conference on Local Computer Networks (LCN), Dubai, United Arab Emirates, November 2016"
+    -
+        link: https://hal.inria.fr/hal-01404318v1
+        title: Designing Time Slotted Channel Hopping and Information-Centric Networking for IoT
+        authors: O. Hahm, C. Adjih, E. Baccelli, T. Schmidt, M. Wählisch
+        reference: IEEE / IFIP International Conference on New Technologies, Mobility and Security (NTMS'2016), Larnaca, Cyprus, November 2016
+    -
+        link: https://icube-publis.unistra.fr/4-TP16
+        title: Experimental Validation of a Distributed Self-Configured 6TiSCH with Traffic Isolation in Low Power Lossy Networks
+        authors: F. Theoleyre, G. Papadopoulos
+        reference: International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM), Malte, Malta, November 2016
+    -
+        link: https://dl.acm.org/citation.cfm?id=2989300
+        title: Importance of Repeatable Setups for Reproducible Experimental Results in IoT
+        authors: G. Z. Papadopoulos, A. Gallais, G. Schreiner and T. Noel
+        reference: In Proc. ACM PE-WASUN 2016 - Malta, November 2016
+    -
+        link: https://hal.inria.fr/hal-01369704v1
+        title: "ICN over TSCH: Potentials for Link-Layer Adaptation in the IoT"
+        authors: O. Hahm, C. Adjih, E. Baccelli, T. Schmidt, M. Waehlisch
+        reference: ACM-ICN 2016 Proceedings of the 3rd ACM Conference on Information-Centric Networking, pp.195-196, Kyoto, Japan, September 2016
+    -
+        link: https://icube-publis.unistra.fr/2-PKGC16a
+        title: Low-Power Neighbor Discovery for Mobility-Aware Wireless Sensor Networks
+        authors: G. Papadopoulos, V. Kotsiou, A. Gallais, P. Chatzimisios , T. Noël
+        reference: "Ad Hoc Networks, Elsevier ( IF : 3.047, SNIP : 2.115, SJR : 0.724 ), pages 66-79, Volume 48, Septembre 2016"
+    -
+        link: https://hal.inria.fr/hal-01369693v1
+        title: "Let healthy links bloom: Scalable Link Checks in Low-Power Wireless Networks for Smart Health"
+        authors: C. Gündogan, C. Adjih, O. Hahm, E. Baccelli
+        reference: ACM 6th International Workshop on Pervasive Wireless Healthcare (MobileHealth), Paderborn, Germany, July 2016
+    -
+        link: https://icube-publis.unistra.fr/4-NMMN16
+        title: RPL Border Router Redundancy in the Internet of Things
+        authors: Q. Nguyen, J. Montavon, N. Montavont , T. Noël
+        reference: International Conference on Ad Hoc Networks and Wireless (AdHoc-Now), Lille, France, July 2016.
+    -
+        link: https://hal.inria.fr/hal-01309638
+        title: Connecting physical things to a SmartCity-OS
+        authors: R. Petrolo, A. Roukounaki, V. Loscri, N. Mitton, J. Soldatos
+        reference: Proceedings of CoWPER - International IEEE SECON Workshop on Toward a city-wide pervasive environment, London, United Kingdom, June 2016.
+    -
+        link: https://hal.archives-ouvertes.fr/hal-01289487v1
+        title: Experimental Evaluation of Interference Impact on the Energy Consumption in Wireless Sensor Networks
+        authors: V. Toldov, R. Igual-Pérez, R. Vyas, A. Boé, L. Clavier, N. Mitton
+        reference: 17th IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks (WoWMoM), Coimbra, Portugal, June 2016
+    -
+        link: https://hal.archives-ouvertes.fr/hal-01363476
+        title: "OneLab: On-demand deployment of IoT over IPv6 Infrastructure as a service for IEEE INFOCOM community"
+        authors: L. Baron, R. Klacza, MY. Rahman, C. Scognamiglio, T. Friedman, S. Fdida, Frederic Saint-Marcel
+        reference: IEEE Infocom 2016 Live/Video Demonstration, San Francisco, United States, April 2016
+    -
+        link: https://hal.inria.fr/hal-01269633
+        title: Confident-based Adaptable Connected objects discovery to HArmonize smart City Applications
+        authors: R. Petrolo, V. Loscri, N. Mitton
+        reference: In Proceedings of IFIP Wireless Days (WD), Toulouse, France, March 2016
+    -
+        link: http://control.ee.ethz.ch/~bsaverio/papers/randsync.pdf
+        title: A randomized linear algorithm for clock synchronization in multi-agent systems
+        authors: S. Bolognani, R. Carli, E. Lovisari &amp; S. Zampieri
+        reference: IEEE Transactions on Automatic Control, 61(7), 2016
+    -
+        link: https://icube-publis.unistra.fr/index.php/2-PKGC16
+        title: "Performance Evaluation Methods in Ad-Hoc and Wireless Sensor Networks: A Literature Study"
+        authors: G. Papadopoulos, K. Kritsis , A. Gallais, P. Chatzimisios , T. Noël
+        reference: "IEEE Communications Magazine, Institute of Electrical and Electronics Engineers (IEEE) (IF : 4.007), pages 122-128, Volume 51, No 1, January 2016"
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-HTH16
+        title: Localized Scheduling for End-to-End Delay Constrained Low Power Lossy Networks with 6tisch
+        authors: I. Hosni , F. Theoleyre, N. Hamdi
+        reference: IEEE Symposium on Computers and Communications (ISCC), Messine, Italy, June 2016
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-BTB16
+        title: "Performance Study of Co-Located IEEE 802.15.4-TSCH Networks: Interference and Coexistence"
+        authors: S. Ben Yaala , F. Theoleyre, R. Bouallegue
+        reference: IEEE Symposium on Computers and Communications (ISCC), Messina, Italy, January 2016
+
+
+- year: 2015
+  publications:
+    -
+        link: https://drakkar.imag.fr/spip.php?article471
+        title: Low Overhead Loop-Free Routing in Wireless Sensor Networks
+        authors: H-J. Audéoud, M. Krol, M. Heusse, A. Duda
+        reference: In proceedings of the WiMob 2015, Abu Dhabi, UAE
+    -
+        link: http://www.ieee-wf-iot.org/
+        title: "FIT IoT-LAB: A Large Scale Open Experimental IoT Testbed"
+        authors: C. Adjih, E. Baccelli, E. Fleury, G. Harter, N. Mitton, T. Noel, R. Pissard-Gibollet, F. Saint-Marcel, G. Schreiner, J. Vandaele, T. Watteyne
+        reference: IEEE World Forum on Internet of Things (IEEE WF-IoT), Milan, Italy, December 2015
+    -
+        link: https://hal.inria.fr/hal-01244826
+        title: "Network Coding in Military Wireless Ad Hoc and Sensor Networks: Experimentation with GardiNet"
+        authors: I. Amdouni, C. Adjih, T. Plesse
+        reference: International Conference on Military Communications and Information Systems (ICMCIS 2015), Cracow, Poland, 18th – 19th May 2015
+    -
+        link: https://hal.inria.fr/hal-01208425/
+        title: Lessons Learned from Large-scale Dense IEEE802.15.4 Connectivity Traces
+        authors: T. Watteyne, C. Adjih, X. Vilajosana
+        reference: IEEE International Conference on Automation Science and Engineering (CASE 2015), Gothenburg, Sweden, 24-28 August 2015
+    -
+        link:
+        title: Adaptive Broadcast Supression for Trickle-Based Protocols
+        authors: Thomas M. M. Meyfroyt, M. Stolikj, and Johan J. Lukkien
+        reference: IEEE Internationa Symposium on a World of Wireless Mobile and Multimedia Networks (WoWMoM), June 2015.
+    -
+        link: https://hal.archives-ouvertes.fr/hal-01183700
+        title: "OneLab Tutorial: A Single Portal to Heterogeneous Testbeds"
+        authors: L. Baron, R. Klacza, N. Kurose, MY. Rahman, C. Scognamiglio, T. Friedman, S. Fdida, F. Saint-Marcel
+        reference: TridentCom 2015, Vancouver, Canada, June 2015
+    -
+        link: http://dx.doi.org/10.1007/978-3-319-15582-1_12
+        title:  Improving the Performance of Trickle-Based Data Dissemination in Low-Power Networks
+        authors: Milosh Stolikj, Thomas M. M. Meyfroyt, Pieter J. L. Cuijpers and Johan J. Lukkien
+        reference: 12th European Conference on Wireless Sensor Networks (EWSN), February 2015.
+    -
+        link: http://heurtefeux.info/Sources/Articles/AINA_2015.pdf
+        title:  Enhancing RPL Resilience Against Routing Layer Insider Attacks
+        authors:  K. Heurtefeux, O. Erdene-Ochir, N. Mohsin, H. Menouar
+        reference: 29th IEEE International Conference on Advanced Information Networking and Applications (AINA-2015), At Gwangju, Korea
+    -
+        link: http://ercim-news.ercim.eu/en101/special/fit-iot-lab-the-largest-iot-open-experimental-testbed
+        title: "FIT IoT-LAB: The Largest IoT Open Experimental Testbed"
+        authors: E. Fleury, N. Mitton, T. Noel, C. Adjih
+        reference: ERCIM News, ERCIM, 2015, pp.14.
+    -
+        link: https://hal.inria.fr/hal-01147332
+        title: Docking autonomous robots in passive docks with Infrared sensors and QR codes
+        authors: R. Quilez, A. Zeeman, N. Mitton, J. Vandaele
+        reference: International Conference on Testbeds and Research Infrastructures for the Development of Networks &amp; Communities (TridentCOM), Jun 2015, Vancouver, Canada.
+    -
+        link: https://hal.inria.fr/hal-01147346
+        title: How to choose an experimentation platform for wireless sensor networks?
+        authors: A.S. Tonneau, N. Mitton, J. Vandaele
+        reference: Elsevier Adhoc networks, 2015, 30, pp.12
+    -
+        link: https://icube-publis.unistra.fr/index.php/2-PKGC15
+        title: Wireless Medium Access Control under Mobility and Bursty Traffic Assumptions in WSNs
+        authors: G. Papadopoulos, V. Kotsiou , A. Gallais, P. Chatzimisios , T. Noël
+        reference: "Mobile Networks and Applications, Springer Verlag (IF : 1.045), pages 649-660, Volume 20, No 5, October 2015"
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-PPGN15
+        title: Distributed Adaptive Scheme for Reliable Data Collection in Fault Tolerant WSNs
+        authors: G. Papadopoulos, N. Pappas , A. Gallais, T. Noël, V. Angelakis
+        reference: IEEE WF-IoT, Milan, Italy, December 2015
+    -
+        link: https://hal.archives-ouvertes.fr/hal-01128241v1
+        title: "Demo Abstract: Automating WSN experiments and simulations"
+        authors: Léone, Jérémie Leguay, Paolo Medagliani, Claude Chaudet
+        reference: EWSN 2015, Feb 2015, Porto, Portugal
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-CMN15
+        title: Integrating mobility in RPL
+        authors: C. Cobârzan, J. Montavont, T. Noël
+        reference: 12th European Conference on Wireless Sensor Networks, Porto, Portugal, February 2015
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-MCN15
+        title: Theoretical Analysis of IPv6 Stateless Address Autoconfiguration in Low-power and Lossy Wireless Networks
+        authors: J. Montavont, C. Cobârzan, T. Noël
+        reference: 11th IEEE International Conference on Computing and Communication Technologies, Cantho, Vietnam, January 2015
+
+
+- year: 2014
+  publications:
+    -
+        link:
+        title: "Cooperative RSSI-based indoor localization: B-MLE and distributed stochastic approximation"
+        authors: G. Morral*, N.A. Dieng
+        reference: 80th IEEE International Conference on Vehicular Technology (VTC-Fall), pp. 1-5, Vancouver in September 2014 (Canada)
+    -
+        link: http://perso.telecom-paristech.fr/~morralad/paper_icassp.pdf
+        title: Distributed on-line multidimensional scaling for self-localization in wireless sensor networks
+        authors: G. Morral*, N.A. Dieng, P. Bianchi
+        reference: 39th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 1110-1114, Florence in May 2014 (Italy)
+    -
+        link: http://dx.doi.org/10.1145/2676733.2676741
+        title: Towards a model@runtime middleware for cyber physical systems
+        authors: F. Javier Acosta Padilla (INRIA Rennes), F. Weis, J. Bourcier (IRISA, Université de Rennes 1)
+        reference: MW4NG '14 Proceedings of the 9th Workshop on Middleware for Next Generation Internet Computing
+    -
+        link: http://mass2014.eecs.utk.edu/index.htm
+        title: "Scientific Experiments with the Large Scale Open Testbed IoT-LAB: Broadcast with Network Coding"
+        authors: C. Adjih, I. Amdouni, H. Baccouch, and A. Masucci
+        reference: IEEE International Conference on Mobile Ad hoc and Sensor Systems (MASS) 2014, Philadelphia, Oct 27-30, 2014
+    -
+        link: https://hal.inria.fr/hal-00987081
+        title: Integrating Wireless Sensor Networks within a City Cloud
+        authors: R. Petrolo, N. Mitton, J. Soldatos, M. Hauswirth, G. Schiele
+        reference: International IEEE SECON Workshop on Self-Organizing Wireless Access Networks for Smart City, SWANSITY 2014, Singapore, June 2014
+    -
+        link: http://ubimob2014.sciencesconf.org/42780/document/
+        title:  "FIT IoT-LAB tutorial: hands-on practice with a very large scale testbed tool for the Internet of Things"
+        authors: O. Fambon, E. Fleury, G. Harter, R. Pissard-Gibollet, F. Saint-Marcel
+        reference: 10èmes journées francophones Mobilité et Ubiquité (UbiMob), Sophia-Antipolis, 5-6 June 2014
+    -
+        link: http://hal.inria.fr/hal-00988776
+        title: A Survey on (mobile) Wireless Sensor Network Experimentation Testbeds
+        authors: A.-S. Tonneau, N. Mitton, J. Vandaele
+        reference: IEEE International Conference on Distributed Computing in Sensor Systems, DCOSS 2014, Marina Del Rey, CA, USA, May 26-28, 2014
+    -
+        link: http://hal.inria.fr/hal-00959921/
+        title:  On the Impact of Network Topology on Wireless Sensor Networks Performances Illustration with Geographic Routing
+        authors: T. Ducrocq, M. Hauspie, N. Mitton, S. Pizzi
+        reference: International Workshop on the Performance Analysis and Enhancement of Wireless Networks (PAEWN) - Victoria, Canada, May 2014
+    -
+        link: http://clarinet.u-strasbg.fr/~beaudaux/docs/IEEESensors13.pdf
+        title: Thorough Empirical Analysis of X-MAC over a Large Scale Internet of Things Testbed
+        authors: J. Beaudeaux and al.
+        reference: IEEE Sensors Journal, vol 14, 2014
+    -
+        link: http://www.naturalspublishing.com/files/published/899c85m69ju5f9.pdf
+        title: Wireless Sensor Networks Testbeds and State-of-the-Art Multimedia Sensor Nodes
+        authors: MO. Farooq, T. Kunz
+        reference: Int. Journal Applied Mathematics & Information Sciences, 2014
+    -
+        link: http://hal.upmc.fr/hal-00926160
+        title: Tools to foster a global federation of testbeds
+        authors: J. Augé, T. Parmentelat, N. Turro, S. Avakian, L. Baron, M. Amine Larabi, M. Yasin Rahman, T. Friedman, S. Fdida
+        reference: Computer Networks Journal, Jan. 2014
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-PGNK14
+        title: Enhancing ContikiMAC for Bursty Traffic in Mobile Sensor Networks
+        authors: G. Papadopoulos , A. Gallais, T. Noël, V. Kotsiou , P. Chatzimisios
+        reference: IEEE Sensors, Valencia, Spain, November 2014
+    -
+        link: https://icube-publis.unistra.fr/index.php/2-BGN14
+        title: Reality-Proof Activity Scheduling for Energy-Efficient Wireless Sensor Networks
+        authors: J. Beaudaux, A. Gallais, T. Noël
+        reference: "International Journal of Ad Hoc and Ubiquitous Computing, Inderscience (IF : 0.554), pages 185-199, Volume 15, No 1-3, 2014"
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-PBGC14
+        title: Toward a Packet Duplication Control for Opportunistic Routing in WSNs
+        authors: G. Papadopoulos , J. Beaudaux, A. Gallais, P. Chatzimisios , T. Noël
+        reference: IEEE Globecom 2014, Austin, United States, September 2014
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-PBGN14
+        title: "T-AAD: Lightweight Traffic Auto-ADaptations for Low-power MAC Protocols"
+        authors: G. Papadopoulos , J. Beaudaux, A. Gallais, T. Noël
+        reference: IEEE/IFIP Med-Hoc-Net'14, Piran, Slovenia, June 2014
+    -
+        link: http://dx.doi.org/10.1016/j.adhoc.2013.11.001
+        title: "Mobile IPv6 in Internet of Things: Analysis, Experimentations and Optimizations"
+        authors: J. Montavont, D. Roth , T. Noël
+        reference: "Ad Hoc Networks, Elsevier (IF : 1.53), pages 15-25, Volume 14, January 2014"
+
+
+- year: 2013
+  publications:
+    -
+        link: http://hal.inria.fr/hal-00863123
+        title: Balancing energy consumption in clustered wireless sensor networks
+        authors: T. Ducrocq, M. Hauspie, N. Mitton
+        reference: ISRN Sensor Networks - 2013
+    -
+        link: http://www.sciencedirect.com/science/article/pii/S1566253513000444
+        title: Data dissemination scheme for distributed storage for IoT observation systems at large scale
+        authors: P. Gonizzi, G Ferrari, V. Gay, J. Leguay
+        reference: Information Fusion, 2013
+    -
+        link: http://conferences.computer.org/wimob2013/
+        title: Adding value to WSN simulation using the IoT-LAB experimental platform
+        authors: G. Papadopoulos, J. Beaudaux, A. Gallais, T. Noel and G. Schreiner
+        reference: In Proc. IEEE WiMob'13 - Lyon, France, October 2013
+    -
+        link: http://link.springer.com/article/10.1007%2Fs13119-013-0016-4
+        title: Heterogeneous MAC duty-cycling for energy-efficient Internet of Things deployments
+        authors: J. Beaudaux, A. Gallais, and T. Noel
+        reference: Networking Science 2013
+    -
+        link: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6548990&amp;tag=1
+        title: "Experimental evaluation of a routing protocol for wireless sensor networks: RPL under study"
+        authors: K. Heurtefeux, and H. Menouar
+        reference: Wireless and Mobile Networking Conference (WMNC), 6th Joint IFIP. IEEE, 2013.
+    -
+        link: http://dl.acm.org/citation.cfm?id=2435235
+        title: Synchronous programming of device drivers for global resource control in embedded operating systems
+        authors: N. Berthier, F. Maraninchi, L. Mounier
+        reference: ACM Transactions on Embedded Computing Systems, 2013
+    -
+        link: http://www.theses.fr/s93527
+        title: Qualité des liens dans les réseaux de capteurs sans fil. Conception de métriques de qualité de liens pour réseaux de capteurs sans fil en intérieur et à large échelle
+        authors: A. Bildea
+        reference: Doctorat Grenoble, November 2013
+    -
+        link:
+        title: Link Quality Metrics in Large Scale Indoor Wireless Sensor Networks
+        authors: A. Bildea, O. Alphand, F. Rousseau, and A. Duda
+        reference: In Proceedings of the 24th IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC’13). London, England, Sept 2013</li>
+    -
+        link: http://hal.archives-ouvertes.fr/hal-00818548
+        title: Link Quality Metrics in Large Scale Indoor Wireless Sensor Networks
+        authors: A. Bildea, O. Alphand, A. Duda
+        reference: 15èmes Rencontres Francophones sur les Aspects Algorithmiques des Télécommunications (AlgoTel) 2013
+    -
+        link: http://hal.inria.fr/hal-00697715
+        title: Is RSSI a Good Choice for Localization in Wireless Sensor Network?
+        authors: K. Heurtefeux, V. Fabrice
+        reference: IEEE International Conference on Advanced Information Networking and Applications (AINA), 2012</span>
+    -
+        link: http://ensiwiki.ensimag.fr/images/6/62/Irl-naza-final-report.pdf
+        title: Evaluation of a Distributed Key Certification using Accumulators in very Constrained Wireless Sensor Networks
+        authors: A. Naz
+        reference: Introduction to laboratory research, Grenoble Informatics Laboratory (LIG), Feb 2013
+    -
+        link: http://dx.doi.org/10.1007/s11235-011-9565-6
+        title: Improving the Medium Access in Highly Mobile Wireless Sensor Networks
+        authors: R. Kuntz , J. Montavont, T. Noël
+        reference: "Telecommunication Systems, Springer (IF : 0.705), pages 2437--2458, Volume 52, No 4, April 2013"
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-BGN13
+        title: Localized MAC Duty-Cycling Adaptations for Global Energy-Efficiency in Wireless Sensor Networks
+        authors: J. Beaudaux, A. Gallais, T. Noël
+        reference: IEEE ISCC 2013, Split, Croatia, July 2013
+
+
+- year: 2012
+  publications:
+    -
+        link:
+        title: SensLAB
+        authors: C. Burin des Rosiers, G. Chelius, E. Fleury, A. Fraboulet, A. Gallais, N. Mitton, T. Noel
+        reference: Testbeds and Research Infrastructure. Development of Networks and Communities, Springer, pp 239-254, 2012
+    -
+        link: http://hal.inria.fr/hal-00689622
+        title: Clustering pour l'optimisation de la durée de vie des réseaux de capteurs sans fil
+        authors: T. Ducrocq, N. Mitton, M. Hauspie
+        reference: 14èmes Rencontres Francophones sur les Aspects Algorithmiques des Télécommunications (AlgoTel), 2012
+    -
+        link: http://hal.archives-ouvertes.fr/hal-00690748
+        title: De la pertinence du RSSI pour la localisation dans les réseaux de capteurs
+        authors: K. Heurtefeux, V. Fabrice
+        reference: 14èmes Rencontres Francophones sur les Aspects Algorithmiques des Télécommunications (AlgoTel) 2012
+    -
+        link: http://tel.archives-ouvertes.fr/tel-00768830
+        title: Méthodes et outils pour la compilation et l'optimisation logicielle des systèmes embarqués sans fil dédiés à des applications
+        authors: A. Chis
+        reference: Doctorat Ecole Normale Supérieure de Lyon, Déc 2012
+    -
+        link: http://tel.archives-ouvertes.fr/tel-00793315
+        title: Gestion de la mobilité dans les réseaux de capteurs sans fil
+        authors: D. Roth
+        reference: Doctorat Université de Strasbourg, Nov 2012
+    -
+        link: http://tel.archives-ouvertes.fr/tel-00727281
+        title: Programmation synchrone de pilotes de périphériques pour un contrôle global de ressources dans les systèmes embarqués
+        authors: N. Berthier
+        reference: Doctorat Université de Grenoble, Mars 2012
+    -
+        link: http://tel.archives-ouvertes.fr/tel-00867469
+        title: Sécurisation par dynamiques chaotiques des réseaux locaux sans fil au niveau de la couche MAC
+        authors: G. Zaibi
+        reference: Doctorat Université de Toulouse co-tutelle Ecole Nationale d'ingénieur de Sfax, Université de Sfax Tunisie, Déc 2012
+    -
+        link:
+        title: Distributed Data Storage and Retrieval Schemes in RPL/IPv6-based networks
+        authors: P. Gonizzi, G. Ferrari, Vincent Gay, Jeremie Leguay
+        reference: "A chapter contribution in Wireless Sensor Networks: From Theory to Applications, edited by I. M. M. El Emary and S. Ramakrishnan, CRC Press, Taylor and Francis Group, accepted, 2012. ISBN: 9781466518100"
+    -
+        link: http://arxiv.org/pdf/1209.2234.pdf
+        title: Online estimation of battery lifetime for wireless sensors network
+        authors: E Nataf, O Festor
+        reference: INRIA Research Report, 2012
+    -
+        link: http://www.bibsonomy.org/bibtex/2ea967230a9ade08804a4d80bec38d487/dblp
+        title: "Redundant Distributed Data Storage: Experimentation with the SensLab Testbed"
+        authors: P. Gonizzi, G. Ferrari, V. Gay, and Jeremie Leguay
+        reference: 1st International Conference on Sensor Networks, SENSORNETS, Roma, 2012
+    -
+        link: http://hal.inria.fr/hal-00755482
+        title: "CCNx for Contiki: implementation details"
+        authors: B. Saadallah, A. Lahmadi, O. Festor
+        reference: INRIA Technical Report, no 432, Nov 2012
+    -
+        link: http://hal.inria.fr/hal-00740371
+        title: "Tutorial: SensLAB/FIT ‐ Very Large Scale Open Wireless Sensor Network Testbed"
+        authors: E. Fleury, G. Harter, F. Saint-Marcel, N. Mitton, J. Vandaele
+        reference: 2012
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-RMN12
+        title: Performance Evaluation of Mobile IPv6 Over 6LoWPAN
+        authors: D. Roth , J. Montavont, T. Noël
+        reference: 9th ACM International Symposium on Performance Evaluation of Wireless Ad Hoc, Sensor, and Ubiquitous Networks (PE-WASUN), Paphos, Cyprus, October 2012
+
+
+- year: 2011
+  publications:
+    -
+        link: http://www.theses.fr/2011LIL10079
+        title: Algorithms for Realistic Wireless Sensor Networks
+        authors: J. Radak
+        reference: Doctorat Université Lille1, December 2011
+    -
+        link: http://www.sciencedirect.com/science/article/pii/S0743731510001991
+        title: From versatility to auto-adaptation of the medium access control in wireless sensor networks
+        authors: R. Kuntz, A. Gallais, T. Noel
+        reference: Journal of Parallel and Distributed Computing, vol 71, 2011
+    -
+        link: http://hal.inria.fr/inria-00599117
+        title: Using Battery Level as Metric for Graph Planarization
+        authors: J. Radak, N. Mitton, D. Simplot-Ryl
+        reference: 10th International Conference on Ad Hoc Networks and Wireless (AdHocNow), 2011
+    -
+        link: http://hal.inria.fr/inria-00599102
+        title: Using SensLAB as a First Class Sccientific Tool for Large Scale Wireless Sensor Network Experiments
+        authors: C. Burin des Roziers, G. Chelius, E. Fleury, A. Fraboulet, A. Gallais, N. Mitton, T. Noel and J. Vandaele
+        reference: Networking 2011
+    -
+        link: http://hal.inria.fr/inria-00587862
+        title: SensLAB Very Large Scale Open Wireless Sensor Network Testbed
+        authors: C. Burin des Roziers, G. Chelius, T. Ducrocq, E. Fleury, A. Fraboulet, A. Gallais, N. Mitton and T. Noel
+        reference: Proc. 7th International ICST Conference on Testbeds and Research Infrastructures for the Development of Networks and Communities (TridentCOM) 2011
+    -
+        link: http://hal.inria.fr/inria-00567993
+        title: Deployment Experience with Low Power Lossy Wireless Sensor Networks
+        authors: C. Adjih, E. Baccelli, P. Jacquet, P. Minet, M. Philipp, G. Wittenburg
+        reference: INRIA Research Report, no 7551, Feb. 2011
+    -
+        link: http://www.sciencedirect.com/science/article/pii/S1631070511001587
+        title: From the Internet of things to the Internet of the physical world
+        authors: N. Mitton, D. Simplot-Ryl
+        reference: Comptes Rendus Physique 12.7, 2011
+    -
+        link: http://hal.inria.fr/inria-00636847
+        title: "Two demos using SensLAB: Very Large Scale Open WSN Testbed"
+        authors: C. Burin des Roziers, G. Chelius, T. Ducrocq, E. Fleury, A. Fraboulet, A. Gallais, N. Mitton, T. Noel and J. Vandaele
+        reference: Demo in Proc. of The 7th IEEE International Conference on Distributed Computing in Sensor Systems (IEEE DCOSS '11), 2011
+    -
+        link: http://hal.inria.fr/inria-00630092
+        title: A survey on facilities for experimental internet of things research
+        authors: A. Gluhak and al
+        reference: IEEE Communications Magazine 49, 2011
+    -
+        link: http://www-verimag.imag.fr/TR/TR-2011-17.pdf
+        title: A Generic Structure for Modeling Time and Energy Consumption in Abstract Virtual Prototypes ofEmbedded Systems
+        authors: F. Maraninchi, C. Parent-Vigouroux, K. Heurtefeux and P. Raymond
+        reference: Verimag Research Report no TR-2011-17, Nov 2011
+    -
+        link: http://dl.acm.org/citation.cfm?id=2093192
+        title: Adaptable service composition for very-large-scale internet of things systems
+        authors: Kashif Dar and al
+        reference: Proceedings of the 8th Middleware Doctoral Symposium (MDS), 2011
+    -
+        link: https://icube-publis.unistra.fr/index.php/4-KGN11
+        title: Auto-Adaptive MAC for Energy-Efficient Burst Transmissions in Wireless Sensor Networks
+        authors: R. Kuntz , A. Gallais, T. Noël
+        reference: IEEE Wireless Communications and Networking Conference (WCNC), Cancun, Mexico, page 8, IEEE, March 2011
+
+
+- year: 2010
+  publications:
+    -
+        link: http://hal.inria.fr/inria-00600284
+        title: Large scale geolocalization and routing experimentation with the SensLAB testbed
+        authors: T. Ducrocq, J. Vandaele, N. Mitton and D. Simplot-Ryl
+        reference: Demo in Proc. 7th IEEE International Conference on Mobile Ad-hoc and Sensor Systems (IEEE MASS) 2010
+    -
+        link: http://dl.acm.org/citation.cfm?id=1870033
+        title: "CASINO: creating alea with a sensor-based interactive network"
+        authors: J. Beaudaux and al.
+        reference: SenSys'10, Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems. ACM, 2010
+    -
+        link: http://ubimob10.liris.cnrs.fr/papers/1.2.Gallais_et_al.pdf
+        title: "MANALA: Mate Network Architecture Layer"
+        authors: A. Gallais, J. Gossa
+        reference: 6èmes Journées Francophones Mobilité et Ubiquité, Lyon, 2010
