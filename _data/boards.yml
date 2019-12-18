@@ -71,7 +71,7 @@
     mcu-soc: Cortex M0
     radio: ble
 -
-    name: FRDM-KW41Z
+    name: NXP FRDM-KW41Z
     iotlab-name: frdm-kw41z
     mcu-soc: Cortex M0
     radio: 15.4, ble
