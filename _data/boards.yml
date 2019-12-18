@@ -71,6 +71,11 @@
     mcu-soc: Cortex M0
     radio: ble
 -
+    name: FRDM-KW41Z
+    iotlab-name: frdm-kw41z
+    mcu-soc: Cortex M0
+    radio: 15.4, ble
+-
     name: nRF52831-MDK
     iotlab-name: nrf52832-mdk
     mcu-soc: Cortex M4
