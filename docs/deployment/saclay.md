@@ -33,11 +33,18 @@ The Saclay testbed is located at [Saclay – Île-de-France](https://goo.gl/maps
         <td>Room 2</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/iot-lab/iot-lab/wiki/Hardware-SAMR21-node">SAMR21 Xplained Pro</a></td>
+        <td><a href="{{ site.baseurl}}/docs/boards/microchip-samr21">SAMR21 Xplained Pro</a></td>
         <td>samr21</td>
         <td>15</td>
         <td>802.15.4</td>
         <td>Room 2</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl}}/docs/boards/microchip-samr30">SAMR30 Xplained Pro</a></td>
+        <td>samr30</td>
+        <td>3</td>
+        <td>Sub-GHz</td>
+        <td>Basement</td>
     </tr>
     <tr>
         <td><a href="https://www.arduino.cc/en/Main/ArduinoBoardZero">Arduino Zero</a></td>
@@ -54,21 +61,21 @@ The Saclay testbed is located at [Saclay – Île-de-France](https://goo.gl/maps
         <td>Room 1</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/iot-lab/iot-lab/wiki/Hardware-nRF52-DK-node">nRF52-DK</a></td>
+        <td><a href="{{ site.baseurl}}/docs/boards/nordic-nrf52dk">nRF52DK</a></td>
         <td>nrf52dk</td>
         <td>10</td>
         <td>BLE</td>
         <td>Room 1</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/iot-lab/iot-lab/wiki/Hardware-nRF52840-DK-node">nRF52840-DK</a></td>
+        <td><a href="{{ site.baseurl}}/docs/boards/nordic-nrf52840dk">nRF52840DK</a></td>
         <td>nrf52840dk</td>
         <td>10</td>
         <td>802.15.4 + BLE</td>
         <td>Room 1 (5) and Room 2 (5)</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/iot-lab/iot-lab/wiki/Hardware-nRF51-DK-node">nRF51-DK</a></td>
+        <td><a href="{{ site.baseurl}}/docs/boards/nordic-nrf51dk">nRF51DK</a></td>
         <td>nrf51dk</td>
         <td>5</td>
         <td>BLE</td>
@@ -96,7 +103,7 @@ The Saclay testbed is located at [Saclay – Île-de-France](https://goo.gl/maps
         <td>Basement</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/iot-lab/iot-lab/wiki/Hardware-frdm-kw41z-node">FRDM-KW41Z</a></td>
+        <td><a href="{{ site.baseurl}}/docs/boards/nxp-frdm-kw41z">NXP FRDM-KW41Z</a></td>
         <td>frdm-kw41z</td>
         <td>5</td>
         <td>802.15.4 + BLE</td>
