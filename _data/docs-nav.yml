@@ -11,14 +11,21 @@
 - title: Boards
   pages:
     - title: Overview
-    - title: Add new board
-    - title: IoT-LAB WSN430
     - title: IoT-LAB M3
     - title: IoT-LAB A8-M3
-    - title: Atmel SAMR21
-    - title: STM32L0 LoRa
+    - title: IoT-LAB WSN430
+    - title: Microchip SAMR21
     - title: Arduino Zero
     - title: Zolertia Firefly
+    - title: ST B-L072Z-LRWAN1
+    - title: ST B-L475E-IOT01A
+    - title: Nordic nRF52DK
+    - title: Nordic nRF52840DK
+    - title: Nordic nRF51DK
+    - title: BBC micro:bit
+    - title: nRF52832-MDK
+    - title: nRF52840-MDK
+    - title: Add new board
 
 - title: Deployment
   pages:
