@@ -33,8 +33,13 @@
 -
     name: Microchip SAMR21
     iotlab-name: samr21
-    mcu-soc: CortexM0
+    mcu-soc: Cortex M0
     radio: "15.4"
+-
+    name: Microchip SAMR30
+    iotlab-name: samr30
+    mcu-soc: Cortex M0
+    radio: sub
 -
     name: Zolertia Firefly
     iotlab-name: firefly
@@ -43,40 +48,40 @@
 -
     name: ST B-L072Z-LRWAN1
     iotlab-name: st-lrwan1
-    mcu-soc: STM32L0
+    mcu-soc: Cortex M0
     radio: lora
 -
     name: ST B-L475E-IOT01A
     iotlab-name: st-iotnode
-    mcu-soc: STM32L4
+    mcu-soc: Cortex M4
     radio: sub, wifi, ble
 -
     name: nRF52DK
     iotlab-name: nrf52dk
-    mcu-soc: nrf52832
+    mcu-soc: Cortex M4
     radio: ble
 -
     name: nRF52840DK
     iotlab-name: nrf52840dk
-    mcu-soc: nrf52840
+    mcu-soc: Cortex M4
     radio: 15.4, ble
 -
     name: nRF51DK
     iotlab-name: nrf51dk
-    mcu-soc: nrf51
+    mcu-soc: Cortex M0
     radio: ble
 -
     name: nRF52831-MDK
     iotlab-name: nrf52832-mdk
-    mcu-soc: nrf52832
+    mcu-soc: Cortex M4
     radio: ble
 -
     name: nRF52840-MDK
     iotlab-name: nrf52840-mdk
-    mcu-soc: nrf52840
+    mcu-soc: Cortex M4
     radio: 15.4, ble
 -
     name: BBC micro:bit
     iotlab-name: microbit
-    mcu-soc: NRF51
+    mcu-soc: Cortex M0
     radio: ble
