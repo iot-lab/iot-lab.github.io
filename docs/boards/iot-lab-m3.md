@@ -8,7 +8,10 @@ group: boards
 
 The M3 open node is based on a STM32 (ARM Cortex M3) micro-controller. Like the WSN430 node, this new generation contains a set of sensors and a radio interface. Main evolutions are a more powerful 32-bits processing, a new ATMEL radio interface in 2.4 GHz and more sensors.
 
-[[/Images/archiopenm3.png | Open node M3 architecture]]
+
+<div style="text-align:center">
+<img src="{{ '/assets/images/docs/boards/m3/' | relative_url}}archiopenm3.png" style="width:50%;"/>
+</div>
 
 The M3 Open Node can reset, debug and program the STM32 on JTAG through the FTDI4232H connected to the USB. This component allows also a UART link to the STM32. The Open Node connector gives access to 3 STM32/GPIO and the STM32/I2C. Two power lines are accessible on this connector :
   * a + 5.0 volts for the board power supply
@@ -30,7 +33,7 @@ In details, the main hardware components  contained in the node are :
   * Three LEDs (green, red, orange)
   * 3,7 V [LIPO battery](http://www.gmbattery.com/Datasheet/LIPO/LIPO-063040.pdf) (650 mAh)
 
-The complete schematics is available  [ [[/Images/pdf.jpg]] ](http://github.com/iot-lab/iot-lab/wiki/Docs/openm3-schematics.pdf)
+The complete schematics are available [here](http://github.com/iot-lab/iot-lab/wiki/Docs/openm3-schematics.pdf).
 
 ## Bugs
 
