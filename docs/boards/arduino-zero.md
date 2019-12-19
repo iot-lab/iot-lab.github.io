@@ -46,7 +46,7 @@ The baudrate must be **9600 bauds**.
 The sensors extension is a
 [ST X-NUCLEO-IKS01A2](https://www.st.com/en/ecosystems/x-nucleo-iks01a2.html)
 shield.
-This gives access to external sensors to the `nrf52dk` nodes:
+This gives access to external sensors to the nodes:
   * a temperature and humidity sensor
     [HTS221](https://www.st.com/resource/en/datasheet/hts221.pdf)
   * an atmospheric pressure sensor
