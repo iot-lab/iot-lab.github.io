@@ -1,11 +1,10 @@
 ---
 title: CLI
 group: tools
+description: IoT-LAB testbed provides a REST API client in the form of command-line tools. Indeed you should easily perform the main testbed features and it’s a good way to automate and script your experiments.
 ---
 
-IoT-LAB testbed provides a REST API client in the form of command-line tools. Indeed you should easily perform the main testbed features and it's a good way to automate and script your experiments.
-
-#### Installation
+## Installation
 
 The best way to install the CLI tools on your computer is to use pip
 
@@ -15,7 +14,7 @@ $ pip install --user iotlabcli
 
 > We remind you that it's not mandatory to install them on your computer as they are installed by default on all IoT-LAB SSH fronted servers.
 
-#### Commands
+## Commands
 
 You can find one command for each main testbed features:
 
@@ -26,7 +25,7 @@ You can find one command for each main testbed features:
 
 We highly recommend you to follow the [getting started tutorial](/tutorials/getting-started/cli-tools/)
 
-##### Auth command
+### Auth command
 
 If you don't want to specify your credentials everytime you launch a command (login/password) you can store your credentials only once.
 
@@ -36,9 +35,9 @@ $ iotlab-auth -u <login>
 
 Don't forget that you must repeat this step from each computer or IoT-LAB SSH frontend where you will use CLI tools.
 
-##### Experiment command
+### Experiment command
 
-* **Get testbed nodes list**<br><br>
+##### Get testbed nodes list
 
 ``` bash
 $ iotlab-experiment info -l
@@ -66,7 +65,8 @@ Filter by archi and site
 $ iotlab-experiment info -l --archi m3 --site grenoble
 ```
 
-* **Submit an experiment**<br><br>
+##### Submit an experiment
+
 When you submit an experiment you can choose between two modes, alias or physical submission. With alias mode your submission is based on a set of alias
 nodes properties in the form of `<number>,<properties1+properties2>`. In this case, thanks to the IoT-LAB scheduler which allocate you automatically the nodes which corresponds to the properties and ensure you that they are in the same radio neighborhood.<br><br>
 An example of experiment submission for a duration of 20 minutes with 10 M3 nodes on Grenoble site:<br><br>
@@ -97,7 +97,8 @@ An example of experiment submission with 2 M3 nodes on Grenoble site with only o
 $ iotlab-experiment submit -n profile_example -d 20 -l 2,archi=m3:at86rf231+site=grenoble,,profile1
 ```
 
-* **Wait for an experiment**<br><br>
+##### Wait for an experiment
+
 When your experiment submission is accepted the scheduler will start the deployment. You have to wait until your experiment is ready with the state `Running`. We provide a command which is blocked pending good state<br><br>
 ``` bash
 $ iotlab-experiment wait
@@ -106,14 +107,15 @@ Waiting that experiment <exp_id> gets in state Running
 $ iotlab-experiment wait -i <exp_id> # if you have several experiments running on the testbed
 ```
 
-* **Get experiment nodes list**<br><br>
+##### Get experiment nodes list
 ``` bash
-$ iotlab-experiment get -n
-$ iotlab-experiment get -n -i <exp_id> # if you have several experiments running on the testbed
+$ iotlab-experiment get -n 
+$ iotlab-experiment get -n -i <exp_id> # if you have several experiments running on the testbed 
 ```
 
-* **Get experiment nodes deployment result**<br><br>
-Get an experiment nodes deployment result with `succes=0 and error=1`. It's important to check the result before interact with a node as it can be considered unusable in case of error return.<br><br>
+##### Get experiment nodes deployment result
+
+Get an experiment nodes deployment result with `succes=0 and error=1`. It's important to check the result before interact with a node as it can be considered unusable in case of error return.<br><br> 
 ``` bash
 $ iotlab-experiment get -d
 {
@@ -127,15 +129,17 @@ $ iotlab-experiment get -d
 $ iotlab-experiment get -d -i <exp_id> # if you have several experiments running on the testbed
 ```
 
-* **Stop experiment**<br><br>
+##### Stop experiment
+
 ``` bash
-$ iotlab-experiment stop
-$ iotlab-experiment stop -i <exp_id> # if you have several experiments running on the testbed
+$ iotlab-experiment stop 
+$ iotlab-experiment stop -i <exp_id> # if you have several experiments running on the testbed 
 ```
 
-##### Node command
+### Node command
 
-* **Flash firmware**<br><br>
+##### Flash firmware
+
 ``` bash
 $ iotlab-node --flash firmware.elf # flash the firmware on all nodes of the experiment
 $ iotlab-node -i <exp_id> --flash firmware.elf # if you have several experiments running on the testbed
@@ -144,41 +148,47 @@ $ iotlab-node --flash firmware.elf -e grenoble,m3,1 # flash the firmware on all 
 $ iotlab-node --flash-idle # flash an idle firmware (default testbed firmware)
 ```
 
-* **Start/Stop/Reset (power supply)**<br><br>
+##### Start/Stop/Reset
+
 ``` bash
 $ iotlab-node --stop # stop all nodes of the experiment
 $ iotlab-node --start -l grenoble,m3,1+10 # start nodes m3-{1,10}.grenoble.iot-lab.info
 $ iotlab-node --reset -e grenoble,m3,1 # reset all nodes of the experiment except m3-1.grenoble.iot-lab.info
 ```
 
-* **Debugger**<br><br>
+##### Debugger
+
 ``` bash
 $ iotlab-node --debug-start # start the debugger on all nodes of the experiment
 $ iotlab-node --debug-stop -l grenoble,m3,1+10 # stop the debugger on the nodes m3-{1,10}.grenoble.iot-lab.info
 ```
 
-* **Update monitoring configuration**<br><br>
+##### Update monitoring configuration
+
 ``` bash
 $ iotlab-node --update-profile profile_name # update monitoring configuration on all nodes of the experiment
 $ iotlab-node --update-profile profile_name -l grenoble,m3,1+10 # update monitoring configuration on the nodes m3-{1,10}.grenoble.iot-lab.info
 $ iotlab-node --profile-reset # reset monitoring configuration on all nodes of the experiment
 ```
 
-##### Profile command
+### Profile command
 
-* **Get monitoring profiles list**<br><br>
+##### Get monitoring profiles list
+
 ``` bash
 $ iotlab-profile get -l
 ```
 
-* **Add monitoring profile**<br><br>
+##### Add monitoring profile
+
 ``` bash
 $ iotlab-profile addm3 -n profile_consumption -p dc -current -voltage -cpower -period 8244 -avg 4 # monitoring power consumption
 $ iotlab-profile addm3 -n profile_rssi -rssi -channels 11 12 -num 10 -rperiod 100 # monitoring radio RSSI
 $ iotlab-profile addm3 -n profile_sniffer -sniffer -channels 11 # monitoring radio sniffer
 ```
 
-* **Delete monitoring profile**<br><br>
+##### Delete monitoring profile
+
 ``` bash
 $ iotlab-profile del -n profile_name
 ```
