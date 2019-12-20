@@ -30,7 +30,7 @@ option for an external SMA antenna (The SMA connector is not mounted, but pads e
 
 WSN430 nodes in version 1.4 have a 2.4GHz radio interface. The radio chip is the [TI CC2420](http://www.ti.com/product/cc2420) radio chipset, offering a IEEE802.15.4-compliant interface. The chosen antenna is an omnidirectional SMD chip (reference Fractus Compact Reach Xtend). 
 
-**Serial Number** -  An EEPROM serial number is available thanks to a Maxim [DS2411](http://datasheets.maximintegrated.com/en/ds/DS2411.pdf) chip, giving each node a unique identifier, readable by the MPS430 firmware over a 1-Wire interface.
+**Serial Number** -  An EEPROM serial number is available thanks to a Maxim [<i class="far fa-file-pdf"/>&nbsp;DS2411](http://datasheets.maximintegrated.com/en/ds/DS2411.pdf) chip, giving each node a unique identifier, readable by the MPS430 firmware over a 1-Wire interface.
 
 **Flash memory** - Additionnal external flash memory is provided on a 1MByte chip ([ST M25P80](http://www.micron.com/parts/nor-flash/serial-nor-flash/m25p80-vmc6g)) accessed through SPI bus.
 
@@ -38,11 +38,11 @@ WSN430 nodes in version 1.4 have a 2.4GHz radio interface. The radio chip is the
 
 **Three LEDs (green, red, blue)**
 
-The SensLAB node hardware is described in details in an [ANR report](http://github.com/iot-lab/iot-lab/wiki/Docs/senslab-deliverable-d1.1a.pdf)  
+The SensLAB node hardware is described in details in an [<i class="far fa-file-pdf"/>&nbsp;ANR report](http://github.com/iot-lab/iot-lab/wiki/Docs/senslab-deliverable-d1.1a.pdf)  
 
 Here are the two WSN430 schematics, one for each of the radio chips:
-  * [WSN430V1.3B schematics (CC1101 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.3b-schema.pdf)
-  * [WSN430V1.4 schematics (CC2420 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.4-schema.pdf) 
+  * [<i class="far fa-file-pdf"/>&nbsp;WSN430V1.3B schematics (CC1101 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.3b-schema.pdf)
+  * [<i class="far fa-file-pdf"/>&nbsp;WSN430V1.4 schematics (CC2420 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.4-schema.pdf) 
 
 ## Dock
 

@@ -22,9 +22,9 @@ firmware and use the `USART` from `SERCOM5` on pins `PB23` (RX) and `PB22` (TX).
 
 ## Schematics and Datasheets
 
-Schematics are available on the Arduino website [here](https://www.arduino.cc/en/uploads/Main/ArduinoMKRZero-schematic.pdf).
+Schematics are available on the Arduino website [<i class="far fa-file-pdf"/>&nbsp;here](https://www.arduino.cc/en/uploads/Main/ArduinoMKRZero-schematic.pdf).
 
-The boards is running on an [ATSAMD21G18A](http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf).
+The boards is running on an [<i class="far fa-file-pdf"/>&nbsp;ATSAMD21G18A](http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf).
 
 ## Extensions
 
@@ -34,7 +34,7 @@ wireless and sensors extensions:
 ### 802.15.4
 
 The wireless extension is providing access to an
-[XBee](https://www.digi.com/resources/documentation/digidocs/pdfs/90000982.pdf)
+[<i class="far fa-file-pdf"/>&nbsp;XBee](https://www.digi.com/resources/documentation/digidocs/pdfs/90000982.pdf)
 module, compatible with 802.15.4 communication protocol.
 
 The XBee module can be controlled from the board via UART connected to Arduino
@@ -48,10 +48,10 @@ The sensors extension is a
 shield.
 This gives access to external sensors to the nodes:
   * a temperature and humidity sensor
-    [HTS221](https://www.st.com/resource/en/datasheet/hts221.pdf)
+    [<i class="far fa-file-pdf"/>&nbsp;HTS221](https://www.st.com/resource/en/datasheet/hts221.pdf)
   * an atmospheric pressure sensor
-    [LPS22HB](https://www.st.com/resource/en/datasheet/dm00140895.pdf)
+    [<i class="far fa-file-pdf"/>&nbsp;LPS22HB](https://www.st.com/resource/en/datasheet/dm00140895.pdf)
   * an accelerometer sensor
-    [LSM6DSL](https://www.st.com/resource/en/datasheet/lsm6dsl.pdf)
+    [<i class="far fa-file-pdf"/>&nbsp;LSM6DSL](https://www.st.com/resource/en/datasheet/lsm6dsl.pdf)
   * an accelerometer sensor
-    [LSM303AGR](https://www.st.com/resource/en/datasheet/lsm303agr.pdf)
+    [<i class="far fa-file-pdf"/>&nbsp;LSM303AGR](https://www.st.com/resource/en/datasheet/lsm303agr.pdf)

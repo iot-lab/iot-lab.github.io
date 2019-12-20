@@ -37,23 +37,3 @@ On those nodes, extra sensors are also available:
   * a Temperature sensor [<i class="far fa-file-pdf"/>&nbsp;Atmel AT30TSE758](https://www.mouser.com/datasheet/2/36/doc8751-68941.pdf)
   * an extra LED (orange)
   * a microSD Card Connector
-
-## Example firmware
-
-IoT-LAB provides an
-[example firmware](https://raw.githubusercontent.com/wiki/iot-lab/iot-lab/firmwares/custom/samr21-default.elf)
-that can be tested on SAMR21 board.
-This firmware is based on [RIOT-OS default example](https://github.com/RIOT-OS/RIOT/tree/master/examples/default).
-It can interact with the I/O1 Xplained extension (only temperature sensor and
-LED are supported for the moment).
-Example of RIOT shell commands:
-<pre>
-% list available commands
-help
-% list network interface
-ifconfig
-% broadcast a message
-txtsnd 4 bcast "Hello IoT-LAB"
-% read temperature sensor
-saul read 0
-</pre>
