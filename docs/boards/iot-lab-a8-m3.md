@@ -17,8 +17,6 @@ Concerning the power consumption, only the global + 5 volts is monitored.
 
 As an option, a GPS module can be connected to the main processor. It can be used for time synchronisation using the PPS line. This line can be connected to the local STM32 or propagated through a open node connector GPIO. The choice is made by a jumper. 
 
-[More information about the GPS module](https://github.com/iot-lab/iot-lab/wiki/Hardware_A8 GPS).
-
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/a8/' | relative_url}}a8opennode.png" style="width:50%;"/>
 </div>
@@ -28,17 +26,17 @@ As an option, a GPS module can be connected to the main processor. It can be use
   * A Variscite [VAR-SOM-AM35 CPU](http://www.variscite.com/products/system-on-module-som/cortex-a8/var-som-am35-cpu-ti-am3517-am3505) which a high performance System On Module.
     * It is a board of the shell based on a [TI SITARA AM3505](http://www.ti.com/product/am3505) (600 Mhz, 256 MB)
   * A “co-microcontroller” based on [STM32F103REY](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1031/LN1565/PF164485) (72 MHz, 32bits, 64kB RAM) which controls :
-    * Radio interface 2.4 GHz [AT86RF231](http://www.atmel.com/images/doc8111.pdf)
+    * Radio interface 2.4 GHz [<i class="far fa-file-pdf"/>&nbsp;AT86RF231](http://ww1.microchip.com/downloads/en/DeviceDoc/doc8111.pdf)
     * Tri-axis accelerometer/magnetometer [L3G4200D](http://www.st.com/web/catalog/sense_power/FM89/SC1288/PF250373)
     * Tri-axis gyrometer [LSM303DLHC](http://www.st.com/web/catalog/sense_power/FM89/SC1449/PF251940)
     * A USB device [FTDI2232H](http://www.ftdichip.com/Products/ICs/FT2232H.htm) to control UART and JTAG
   * Three LEDs (green, red, orange)
-  * 3,7 V [LIPO battery](http://www.gmbattery.com/Datasheet/LIPO/LIPO-063040.pdf) (600 mAh)
+  * 3,7 V [<i class="far fa-file-pdf"/>&nbsp;LIPO battery](http://www.gmbattery.com/Datasheet/LIPO/LIPO-063040.pdf) (600 mAh)
 
 Options
    * [[A8-GPS|Hardware_A8 GPS]]: A GPS device [MAX-6Q](https://www.u-blox.com/en/product/max-6-series)
 
-The complete schematics are available [here](http://github.com/iot-lab/iot-lab/wiki/Docs/opena8-schematics.pdf).
+The complete schematics are available [<i class="far fa-file-pdf"/>&nbsp;here](http://github.com/iot-lab/iot-lab/wiki/Docs/opena8-schematics.pdf).
 
 ## GPS
 
