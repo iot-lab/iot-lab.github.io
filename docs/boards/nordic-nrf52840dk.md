@@ -7,7 +7,7 @@ The NRF52840DK open node is a [<i class="far fa-file-pdf"/>&nbsp;Nordic nRF52840
 This open node provides a BLE radio interface and a 802.15.4 radio interface.
 
 <div style="text-align:center">
-<img src="https://www.nordicsemi.com/-/media/Images/Products/DevKits/nRF52-Series/nRF52840-DK/nRF52840-DK.png" style="width:20%;"/>
+<img src="{{ '/assets/images/docs/boards/nrf52840dk/' | relative_url}}nrf52840dk.png" style="width:20%;"/>
 </div>
 
 The nRF52840DK Open Node can reset, debug and program the ARM Cortex M4 through

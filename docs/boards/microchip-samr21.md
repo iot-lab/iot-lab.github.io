@@ -8,7 +8,9 @@ The SAMR21 open node is based on an
 built on top of an Microchip ARM Cortex M0 micro-controller. This new open node
 also contains an IEEE 802.15.4 Atmel radio interface at 2.4 GHz.
 
-<div style="text-align:center"><img src="https://www.microchip.com/_ImagedCopy/ATSAMR21-XPRO_angle9925.jpg"/></div>
+<div style="text-align:center">
+<img src="{{ '/assets/images/docs/boards/samr21/' | relative_url}}samr21.jpg" style="width:50%;"/>
+</div>
 
 The SAMR21 Open Node can reset, debug and program the ARM Cortex M0 through the
 embedded debugger (EDBG) connected to the gateway USB port. This component also

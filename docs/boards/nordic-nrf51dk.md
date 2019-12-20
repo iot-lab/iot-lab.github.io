@@ -7,7 +7,7 @@ The NRF51DK open node is a [<i class="far fa-file-pdf"/>&nbsp;Nordic nRF51DK](ht
 This open node provides a BLE radio interface.
 
 <div style="text-align:center">
-<img src="https://www.nordicsemi.com/-/media/Images/Products/DevKits/nRF51-Series/nRF51-DK.png" style="width:20%;"/>
+<img src="{{ '/assets/images/docs/boards/nrf51dk/' | relative_url}}nrf51dk.png" style="width:20%;"/>
 </div>
 
 The nRF51DK Open Node can reset, debug and program the ARM Cortex M0 through

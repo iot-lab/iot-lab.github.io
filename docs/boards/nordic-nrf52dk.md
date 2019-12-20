@@ -7,7 +7,7 @@ The NRF52DK open node is a [<i class="far fa-file-pdf"/>&nbsp;Nordic nRF52DK](ht
 This open node provides a BLE radio interface.
 
 <div style="text-align:center">
-<img src="https://www.nordicsemi.com/-/media/Images/Products/DevKits/nRF52-Series/nRF52-DK/nRF52-DK.png" style="width:20%;"/>
+<img src="{{ '/assets/images/docs/boards/nrf52dk/' | relative_url}}nrf52dk.png" style="width:20%;"/>
 </div>
 
 The nRF52DK Open Node can reset, debug and program the ARM Cortex M4 through
