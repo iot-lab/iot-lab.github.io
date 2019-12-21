@@ -9,7 +9,7 @@ description: When you fill the IoT-LAB testbed signup form we ask you optionally
 If you don't have a key you need to create one on your computer. You can run the following `ssh-keygen` command in a terminal which generates a key pairs for SSH. The SSH public key is the content of the `id_rsa.pub` file.
 On windows computer you can use the [Puttygen](https://www.puttygen.com/) key generator tool.
 
-```
+``` bash
 you@yourpc:~$ ssh-keygen -t rsa
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/you/.ssh/id_rsa):
@@ -45,6 +45,6 @@ Log into the [IoT-LAB Webportal](https://www.iot-lab.info/testbed/account). Then
 
 Each IoT-LAB site has a SSH frontend reachable with the following address `<site>.iot-lab.info`. For example try to connect to the Grenoble frontend server:
 
-```
+``` bash
 ssh <login>@grenoble.iot-lab.info
 ```
