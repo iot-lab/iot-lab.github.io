@@ -90,3 +90,13 @@
     iotlab-name: microbit
     mcu-soc: Cortex M0
     radio: ble
+-
+    name: Pycom
+    iotlab-name: pycom
+    mcu-soc: ESP32
+    radio: lora, ble, wifi
+-
+    name: LoRa gateway
+    iotlab-name: lora-gw
+    mcu-soc: BCM2837
+    radio: lora

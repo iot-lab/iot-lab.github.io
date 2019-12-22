@@ -27,6 +27,8 @@
     - title: BBC micro:bit
     - title: nRF52832-MDK
     - title: nRF52840-MDK
+    - title: Pycom
+    - title: LoRa gateway
     - title: Add new board
 
 - title: Deployment
