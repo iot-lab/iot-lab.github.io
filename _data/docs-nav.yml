@@ -29,6 +29,7 @@
     - title: nRF52840-MDK
     - title: Pycom
     - title: LoRa gateway
+    - title: RTL SDR
     - title: Add new board
 
 - title: Deployment

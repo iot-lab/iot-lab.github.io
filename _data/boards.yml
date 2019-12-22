@@ -100,3 +100,8 @@
     iotlab-name: lora-gw
     mcu-soc: BCM2837
     radio: lora
+-
+    name: RTL SDR
+    iotlab-name: rtl-sdr
+    mcu-soc: R820T2
+    radio:
