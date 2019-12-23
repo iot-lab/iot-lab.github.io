@@ -1,0 +1,46 @@
+---
+title: Publications
+---
+{% include community.html %}
+
+<section>
+    <h2 id="publications">Publications using/citing IoT-LAB</h2>
+
+    <p class="lead">This list is not exhaustive but regroups some papers shared by users.</p>
+
+    <div class="alert alert-warning">
+        <h4 class="alert-heading">Quote IoT-LAB</h4>
+        As mentionned in the <a href="{{ "/docs/getting-started/terms-of-use" | relative_url }}" class="alert-link">Terms of Use</a> you have to quote FIT IoT-LAB in your publication if your experiments results are based on FIT IoT-LAB testbed:
+        <ol>
+            <li>Add acknowledgements to FIT IoT-LAB in introduction or conclusion of the publication.</li>
+            <li>Add the following citation to the reference article of FIT IoT-LAB:
+                <blockquote class="blockquote">
+                    <a href="#" class="alert-link">FIT IoT-LAB: A Large Scale Open Experimental IoT Testbed</a>
+                    <footer class="blockquote-footer">
+                        C. Adjih, E. Baccelli, E. Fleury, G. Harter, N. Mitton, T. Noel, R. Pissard-Gibollet, F. Saint-Marcel, G. Schreiner, J. Vandaele, T. Watteyne
+                        <br> in <cite title="Source Title">IEEE World Forum on Internet of Things (IEEE WF-IoT), Milan, Italy, December 2015</cite></footer>
+                    </blockquote>
+                </li>
+                <li>Send email to admin@iot-lab.info once your publication has been accepted in order to update list.</li>
+            </ol>
+        </div>
+
+        <div>
+            {% for item in site.data.publications %}
+            <h3 class="border-bottom">{{ item.year }}</h3>
+            <ul>
+                {% for publi in item.publications %}
+                <li>
+                    <blockquote class="blockquote">
+                        <p class="mb-0"><a href="{{ publi.link }}" target="_blank">{{ publi.title }}</a></p>
+                        <footer class="blockquote-footer">
+                            {{ publi.authors }}
+                            <br>in <cite title="Source Title">{{ publi.reference }}</cite>
+                        </footer>
+                    </blockquote>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+    </section>

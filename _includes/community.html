@@ -1,0 +1,23 @@
+<div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+        <h1 class="display-2">Community <i class="fas fa-users text-primary"></i></h1>
+        <p class="display-4 text-muted">Share your experience!</p>
+        <p class="lead mt-5 mb-3">IoT-LAB is a scientific tool used by many people doing research in various fields, addressing wireless communications, sensor networks, low power routing protocols, embedded and distributed applications, etc. Users are encouraged to share their experience, improvement ideas and results.</p>
+        <p>
+            Contact <a href="mailto:admin@iot-lab.info">IoT-LAB administrators</a> to add yours.
+        </p>
+    </div>
+</div>
+<div class="row justify-content-center mb-5">
+    <ul class="col-auto nav lead px-0">
+    {% assign links = "publications, education" | split: ", " %}
+    {% for link in links %}
+        {% if forloop.first ==false %}
+        <li class="my-auto">•</li>
+        {% endif %}
+        <li class="nav-item">
+            <a href="/community/{{ link }}" class="nav-link {% if page.url contains link %}disabled{% endif %}">{{ link | capitalize }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
