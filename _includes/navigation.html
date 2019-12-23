@@ -10,9 +10,10 @@
             <div class="navbar-nav mr-auto">
                 {% for item in site.data.navigation %}
                 {% assign active = nil %}
+                {% assign slug = item.name | slugify %}
                 {% if item.name == "Home" and page.url == item.link %}
                 {% assign active = true %}
-                {% elsif item.name != "Home" and page.url contains item.link) %}
+                {% elsif item.name != "Home" and page.url contains slug %}
                 {% assign active = true %}
                 {% endif %}
                 <a href="{{ item.link | relative_url }}" class="nav-item nav-link{% if active %} active{% endif %}">
