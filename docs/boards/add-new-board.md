@@ -11,7 +11,7 @@ Instructions on how to develop your plugin are documented in the <code>DEVELOPER
 
 You can also install a Gateway-like environment on your computer by following the <code>INSTALL.md</code> instructions. Thus, you will be able to test and validate your plugin.
 
-![Develop Open Node Class](/assets/images/docs/boards-extend.png)
+![Develop Open Node Class]({{ "/assets/images/docs/boards-extend.png" | relative_url }})
 
 ## 2. Plug
 
