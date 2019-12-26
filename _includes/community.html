@@ -16,7 +16,7 @@
         <li class="my-auto">•</li>
         {% endif %}
         <li class="nav-item">
-            <a href="/community/{{ link }}" class="nav-link {% if page.url contains link %}disabled{% endif %}">{{ link | capitalize }}</a>
+            <a href="{{ "/community/" | append: link | relative_url }}" class="nav-link {% if page.url contains link %}disabled{% endif %}">{{ link | capitalize }}</a>
         </li>
     {% endfor %}
     </ul>
