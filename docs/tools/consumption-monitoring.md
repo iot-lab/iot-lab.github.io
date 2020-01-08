@@ -27,7 +27,7 @@ $ iotlab-profile addm3 -n <profile_name> -p -voltage -current -power -period 824
 
 To illustrate the consumption monitoring we will launch an experiment with:
 
-* a duration of 10 minutes
+* a duration of 5 minutes
 * one M3 node on Grenoble site
 * a firmware flashing LED(s) with a frequency of 1Hz
 * the consumption monitoring profile we have just created.
