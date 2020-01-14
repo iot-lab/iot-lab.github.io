@@ -1,0 +1,29 @@
+---
+layout: docs
+---
+<h1>{{ page.title }}</h1>
+<p class="lead">{{ page.description }}</p>
+
+<div class="alert alert-info text-monospace">
+    OS Support:
+    <ul>
+    {% assign os_support = site.data.oses | where_exp:"item",
+"item.boards contains 'IoT-LAB M3'" %}
+    {% for os in os_support %}
+        <li>{{ os.name }}</li>
+    {% endfor %}
+    </ul>
+</div>
+
+<div class="alert alert-info text-monospace">
+    Deployment:
+    <ul>
+    {% for loc in site.data.deployments %}
+        {% if loc.deployment[page.title] > 0 %}
+        <li>{{ loc.site }} - {{ loc.deployment[page.title] }}</li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>
+
+{{ content }}

@@ -1,0 +1,21 @@
+---
+layout: docs
+---
+{% assign location = site.data.deployments | where:"site", page.title %}
+{% assign location = location.first %}
+
+<h1>{{ page.title }}</h1>
+
+<p class="lead">{{ page.description }}</p>
+
+<div class="alert alert-info text-monospace">
+    Resources:
+    <ul>
+    {% for item in location.deployment %}
+        {% assign board = item[0] %}
+        <li>{{ item[1] }} <a class="alert-link" href="{{ "/docs/boards/" | relative_url }}{{ board | slugify }}">{{ board }}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+
+{{ content }}

@@ -5,13 +5,21 @@ timezone: Europe/Paris
 
 defaults:
   - scope:
-      path: "testbed/*"
-    values:
-      layout: "testbed"
-  - scope:
       path: "docs/*"
     values:
-      layout: "docs"
+      layout: "docs-default"
+  - scope:
+      path: "docs/boards/*"
+    values:
+      layout: "docs-board"
+  - scope:
+      path: "docs/deployment/*"
+    values:
+      layout: "docs-deployment"
+  - scope:
+      path: "docs/os/*"
+    values:
+      layout: "docs-os"
   - scope:
       path: "tutorials/*"
     values:
