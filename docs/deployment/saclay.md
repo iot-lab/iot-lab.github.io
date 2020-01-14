@@ -1,9 +1,8 @@
 ---
 title: Saclay
 group: deployment
+description: The Saclay testbed is located at Saclay – Île-de-France.
 ---
-
-The Saclay testbed is located at [Saclay – Île-de-France](https://goo.gl/maps/zgfEtm1wkp7qPhya6).
 
 ## Resources
 
@@ -123,7 +122,7 @@ The Saclay testbed is located at [Saclay – Île-de-France](https://goo.gl/maps
         <td>802.15.4</td>
         <td>Room 2</td>
     </tr>
-    </tbody>	
+    </tbody>
 </table>
 
 Ground floor rooms 1 and 2 are equipped with a set of GPS repeaters that are relaying the GPS signal indoor.
