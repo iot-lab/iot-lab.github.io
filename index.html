@@ -304,14 +304,17 @@ style: fullwidth
                         <h5 class="card-title">Common name</h5>
                         <h6 class="card-subtitle mt-0 mb-2 text-monospace">iot-lab name</h6>
                         <p class="card-text">
-                            <small>list and number of nodes deployed accross sites</small>
+                            <span class="badge badge-pill badge-info" href="#">radio</span>
+                        </p>
+                        <p class="card-text">
+                            <span class="badge badge-light">Location <span class="badge badge-info">number</span></span>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            {% assign sorted_boards = site.data.boards | sort: "name" %}
+            {% assign sorted_boards = site.data.boards | sort_natural: "name" %}
             {% for board in sorted_boards %}
             {% capture color-style %}{% if board.name contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
             <div class=" col-sm-6 col-md-4 col-lg-3">
@@ -325,16 +328,16 @@ style: fullwidth
                         <h5 class="card-title"><a href="#"{% unless board.name contains "IoT-LAB" %} class="text-reset"{% endunless %}>{{ board.name}}</a></h5>
                         <h6 class="card-subtitle mt-0 mb-2 text-monospace">{{ board.iotlab-name }}</h6>
                         <p class="card-text">
-                            <span class="badge badge-pill badge-{{ color-style }}" href="#">802.15.4</span>
-                            <span class="badge badge-pill badge-{{ color-style }}" href="#">Sub-1GHz</span>
-                            <span class="badge badge-pill badge-{{ color-style }}" href="#">Bluetooth</span>
-                            <span class="badge badge-pill badge-{{ color-style }}" href="#">LoRa</span>
+                        {% for radio in board.radio %}
+                            <span class="badge badge-pill badge-{{ color-style }}" href="#">{{ radio }}</span>
+                        {% endfor %}
                         </p>
                         <p class="card-text">
-                            <a class="badge badge-light" href="#">grenoble <span class="badge badge-{{ color-style }}">380</span></a>
-                            <a class="badge badge-light" href="#">lille <span class="badge badge-{{ color-style }}">256</span></a>
-                            <a class="badge badge-light" href="#">saclay <span class="badge badge-{{ color-style }}">36</span></a>
-                            <a class="badge badge-light" href="#">strasbourg <span class="badge badge-{{ color-style }}">256</span></a>
+                        {% for loc in site.data.deployments %}
+                            {% if loc.deployment[board.name] > 0 %}
+                            <a class="badge badge-light" href="{{ "/docs/deployment/" | relative_url }}{{ loc.site | slugify }}">{{ loc.site}} <span class="badge badge-{{ color-style }}">{{ loc.deployment[board.name] }}</span></a>
+                            {% endif %}
+                        {% endfor %}
                         </p>
                     </div>
                 </div>
@@ -358,16 +361,21 @@ style: fullwidth
         <div class="card-columns mt-5">
         {% for os in site.data.oses %}
             <div class="card border-0 shadow m-3">
+                {% if os.img %}
                 <img class="card-img-top pt-3 px-3" src="{{ "/assets/images/oses/" | relative_url }}{{ os.img }}" class="card-img" title="{{ os.name }}" alt="{{ os.name }}">
+                {% else %}
+                <h4 class="pt-3 text-center">{{ os.name }}</h4>
+                {% endif %}
                 <div class="card-body">
                     <hr>
                     <p class="card-text">{{ os.short-desc }}</p>
                 </div>
-                {% if os.iotlab-support %}
+                {% assign iotlab-support = os.boards | where_exp:"item", "item contains 'IoT-LAB'" %}
+                {% if iotlab-support %}
                 <div class="card-footer w-100 badge badge-primary">
                     IoT-LAB board support
-                    {% for board in os.iotlab-support %}
-                    <span class="badge badge-light">{{ board }}</span>
+                    {% for board in iotlab-support %}
+                    <span class="badge badge-light">{{ board | replace: "IoT-LAB ", "" }}</span>
                     {% endfor %}
                 </div>
                 {% endif %}
