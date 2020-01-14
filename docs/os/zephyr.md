@@ -1,7 +1,6 @@
 ---
 title: Zephyr
 group: os
-logo: logo-zephyr.png
 ---
 
 ## Description

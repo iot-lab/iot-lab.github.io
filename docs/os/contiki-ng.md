@@ -1,7 +1,6 @@
 ---
 title: Contiki-NG
 group: os
-logo: logo-contiki-ng.png
 ---
 
 ## Description

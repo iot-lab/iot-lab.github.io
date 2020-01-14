@@ -1,7 +1,6 @@
 ---
 title: RIOT
 group: os
-logo: logo-riot.png
 ---
 
 ## Description

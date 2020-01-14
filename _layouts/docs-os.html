@@ -19,8 +19,8 @@ layout: docs
 {% endif %}
 
 <p>
-    {% if page.logo %}
-    <img style="width:20%" class="img-thumbnail p-2" src="{{ '/assets/images/oses/' | relative_url}}{{ page.logo }}"/><br>
+    {% if os.img %}
+    <img style="width:20%" class="img-thumbnail p-2" src="{{ '/assets/images/oses/' | relative_url}}{{ os.img }}"/><br>
     {% endif %}
     <small><a href="{{ os.website }}" target="_blank">Official website <i class="fas fa-external-link-alt"></i></a></small>
 </p>

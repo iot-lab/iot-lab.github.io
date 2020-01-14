@@ -1,7 +1,6 @@
 ---
 title: FreeRTOS
 group: os
-logo: logo-freertos.jpg
 ---
 
 ## Description
