@@ -1,4 +1,5 @@
 ---
+layout: docs-default
 title: Overview
 group: boards
 ---
@@ -6,6 +7,7 @@ group: boards
 
 <p>Here is a table summarizing tech specs of boards. It shows notably communications possibilities between the boards.</p>
 
+{% assign radios = "802.15.4, Sub-GhZ, BLE, LoRa" | split: ", " %}
 <table class="table table-hover">
   <thead>
       <tr>
@@ -15,23 +17,21 @@ group: boards
           <th colspan="4" scope="colgroup" class="text-center">Radio</th>
       </tr>
       <tr>
-          <th class="text-center" scope="col">802.15.4</th>
-          <th class="text-center" scope="col">Sub-GhZ</th>
-          <th class="text-center" scope="col">BLE</th>
-          <th class="text-center" scope="col">LoRa</th>
+      {% for radio in radios %}
+          <th class="text-center" scope="col">{{ radio }}</th>
+      {% endfor%}
       </tr>
   </thead>
   <tbody>
-  {% assign sorted_boards = site.data.boards | sort: "name" %}
+  {% assign sorted_boards = site.data.boards | sort_natural: "name" %}
   {% for board in sorted_boards %}
       <tr>
           <td><a href="#">{{ board.name }}</a></td>
           <td class="text-monospace">{{ board.iotlab-name }}</td>
           <td>{{ board.mcu-soc }}</td>
-          <td class="text-center">{% if board.radio contains "15.4" %}&bull;{% endif %}</td>
-          <td class="text-center">{% if board.radio contains "sub" %}&bull;{% endif %}</td>
-          <td class="text-center">{% if board.radio contains "ble" %}&bull;{% endif %}</td>
-          <td class="text-center">{% if board.radio contains "lora" %}&bull;{% endif %}</td>
+      {% for radio in radios %}
+          <td class="text-center">{% if board.radio contains radio %}&bull;{% endif %}</td>
+      {% endfor %}
       </tr>
   {% endfor %}
   </tbody>
