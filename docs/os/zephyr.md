@@ -1,11 +1,8 @@
 ---
 title: Zephyr
 group: os
+logo: logo-zephyr.png
 ---
-
-<div style="text-align:right">
-<img src="{{ '/assets/images/oses/' | relative_url}}logo-zephyr.png" style="width:20%;"/>
-</div>
 
 ## Description
 

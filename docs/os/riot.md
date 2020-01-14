@@ -1,11 +1,8 @@
 ---
 title: RIOT
 group: os
+logo: logo-riot.png
 ---
-
-<div style="text-align:right">
-<img src="{{ '/assets/images/oses/' | relative_url}}logo-riot.png" style="width:20%;"/>
-</div>
 
 ## Description
 

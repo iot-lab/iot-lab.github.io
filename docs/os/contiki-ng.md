@@ -1,11 +1,8 @@
 ---
-title: Contiki
+title: Contiki-NG
 group: os
+logo: logo-contiki-ng.png
 ---
-
-<div style="text-align:right">
-<img src="{{ '/assets/images/oses/' | relative_url}}logo-contiking.png" style="width:20%;"/>
-</div>
 
 ## Description
 

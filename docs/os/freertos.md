@@ -1,11 +1,8 @@
 ---
 title: FreeRTOS
 group: os
+logo: logo-freertos.jpg
 ---
-
-<div style="text-align:right">
-<img src="{{ '/assets/images/oses/' | relative_url}}logo-freertos.jpg" style="width:20%;"/>
-</div>
 
 ## Description
 
