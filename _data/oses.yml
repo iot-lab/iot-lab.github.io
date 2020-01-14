@@ -28,7 +28,7 @@
 
 - name: MicroPython
   website: http://micropython.org
-  img: MicroPython.jpg
+  img: logo-micropython.jpg
 
 - name: Yocto
   website: https://www.yoctoproject.org
