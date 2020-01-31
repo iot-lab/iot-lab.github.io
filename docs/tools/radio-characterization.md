@@ -119,6 +119,59 @@ With the above config.yaml, these command lines are equivalent
     iotlab-radiotest start --site lille --nodes.m3 12-14 --radio.txpower -7,0,3 --nodes.samr21 1,2
 ```
 
+### draw
+
+`iotlab-radiotest draw -i <experiment_id>` can display the graph or connectivity/PDR/LQI/RSSI
+
+    Usage: iotlab-radiotest draw [OPTIONS] COMMAND [ARGS]...
+    
+      Draw results
+    
+    Options:
+      -i, --id INTEGER  IoT-LAB experiment id  [default: (latest experiment)]
+      -s, --save        save image as file
+      --help            Show this message and exit.
+    
+    Commands:
+      connectivity  Draw connectivity results
+      graph         Draw Connectivity Graph
+      lqi           Draw lqi results
+      pdr           Draw pdr results
+      rssi          Draw rssi results
+
+These drawing outputs are done through `matplotlib`, and some (pdr/lqi/rssi) are quite ugly if the topology is not 
+roughly flat on Z (for example, the Lille topology on multiple floors shows badly). 
+
+#### Configuration
+
+The subcommands all take a `--config` parameter and CLI parameter which work just like the one for `start`, example:
+
+    Usage: iotlab-radiotest draw pdr [OPTIONS]
+    
+      Draw pdr results
+    
+    Options:
+      -w, --wifis COMMA-SEPARATED-STRING
+                                      list of XYZName values, like 1,2,3,Wifi1
+                                      [multiple]
+      -s, --stability                 draw stability results
+      -s, --show_wifis                show WiFi APs
+      -s, --show_robots               show the robots
+      -s, --show_nodes                show the nodes
+      -r, --robots COMMA-SEPARATED-STRING
+                                      list of XYZName values, like 1,2,3,Robot1
+                                      [multiple]
+      -f, --font INTEGER              font size
+      -e, --elev FLOAT                elevation from which to draw
+      -a, --azim FLOAT                azimuth from which to draw
+      --config YAML_CONFIG_FILE       config file to use
+      --cluster                       show clusters
+      --help                          Show this message and exit.
+ 
+
+The `--robots` and `--wifis` parameters are not really useful except when you know the position of Wifi APs and robot
+docks in the site.
+
 ### parse
 
 `iotlab-radiotest parse -i <experiment_id>` parses the results independently from the `start`.
