@@ -276,7 +276,7 @@ Taking a threshold at 90% PDR:
 * a bad link is a link that is bad (PDR < 90%) for all the channels.
 * an unbalanced link is a link that is not consistently good or bad
  
-### experiments/[id]/parsed/graph-tx[txpower].log
+### experiments/[id]/parsed/graph-tx[txpower].json
  
 Roughly the same thing as the link-* file, but it's a `networkx`-loadable graph file in JSON format, which contains
 the graph of the links between the nodes, with PDR/LQI/RSSI in the edges' data
