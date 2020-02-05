@@ -17,3 +17,6 @@ You will be able to update your gem versions later with `bundle update`.
     bundle exec jekyll serve
 
 This restricts your Ruby environment to only use gems set in your `Gemfile`.
+You can also add livereload for hot-reloading the browser page when the sources change:
+
+    bundle exec jeklyy serve --livereload
