@@ -360,7 +360,7 @@ style: fullwidth
         {% for os in site.data.oses %}
             <div class="card border-0 shadow m-3">
                 {% if os.img %}
-                <img class="card-img-top pt-3 px-3" src="{{ "/assets/images/oses/" | relative_url }}{{ os.img }}" class="card-img" title="{{ os.name }}" alt="{{ os.name }}">
+                <img class="card-img-top pt-3 px-3" src="{{ '/assets/images/oses/' | relative_url }}{{ os.img }}" class="card-img" title="{{ os.name }}" alt="{{ os.name }}">
                 {% else %}
                 <h4 class="pt-3 text-center">{{ os.name }}</h4>
                 {% endif %}
@@ -394,13 +394,26 @@ style: fullwidth
             <div class=" col-sm-6 col-md-4 col-lg-3">
                 <h1>Several deployments.<br>Several possibilities.</h1><br>
             </div>
-            {% assign sites = "Grenoble, Lille, Lyon, Paris, Munich, Nantes, Saclay, Santiago du Chili, Strasbourg" | split: ", " %}
-            {% for site in sites %}
             <div class="col-sm-6 col-md-4 col-lg-3 text-center mb-2">
-                <img class="img-fluid mb-2" style="filter:hue-rotate({{ forloop.index | times: 50 }}deg)" src="{{ "/assets/images/" | relative_url }}inria-lille-building.png">
-                <h5>{{ site }}</h5>
+                <img class="img-fluid mb-2" src="{{ '/assets/images/sites/' | relative_url }}inria-grenoble-building.jpg" alt="Inria Grenoble building">
+                <h5><a class="text-reset" href="{{ '/docs/deployment/' | relative_url }}grenoble">Grenoble</a></h5>
             </div>
-            {% endfor %}
+            <div class="col-sm-6 col-md-4 col-lg-3 text-center mb-2">
+                <img class="img-fluid mb-2" src="{{ '/assets/images/sites/' | relative_url }}inria-lille-building.jpg" alt="Inria Lille building">
+                <h5><a class="text-reset" href="{{ '/docs/deployment/' | relative_url }}lille">Lille</a></h5>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 text-center mb-2">
+                <img class="img-fluid mb-2" src="{{ '/assets/images/sites/' | relative_url }}citi-lyon-building.jpg" alt="Citi Lyon building">
+                <h5><a class="text-reset" href="{{ '/docs/deployment/' | relative_url }}lyon">Lyon</a></h5>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 text-center mb-2">
+                <img class="img-fluid mb-2" src="{{ '/assets/images/sites/' | relative_url }}inria-saclay-building.jpg" alt="Saclay Inria building">
+                <h5><a class="text-reset" href="{{ '/docs/deployment/' | relative_url }}saclay">Saclay</a></h5>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 text-center mb-2">
+                <img class="img-fluid mb-2" src="{{ '/assets/images/sites/' | relative_url }}icube-strasbourg-building.jpg" alt="ICube Strasbourg building">
+                <h5><a class="text-reset" href="{{ '/docs/deployment/' | relative_url }}strasbourg">Strasbourg</a></h5>
+            </div>
         </div>
     </div>
 </section>
