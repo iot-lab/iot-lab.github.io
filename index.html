@@ -291,7 +291,7 @@ style: fullwidth
                     <span class="display-2">{{ site.data.boards.size }}</span><br>
                     <span class="display-4"> boards available</span>
                 </p>
-                <p class="text-muted">described as follow <span class="small"><i class="fas fa-arrow-right"></i></span></p>
+                <p class="text-muted">described as follows <span class="small"><i class="fas fa-arrow-right"></i></span></p>
             </div>
             <div class=" col-sm-6 col-md-4 col-lg-3">
                 <div class="my-3 card border-info text-info">
@@ -319,13 +319,11 @@ style: fullwidth
             {% capture color-style %}{% if board.name contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
             <div class=" col-sm-6 col-md-4 col-lg-3">
                 <div class="my-3 card border-{{ color-style }}">
-                    <svg class="card-img-top" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 400x300">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect>
-                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">400x300</text>
-                    </svg>
+                    <img class="img-fluid"
+                         src="{{ '/assets/images/boards/' | relative_url }}{{ board.iotlab-name }}.jpg"
+                         alt="">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#"{% unless board.name contains "IoT-LAB" %} class="text-reset"{% endunless %}>{{ board.name}}</a></h5>
+                        <h5 class="card-title"><a href="{{ '/docs/boards/' | relative_url }}{{ board.name | slugify }}"{% unless board.name contains "IoT-LAB" %} class="text-reset"{% endunless %}>{{ board.name}}</a></h5>
                         <h6 class="card-subtitle mt-0 mb-2 text-monospace">{{ board.iotlab-name }}</h6>
                         <p class="card-text">
                         {% for radio in board.radio %}
