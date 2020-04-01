@@ -133,37 +133,45 @@ style: fullwidth
         </div>
         <img class="w-100" src="{{ '/assets/images/' | relative_url }}multi-radio.jpg" alt="" height="500">
         <p class="my-4 lead text-center mx-auto w-75">The different boards available bring users several radio technologies. Test radio scenarios with isolation, coexistence, cooperation, interoperability.</p>
-        <div class="card-deck">
-            <div class="card card-body">
-                <div class="flex-grow-1">
-                    <h3>802.15.4</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+            <div class="col mb-3">
+                <div class="card h-100 card-body">
+                    <div class="flex-grow-1">
+                        <h3>802.15.4</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="card card-body">
-                <div class="flex-grow-1">
-                    <h3>Sub-1GHz</h3>
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
+            <div class="col mb-3">
+                <div class="card h-100 card-body">
+                    <div class="flex-grow-1">
+                        <h3>Sub-1GHz</h3>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="card card-body">
-                <div class="flex-grow-1">
-                    <h3>Bluetooth</h3>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
+            <div class="col mb-3">
+                <div class="card h-100 card-body">
+                    <div class="flex-grow-1">
+                        <h3>Bluetooth</h3>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="card card-body">
-                <div class="flex-grow-1">
-                    <h3>LoRa</h3>
-                    <p>
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+            <div class="col mb-3">
+                <div class="card h-100 card-body">
+                    <div class="flex-grow-1">
+                        <h3>LoRa</h3>
+                        <p>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,17 +185,17 @@ style: fullwidth
             <h1 class="display-2 text-muted text-center mb-0"><strong>Multi-platform</strong></h1>
             <h1 class="display-4 text-center mt-0">A large choice of hardware boards</h1>
         </div>
-        <div class="row">
-            <div class=" col-sm-6 col-md-4 offset-md-4 col-lg-3 offset-lg-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col offset-lg-3">
                 <p>
                     <span class="display-2">{{ site.data.boards.size }}</span><br>
                     <span class="display-4"> boards available</span>
                 </p>
                 <p class="text-muted">described as follows <span class="small"><i class="fas fa-arrow-right"></i></span></p>
             </div>
-            <div class=" col-sm-6 col-md-4 col-lg-3">
+            <div class="col">
                 <div class="my-3 card border-info text-info">
-                    <svg class="img-fluid" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 400x300">
+                    <svg class="img-fluid" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" focusable="false" role="img" aria-label="Placeholder: 400x300">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#24A2B7"></rect>
                         <text x="50%" y="50%" fill="#dee2e6" dy=".3em">board picture</text>
@@ -205,12 +213,12 @@ style: fullwidth
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
             {% assign sorted_boards = site.data.boards | sort_natural: "name" %}
             {% for board in sorted_boards %}
             {% capture color-style %}{% if board.name contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
-            <div class=" col-sm-6 col-md-4 col-lg-3">
-                <div class="my-3 card border-{{ color-style }}">
+            <div class="col my-3">
+                <div class="card h-100 border-{{ color-style }}">
                     <img class="img-fluid"
                          src="{{ '/assets/images/boards/' | relative_url }}{{ board.iotlab-name }}.jpg"
                          alt="">
