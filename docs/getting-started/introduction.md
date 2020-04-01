@@ -1,14 +1,20 @@
 ---
 title: Introduction
 group: getting-started
-description: IoT-LAB documentation brings detailed information about the testbed, its usage and its tools to make the most of this experimentation tool and give you the best user experience.
+description: IoT-LAB documentation brings detailed information about the testbed, its usage and its tools to make the most of this experimentation platform and give you the best user experience.
 ---
 
 ## Quickstart
 
-The testbed is distributed among several sites. The main server serves the open API that allows all interactions. Thus, the testbed could be accessed through the Web portal or using provided command-line tools.
+The testbed is distributed among several sites. The main server serves the open API that allows all interactions. Of course, an easy access is provided through a web portal and command line interface (CLI) tools.
 
-In addition, the testbed offers a hosted environment on SSH front-ends (one per IoT-LAB site), featuring pre-installed command-line tools, target architectures cross-compiler toolchains, experiments results, and access to devices serial ports. It is also possible to use a dedicated Ubuntu virtual machine, based on VirtualBox, on your Linux/Mac/Windows workstation, with the same features installed.
+In addition, the testbed offers an hosted environment on SSH frontends (one per IoT-LAB site), featuring:
+- pre-installed command line interface (CLI) tools,
+- cross-compiler toolchains for target architectures,
+- access to devices serial link, debuger and sniffer.
+- and experiments results,
+
+An Ubuntu [virtual machine]({% link docs/getting-started/virtual-machine.md %}), based on VirtualBox, is available to bring the development environment on the user's computer.
 
 ### Run an experiment
 
@@ -33,5 +39,5 @@ Upload your firmware(s). Select the nodes that you want to use, regarding their 
 
 ## Learn
 
-- [Tutorials]()
-- [Notebook trainings]()
+The documentation here will bring you a lot of information regarding the features and possibilities of the testbed. But we also added more practical examples through our [Tutorials]()
+and [Notebook trainings]().
