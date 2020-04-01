@@ -19,7 +19,8 @@ $ pip install --user iotlabcli
 You can find one command for each main testbed features:
 
 * **[iotlab-auth](#auth-command)**: credentials storage
-* **[iotlab-experiment](#experiment-command)**: manage experiment lifecycle and testbed nodes description
+* **[iotlab-status](#status-command)**: manage testbed status informations
+* **[iotlab-experiment](#experiment-command)**: manage experiment lifecycle 
 * **[iotlab-node](#node-command)**: manage nodes interaction like power supply management or flashing firmware
 * **[iotlab-profile](#profile-command)**: manage power consumption and radio monitoring profiles
 
@@ -35,12 +36,12 @@ $ iotlab-auth -u <login>
 
 Don't forget that you must repeat this step from each computer or IoT-LAB SSH frontend where you will use CLI tools.
 
-### Experiment command
+### Status command
 
 ##### Get testbed nodes list
 
 ``` bash
-$ iotlab-experiment info -l
+$ iotlab-status --nodes
 {
     "items": [
         {
@@ -60,10 +61,26 @@ $ iotlab-experiment info -l
 }
 ```
 
-Filter by archi and site
+Filter by archi, site and state
 ``` bash
-$ iotlab-experiment info -l --archi m3 --site grenoble
+$ iotlab-status --nodes --archi m3 --site grenoble --state Alive
 ```
+
+##### Get testbed sites
+
+It gives a list of sites with available nodes sort by archi properties
+
+``` bash
+iotlab-status --sites
+```
+
+##### Get running experiments list
+
+``` bash
+iotlab-status --experiments-running
+```
+
+### Experiment command
 
 ##### Submit an experiment
 
@@ -79,19 +96,19 @@ $ iotlab-experiment submit -n alias_example -d 20 -l 10,archi=m3:at86rf231+site=
 You can note that when your submission is accepted the scheduler gives you an experiment id.<br><br>
 For a physical submission you specify a set of nodes hostname in the form of `<site>,<archi>,<nodes_ids_list>`. We remind you that all IoT-LAB nodes hostname are in the form of `<archi>-<id>.<site>.iot-lab.info` whith as an example `m3-1.grenoble.iot-lab.info`.<br><br>
 An example of experiment submission with 4 M3 nodes on Grenoble site (`m3-{1,2,3,10}.grenoble.iot-lab.info`):<br>
+
 ``` bash
 $ iotlab-experiment submit -n physical_example -d 20 -l grenoble,m3,1-3+10
 ```
-When you submit an experiment whitout specify a precise date the IoT-LAB scheduler tries to start your experiment as soon as possible and schedule automatically the experiment. It's also possible to manually schedule your experiment by specifying an epoch Linux date.<br>
+When you submit an experiment whitout specify a precise date the IoT-LAB scheduler tries to start your experiment as soon as possible (ASAP mode) and schedule automatically the experiment. It's also possible to manually schedule your experiment by specifying an epoch Linux date.<br>
 ``` bash
 $ iotlab-experiment submit -n schedule_example -d 20 -l grenoble,m3,1-3+10 -r $(date +%s -d "1 Jan 2089 00:00:00 UTC")
 ```
 Finally it's also possible to specify a firmware and monitoring profile association during an experiment submission. For each set of nodes you can specify it in the form of `<alias_or_physical_nodes>,<firmware_path>,<profile_name>`<br><br>
 An example of experiment submission with 2 M3 nodes on Grenoble site with two different firmwares association:<br>
-
 ``` bash
 $ iotlab-experiment submit -n firmware_example -d 20 -l grenoble,m3,1,firmware1.elf -l grenoble,m3,2,firmware2.elf
-``` bash
+```
 An example of experiment submission with 2 M3 nodes on Grenoble site with only one monitoring association<br>
 ``` bash
 $ iotlab-experiment submit -n profile_example -d 20 -l 2,archi=m3:at86rf231+site=grenoble,,profile1
@@ -105,6 +122,13 @@ $ iotlab-experiment wait
 Waiting that experiment <exp_id> gets in state Running
 "Running"
 $ iotlab-experiment wait -i <exp_id> # if you have several experiments running on the testbed
+```
+
+It can also happen that your experiment doesn't start immediately with ASAP mode. For example, if the nodes you request with a physical submission are not available because an experiment is running using these nodes, the scheduler will accept your submission and schedule it automatically at the end of this experiment. In this case the experiment will be in a `Waiting` state. It is therefore possible to add a timeout (eg. seconds) to the command in order not to wait indefinitely for your experiment to start. You can also use an option to cancel your experiment if the timeout is reached
+
+``` bash
+iotlab-experiment wait --timeout 30
+iotlab-experiment wait --timeout 30 --cancel-on-timeout
 ```
 
 ##### Get experiment nodes list
