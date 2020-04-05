@@ -1,12 +1,12 @@
 ---
 title: Resources
 group: getting-started
-description: IoT-LAB testbed provides users with a set of resources for experimentation. In this page we are going to describe these resources and their properties. When you run an experiment on IoT-LAB you must reserve these resources. For this we use a scheduler or a resource manager to which you make a reservation request. We will learn how to select and book your resources according to your experimentation needs.
+description: IoT-LAB testbed provides users with a set of resources for experimentation. This page describes these resources and their properties and how to book them to be able to run an experiment according to your needs.
 ---
 
-#### Node description
+## Nodes properties
 
-The default resource of the testbed is the node. It is on this resource that the user's experimentation takes place. You can find below a description of the main properties of a node.
+The basic resource of the testbed is the node: a specific board deployed at a specific position on a specific site. It is on such resources that the user's experimentation takes place. All the resources are stored into the resource manager database with a set of properties described in the table below:
 
 <table class="table table-striped">
     <thead>
@@ -22,7 +22,7 @@ The default resource of the testbed is the node. It is on this resource that the
             <td>string</td>
             <td>
                 Network hostname of the node, composed as follows:<br>
-                <code>&lt;node_name&gt;-&lt;id&gt;.&lt;site&gt;.iot-lab.info</code>.<br>
+                <code>&lt;board_name&gt;-&lt;id&gt;.&lt;site&gt;.iot-lab.info</code>.<br>
                 <small>Example: the first M3 node of Grenoble site is <code>m3-1.grenoble.iot-lab.info</code>.</small>
             </td>
         </tr>
@@ -30,7 +30,7 @@ The default resource of the testbed is the node. It is on this resource that the
             <th scope="row">archi</th>
             <td>string</td>
             <td>
-                Information about the hardware of the node, composed as follows:<br> <code>&lt;node_name&gt;:&lt;radio_chipset&gt;</code>.<br>
+                Information about the hardware of the node, composed as follows:<br> <code>&lt;board_name&gt;:&lt;radio_chipset&gt;</code>.<br>
                 <small>Example: the value for an IoT-LAB M3 is <code>m3:at86rf231</code> (node_name = m3 and radio_chipset = at86rf231).</small>
             </td>
         </tr>
@@ -54,34 +54,85 @@ The default resource of the testbed is the node. It is on this resource that the
             <td>integer</td>
             <td>Coordinates of the node (in meters) in a 3D cartesian coordinate system. <span class="text-warning">On the Deployment page of each site you can find where is located the origin (0, 0, 0).</span></td>
         </tr>
-        <tr class="text-warning">
-            <th scope="row">mobile</th>
-            <td>integer</td>
-            <td>Gives information if the node is mobile on a robot (mobile=1) or fixed (mobile=0) in an experimentation room or in a building</td>
-        </tr>
     </tbody>
 </table>
 
-#### Resources selection
+## Browse nodes
 
-To start an experiment on IoT-LAB you have to choose the resources that will be used. The first step is to see the list of resources available on the testbed. You can find an exhaustive list in the <a href="{{ "/docs/boards/overview" | relative_url }}">boards documentation page</a> with a hardware description, the corresponding node name and which radio technology is supported. You can also view the number of these resources deployed per site.
+The different tools of the testbed allow to browse them.
 
-Then IoT-LAB makes it possible to dynamically retrieve informations on the resources of the testbed with two REST API clients:
+From the [webportal](https://www.iot-lab.info/testbed), the Testbed Status page displays a list in a table that can be filtered by site, architecture and status.
 
- * the testbed Webportal with the <a href="https://www.iot-lab.info/testbed/status" target="_blank">status page</a>
- * the command line tools (CLI-tools) with the <a href="{{ "/docs/tools/cli/#status-command" | relative_url }}">iotlab-status</a> command
+<div class="col col-lg-10 offset-lg-1" markdown="1">
+![]({% link assets/images/docs/resources-status.png %}){:.img-thumbnail}
+</div>
 
-#### Resources booking
+The 'view on site map' link allows to show them also in an interactive 3D view, helping a lot in understanding or choosing a physical topology.  
 
-When you know what type of node you want you have to make a request to the scheduler to reserve them on the testbed. There are two possibilities:
+<div class="col col-lg-10 offset-lg-1" markdown="1">
+![]({% link assets/images/docs/resources-3dmap.png %}){:.img-thumbnail}
+</div>
 
-1. <b>book by hostnames</b>: you simply specify a list of hostname and the scheduler will check if the nodes are available.
-2. <b>book by properties</b>: you ask the scheduler for a number of nodes that match a set of properties (eg. archi, site) and it will assign you available nodes that meet the criteria.
+Using the [CLI tools]({% link docs/tools/cli.md %}), the `iotlab-status` command lists resources and their properties, with options to apply filters.
 
-In the second case the scheduler will make sure that the assigned nodes are in the same radio neighborhood. Thus they will be within radio range of each other. In the first case this constraint is not checked and you have to make sure that the nodes are close to each other when you reserve them. You can use 3D maps to visualize the topologies of IoT-LAB sites. They are available on the testbed Webportal in the <a href="https://www.iot-lab.info/testbed/status" target="_blank">status page</a> (eg. view on site map link) or when you <a href="https://www.iot-lab.info/testbed/experiment" target="_blank">add a new experiment</a> and select your nodes by `hostname/map` (eg. View/select nodes on map link).
+```bash
+$ iotlab-status --nodes
+{
+    "items": [
+        {
+            "archi": "m3:at86rf231",
+            "camera": 0,
+            "mobile": 0,
+            "mobility_type": " ",
+            "network_address": "m3-1.grenoble.iot-lab.info",
+            "site": "grenoble",
+            "state": "Alive",
+            "uid": "2354",
+            "x": "20.10",
+            "y": "26.76",
+            "z": "-0.04"
+        },
+        ...
+    ]
+}
+```
 
-Finally for both booking mode you can ask the scheduler to start your experience as soon as possible (eg. ASAP) or make a reservation for a specific date and time. With ASAP mode the scheduler will accept your reservation but you can't be sure it will start immediately. For example if another user has an ongoing experiment with nodes you want, the start of your experiment will be automatically scheduled at the end of this experiment. In this case your experiment will be in a `Waiting` state. Don't forget that you have access to your nodes only if the experiment is started with state `Running`.
+## Booking
 
-To help you to reserve resources you have access to a Drawgantt in the <a href="https://www.iot-lab.info/testbed/status" target="_blank">status page</a> (eg. `Testbed Activity` tab next to Nodes Properties tab) where you can see experiments schedule on the testbed.
+Once you chose the [board(s)]({% link docs/boards/overview.html %}) and the [site(s)]() you want to involve in your experiment, you have to express it at the submission step so that the resources are booked for you.
 
-You can also consult the  <a href="{{ "/docs/tools/cli/#experiment-command" | relative_url }}">Cli-Tools documentation</a> to understand how to submit an experiment with both booking modes and how to make a reservation for a date.
+At that point, there are two alternatives available to you to select nodes:
+
+1. **by properties**, specifying a set of properties (eg. archi, site) that nodes have to match and their number;
+2. **by ids**, specifying the site and board name with a list of resources ids.
+
+The first case is the simplest if you just want a number of nodes, since you just have to express your need and the scheduler will choose the right nodes for you. Here is an example using CLI tools:
+```bash
+iotlab-experiment submit -d 20 -l 10,archi=m3:at86rf231+site=grenoble
+```
+
+The second case is typically used when you want to have a specific physical topology (aligned, grids, clusters, multi-hop, etc.). You saw in the nodes description that the nodes coordinates are stored. The [Deployment]() section should help you in understanding how the nodes are spread among a site and, so, in picking the right ones to setup your topology. The 3D view of the webportal is also very helpfull for that. Here is an example using CLI tools:
+```bash
+iotlab-experiment submit -d 20 -l grenoble,m3,1-9+23
+```
+
+<div class="alert alert-info" markdown="1">
+**About radio proximity**
+
+As IoT-LAB M3 and A8-M3 are deployed at a large-scale, you could have 2 nodes too far from each other to be able to communicate.
+
+- In the submission **by properties** case, the scheduler will make sure that the assigned nodes are in the same radio neighborhood.
+- In the submission **by ids** case, the constraint on radio proximity is not checked by the scheduler. You have to make sure that the nodes are able to communicate together.
+
+Other boards are deployed in a smaller scale, next to each others, and do not involve this additional mechanism.
+</div>
+
+### Scheduling
+
+For both booking mode you can ask the scheduler to start your experience as soon as possible (i.e. ASAP) or make a reservation for a specific date and time.
+
+With the **asap** mode the scheduler will accept your reservation, but the experiment may not start right away if some of the nodes you asked for are already in use. In that case, the experiment will have a status of _Waiting_, and will be start asap - i.e. as soon as they are free again.
+
+Making a **reservation** amounts to precise a start date. Regarding the specified duration, the scheduler will check if the nodes requested will be available on that time slot. If not, the experiment submission will be rejected.
+
+To help you to select available nodes or available time slot, the Testbed Status page of the webportal displays the current state of nodes in the list. Moreover, on the same page, the 'Tesbed Activity' tab gives access to a gantt diagram that allows to see past, current and future experiments over time.
