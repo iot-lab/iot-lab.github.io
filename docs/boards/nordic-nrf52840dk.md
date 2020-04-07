@@ -1,5 +1,5 @@
 ---
-title: Nordic nRF52840DK
+board: Nordic nRF52840DK
 group: boards
 ---
 

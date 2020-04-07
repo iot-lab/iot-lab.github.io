@@ -1,29 +1,28 @@
 ---
 layout: docs
 ---
-<h1>{{ page.title }}</h1>
+<h1>{% if page.title %}{{ page.title }}{% else %}{{ page.board }}{% endif %}</h1>
 <p class="lead">{{ page.description }}</p>
 
-<div class="alert alert-info text-monospace">
-    OS Support:
-    <ul>
-    {% assign os_support = site.data.oses | where_exp:"item",
-"item.boards contains 'IoT-LAB M3'" %}
+<p>
+    <!-- board wharacteristics -->
+    {% assign board = site.data.boards | where:"name", page.board %}
+    {% assign board = board.first %}
+    <span class="badge badge-primary text-monospace">{{ board.iotlab-name }}</span>
+    {% for radio in board.radio %}
+        <span class="badge badge-pill badge-secondary">{{ radio }}</span>
+    {% endfor %}
+    <!-- OS -->
+    {% assign os_support = site.data.oses | where_exp:"item", "item.boards contains page.board" %}
     {% for os in os_support %}
-        <li>{{ os.name }}</li>
+    <a class="badge badge-info" href="{{ '/docs/os/' | relative_url }}{{ os.name | slugify }}">{{ os.name }}</a>
     {% endfor %}
-    </ul>
-</div>
-
-<div class="alert alert-info text-monospace">
-    Deployment:
-    <ul>
+    <!-- Deployments -->
     {% for loc in site.data.deployments %}
-        {% if loc.deployment[page.title] > 0 %}
-        <li>{{ loc.site }} - {{ loc.deployment[page.title] }}</li>
-        {% endif %}
+    {% if loc.deployment[page.board] > 0 %}
+    <a class="badge badge-light" href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }} <span class="badge badge-info">{{ loc.deployment[page.board] }}</span></a>
+    {% endif %}
     {% endfor %}
-    </ul>
-</div>
+</p>
 
 {{ content }}

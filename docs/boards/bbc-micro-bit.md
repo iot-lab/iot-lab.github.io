@@ -1,5 +1,5 @@
 ---
-title: BBC micro:bit
+board: BBC micro:bit
 group: boards
 ---
 

@@ -1,4 +1,5 @@
 ---
+board: RTL SDR
 title: RTL SDR dongle
 group: boards
 ---

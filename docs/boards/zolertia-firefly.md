@@ -1,5 +1,5 @@
 ---
-title: Zolertia Firefly
+board: Zolertia Firefly
 group: boards
 ---
 

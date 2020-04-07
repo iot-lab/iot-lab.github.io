@@ -1,5 +1,5 @@
 ---
-title: Arduino Zero
+board: Arduino Zero
 group: boards
 ---
 

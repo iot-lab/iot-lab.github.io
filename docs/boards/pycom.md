@@ -1,4 +1,4 @@
 ---
-title: Pycom
+board: Pycom
 group: boards
 ---

@@ -1,5 +1,5 @@
 ---
-title: IoT-LAB WSN430
+board: IoT-LAB WSN430
 group: boards
 ---
 

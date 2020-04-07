@@ -1,4 +1,4 @@
 ---
-title: LoRa gateway
+board: LoRa gateway
 group: boards
 ---

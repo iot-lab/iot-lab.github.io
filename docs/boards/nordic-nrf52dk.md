@@ -1,5 +1,5 @@
 ---
-title: Nordic nRF52DK
+board: Nordic nRF52DK
 group: boards
 ---
 

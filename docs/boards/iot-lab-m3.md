@@ -1,5 +1,5 @@
 ---
-title: IoT-LAB M3
+board: IoT-LAB M3
 group: boards
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: NXP FRDM-KW41Z
+board: NXP FRDM-KW41Z
 group: boards
 ---
 

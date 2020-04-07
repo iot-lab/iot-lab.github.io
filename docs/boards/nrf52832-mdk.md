@@ -1,4 +1,5 @@
 ---
+board: nRF52832-MDK
 title: Makerdiary nRF52832-MDK
 group: boards
 ---
