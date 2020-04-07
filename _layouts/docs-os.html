@@ -8,14 +8,12 @@ layout: docs
 <p class="lead">{{ os.short_desc }}</p>
 
 {% if os.boards %}
-<div class="alert alert-info text-monospace">
-  Boards:
-  <ul>
-  {% for board in os.boards %}
-    <li><a class="alert-link" href="{{ "/docs/boards/" | relative_url }}{{ board | slugify }}">{{ board }}</a></li>
-  {%- endfor -%}
-  </ul>
-</div>
+<p>
+    {% for board in os.boards %}
+    {% capture color-style %}{% if board contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
+    <a class="badge badge-{{ color-style }}" href="{{ '/docs/boards/' | relative_url }}{{ board | slugify }}">{{ board }}</a>
+    {%- endfor -%}
+</p>
 {% endif %}
 
 <p>
