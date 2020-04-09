@@ -6,6 +6,8 @@
 <title>
 {%- if page.title -%}
     {{ page.title }} · {{ site.title }}
+{%- elsif page.group == 'boards' -%}
+    {{ page.board }} · {{ site.title }}
 {%- else -%}
     {{ site.title }} · {{ site.description }}
 {%- endif -%}
