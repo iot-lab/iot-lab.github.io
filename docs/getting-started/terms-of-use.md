@@ -6,7 +6,9 @@ description: IoT-LAB is an accurate and efficient scientific tool, built to help
 
 ## Acknowledging usage
 
-The sustainability of the IoT-LAB testbed is ensured through regular funding requests, for which information must be provided about usage and results obtained by experimenters. IoT-LAB users must contribute to this effort. Indeed the testbed must be acknowledged in all publications presenting results or contents obtained or derived from the usage of IoT-LAB. The acknowledgment in your publication must contain the `FIT IoT-LAB` official name.
+The sustainability of the IoT-LAB testbed is ensured through regular funding requests, for which information must be provided about usage and results obtained by experimenters. IoT-LAB users must contribute to this effort. Indeed the testbed must be acknowledged in all work presenting results or contents obtained or derived from its usage. The acknowledgment must contain the `FIT IoT-LAB` official name.
+
+{% include quote-iotlab.html %}
 
 ## Resources reservation
 
