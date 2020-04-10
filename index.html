@@ -186,34 +186,12 @@ style: fullwidth
             <h1 class="display-4 text-center mt-0">A large choice of hardware boards</h1>
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-            <div class="col offset-lg-3">
+            <div class="col my-3 text-info">
                 <p>
                     <span class="display-2">{{ site.data.boards.size }}</span><br>
                     <span class="display-4"> boards available</span>
                 </p>
-                <p class="text-muted">described as follows <span class="small"><i class="fas fa-arrow-right"></i></span></p>
             </div>
-            <div class="col">
-                <div class="my-3 card border-info text-info">
-                    <svg class="img-fluid" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" focusable="false" role="img" aria-label="Placeholder: 400x300">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#24A2B7"></rect>
-                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">board picture</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Common name</h5>
-                        <h6 class="card-subtitle mt-0 mb-2 text-monospace">iot-lab name</h6>
-                        <p class="card-text">
-                            <span class="badge badge-pill badge-info" href="#">radio</span>
-                        </p>
-                        <p class="card-text">
-                            <span class="badge badge-light">Location <span class="badge badge-info">number</span></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
             {% assign featured_boards = "IoT-LAB M3, IoT-LAB A8-M3, Microchip SAMR21, Zolertia Firefly, ST B-L072Z-LRWAN1, Nordic nRF52840DK" | split: ", " %}
             {% for featured in featured_boards %}
             {% assign board = site.data.boards | where: "name",featured | first %}
@@ -225,17 +203,9 @@ style: fullwidth
                          alt="">
                     <div class="card-body">
                         <h5 class="card-title"><a href="{{ '/docs/boards/' | relative_url }}{{ board.name | slugify }}"{% unless board.name contains "IoT-LAB" %} class="text-reset"{% endunless %}>{{ board.name}}</a></h5>
-                        <h6 class="card-subtitle mt-0 mb-2 text-monospace">{{ board.iotlab-name }}</h6>
                         <p class="card-text">
                         {% for radio in board.radio %}
                             <span class="badge badge-pill badge-{{ color-style }}" href="#">{{ radio }}</span>
-                        {% endfor %}
-                        </p>
-                        <p class="card-text">
-                        {% for loc in site.data.deployments %}
-                            {% if loc.deployment[board.name] > 0 %}
-                            <a class="badge badge-light" href="{{ "/docs/deployment/" | relative_url }}{{ loc.site | slugify }}">{{ loc.site}} <span class="badge badge-{{ color-style }}">{{ loc.deployment[board.name] }}</span></a>
-                            {% endif %}
                         {% endfor %}
                         </p>
                     </div>
