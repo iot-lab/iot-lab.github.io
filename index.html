@@ -214,8 +214,9 @@ style: fullwidth
             </div>
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-            {% assign sorted_boards = site.data.boards | sort_natural: "name" %}
-            {% for board in sorted_boards %}
+            {% assign featured_boards = "IoT-LAB M3, IoT-LAB A8-M3, Microchip SAMR21, Zolertia Firefly, ST B-L072Z-LRWAN1, Nordic nRF52840DK" | split: ", " %}
+            {% for featured in featured_boards %}
+            {% assign board = site.data.boards | where: "name",featured | first %}
             {% capture color-style %}{% if board.name contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
             <div class="col my-3">
                 <div class="card h-100 border-{{ color-style }}">
@@ -241,6 +242,12 @@ style: fullwidth
                 </div>
             </div>
             {% endfor %}
+            <div class="col my-3">
+                <a href="{% link docs/boards/overview.html %}"
+                class="btn btn-outline-info w-100 h-100 d-flex align-items-end justify-content-center">
+                    <h5><i class="fas fa-chevron-right fa-7x"></i> Show all</h5>
+                </a>
+            </div>
         </div>
     </div>
 </section>
