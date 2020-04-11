@@ -42,12 +42,6 @@
     IoT-LAB A8-M3: 14
     IoT-LAB WSN430: 256
 
-- site: Paris
-  iotlab-name: paris
-  deployment:
-    IoT-LAB M3: 69
-    IoT-LAB A8-M3: 62
-
 - site: Lyon
   iotlab-name: lyon
   deployment:
