@@ -6,12 +6,19 @@ description: IoT-LAB documentation brings detailed information about the testbed
 
 ## Quickstart
 
-The testbed is distributed among several sites. The main server serves the open API that allows all interactions. Of course, an easy access is provided through a web portal and command line interface (CLI) tools.
+The testbed enables access to hundreds of boards for experimenting, deployed across different sites. This deployment makes IoT-LAB:
+
+- **multi-platform**, in that it offers various different experimentation boards;
+- **multi-radio**, in that boards don’t all have the same radio chips, and some have more than one;
+- **multi-topology**, in that the physical deployments are all different (in grids, in several corridors, dense, scattered, over several levels, etc.);
+- **multi-OS**, in that the different boards have one or more embedded OS support.
+
+The main server serves the open API that allows all interactions. Of course, an easy access is provided through a web portal and command line interface (CLI) tools.
 
 In addition, the testbed offers an hosted environment on SSH frontends (one per IoT-LAB site), featuring:
 - pre-installed command line interface (CLI) tools,
 - cross-compiler toolchains for target architectures,
-- access to devices serial link, debuger and sniffer.
+- access to devices serial link, debuger and radio sniffer.
 - and experiments results,
 
 An Ubuntu [virtual machine]({% link docs/getting-started/virtual-machine.md %}), based on VirtualBox, is available to bring the development environment on the user's computer.
