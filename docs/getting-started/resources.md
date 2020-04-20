@@ -64,13 +64,13 @@ The different tools of the testbed allow to browse them.
 From the [webportal](https://www.iot-lab.info/testbed), the Testbed Status page displays a list in a table that can be filtered by site, architecture and status.
 
 <div class="col col-lg-10 offset-lg-1" markdown="1">
-![]({% link assets/images/docs/resources-status.png %}){:.img-thumbnail}
+![]({{ 'assets/images/docs/resources-status.png' | relative_url }}){:.img-thumbnail}
 </div>
 
-The 'view on site map' link allows to show them also in an interactive 3D view, helping a lot in understanding or choosing a physical topology.  
+The **view on site map** link allows to show them also in an interactive 3D view, helping a lot in understanding or choosing a physical topology.  
 
 <div class="col col-lg-10 offset-lg-1" markdown="1">
-![]({% link assets/images/docs/resources-3dmap.png %}){:.img-thumbnail}
+![]({{ 'assets/images/docs/resources-3dmap.png' | relative_url }}){:.img-thumbnail}
 </div>
 
 Using the [CLI tools]({% link docs/tools/cli.md %}), the `iotlab-status` command lists resources and their properties, with options to apply filters.
@@ -131,7 +131,7 @@ Other boards are deployed in a smaller scale, next to each others, and do not in
 
 For both booking mode you can ask the scheduler to start your experience as soon as possible (i.e. ASAP) or make a reservation for a specific date and time.
 
-With the **asap** mode the scheduler will accept your reservation, but the experiment may not start right away if some of the nodes you asked for are already in use. In that case, the experiment will have a status of _Waiting_, and will be start asap - i.e. as soon as they are free again.
+With the **asap** mode the scheduler will accept your reservation, but the experiment may not start right away if some of the nodes you asked for are already in use. In that case, the experiment will have a status of _Waiting_, and will be start as soon as they are free again.
 
 Making a **reservation** amounts to precise a start date. Regarding the specified duration, the scheduler will check if the nodes requested will be available on that time slot. If not, the experiment submission will be rejected.
 
