@@ -20,7 +20,7 @@ You can find one command for each main testbed features:
 
 * **[iotlab-auth](#auth-command)**: credentials storage
 * **[iotlab-status](#status-command)**: manage testbed status informations
-* **[iotlab-experiment](#experiment-command)**: manage experiment lifecycle 
+* **[iotlab-experiment](#experiment-command)**: manage experiment lifecycle
 * **[iotlab-node](#node-command)**: manage nodes interaction like power supply management or flashing firmware
 * **[iotlab-profile](#profile-command)**: manage power consumption and radio monitoring profiles
 
@@ -35,6 +35,13 @@ $ iotlab-auth -u <login>
 ```
 
 Don't forget that you must repeat this step from each computer or IoT-LAB SSH frontend where you will use CLI tools.
+
+You can also add a SSH key to your account with the following command:
+```bash
+iotlab-auth --add-ssh-key
+```
+
+It will use `~/.ssh/id_rsa.pub` as default, but you can specify the identity file to use with the `-i` option.
 
 ### Status command
 
@@ -134,13 +141,13 @@ iotlab-experiment wait --timeout 30 --cancel-on-timeout
 
 ##### Get experiment nodes list
 ``` bash
-$ iotlab-experiment get -n 
-$ iotlab-experiment get -n -i <exp_id> # if you have several experiments running on the testbed 
+$ iotlab-experiment get -n
+$ iotlab-experiment get -n -i <exp_id> # if you have several experiments running on the testbed
 ```
 
 ##### Get experiment nodes deployment result
 
-Get an experiment nodes deployment result with `succes=0 and error=1`. It's important to check the result before interact with a node as it can be considered unusable in case of error return.<br><br> 
+Get an experiment nodes deployment result with `succes=0 and error=1`. It's important to check the result before interact with a node as it can be considered unusable in case of error return.<br><br>
 ``` bash
 $ iotlab-experiment get -d
 {
@@ -157,8 +164,8 @@ $ iotlab-experiment get -d -i <exp_id> # if you have several experiments running
 ##### Stop experiment
 
 ``` bash
-$ iotlab-experiment stop 
-$ iotlab-experiment stop -i <exp_id> # if you have several experiments running on the testbed 
+$ iotlab-experiment stop
+$ iotlab-experiment stop -i <exp_id> # if you have several experiments running on the testbed
 ```
 
 ### Node command
