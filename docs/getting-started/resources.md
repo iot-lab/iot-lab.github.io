@@ -63,14 +63,19 @@ The different tools of the testbed allow to browse them.
 
 From the [webportal](https://www.iot-lab.info/testbed), the Testbed Status page displays a list in a table that can be filtered by site, architecture and status.
 
-<div class="col col-lg-10 offset-lg-1" markdown="1">
-![]({{ 'assets/images/docs/resources-status.png' | relative_url }}){:.img-thumbnail}
+<div class="col col-lg-10 offset-lg-1">
+    <video autoplay muted loop class="embed-responsive-item" width="100%">
+      <source src="{{ 'assets/images/docs/' | relative_url }}resources-status.mp4" type="video/mp4">
+      <img src="{{ 'assets/images/docs/' | relative_url }}resources-status.png" class="img-thumbnail">
+    </video>
 </div>
 
 The **view on site map** link allows to show them also in an interactive 3D view, helping a lot in understanding or choosing a physical topology.  
-
-<div class="col col-lg-10 offset-lg-1" markdown="1">
-![]({{ 'assets/images/docs/resources-3dmap.png' | relative_url }}){:.img-thumbnail}
+<div class="col col-lg-10 offset-lg-1">
+    <video autoplay muted loop playsinline class="embed-responsive-item" width="100%">
+      <source src="{{ 'assets/images/docs/' | relative_url }}resources-3dmap.mp4" type="video/mp4">
+      <img src="{{ 'assets/images/docs/' | relative_url }}resources-3dmap.png" class="img-thumbnail">
+    </video>
 </div>
 
 Using the [CLI tools]({% link docs/tools/cli.md %}), the `iotlab-status` command lists resources and their properties, with options to apply filters.
