@@ -9,7 +9,9 @@ layout: docs
 
 {% if os.boards %}
 <p>
-    {% for board in os.boards %}
+    <strong>boards</strong>
+    {% assign sorted_boards = os.boards | sort_natural %}
+    {% for board in sorted_boards %}
     {% capture color-style %}{% if board contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
     <a class="badge badge-{{ color-style }}" href="{{ '/docs/boards/' | relative_url }}{{ board | slugify }}">{{ board }}</a>
     {%- endfor -%}
