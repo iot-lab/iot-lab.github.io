@@ -31,8 +31,9 @@ layout: docs
           {% endfor %}
           <span class="text-muted">, Deployment:</span>
           {% for loc in site.data.deployments %}
-          {% if loc.deployment[page.board] > 0 %}
-          <a class="badge badge-light" href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }} <span class="badge badge-info">{{ loc.deployment[page.board] }}</span></a>
+          {% assign deployment = loc.deployment | where: "board", page.board | first %}
+          {% if deployment %}
+          <a class="badge badge-light" href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }} <span class="badge badge-info">{{ deployment.number }}</span></a>
           {% endif %}
           {% endfor %}
       </p>
@@ -56,8 +57,9 @@ layout: docs
                   </td>
                   <td>
                       {% for loc in site.data.deployments %}
-                      {% if loc.deployment[page.board] > 0 %}
-                      <a href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }} ({{ loc.deployment[page.board] }})</a>
+                      {% assign deployment = loc.deployment | where: "board", page.board | first %}
+                      {% if deployment %}
+                      <a href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }}({{ deployment.number }})</a>
                       {% endif %}
                       {% endfor %}
                   </td>
@@ -88,8 +90,9 @@ layout: docs
                   </td>
                   <td>
                       {% for loc in site.data.deployments %}
-                      {% if loc.deployment[page.board] > 0 %}
-                      <a class="badge badge-light" href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }} <span class="badge badge-info">{{ loc.deployment[page.board] }}</span></a>
+                      {% assign deployment = loc.deployment | where: "board", page.board | first %}
+                      {% if deployment %}
+                      <a class="badge badge-light" href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }} <span class="badge badge-info">{{ deployment.number }}</span></a>
                       {% endif %}
                       {% endfor %}
                   </td>
@@ -122,8 +125,9 @@ layout: docs
                   </td>
                   <td>
                       {% for loc in site.data.deployments %}
-                      {% if loc.deployment[page.board] > 0 %}
-                      <a class="badge badge-light" href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }} <span class="badge badge-info">{{ loc.deployment[page.board] }}</span></a>
+                      {% assign deployment = loc.deployment | where: "board", page.board | first %}
+                      {% if deployment %}
+                      <a class="badge badge-light" href="{{ '/docs/deployment/' | relative_url }}{{ loc.site | slugify }}">{{ loc.site }} <span class="badge badge-info">{{ deployment.number }}</span></a>
                       {% endif %}
                       {% endfor %}
                   </td>

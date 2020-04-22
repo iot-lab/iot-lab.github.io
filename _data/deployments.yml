@@ -1,49 +1,44 @@
 - site: Lille
-  iotlab-name: lille
   deployment:
-    IoT-LAB M3: 264
-    Zolertia Firefly: 16
-    BBC micro:bit: 5
-    Microchip SAMR21: 5
-    ST B-L072Z-LRWAN1: 5
+    - { board: IoT-LAB M3, number: 264}
+    - { board: Zolertia Firefly, number: 16}
+    - { board: "BBC micro:bit", number: 5}
+    - { board: Microchip SAMR21, number: 5}
+    - { board: ST B-L072Z-LRWAN1, number: 5}
 
 - site: Grenoble
-  iotlab-name: grenoble
   deployment:
-    IoT-LAB M3: 380
-    IoT-LAB A8-M3: 228
+    - { board: IoT-LAB M3, number: 380}
+    - { board: IoT-LAB A8-M3, number: 228}
 
 - site: Saclay
-  iotlab-name: saclay
   deployment:
-    IoT-LAB M3: 12
-    IoT-LAB A8-M3: 155
-    Microchip SAMR21: 15
-    Microchip SAMR30: 3
-    Arduino Zero: 3
-    ST B-L072Z-LRWAN1: 25
-    Nordic nRF52DK: 10
-    Nordic nRF52840DK: 10
-    Nordic nRF51DK: 5
-    BBC micro:bit: 1
-    ST B-L475E-IOT01A: 10
-    NXP FRDM-KW41Z: 5
-    nRF52840-MDK: 1
-    nRF52832-MDK: 1
-    Phytec PhyNODE-KW41Z: 1
-    LoRa gateway: 1
-    Pycom: 5
-    RTL SDR: 3
+    - { board: IoT-LAB M3, number: 12}
+    - { board: IoT-LAB A8-M3, number: 155}
+    - { board: Microchip SAMR21, number: 15}
+    - { board: Microchip SAMR30, number: 3}
+    - { board: Arduino Zero, number: 3}
+    - { board: ST B-L072Z-LRWAN1, number: 25}
+    - { board: Nordic nRF52DK, number: 10}
+    - { board: Nordic nRF52840DK, number: 10}
+    - { board: Nordic nRF51DK, number: 5}
+    - { board: "BBC micro:bit", number: 1}
+    - { board: ST B-L475E-IOT01A, number: 10}
+    - { board: NXP FRDM-KW41Z, number: 5}
+    - { board: nRF52840-MDK, number: 1}
+    - { board: nRF52832-MDK, number: 1}
+    - { board: Phytec PhyNODE-KW41Z, number: 1}
+    - { board: LoRa gateway, number: 1}
+    - { board: Pycom, number: 5}
+    - { board: RTL SDR, number: 3}
 
 - site: Strasbourg
-  iotlab-name: strasbourg
   deployment:
-    IoT-LAB M3: 74
-    IoT-LAB A8-M3: 14
-    IoT-LAB WSN430: 256
+    - { board: IoT-LAB M3, number: 74}
+    - { board: IoT-LAB A8-M3, number: 14}
+    - { board: IoT-LAB WSN430, number: 256}
 
 - site: Lyon
-  iotlab-name: lyon
   deployment:
-    IoT-LAB M3: 18
-    IoT-LAB A8-M3: 11
+    - { board: IoT-LAB M3, number: 18}
+    - { board: IoT-LAB A8-M3, number: 11}
