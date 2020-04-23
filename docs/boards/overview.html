@@ -25,7 +25,7 @@ description: "We started by design and deploy our own boards. Since 2018, we hav
   {% assign sorted_boards = site.data.boards | sort_natural: "name" %}
   {% for board in sorted_boards %}
       <tr>
-          <td><a href="{{ '/docs/boards/' | relative_url }}{{ board.name | slugify }}">{{ board.name }}</a></td>
+          <td><a href="{{ '/docs/boards/' | relative_url }}{{ board.name | slugify }}">{{ board.name }}</a></td>
           <td class="text-monospace">{{ board.iotlab-name }}</td>
           <td>{{ board.mcu-soc }}</td>
       {% for radio in radios %}
