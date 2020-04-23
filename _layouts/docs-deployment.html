@@ -9,13 +9,14 @@ layout: docs
 <p class="lead">{{ page.description }}</p>
 
 <p>
-    <span class="badge badge-info">{{ page.title | slugify }}.iot-lab.info</span>
-{% for item in location.deployment %}
-    {% assign board = item[0] %}
-    {% capture color-style %}{% if board contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
-    <a class="badge badge-{{ color-style }}" href="{{ '/docs/boards/' | relative_url }}{{ board | slugify }}">
-        {{ board }}
-        <span class="badge badge-light">{{ item[1] }}</span>
+    <strong>server</strong> <span class="badge badge-info">{{ page.title | slugify }}.iot-lab.info</span><br>
+    <strong>boards</strong>
+{% assign boards = location.deployment | sort_natural: "board" %}
+{% for item in boards %}
+    {% capture color-style %}{% if item.board contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
+    <a class="badge badge-{{ color-style }}" href="{{ '/docs/boards/' | relative_url }}{{ item.board | slugify }}">
+        {{ item.board }}
+        <span class="badge badge-light">{{ item.number }}</span>
     </a>
 {% endfor %}
 </p>
