@@ -4,6 +4,13 @@ layout: docs
 {% assign os = site.data.oses | where: "name", page.title %}
 {% assign os = os.first %}
 
+<div class="col-3 float-right">
+    {% if os.img %}
+    <img class="img-thumbnail p-2" src="{{ '/assets/images/oses/' | relative_url}}{{ os.img }}"/><br>
+    {% endif %}
+    <small><a href="{{ os.website }}" target="_blank">Official website <i class="fas fa-external-link-alt"></i></a></small>
+</div>
+
 <h1>{{ page.title }}</h1>
 <p class="lead">{{ os.short_desc }}</p>
 
@@ -17,12 +24,5 @@ layout: docs
     {%- endfor -%}
 </p>
 {% endif %}
-
-<p>
-    {% if os.img %}
-    <img style="width:20%" class="img-thumbnail p-2" src="{{ '/assets/images/oses/' | relative_url}}{{ os.img }}"/><br>
-    {% endif %}
-    <small><a href="{{ os.website }}" target="_blank">Official website <i class="fas fa-external-link-alt"></i></a></small>
-</p>
 
 {{ content }}
