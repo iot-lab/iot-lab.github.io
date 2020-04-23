@@ -32,6 +32,6 @@
 
 - name: Yocto
   website: https://www.yoctoproject.org
-  img: logo-linux.png
+  img: logo-yocto.png
   short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   boards: [IoT-LAB A8-M3]
