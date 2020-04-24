@@ -47,7 +47,6 @@
     - title: Contiki-NG
     - title: Zephyr
     - title: FreeRTOS
-    - title: ARM mbed
     - title: MicroPython
     - title: Yocto
 

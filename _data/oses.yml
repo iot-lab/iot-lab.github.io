@@ -15,11 +15,6 @@
   img: logo-zephyr.png
   short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-- name: ARM Mbed
-  website: https://os.mbed.com
-  img: logo-armmbed.svg
-  short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
 - name: FreeRTOS
   website: https://www.freertos.org
   img: logo-freertos.jpg
