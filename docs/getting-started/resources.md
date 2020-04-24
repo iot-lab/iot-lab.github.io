@@ -22,7 +22,7 @@ The basic resource of the testbed is the node: a specific board deployed at a sp
             <td>string</td>
             <td>
                 Network hostname of the node, composed as follows:<br>
-                <code>&lt;board_name&gt;-&lt;id&gt;.&lt;site&gt;.iot-lab.info</code>.<br>
+                <code>&lt;node_id&gt;.&lt;site&gt;.iot-lab.info</code>.<br>
                 <small>Example: the first M3 node of Grenoble site is <code>m3-1.grenoble.iot-lab.info</code>.</small>
             </td>
         </tr>
@@ -30,7 +30,7 @@ The basic resource of the testbed is the node: a specific board deployed at a sp
             <th scope="row">archi</th>
             <td>string</td>
             <td>
-                Information about the hardware of the node, composed as follows:<br> <code>&lt;board_name&gt;:&lt;radio_chipset&gt;</code>.<br>
+                Information about the hardware of the node, composed as follows:<br> <code>&lt;board_id&gt;:&lt;radio_chipset&gt;</code>.<br>
                 <small>Example: the value for an IoT-LAB M3 is <code>m3:at86rf231</code> (node_name = m3 and radio_chipset = at86rf231).</small>
             </td>
         </tr>
