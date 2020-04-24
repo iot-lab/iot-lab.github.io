@@ -20,7 +20,7 @@ layout: docs
   <div data-parent="#collapse-parent" class="collapse show" id="pills-oneline" aria-labelledby="pills-oneline-tab">
       <p>
           <span class="text-muted">Board ID:</span>
-          <span class="badge badge-primary text-monospace">{{ board.iotlab-name }}</span>
+          <span class="badge badge-primary text-monospace">{{ board.board-id }}</span>
           <span class="text-muted">, Radio:</span>
           {% for radio in board.radio %}
               <span class="badge badge-pill badge-secondary">{{ radio }}</span>
@@ -48,7 +48,7 @@ layout: docs
                   <th>deployment</th>
               </tr>
               <tr>
-                  <td>{{ board.iotlab-name }}</td>
+                  <td>{{ board.board-id }}</td>
                   <td>{{ board.radio | join: ", " }}</td>
                   <td>
                       {% for os in os_support %}
@@ -77,7 +77,7 @@ layout: docs
                   <th>deployment</th>
               </tr>
               <tr>
-                  <td><span class="badge badge-primary text-monospace">{{ board.iotlab-name }}</span></td>
+                  <td><span class="badge badge-primary text-monospace">{{ board.board-id }}</span></td>
                   <td>
                       {% for radio in board.radio %}
                       <span class="badge badge-pill badge-secondary">{{ radio }}</span>
@@ -112,7 +112,7 @@ layout: docs
           </thead>
           <tbody>
               <tr>
-                  <td><span class="badge badge-primary text-monospace">{{ board.iotlab-name }}</span></td>
+                  <td><span class="badge badge-primary text-monospace">{{ board.board-id }}</span></td>
                   <td>
                       {% for radio in board.radio %}
                       <span class="badge badge-pill badge-secondary">{{ radio }}</span>

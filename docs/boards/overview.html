@@ -26,7 +26,7 @@ description: "We started by design and deploy our own boards. Since 2018, we hav
   {% for board in sorted_boards %}
       <tr>
           <td><a href="{{ '/docs/boards/' | relative_url }}{{ board.name | slugify }}">{{ board.name }}</a></td>
-          <td class="text-monospace">{{ board.iotlab-name }}</td>
+          <td class="text-monospace">{{ board.board-id }}</td>
           <td>{{ board.mcu-soc }}</td>
       {% for radio in radios %}
           <td class="text-center">{% if board.radio contains radio %}&bull;{% endif %}</td>

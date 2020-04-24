@@ -1,101 +1,101 @@
 ---
 -
     name: IoT-LAB WSN430
-    iotlab-name: wsn430
+    board-id: wsn430
     mcu-soc: TI MSP430
     radio: [802.15.4]
 -
     name: IoT-LAB M3
-    iotlab-name: m3
+    board-id: m3
     mcu-soc: Cortex M3
     radio: [802.15.4]
 -
     name: IoT-LAB A8-M3
-    iotlab-name: a8
+    board-id: a8
     mcu-soc: Cortex A8
     radio: [802.15.4]
 -
     name: Microchip SAMR21
-    iotlab-name: samr21
+    board-id: samr21
     mcu-soc: Cortex M0
     radio: [802.15.4]
 -
     name: Microchip SAMR30
-    iotlab-name: samr30
+    board-id: samr30
     mcu-soc: Cortex M0
     radio: [Sub-GhZ]
 -
     name: Zolertia Firefly
-    iotlab-name: firefly
+    board-id: firefly
     mcu-soc: Cortex M3
     radio: [802.15.4, Sub-GhZ]
 -
     name: ST B-L072Z-LRWAN1
-    iotlab-name: st-lrwan1
+    board-id: st-lrwan1
     mcu-soc: Cortex M0
     radio: [LoRa]
 -
     name: ST B-L475E-IOT01A
-    iotlab-name: st-iotnode
+    board-id: st-iotnode
     mcu-soc: Cortex M4
     radio: [Sub-GhZ, wifi, BLE]
 -
     name: Nordic nRF52DK
-    iotlab-name: nrf52dk
+    board-id: nrf52dk
     mcu-soc: Cortex M4
     radio: [BLE]
 -
     name: Nordic nRF52840DK
-    iotlab-name: nrf52840dk
+    board-id: nrf52840dk
     mcu-soc: Cortex M4
     radio: [802.15.4, BLE]
 -
     name: Nordic nRF51DK
-    iotlab-name: nrf51dk
+    board-id: nrf51dk
     mcu-soc: Cortex M0
     radio: [BLE]
 -
     name: NXP FRDM-KW41Z
-    iotlab-name: frdm-kw41z
+    board-id: frdm-kw41z
     mcu-soc: Cortex M0
     radio: [802.15.4, BLE]
 -
     name: nRF52832-MDK
-    iotlab-name: nrf52832mdk
+    board-id: nrf52832mdk
     mcu-soc: Cortex M4
     radio: [802.15.4, BLE]
 -
     name: nRF52840-MDK
-    iotlab-name: nrf52840mdk
+    board-id: nrf52840mdk
     mcu-soc: Cortex M4
     radio: [802.15.4, BLE]
 -
     name: BBC micro:bit
-    iotlab-name: microbit
+    board-id: microbit
     mcu-soc: Cortex M0
     radio: [BLE]
 -
     name: Pycom
-    iotlab-name: pycom
+    board-id: pycom
     mcu-soc: ESP32
     radio: [LoRa, BLE, Wifi]
 -
     name: LoRa gateway
-    iotlab-name: lora-gw
+    board-id: lora-gw
     mcu-soc: BCM2837
     radio: [LoRa]
 -
     name: RTL SDR
-    iotlab-name: rtl-sdr
+    board-id: rtl-sdr
     mcu-soc: R820T2
     radio: []
 -
     name: Arduino Zero
-    iotlab-name: arduino-zero
+    board-id: arduino-zero
     mcu-soc: Cortex M0
     radio: [802.15.4]
 -
     name: Phytec PhyNODE-KW41Z
-    iotlab-name: phynode
+    board-id: phynode
     mcu-soc:
     radio: [802.15.4]

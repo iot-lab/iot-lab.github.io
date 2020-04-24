@@ -199,7 +199,7 @@ style: fullwidth
             <div class="col my-3">
                 <div class="card h-100 border-{{ color-style }}">
                     <img class="img-fluid"
-                         src="{{ '/assets/images/boards/' | relative_url }}{{ board.iotlab-name }}.jpg"
+                         src="{{ '/assets/images/boards/' | relative_url }}{{ board.board-id }}.jpg"
                          alt="">
                     <div class="card-body">
                         <h5 class="card-title"><a href="{{ '/docs/boards/' | relative_url }}{{ board.name | slugify }}"{% unless board.name contains "IoT-LAB" %} class="text-reset"{% endunless %}>{{ board.name}}</a></h5>
