@@ -132,7 +132,7 @@ As IoT-LAB M3 and A8-M3 are deployed at a large-scale, you could have 2 nodes to
 Other boards are deployed in a smaller scale, next to each others, and do not involve this additional mechanism.
 </div>
 
-### Scheduling
+## Scheduling
 
 For both booking mode you can ask the scheduler to start your experience as soon as possible (i.e. ASAP) or make a reservation for a specific date and time.
 
