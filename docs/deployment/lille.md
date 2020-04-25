@@ -18,7 +18,7 @@ description: "On the Lille site, the nodes are deployed in our two buidlings at 
     * 5 Zolertia Firefly
 </div>
 <div class="col-lg-6" markdown="1">
-[![plan-lille](https://www.iot-lab.info/wp-content/uploads/2019/01/plan-lille.png)](https://www.openstreetmap.org/#map=18/50.60503/3.14872)
+[![plan-lille](https://www.iot-lab.info/wp-content/uploads/2019/01/plan-lille.png){: .img-fluid}](https://www.openstreetmap.org/#map=18/50.60503/3.14872)
 </div>
 </div>
 
@@ -51,7 +51,7 @@ Here is the dispatch regarding node's ids:
 ![fit-lille-3](https://www.iot-lab.info/wp-content/uploads/2019/01/fit-lille-3-300x200.jpg)
 <small class="text-muted">© Inria / Photo C. Morel</small>
 
-### Le Cube
+## Le Cube
 
 There is an additional deployment in the B building, around 100 m from the other one, in a wooden structure called Le Cube. It's purpose, here, is not to experiment at a large scale, but rather to test network solutions, protocols or Operating Systems over different hardwares and radios. This deployment brings a practical way to experiment compatibility and interoperability scenarios.
 
