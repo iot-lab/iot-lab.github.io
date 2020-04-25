@@ -71,6 +71,40 @@ footer .logo {
     }
 }
 
+/* Doc TOC */
+.doc-toc {
+    // background-color:#f3f3f3;
+    // top: 5rem;
+    height: calc(100vh - 6.5rem);
+    overflow-y: auto;
+    font-size: 0.875rem;
+}
+
+.doc-toc > ul {
+  padding-left: 0;
+  border-left: 1px solid #eee;
+
+  ul {
+    padding-left: 1rem;
+  }
+}
+
+.doc-toc li {
+  display: block;
+
+  a {
+    display: block;
+    padding: .125rem 1.5rem;
+    color: #77757a;
+
+    &:hover {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+}
+
+
 /**
  * Code formatting
  */
@@ -78,21 +112,4 @@ pre {
     padding: 8px 12px;
     border-radius: 3px;
     // color: white;
-}
-
-/*
- * Home page
- */
-.bg-fixed {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-home {
-    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0.25)), url('/www/assets/images/lille3.jpg');
-}
-
-.bg-interact {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/www/assets/images/bg-interact.jpg');
 }

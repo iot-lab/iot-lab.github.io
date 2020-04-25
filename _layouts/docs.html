@@ -1,17 +1,17 @@
 ---
 layout: default
+style: fluid
 ---
-<div class="row">
-    <div class="col-12 col-md-3 col-xl-2 sidenav">
+<div class="row flex-xl-nowrap">
+    <div class="col-md-3 col-xl-2 sidebar sidenav">
         {% include docs-sidebar.html %}
     </div>
 
-    <main class="col-12 col-md-9 col-xl-10 pl-md-5" role="main">
+    <nav class="d-none order-2 d-xl-block col-xl-2 py-3 sticky-top doc-toc">
+        {% include toc.html html=content h_min=2 h_max=3 %}
+    </nav>
+
+    <main class="col-md-9 col-xl-8 py-md-3 pl-md-5" role="main">
         {{ content }}
     </main>
-
-    <!-- <div class="d-none d-xl-block col-xl-2" style="background-color:#f3f3f3;">
-        * TOC
-        {:toc}
-    </div> -->
 </div>
