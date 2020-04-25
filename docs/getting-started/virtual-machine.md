@@ -25,7 +25,7 @@ The virtual machine is available in two formats hosted on the IoT-LAB Website:
 [Vagrant](https://www.vagrantup.com/) is a virtual machine environment management tool. The vagrant box is also hosted in the official [Vagrant cloud](https://app.vagrantup.com/iotlab/boxes/iotlab-vm).
 
 
-#### Start the virtual machine with Vagrant box file
+### Start the virtual machine with Vagrant box file
 
 ```bash
 $ wget https://www.iot-lab.info/vagrant-box/iotlab-vm.box .
@@ -36,7 +36,7 @@ $ vagrant ssh
 ```
 
 
-#### Start the virtual machine with Vagrant Cloud
+### Start the virtual machine with Vagrant Cloud
 
 ``` bash
 $ vagrant init iotlab/iotlab-vm 
@@ -44,7 +44,7 @@ $ vagrant up
 $ vagrant ssh
 ```
 
-#### Start the virtual machine without Vagrant
+### Start the virtual machine without Vagrant
 
 If you don't want to use Vagrant you can download the OVA file and just import it directly in Virtualbox.
 
