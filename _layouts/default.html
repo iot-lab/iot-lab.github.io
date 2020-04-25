@@ -8,12 +8,16 @@
             {% include navigation.html %}
         </header>
         <main role="main">
-        {% if page.style != "fullwidth" %}
-            <div class="container py-md-3">
+        {% if layout.style == "fullwidth" or page.style == "fullwidth" %}
+            {{ content }}
+        {% elsif layout.style == "fluid" or page.style == "fluid" %}
+            <div class="container-fluid">
                 {{ content }}
             </div>
         {% else %}
-            {{ content }}
+            <div class="container py-md-3">
+                {{ content }}
+            </div>
         {% endif %}
         </main>
         <footer class="bg-dark text-light">
