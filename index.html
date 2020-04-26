@@ -16,19 +16,19 @@ style: fullwidth
     <div class="container py-5">
         <h1 class="display-4 py-5 text-center">Used by a large part of the IoT community around the world.</h1>
         <div class="row justify-content-center pb-5">
-            <div class="col-6 mb-3 col-lg-3 mb-lg-0">
+            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <span class="display-4 text-primary d-block">1, 500+</span>
                 <h6>Nodes</h6>
             </div>
-            <div class="col-6 mb-3 col-lg-3 mb-lg-0">
+            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <span class="display-4 text-primary d-block">5,050+</span>
                 <h6>Users<br><span class="text-muted">including academics, students and companies</span></h6>
             </div>
-            <div class="col-6 mb-3 col-lg-3 mb-lg-0">
+            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <span class="display-4 text-primary d-block">25+</span>
                 <h6>User Countries</h6>
             </div>
-            <div class="col-6 mb-3 col-lg-3 mb-lg-0">
+            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <span class="display-4 text-primary d-block">73,000+</span>
                 <h6>Experiments<br><span class="text-muted">ran since 2012</span></h6>
             </div>
@@ -134,7 +134,7 @@ style: fullwidth
         <img class="img-fluid" style="width: 100%; max-height: 500px; object-fit: cover;" src="{{ '/assets/images/' | relative_url }}multi-radio.jpg">
         <p class="my-4 lead text-center mx-auto w-75">The different boards available bring users several radio technologies. Test radio scenarios with isolation, coexistence, cooperation, interoperability.</p>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
-            <div class="col mb-3">
+            <div class="col-6 mb-3">
                 <div class="card h-100 card-body">
                     <div class="flex-grow-1">
                         <h3>802.15.4</h3>
@@ -144,7 +144,7 @@ style: fullwidth
                     </div>
                 </div>
             </div>
-            <div class="col mb-3">
+            <div class="col-6 mb-3">
                 <div class="card h-100 card-body">
                     <div class="flex-grow-1">
                         <h3>Sub-1GHz</h3>
@@ -154,7 +154,7 @@ style: fullwidth
                     </div>
                 </div>
             </div>
-            <div class="col mb-3">
+            <div class="col-6 mb-3">
                 <div class="card h-100 card-body">
                     <div class="flex-grow-1">
                         <h3>Bluetooth</h3>
@@ -164,7 +164,7 @@ style: fullwidth
                     </div>
                 </div>
             </div>
-            <div class="col mb-3">
+            <div class="col-6 mb-3">
                 <div class="card h-100 card-body">
                     <div class="flex-grow-1">
                         <h3>LoRa</h3>
@@ -186,7 +186,7 @@ style: fullwidth
             <h1 class="display-4 text-center mt-0">A large choice of hardware boards</h1>
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-            <div class="col my-3 text-info">
+            <div class="col-6 my-3 text-info">
                 <p>
                     <span class="display-2">{{ site.data.boards.size }}</span><br>
                     <span class="display-4"> boards available</span>
@@ -196,7 +196,7 @@ style: fullwidth
             {% for featured in featured_boards %}
             {% assign board = site.data.boards | where: "name",featured | first %}
             {% capture color-style %}{% if board.name contains "IoT-LAB"%}primary{% else %}secondary{% endif %}{% endcapture %}
-            <div class="col my-3">
+            <div class="col-6 my-3">
                 <div class="card h-100 border-{{ color-style }}">
                     <img class="img-fluid"
                          src="{{ '/assets/images/boards/' | relative_url }}{{ board.board-id }}.jpg"
@@ -212,7 +212,7 @@ style: fullwidth
                 </div>
             </div>
             {% endfor %}
-            <div class="col my-3">
+            <div class="col-6 my-3">
                 <a href="{% link docs/boards/overview.html %}"
                 class="btn btn-outline-info w-100 h-100 d-flex align-items-end justify-content-center">
                     <h5><i class="fas fa-chevron-right fa-7x"></i> Show all</h5>
