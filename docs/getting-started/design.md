@@ -57,3 +57,7 @@ It is also through this link that the usual physical interaction links with the 
 </div>
 
 Dynamic network filtering rules make these links only accessible to the user who has reserved these experimentation nodes, from the SSH frontend of the site concerned, for the duration of the experiment.
+
+<div class="alert alert-info" markdown="1">
+Note that there is tools to help you to manage several [serial]({{ '/docs/tools/serial-aggregator/' | relative_url }}){: .alert-link} or [sniffer]({{ '/docs/tools/radio-monitoring/#send-radio-packets-and-analyse-radio-traffic' | relative_url }}){: .alert-link} links, as well as to plot [consumption]({{ '/docs/tools/consumption-monitoring/#analyse-monitoring-data' | relative_url }}){: .alert-link} or [radio]({{ '/docs/tools/radio-monitoring/#analyse-monitoring-data' | relative_url }}){: .alert-link} monitoring data.
+</div>
