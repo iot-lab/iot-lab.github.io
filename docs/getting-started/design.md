@@ -30,14 +30,22 @@ The IoT-LAB provides a solution to this problem by integrating each experimentat
 ![]({{ '/assets/images/docs/design-iotlab-node.png' | relative_url }}){:.img-fluid}
 
 ### Interaction
-To facilitate deployment, the Gateway includes a PoE (Power Over Ethernet) module which, as its name suggests, allows power to be supplied via the Ethernet port in addition to the network link. Being the only link to the hardware, it is also through this link that the usual physical interaction links with the experimentation board pass:
-- the serial link of the Open Node is redirected to a TCP socket served by the Gateway on port 20000;
-- the debug link of the Open Node is redirected to a second TCP socket served by the Gateway on port 3333;
-
-The same applies to the data sent back by the Control Node:
+To facilitate deployment, the Gateway includes a PoE (Power Over Ethernet) module which, as its name suggests, allows power to be supplied via the Ethernet port in addition to the network link. Being the only link to the hardware, it is used to sent back the Control Node data:
 - the sniffer data is written to a TCP socket served by the Gateway on port 30000;
 - the automatic monitoring data is written directly to files in the user's workspace.
 
-Dynamic network filtering rules make these links accessible to the user who has reserved these experimentation nodes, from the SSH frontend of the site concerned, for the duration of the experiment.
+It is also through this link that the usual physical interaction links with the experimentation board pass, and they vary according to the type of board.
 
-![]({{ '/assets/images/docs/design-hardware.png' | relative_url }}){:.img-fluid}
+**For boards based on a microcontroller:**
+- the serial link of the Open Node is redirected to a TCP socket served by the Gateway on port 20000;
+- the debug link of the Open Node is redirected to a second TCP socket served by the Gateway on port 3333.
+
+![]({{ '/assets/images/docs/design-hard-micro.png' | relative_url }}){:.img-fluid}
+
+**For boards running an embedded Linux:**
+- an SSH access to the Open Node is available through the classic 22 TCP port;
+- the A8 directory present in the user's workspace on the SSH frontend is mounted through NFS and accessible in the Open Node filesystem at `~/A8`.
+
+![]({{ '/assets/images/docs/design-hard-linux.png' | relative_url }}){:.img-fluid}
+
+Dynamic network filtering rules make these links only accessible to the user who has reserved these experimentation nodes, from the SSH frontend of the site concerned, for the duration of the experiment.
