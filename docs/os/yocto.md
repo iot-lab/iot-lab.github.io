@@ -10,12 +10,12 @@ The Yocto Project is an open-source project which allows the creation of embedde
 
 ## Support for Linux boards
 
-### Boot and filesystem
+#### Boot and filesystem
 
 The setup for Linux nodes is to used both TFTP and NFS server and U-Boot bootloader write on the NAND flash memory (eg. A8 hardware) or SD card (eg. RPI3 hardware). The bootloader will fetch the Linux kernel from the TFTP server and the kernel will mount the root filesystem from the NFS server. For each experiment submission a reference filesystem is extracted and used by all Linux nodes of an experiment. It's a volatile filesystem that will be deleted between two experiments. It's important to understand that the same filesystem is shared between all the nodes of an experiment and if for example you install a package on one of the nodes of the experiment it will be available on all the others.
 
 
-### Software support
+#### Software support
 
 We provide a Yocto Github repository [here](https://github.com/iot-lab/iot-lab-yocto) from which we generate custom Linux images, kernel and bootloader. We have created a **meta-iotlab** layer which contains all customizations for IoT-LAB testbed like SSH keys management or IPv6 configuration. Actually we have two boards support:
 
@@ -32,17 +32,17 @@ We provide a Yocto Github repository [here](https://github.com/iot-lab/iot-lab-y
         <tr>
             <th>IoT-LAB A8-M3</th>
             <td>Krogoth</td>
-            <td>Variscite VAR-SOM-AM35 (AM3505) port: <br>
-                * [U-boot 2015.01](https://github.com/iot-lab/iot-lab-uboot/tree/2015.01)<br>
-                * [Linux 3.19.0](https://github.com/iot-lab/iot-lab-linux/tree/3.19.0)
+            <td>Variscite VAR-SOM-AM35 (AM3505) port<br>
+                <a href="https://github.com/iot-lab/iot-lab-uboot/tree/2015.01">U-boot 2015.01</a><br>
+                <a href="https://github.com/iot-lab/iot-lab-linux/tree/3.19.0">Linux 3.19.0</a>
             </td>
         </tr>
         <tr>
             <th>Raspberry PI3b(+)</th>
             <td>Thud (eg. branch thud_port)</td>
-            <td>[Meta-raspberrypi overlay](http://git.yoctoproject.org/cgit/cgit.cgi/meta-raspberrypi):
-                * Linux 4.4.13
-                [U-boot](https://github.com/iot-lab/iot-lab-uboot-rpi3) is built separately
+            <td> <a href="http://git.yoctoproject.org/cgit/cgit.cgi/meta-raspberrypi">Meta-raspberrypi overlay</a><br>
+                Linux 4.4.13<br>
+                <a href="https://github.com/iot-lab/iot-lab-uboot-rpi3">U-boot</a> is built separately
             </td>
         </tr>
     </tbody>
