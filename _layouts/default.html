@@ -20,9 +20,11 @@
             </div>
         {% endif %}
         </main>
+        {% unless layout.nofooter %}
         <footer class="bg-dark text-light">
             {% include footer.html %}
         </footer>
+        {% endunless %}
         {% include scripts.html %}
     </body>
 </html>
