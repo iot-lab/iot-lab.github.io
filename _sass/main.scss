@@ -1,4 +1,4 @@
-/*
+
 html {
   // Margin top by navbar height, used with .fixed-top navbar
   padding-top: 4.5rem
@@ -9,7 +9,7 @@ html {
   padding-top: 4.5rem;
   margin-top: -4.5rem;
 }
-*/
+
 header nav .navbar-brand img {
      height: 47px;
 }
@@ -29,6 +29,13 @@ footer .logo {
 
 #os.card-columns {
     column-count: 2;
+}
+
+/* Sidebar */
+.sidebar {
+    top: 4.5rem;
+    height: calc(100vh - 4.5rem);
+    overflow-y: auto;
 }
 
 /* Sidebar navigation */
@@ -73,9 +80,8 @@ footer .logo {
 
 /* Doc TOC */
 .doc-toc {
-    // background-color:#f3f3f3;
-    // top: 5rem;
-    height: calc(100vh - 6.5rem);
+    top: 4.5rem;
+    height: calc(100vh - 4.5rem);
     overflow-y: auto;
     font-size: 0.875rem;
 }
