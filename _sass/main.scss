@@ -31,6 +31,13 @@ footer .logo {
     column-count: 2;
 }
 
+/* Sidebar */
+.sidebar {
+    top: 4.5rem;
+    height: calc(100vh - 4.5rem);
+    overflow-y: auto;
+}
+
 /* Sidebar navigation */
 .sidenav .nav-item>.nav-link {
     color: rgba(0,0,0,.65);
@@ -74,7 +81,7 @@ footer .logo {
 /* Doc TOC */
 .doc-toc {
     top: 4.5rem;
-    height: calc(100vh - 4.5rem - 6.5rem);
+    height: calc(100vh - 4.5rem);
     overflow-y: auto;
     font-size: 0.875rem;
 }
