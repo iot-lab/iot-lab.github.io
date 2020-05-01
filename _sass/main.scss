@@ -73,9 +73,8 @@ footer .logo {
 
 /* Doc TOC */
 .doc-toc {
-    // background-color:#f3f3f3;
-    // top: 5rem;
-    height: calc(100vh - 6.5rem);
+    top: 4.5rem;
+    height: calc(100vh - 4.5rem - 6.5rem);
     overflow-y: auto;
     font-size: 0.875rem;
 }
