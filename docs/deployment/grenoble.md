@@ -29,7 +29,7 @@ description: "On the Grenoble site, the nodes are deployed in Inria Grenoble –
 
 </div>
 <div class="col-lg-6" markdown="1">
-<p><a href="https://www.openstreetmap.org/#map=19/45.21830/5.80703"><img src="/assets/images/deployments/grenoble/plan.png" alt="plan-grenoble" class="img-fluid" /></a></p>
+[![plan-grenoble]({{'/assets/images/deployments/grenoble/plan.png' | relative_url }}){: .img-fluid}](https://www.openstreetmap.org/#map=19/45.21830/5.80703)
 </div>
 </div>
 
@@ -47,6 +47,6 @@ See the video and photos below to visit the deployment across the building:
 </div>
 
 <br>
-<p><img src="/assets/images/deployments/grenoble/false-floors.png" alt="false-floors" />
-<img src="/assets/images/deployments/grenoble/false-ceilings.png" alt="false-ceilings" /></p>
+![false-floors]({{ '/assets/images/deployments/grenoble/false-floors.png' | relative_url }})
+![false-ceilings]({{ '/assets/images/deployments/grenoble/false-ceilings.png' | relative_url }})
 
