@@ -8,6 +8,7 @@
     - title: Resources
     - title: IPv6
     - title: Virtual machine
+    - title: Workspace
 
 - title: Boards
   pages:
@@ -28,6 +29,7 @@
     - title: BBC micro:bit
     - title: nRF52832-MDK
     - title: nRF52840-MDK
+    - title: Phytec Phynode KW2X
     - title: Pycom
     - title: LoRa gateway
     - title: RTL SDR
