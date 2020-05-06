@@ -2,7 +2,7 @@
   website: http://www.riot-os.org/
   img: logo-riot.png
   short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  boards: [IoT-LAB WSN430, IoT-LAB M3, Arduino Zero, BBC micro\:bit, Microchip SAMR21, Microchip SAMR30, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, nRF52832-MDK, nRF52840-MDK, NXP FRDM-KW41Z, Phytec PhyNODE-KW2X, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A, Zolertia Firefly]
+  boards: [IoT-LAB WSN430, IoT-LAB M3, Arduino Zero, BBC micro bit, Microchip SAMR21, Microchip SAMR30, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, nRF52832-MDK, nRF52840-MDK, NXP FRDM-KW41Z, Phytec PhyNODE-KW2X, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A, Zolertia Firefly]
 
 - name: Contiki-NG
   website: http://www.contiki-ng.org
