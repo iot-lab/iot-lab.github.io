@@ -27,7 +27,7 @@
     - { board: NXP FRDM-KW41Z, number: 5}
     - { board: nRF52840-MDK, number: 1}
     - { board: nRF52832-MDK, number: 1}
-    - { board: Phytec PhyNODE-KW41Z, number: 1}
+    - { board: Phytec PhyNODE-KW2X, number: 1}
     - { board: LoRa gateway, number: 1}
     - { board: Pycom, number: 5}
     - { board: RTL SDR, number: 3}

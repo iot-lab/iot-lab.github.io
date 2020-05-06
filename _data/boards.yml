@@ -63,7 +63,7 @@
     name: nRF52832-MDK
     board-id: nrf52832mdk
     mcu-soc: Cortex M4
-    radio: [802.15.4, BLE]
+    radio: [BLE]
 -
     name: nRF52840-MDK
     board-id: nrf52840mdk
@@ -95,7 +95,7 @@
     mcu-soc: Cortex M0
     radio: [802.15.4]
 -
-    name: Phytec PhyNODE-KW41Z
+    name: Phytec PhyNODE-KW2X
     board-id: phynode
     mcu-soc:
     radio: [802.15.4]
