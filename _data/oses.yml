@@ -14,6 +14,7 @@
   website: https://www.zephyrproject.org
   img: logo-zephyr.png
   short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  boards: [Arduino Zero, BBC micro bit, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, NXP FRDM-KW41Z, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A]
 
 - name: FreeRTOS
   website: https://www.freertos.org
@@ -24,6 +25,7 @@
 - name: MicroPython
   website: http://micropython.org
   img: logo-micropython.jpg
+  boards: [Pycom]
 
 - name: Yocto
   website: https://www.yoctoproject.org
