@@ -1,11 +1,7 @@
 ---
 title: MQTT
 group: tools
-description: This document shows how to exchange simple messages using the MQTT
-broker deployed in IoT-LAB and the mosquitto CLI clients installed on the SSH
-frontends. In this document, you will learn how to connect to the broker
-and then, you will subscribe to an MQTT topic and publish messages to an MQTT
-topic.
+description: This document shows how to exchange simple messages using the MQTT broker deployed in IoT-LAB and the mosquitto CLI clients installed on the SSH frontends. In this document, you will learn how to connect to the broker and then, you will subscribe to an MQTT topic and publish messages to an MQTT topic.
 ---
 
 ## Introduction
