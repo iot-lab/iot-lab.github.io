@@ -21,7 +21,7 @@ However, the Contiki-NG's build system enables compiling with arch directory at 
 
 ```bash
 git clone https://github.com/iot-lab/iot-lab-contiki-ng.git
-cd iot-la-contiki-ng
+cd iot-lab-contiki-ng
 ```
 
 It also includes a Contiki-NG release (version 4.4) as a git submodule, so, if you don't have to work with your specific Contiki-NG version, you can retrieve the submodule version with the following command:

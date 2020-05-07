@@ -47,7 +47,7 @@ sudo ethos_uhcpd.py <node-id> tap<num> fd00::1/64
 - `num` specifies a free tap interface (see below);
 - `fd00::1/64` is the default IPv6 prefix. It can be replaced by another local prefix, or even by a global prefix (see [IPv6]({{ '/docs/getting-started/ipv6' | relative_url }})).
 
-To list tap interface in currently in use, launch the following command on the SSH frontend:
+To list tap interface currently in use, launch the following command on the SSH frontend:
 ```bash
 <login>@<site>:~$ ip addr show | grep tap
 ```
