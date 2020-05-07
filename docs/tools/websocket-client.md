@@ -1,11 +1,7 @@
 ---
 title: Websocket client
 group: tools
-description: The websocket client is a powerful tool to aggregate serial port
-(UART) of all your experiment nodes even from different sites. This client
-automatically connects to the websocket server of each site and gather all
-connections in one call. Each websocket server connects to the devices of its
-site.
+description: The websocket client is a powerful tool to aggregate serial port (UART) of all your experiment nodes even from different sites. This client automatically connects to the websocket server of each site and gather all connections in one call. Each websocket server connects to the devices of its site.
 ---
 
 ## Restrictions
