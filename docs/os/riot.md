@@ -16,7 +16,12 @@ well as a full IPv6 network protocol stack including the latest standards of the
 IETF for connecting constrained systems to the Internet (6LoWPAN, IPv6, RPL, TCP
 and UDP).
 
-See the documentation on the [RIOT wiki](https://github.com/RIOT-OS/RIOT/wiki).
+Documentation on RIOT is available either on [the online docs](https://doc.riot-os.org)
+or on the [GitHub wiki](https://github.com/RIOT-OS/RIOT/wiki).
+
+Good RIOT tutorials are also available on GitHub:
+- [The RIOT course](https://github.com/riot-os/riot-course)
+- [The RIOT tutorials](https://github.com/riot-os/tutorials)
 
 ## Compilation from IoT-LAB SSH frontend
 
