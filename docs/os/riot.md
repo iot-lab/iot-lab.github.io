@@ -16,47 +16,39 @@ well as a full IPv6 network protocol stack including the latest standards of the
 IETF for connecting constrained systems to the Internet (6LoWPAN, IPv6, RPL, TCP
 and UDP).
 
-See [RIOT Quick Start Guide](https://github.com/RIOT-OS/RIOT/wiki/Quick-Start-Guide) in the RIOT wiki.
+See the documentation on the [RIOT wiki](https://github.com/RIOT-OS/RIOT/wiki).
 
-## Boards supported
+## Compilation from IoT-LAB SSH frontend
 
-Node type    |  Sources
------------     |  ----------
- M3             |  [RIOT/boards/iotlab-m3](https://github.com/RIOT-OS/RIOT/tree/master/boards/iotlab-m3)
- A8-M3          |  [RIOT/boards/iotlab-a8-m3](https://github.com/RIOT-OS/RIOT/tree/master/boards/iotlab-a8-m3)
- WSN430         |  [RIOT/boards/wsn430 (1.3b)](https://github.com/RIOT-OS/RIOT/tree/master/boards/wsn430-v1_3b), [RIOT/boards/wsn430 (1.4)](https://github.com/RIOT-OS/RIOT/tree/master/boards/wsn430-v1_4)
- SAMR21         |  [RIOT/boards/samr21-xpro](https://github.com/RIOT-OS/RIOT/tree/master/boards/samr21-xpro)
- Arduino Zero   |  [RIOT/boards/arduino-zero](https://github.com/RIOT-OS/RIOT/tree/master/boards/arduino-zero)
- ST-LRWAN1      |  [RIOT/boards/b-l072z-lrwan1](https://github.com/RIOT-OS/RIOT/tree/master/boards/b-l072z-lrwan1)
- ST-IOTNODE     |  [RIOT/boards/b-l475e-iot01a](https://github.com/RIOT-OS/RIOT/tree/master/boards/b-l475e-iot01a)
- nRF52840DK     |  [RIOT/boards/nrf52840dk](https://github.com/RIOT-OS/RIOT/tree/master/boards/nrf52840dk)
- NRF52DK        |  [RIOT/boards/nrf52dk](https://github.com/RIOT-OS/RIOT/tree/master/boards/nrf52dk)
- nRF51DK        |  [RIOT/boards/nrf51dk](https://github.com/RIOT-OS/RIOT/tree/master/boards/nrf51dk)
- FRDM-KW41Z     |  [RIOT/boards/frdm-kw41z](https://github.com/RIOT-OS/RIOT/tree/master/boards/frdm-kw41z)
- Firefly        |  [RIOT/boards/firefly](https://github.com/RIOT-OS/RIOT/tree/master/boards/firefly)
- Micro:bit      |  [RIOT/boards/microbit](https://github.com/RIOT-OS/RIOT/tree/master/boards/microbit)
-
-<br/><br/>
-
-## Use RIOT on IoT-LAB
-
-### Special IoT-LAB configuration
+// Do we set ARMv7 by default on SSH frontends?
+{: .text-warning }
 
 With recent versions of RIOT (2018.01+), the default version of the GNU
 Toolchain for ARM (4.9) doesn't work.
 
 RIOT recommends to use 7.2+. Before building any RIOT firmware on an SSH
-frontend, ensure RIOT related environment variables are correctly set:
+frontend, ensure RIOT related environment variables are correctly set with:
 
 ```sh
 source /opt/riot.source
 ```
 
-### Related tutorials
+## Border Router and IPv6 networking on IoT-LAB
 
-* [Running RPL routing with RIOT on M3 nodes](https://www.iot-lab.info/tutorials/rpl-riot)
-* [Public IPv6/6LoWPAN network on M3 nodes](https://www.iot-lab.info/tutorials/riot-public-ipv66lowpan-network-with-m3-nodes/)
-* [Public IPv6/6LoWPAN network on A8-M3 nodes](https://www.iot-lab.info/tutorials/riot-public-ipv66lowpan-network-with-a8-m3-nodes/)
-* [CoAP server with public IPv6/6LoWPAN network on M3 nodes](https://www.iot-lab.info/tutorials/coap-using-riot-with-m3-nodes)
-* [CoAP server with public IPv6/6LoWPAN network on A8-M3 nodes](https://www.iot-lab.info/tutorials/coap-riot-with-a8-m3-nodes/)
-* [MQTT-SN with RIOT on A8-M3 nodes](https://www.iot-lab.info/tutorials/mqtt-sn-using-riot-with-a8-m3-nodes)
+To connect to the serial link of your border router and propagate an IPv6 prefix through your network, RIOT provides the `ethos_uhcpd` tool. It uses the serial interface, ethos (Ethernet Over Serial) and UHCP (micro Host Configuration Protocol). Ethos multiplexes serial data to separate ethernet packets from shell commands. UHCP is in charge of configuring the wireless interface prefix and routes on the Border Router.
+
+Usually, it needs sudo privileges to be able to create a dedicated tap interface. Since the command has to be launched from the SSH frontend to have access to serial link, where you are not part of the sudoers, you have to use a wrapper we developed:
+
+```bash
+sudo ethos_uhcpd.py <node-id> tap<num> fd00::1/64
+```
+
+- `node-id` refers to the node acting as Border Router;
+- `num` specifies a free tap interface (see below);
+- `fd00::1/64` is the default IPv6 prefix. It can be replaced by another local prefix, or even by a global prefix (see [IPv6]({{ '/docs/getting-started/ipv6' | relative_url }})).
+
+To list tap interface in currently in use, launch the following command on the SSH frontend:
+```bash
+<login>@<site>:~$ ip addr show | grep tap
+```
+Choose one not in the list. You could use tap0 if there is not output.
