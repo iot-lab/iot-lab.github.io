@@ -124,7 +124,7 @@ m3-<id2>.saclay;
 ```
 
 Send a radio packet from only one device and verify the good reception on the
-other devices. Type `saclay,m3,<id1>;s+Enter' to send `s\n` on the serial port
+other devices. Type `saclay,m3,<id1>;s+Enter` to send `s\n` on the serial port
 of `m3-<id1>.saclay`:
 
 ``` bash
