@@ -154,7 +154,7 @@ $ iotlab-ws -l saclay,m3,1-3 -l grenoble,m3,1-5 -l lille,m3,10
 ```
 
 Finally it's important to remember that the serial port access is **exclusive**
-and thus it's possible to connect `iotlab-ws` to a device if the `nc` command
+and thus it's not possible to connect `iotlab-ws` to a device if the `nc` command
 is already connected to the serial redirection of the device.
 In this case, you will obtain this message:
 
