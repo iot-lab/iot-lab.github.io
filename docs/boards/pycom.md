@@ -38,3 +38,15 @@ Fipy boards.
 Each Fipy board is plugged on the
 [Pysense extension board](https://docs.pycom.io/datasheets/boards/pysense/)
 which provides access to several sensors.
+
+## Troubleshooting
+
+Some the REPL doesn't respond after the experiment startup (e.g. no display of
+`>>>` prompt when sending `Enter` on the serial port).
+In this case, one way to recover the REPL is to perform a power cycle of the
+board:
+
+```bash
+$ iotlab-node --stop
+$ iotlab-node --start
+```
