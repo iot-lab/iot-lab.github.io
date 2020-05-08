@@ -7,8 +7,8 @@ group: boards
 
 [Pycom](https://pycom.io/) is an a complete ecosystem for easy IoT development.
 The IoT-LAB testbed provides access to the
-[Pycom FiPY development boards](https://docs.pycom.io/products/). These boards
-can be programmed with [Micropython](https://micropython.org/) and feature
+[Pycom Fipy development boards](https://docs.pycom.io/products/). These boards
+can be programmed with [MicroPython](https://micropython.org/) and feature
 several wireless technologies: WiFi, BLE, SigFox, NB-IoT and LoRa.
 
 **Note:** it's not possible yet to use SigFox or NB-IoT because of missing
@@ -28,13 +28,13 @@ The Pycom FiPy is described in detail
 
 ## IoT-LAB special configuration
 
-IoT-LAB only provides access to the Micropython REPL of the firmware
+IoT-LAB only provides access to the MicroPython REPL of the firmware
 pre-installed on the boards via the usual serial redirection mechanism (use
 `nc` on port `20000` from the SSH frontend).
 
-It is not possible to reflash the Micropython firmware running on the Pycom
+It is not possible to reflash the MicroPython firmware running on the Pycom
 Fipy boards.
 
-Each FiPY is plugged on the
+Each Fipy board is plugged on the
 [Pysense extension board](https://docs.pycom.io/datasheets/boards/pysense/)
 which provides access to several sensors.
