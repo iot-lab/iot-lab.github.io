@@ -124,7 +124,7 @@ Edit the Pymakr global settings and change/add the `address` field as follows:
 ```
 
 Then use the control in the bottom menu of VSCode to Run/Upload/Download
-MicroPython sripts.
+MicroPython scripts.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/oses/micropython/' | relative_url}}pymakr-controls.png" style="width:300px;"/>
