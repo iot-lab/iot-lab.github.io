@@ -19,7 +19,7 @@ application.
 
 ## Software
 
-The software stack that is controlling the gateway is composed of:
+The software stack controlling the gateway is composed of:
 - the LoRa-net [packer forwarder](https://github.com/Lora-net/packet_forwarder)
   and [lora gateway SPI driver](https://github.com/Lora-net/lora_gateway)
 - the [chirpstack gateway bridge](https://www.chirpstack.io/gateway-bridge/overview/)
@@ -38,9 +38,9 @@ Users can control the gateway using the MQTT protocol on port 1883 from SSH
 frontend.
 
 There is no authentication required to connect to the MQTT broker
-running on the gateway, indeed, the IoT-LAB infrastructure add network
-filtering rules so only the user of the experiment can access to port 1883 of
-the gateway.
+running on the gateway. Indeed, the IoT-LAB infrastructure adds network
+filtering rules during the experiment startup phase so that only the user of
+the experiment can access to port 1883 of the gateway.
 
 MQTT topics follows the chipstack gateway bridge API:
 - uplink topic is `gateway/<gateway identifier>/rx`
