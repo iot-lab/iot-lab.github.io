@@ -55,10 +55,10 @@ $ sudo apt install gnuradio gr-osmosdr
 Here we provide an example of GNU radio workflow that allows to retrieve and
 display the RTL-SDR radio signal.
 
-1. Download this <a href="{{ '/assets/misc/docs/rtl-sdr/' | relative_url}}rtl_tcp.grc">sample GNU radio project</a>
+1. Download this <a href="{{ '/assets/misc/docs/rtl-sdr/rtl_tcp.grc' | relative_url }}">sample GNU radio project</a>
 
 ```bash
-$ wget https://iot-lab.github.io/www/assets/misc/docs/rtl-sdr/rtl_tcp.grc
+$ wget {{ site.url }}{{ '/assets/misc/docs/rtl-sdr/rtl_tcp.grc' | relative_url}}
 ```
 
 2. Start `gnuradio-companion` and open the project file you just downloaded:
@@ -70,7 +70,7 @@ $ gnuradio-companion rtl_tcp.grc
 You should end up with the following user interface:
 
 <div style="text-align:center">
-<img src="{{ '/assets/images/docs/boards/rtl-sdr/' | relative_url}}gnu-radio-ui.png" style="width:50%;"/>
+<img src="{{ '/assets/images/docs/boards/rtl-sdr/gnu-radio-ui.png' | relative_url}}" style="width:50%;"/>
 </div>
 
 **Note:** See the _Device Arguments_ field in the _RTL-SDR source_ box: it
@@ -84,10 +84,10 @@ Let's submit an experiment with one rtl-sdr and one LoRa board in the Saclay
 site.
 
 To send LoRa radio messages with the LoRa board, we will a prebuilt firmware
-that can be downloaded from [here]():
+that can be downloaded from [here]({% link /assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf %}):
 
 ```bash
-$ wget https://iot-lab.github.io/www/assets/firmwares/rtl-sdr/rtl-tcp-lora.elf
+$ wget {{ site.url }}{{ '/assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf' | relative_url}}
 ```
 
 The experiment can be submitted as follows:
@@ -138,7 +138,7 @@ $ gnuradio-companion rtl_tcp.grc
 The following window with the waterfall and spectrogram windows should appear:
 
 <div style="text-align:center">
-<img src="{{ '/assets/images/docs/boards/rtl-sdr/' | relative_url}}gnu-radio-waterfall.png" style="width:50%;"/>
+<img src="{{ '/assets/images/docs/boards/rtl-sdr/gnu-radio-waterfall.png' | relative_url}}" style="width:50%;"/>
 </div>
 
 Now, let's connect to the lora board serial port from the terminal running the
@@ -184,5 +184,5 @@ appear in the GNU Radio interface:
 ```
 
 <div style="text-align:center">
-<img src="{{ '/assets/images/docs/boards/rtl-sdr/' | relative_url}}gnu-radio-waterfall-2.png" style="width:50%;"/>
+<img src="{{ '/assets/images/docs/boards/rtl-sdr/gnu-radio-waterfall-2.png' | relative_url}}" style="width:50%;"/>
 </div>
