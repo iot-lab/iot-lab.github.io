@@ -48,7 +48,7 @@ In the Webortal go to the
 With command-line tools run the following commands:
 
 ``` bash
-$ wget https://iot-lab.github.io/www/assets/firmwares/docs/monitoring/tutorial_m3.elf
+$ wget {{ site.url }}{{ '/assets/firmwares/docs/monitoring/tutorial_m3.elf' | relative_url}}
 $ iotlab-auth -u <login> # optionally store your credentials if you haven't done it before.
 $ iotlab-experiment submit -d 20 -l 3,archi=m3:at86rf231+site=saclay,tutorial_m3.elf
 $ iotlab-experiment wait

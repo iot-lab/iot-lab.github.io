@@ -19,7 +19,7 @@ In the Webortal go to the [New Experiment](https://www.iot-lab.info/testbed/expe
 With command-line tools use these commands:
 
 ``` bash
-$ wget ?????/assets/firmwares/docs/monitoring/tutorial_m3.elf .
+$ wget {{ site.url }}{{ '/assets/firmwares/docs/monitoring/tutorial_m3.elf' | relative_url}} .
 $ iotlab-auth -u <login> # optionally store your credentials if you haven't done it before.
 $ iotlab-experiment submit -d 20 -l 3,archi=m3:at86rf231+site=grenoble,tutorial_m3.elf
 $ iotlab-experiment wait
