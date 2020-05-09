@@ -87,7 +87,7 @@ To send LoRa radio messages with the LoRa board, we will a prebuilt firmware
 that can be downloaded from [here]({% link /assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf %}):
 
 ```bash
-$ wget {{ site.url }}{{ site.baseurl }}{{ '/assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf' | relative_url}}
+$ wget {{ site.url }}{{ '/assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf' | relative_url}}
 ```
 
 The experiment can be submitted as follows:
