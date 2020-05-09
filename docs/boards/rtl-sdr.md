@@ -84,7 +84,7 @@ Let's submit an experiment with one rtl-sdr and one LoRa board in the Saclay
 site.
 
 To send LoRa radio messages with the LoRa board, we will a prebuilt firmware
-that can be downloaded from [here]({% link /assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf %}):
+that can be downloaded from [here]({{ '/assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf' | relative_url}}):
 
 ```bash
 $ wget {{ site.url }}{{ '/assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf' | relative_url}}
