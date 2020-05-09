@@ -55,7 +55,7 @@ $ sudo apt install gnuradio gr-osmosdr
 Here we provide an example of GNU radio workflow that allows to retrieve and
 display the RTL-SDR radio signal.
 
-1. Download this <a href="{{ '/assets/misc/docs/rtl-sdr/rtl_tcp.grc' | relative_url }}">sample GNU radio project</a>
+1. Download this [sample GNU radio project]({{ site.baseurl }}{% link assets/misc/docs/rtl-sdr/rtl_tcp.grc %})
 
 ```bash
 $ wget {{ site.url }}{{ '/assets/misc/docs/rtl-sdr/rtl_tcp.grc' | relative_url}}
