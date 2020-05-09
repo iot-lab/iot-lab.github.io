@@ -1,6 +1,7 @@
 title: FIT IoT-LAB
 description: The Very Large Scale IoT Testbed
 url: https://iot-lab.github.io
+baseurl: /www
 timezone: Europe/Paris
 
 defaults:
