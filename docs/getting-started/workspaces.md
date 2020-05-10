@@ -51,7 +51,13 @@ and [radio monitoring]({{ site.baseurl }}{% link docs/tools/radio-monitoring.md 
 
 ### Shared directory with Open Linux boards
 
+Each SSH frontend provides a directory that is shared with all Open Linux
+boards, such as the [A8]({{ site.baseurl }}{% link docs/boards/iotlab-a8-m3.md %}).
 
+This is directory is located in `~/shared` (formerly `~/A8`).
+
+You can use it to easily share firmwares or any kind of files between the
+frontend and the embedded Linux running on the Open Linux boards.
 
 ## The virtual machine
 
@@ -62,7 +68,7 @@ users to use IoT-LAB tools from their computer.
 
 The IoT-LAB virtual machine is built using [Packer](https://www.packer.io/). For
 details on the virtual machine setup, see
-[<i class="fab fa-github"></i> this Github repository](https://github.com/iot-lab/iot-lab-packer).
+[this Github <i class="fab fa-github"></i> repository](https://github.com/iot-lab/iot-lab-packer).
 
 To run the virtual machine on your computer, you have to install
 [VirtualBox](https://www.virtualbox.org/).
@@ -75,11 +81,11 @@ $ sudo apt-get update
 $ sudo apt-get install virtualbox
 ```
 
-## Start the VM
+### Start the VM
 
 The virtual machine is available in two formats.
 
-### Using the Open Virtual Appliance (OVA) file
+#### Using the Open Virtual Appliance (OVA) file
 
 An [OVA file](https://www.iot-lab.info/vagrant-box/iotlab-vm.ova) (Open Virtual Appliance format)
 
@@ -109,7 +115,7 @@ targets:
 	pull
 ```
 
-### Using vagrant
+#### Using vagrant
 
 [Vagrant](https://www.vagrantup.com/) is a virtual machine environment
 management tool. To start the IoT-LAB virtual machine using Vagrant, you first have
