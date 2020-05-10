@@ -52,7 +52,7 @@ and [radio monitoring]({{ site.baseurl }}{% link docs/tools/radio-monitoring.md 
 ### Shared directory with Open Linux boards
 
 Each SSH frontend provides a directory that is shared with all Open Linux
-boards, such as the [A8]({{ site.baseurl }}{% link docs/boards/iotlab-a8-m3.md %}).
+boards, such as the [A8]({{ site.baseurl }}{% link docs/boards/iot-lab-a8-m3.md %}).
 
 This is directory is located in `~/shared` (formerly `~/A8`).
 
