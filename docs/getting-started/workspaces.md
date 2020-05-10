@@ -61,8 +61,6 @@ frontend and the embedded Linux running on the Open Linux boards.
 
 ## The virtual machine
 
-### Description
-
 In parallel of the SSH frontend, IoT-LAB provides a virtual machine which allow
 users to use IoT-LAB tools from their computer.
 
