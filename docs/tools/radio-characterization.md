@@ -1,335 +1,202 @@
 ---
 title: Radio characterization
 group: tools
-description: |
-    We provide a (beta) dedicated tool to run experiments on the testbed that can map out the connectivity of nodes between each other.
-    It's been tested almost only IoT-LAB M3 nodes 
+description: We provide a dedicated tool to run experiments on the testbed that can map out the radio connectivity of nodes between each other.
 ---
 
 ## Principle
 
-The tool uses a [RIOT]({% link docs/os/riot.md %})-based firmware.
+All the nodes of an experiment are in receive mode (RX) at the start. Then each node, in turn, will pass in transmitter mode (TX) and send broadcast 802.15.4 raw packets with a time delay. Each node receiving the packets will record the good reception information with radio Received Signal Strength Indication (RSSI) and Link Quality indicator (LQI) values. This packet sending step will be performed for a given list of radio channels and transmission power.
 
-The tool presents as a CLI program with a certain number of subcommands to start a radio characterization experiment,
-parse the results from a radio characterization experiment, and also draw the results (through matplotlib)
+We can summarize as follows:
 
-1. The tool can start an experiment for you, with nodes selection, site selection etc...
-2. It redirects the serial communication from all the nodes to a local socket 
-3. It then communicates with the nodes firmware to test out message emissions between the nodes:
-
-    Example run with 3 nodes:
-    * for each channel, txpower pair:
-        * selects node 1
-        * node 2-3 listen for incoming broadcasts
-        * node 1 broadcasts a number of messages
-        * the tool queries nodes 2-3 to see which messages were received, and by whom
-        
-        * selects node 2, node 1+3 listen, node 2 broadcasts, same thing
-        * selects nodes 3, node 1-2 listen, node 3 broadcasts, same thing
-
-4. Once the experiment is over, it parses the logs of all the nodes, it can then know link quality between a source node
-and a receiving node, mainly the PDR (packet Delivery Ratio).
-5. Once the experiment results are parsed, the tool has generated a number of data files (by default, in the `experiments/<id>/` folder in the current working directory), see [Generated files](#generated-files)
-    
-In order to use the tool, you have to install it through `pip install iotlabradiotest`, or connect to a site's frontend
-using X redirection `ssh -X <username>@site.iot-lab.info` and use the tool there.
-
-## Limitations
-
-* Depending on the number It can take a few seconds per step. You can estimate your experiment minimum run time with formula : ``experiment run time = nb_nodes * nb_channels * nb_txpower * packets_interval * packets_numbers``
-* Some options for plotting results work only if nodes are on the same z level, and not aligned (all nodes with same x or same y).
-
-## Subcommands 
-
-`iotlab-radiotest --help` to get the full CLI help
-
-All subcommands, except `ls` and `start`, take an experiment ID as parameter e.g. `-i 185555`, if left empty 
-the subcommand will treat the latest radio characterization experiment.
-
-### start
-
-`iotlab-radiotest start` will:
-* start the experiment with the firmware
-* run the background listening for the outputs on the serial link,
-* collect the outputs
-* parse the results
-
-
-    Usage: iotlab-radiotest start [OPTIONS]
-    
-      Start a Radio-Test experiment
-    
-    Options:
-      --start_time DATE               Date-Time When to start the experiment,
-                                      otherwise the experiment is started ASAP
-      --config YAML_CONFIG_FILE       config file to use
-      -s, --site SITE                 site on which to start the experiment
-      -rt, --radio.txpowers COMMA-SEPARATED-FLOAT
-                                      list of transmission powers in dBm
-      -rc, --radio.channels COMMA-SEPARATED-INTEGER
-                                      list of radio channel: 11 -> 26 for 802.15.4
-      -ps, --packets.size INTEGER     packet size (bytes)
-      -pn, --packets.numbers INTEGER  number of packets
-      -pi, --packets.interval INTEGER
-                                      interval between packets (ms)
-      -d, --duration INTEGER          duration of the experiment in minutes
-      --help                          Show this message and exit.
-    
-    Archis/Nodes Options (<archi> any of st-lrwan1,m3,nrf52dk,samr21,a8,samr30):
-      --nodes.<archi> NODESSTRLIST  list: 1+4-6 or 1,4,5,6 for [1, 4, 5, 6]
-
-#### Configuration
-
-configuration is passed through CLI arguments or a yaml file. Many arguments have sensible defaults,
-like the channel list (channels 11,18,25 for 802.15.4) or the packet size, numbers, intervals:
-
-|      Parameter     | Default Value |            Unit           |
-|:------------------:|:-------------:|:-------------------------:|
-| radio.channel_list |    11,18,25   | Channel, or Hz (for LoRa) |
-|    radio.txpower   |       3       |            dBm            |
-|    packets.size    |       30      |           bytes           |
-|   packets.number   |      100      |                           |
-|  packets.interval  |      100      |             ms            |
-|      duration      |       20      |            min            |
-
-
-To use a config file instead of passing many command line arguments, use the `--config <path_to_config_yaml>` argument. 
-
-Example config.yaml:
-
-    site: lille
-    nodes:
-      m3: 12-14
-      samr21: [1, 2]
-    radio:
-      txpower: [-7,0,3]
-
-Then,
-
-    iotlab-radiotest start --config config.yaml
-
-will keep the default values for most of the parameters but use the Lille site, and use different TX power (-7, 0 and 3 dBm).
-It will use `IoT-LAB M3` nodes m3-12, m3-13, m3-14 and `SAMR21` nodes samr21-1, samr21-2. 
-
-You can also modify a single value in the config by using  CLI arguments.
-With the above config.yaml, these command lines are equivalent 
-
-```
-    iotlab-radiotest start --config config.yaml
-    iotlab-radiotest start --site lille --nodes.m3 12-14 --radio.txpower -7,0,3 --nodes.samr21 1,2
+```sh
+for every channel:
+    for every txpower:
+        for every node:
+            send_packets(nb_packets, packet_size, delay)
+            collect_all_receiver_logs
+            clear_all_receiver_logs
 ```
 
-### draw
+To perform the different step on the nodes (send packets, collect, clear) we use the serial port on which we send commands. Thanks to the
+[serial aggregator](/docs/tools/serial-aggregator/) tool which allows us to aggregate all serial ports of nodes very easily. We also manage error detection when receiving packets (eg. CRC16 & Magic Number, ...)
 
-`iotlab-radiotest draw -i <experiment_id>` can display the graph or connectivity/PDR/LQI/RSSI
 
-    Usage: iotlab-radiotest draw [OPTIONS] COMMAND [ARGS]...
+## Firmware
+
+The firmware that runs on the nodes is based on [RIOT OS](https://riot-os.org/) and used the [GNRC network stack](https://riot-os.org/api/group__net__gnrc.html) to send 802.15.4 packets. You can find the source code [here](https://github.com/iot-lab/iot-lab-radio/blob/master/iotlabradio/riot/radio-characterization/main.c). When a node sends packets the firmware builds each packet with a fixed header of 16 bytes as follows:
+
+
+    0       7 8     15 16    23 24    31
+    +--------+--------+--------+--------+
+    | magic number (*)|   CRC value     |
+    +--------+--------+--------+--------+
+    |  len(node id)   |   node id       |
+    +--------+--------+--------+--------+
+    |  packet number  |   txpower       |
+    +--------+--------+--------+--------+
+    |  channel        |   packet size   |
+    +--------+--------+--------+--------+
+    \                                   \
+    /        Each bytes is filled       /  0 or more bytes
+    \    with packet number (padding)   \
+    +-----------------------------------+
+
+    (*) = 0xADCE
+
+This firmware is originally based on the work of <a href="cedric.adjih@inria.fr">Cedric Adjih</a>:
+
+- [Firmware](https://github.com/adjih/openlab/tree/radio-exp/devel/radio_test) source code
+- [Paper](https://www.researchgate.net/publication/304285486_Lessons_Learned_from_Large-scale_Dense_IEEE802154_Connectivity_Traces) published at IEEE CASE 2015 conference
+
+
+## Launch a characterization
+
+The first step is to launch an experiment on IoT-LAB testbed and flash the firmware on nodes. The following example shows you how to book nodes
+on Grenoble site that are automatically allocated by the scheduler. If you want specific nodes or topologies you will have to adapt it.
+Another important point is that we use the serial aggregator tool to collect the data, so we need to run the radio setup on the IoT-LAB SSH frontend.
+
+```sh
+ssh <login>@grenoble.iot-lab.info
+<login>@grenoble:~$ source /opt/riot.source (eg. compilation toolchain)
+<login>@grenoble:~$ git clone --recursive https://github.com/iot-lab/iot-lab-radio
+<login>@grenoble:~$ cd iot-lab-radio
+<login>@grenoble:~$ make -C iotlabradio/riot/radio-characterization (eg. BOARD=iotlab-m3 in the Makefile)
+<login>@grenoble:~$ cp iotlabradio/riot/radio-characterization/bin/iotlab-m3/radio-characterization.elf .
+<login>@grenoble:~$ iotlab-experiment submit -d 60 -l 10,archi=m3:at86rf231+site=grenoble,radio-characterization.elf
+<login>@grenoble:~$ iotlab-experiment wait
+<login>@grenoble:~$ iotlab-radio
+```
+
+This setup is launched by default with following parameters:
+
+- all channels: [11..26]
+- all txpower: [-17, -12, -9, -7, -5, -4, -3, -2, -1, 0, 1, 2, 3]
+- number of packets: 100
+- packet size: 50 bytes
+- delay: 1 ms
+
+Of course you can modify this configuration with iotlab-radio command and choose another board when you compile the firmware.
+
+Another point is the time needed to carry out a characterization in order to choose an experiment duration. By default we use a default timeout of 5 seconds (can be changed with command option) to wait for the good firmware execution of the commands (set channel, set txpower, send packets, show logs, clear logs). Only send packets command timeout (`default timeout + delay*0,001*nb_packets`) is blocking. Indeed it's an assumption on the time it takes for other nodes to receive the packets. For other commands all the nodes send an acknowledgement and we're checking the good reception (maybe less than timeout).
+
+So you should estimate the maximum duration with this formula:
+
+```sh
+duration (seconds) = nb_channel*(timeout +
+                                 nb_power*timeout +
+                                 nb_power*nb_nodes*(3*timeout + delay*0,001*nb_packets))
+```
+
+## Radio logs data
+
+At the end of each characterization we save log files as follows:
+
+```sh
+logs/<exp_id>/<%Y%m%d-%H%M%S>/config.json
+logs/<exp_id>/<%Y%m%d-%H%M%S>/<channel>/<txpower>/<node_id>.json
+```
+
+Thus if you launch a setup with m3-1 and m3-2 on the Grenoble site for channel=[11, 12] and txpower=[-4, -3] you will obtain this tree structure on your filesystem:
+
+```sh
+.../11/-4/m3-1.json
+.../11/-4/m3-2.json
+.../11/-3/m3-1.json
+.../11/-3/m3-2.json
+.../12/-4/m3-1.json
+.../12/-4/m3-2.json
+...
+```
+
+In each JSON file you can find a list of all packets sended/received by a node during the radio characterization.
+
+For example when one node send packets (for given channel and txpower values) we use this log format:
+
+
+```
+{"nb_error": 0, "node_id": "126", "power": -17, "channel": 11,  "nb_pkt": 100,
+ "send": [{"pkt_num": 0, "pkt_send": 1}, {"pkt_num": 1, "pkt_send": 1}, ...]}
+```
+
+* **nb_error**: number of delivery failures
+* **node_id**: sender node id
+* **power**: radio transmission power
+* **channel**: radio channel
+* **nb_pkt**: number of packets sent
+* **send**: sent packets list
+  * **pkt_num**: packet number
+  * **pkt_send**: 1=Success/0=Failure (*)
     
-      Draw results
-    
-    Options:
-      -i, --id INTEGER  IoT-LAB experiment id  [default: (latest experiment)]
-      -s, --save        save image as file
-      --help            Show this message and exit.
-    
-    Commands:
-      connectivity  Draw connectivity results
-      graph         Draw Connectivity Graph
-      lqi           Draw lqi results
-      pdr           Draw pdr results
-      rssi          Draw rssi results
+(*) Result of gnrc_netapi_send function of RIOT OS.
 
-These drawing outputs are done through `matplotlib`, and some (pdr/lqi/rssi) are quite ugly if the topology is not 
-roughly flat on Z (for example, the Lille topology on multiple floors shows badly). 
+For one node which received packets (for given channel and txpower values) we use this log format:
 
-#### Configuration
+```
+{"nb_generic_error": 0, "nb_magic_error": 0, "nb_crc_error": 0, "nb_control_error": 0, "nb_pkt": 67, "node_id": "112", "power": -17, "channel": 11,
+ "recv": [{"lqi": 255, "pkt_num": 0, "rssi": -91}, { "lqi": 244, "pkt_num": 1, "rssi": -91}, ...]}
+```
 
-The subcommands all take a `--config` parameter and CLI parameter which work just like the one for `start`, example:
+* **nb_generic_error**: number of unknown packet error
+* **nb_magic_error**: number of magic number packet error
+* **nb_crc_error**:  number of corruption packet data error
+* **nb_control_error**: number of control packet data error (**)
+* **node_id**: sender node id (*)
+* **power**: radio transmission power (*)
+* **channel**: radio channel (*)
+* **nb_pkt**: number of packets received
+* **recv**: received packets list
+  * **pkt_num**: packet number (*)
+  * **rssi**: RSSI value
+  * **lqi**: LQI value
 
-    Usage: iotlab-radiotest draw pdr [OPTIONS]
-    
-      Draw pdr results
-    
-    Options:
-      -w, --wifis COMMA-SEPARATED-STRING
-                                      list of XYZName values, like 1,2,3,Wifi1
-                                      [multiple]
-      -s, --stability                 draw stability results
-      -s, --show_wifis                show WiFi APs
-      -s, --show_robots               show the robots
-      -s, --show_nodes                show the nodes
-      -r, --robots COMMA-SEPARATED-STRING
-                                      list of XYZName values, like 1,2,3,Robot1
-                                      [multiple]
-      -f, --font INTEGER              font size
-      -e, --elev FLOAT                elevation from which to draw
-      -a, --azim FLOAT                azimuth from which to draw
-      --config YAML_CONFIG_FILE       config file to use
-      --cluster                       show clusters
-      --help                          Show this message and exit.
- 
+(*) These values are extracted from packet data received
 
-The `--robots` and `--wifis` parameters are not really useful except when you know the position of Wifi APs and robot
-docks in the site.
-
-### parse
-
-`iotlab-radiotest parse -i <experiment_id>` parses the results independently from the `start`.
-
-    Usage: iotlab-radiotest parse [OPTIONS]
-    
-      Parse results of a Radio-Test experiment
-    
-    Options:
-      -i, --id INTEGER  IoT-LAB experiment id  [default: (latest experiment)]
-      --help            Show this message and exit.
-      
+(**) Packet data values has been changed (eg. sender node id|packet size|channel|power)
 
 
-    
+## Parsing radio logs data
 
-### clean
+we provide a command to parse the radio logs obtained. You can run it as follows:
 
-`iotlab-radiotest clean` cleans up parsed results for an experiment.
+```
+<login>@grenoble:~$ iotlab-radio-parse -p logs/<exp_id>/<%Y%m%d-%H%M%S>
+```      
 
-    Usage: iotlab-radiotest clean [OPTIONS]
-    
-      delete parsed experiment data
-    
-    Options:
-      -i, --id INTEGER  IoT-LAB experiment id  [default: (latest experiment)]
-      --help            Show this message and exit.
-      
-### ls
-
-`iotlab-radiotest ls` lists the experiments in the folder
-
-    Usage: iotlab-radiotest ls [OPTIONS]
-    
-      List Radio-Test experiments
-    
-    Options:
-      --help  Show this message and exit.
-
-Example output:
-
-        id  site          number of  date
-                              nodes
-    ------  ----------  -----------  ----------------
-    174546  grenoble             67  2019-08-09 11:34
-    178837  lille                44
-    182203  strasbourg           20
-    182205  strasbourg           20
-    182210  strasbourg           20
-    184652  strasbourg            3  2019-11-13 13:50
-    184653  strasbourg            3  2019-11-13 13:54
+The parsing uses [Pandas Python library](https://pandas.pydata.org/) to generate three csv files in the logs directory. Feel free to use this library to analyze and plotting the parsing results.
 
 
-### config
+* **recv-logs.csv**: all packets received (*) by nodes with the following format
 
-`iotlab-radiotest config` outputs the config of an experiment
+  ```csv
+  channel,power,rx_node,tx_node,pkt_num,rssi,lqi
+  11,-3,11,14,0,-75,255
+  11,-3,11,14,1,-75,255
+  11,-3,11,14,2,0,0
+  ...
+  ```
 
-    Usage: iotlab-radiotest config [OPTIONS]
-    
-      Show Radio-Test experiment config
-    
-    Options:
-      -i, --id INTEGER          IoT-LAB experiment id  [default: (latest
-                                experiment)]
-      -f, --format [yaml|json]  format of the output
-      --help                    Show this message and exit.
+  This is a total number (eg. theoretical) of packets received that you can calculate with this formula `(nb_channel*nb_power*nb_nodes*(nb_nodes-1)*nb_packet)`. You can find the packets that have not been received during radio characterization with LQI and RSSI values equal to 0.
+
+* **send-logs.csv**: all packets sent by nodes with the following format
+
+  ```csv
+  channel,power,tx_node,pkt_num,pkt_send
+  11,-3,11,0,1
+  11,-3,11,1,1
+  ...
+  ```
+
+  pkt_send = 0 in case of packet transmission error
+
+* **error-logs.csv**: all packet reception errors
+
+  ```csv
+  channel,power,rx_node,tx_node,generic,magic_number,crc,control
+  11,-3,11,14,0,0,0,0
+  11,-3,11,15,0,0,0,0
+  ...
+  ```
 
 
-Example output:
-
-    $ iotlab-radiotest config -i 184694
-    api_url: https://www.iot-lab.info/rest/
-    duration: 25
-    nodes:
-      m3: 10-20
-    packets:
-      interval: 10
-      numbers: 100
-      size: 30
-    radio:
-      channels:
-      - 11
-      txpowers:
-      - -17.0
-      - -9.0
-      - 0.0
-      - 3.0
-    site: strasbourg
-    version: 2
-
-`version` and `api_url` are only internally-used
-
-## Generated files
-
-### experiments/[id]/config.yaml
-
-Contains the description of the experiment that was started. It is the merge of the default parameter values, the passed
-config file, and the passed CLI parameters.
-
-### experiments/[id]/raw.log
-
-Contains the output of the experiment control, example:
-
-    2020-01-24 16:33:49,822 Starting experiment, output experiments/191460
-    2020-01-24 16:33:49,824 Connect to serial_aggregator
-    2020-01-24 16:33:49,834 Total items in command queue 610
-    2020-01-24 16:45:46,173 Queue is empty, exiting
-    2020-01-24 16:45:46,173 OK, all finished, parsing the results...
-    2020-01-24 16:45:46,177 Parsing IoT-LAB raw logs from experiments/191460/raw to experiments/191460/parsed
-    2020-01-24 16:45:46,457 parsing the connectivity...
-    2020-01-24 16:45:46,461 Parsing from experiments/191460/parsed to experiments/191460/parsed/link-*
-    2020-01-24 16:45:47,000 experiment 191460 stopped
-
-### experiments/[id]/raw/radio-ch[channel]-tx[txpower].log
-
-Contains the raw output of the back-and-forth communication between the tool and the nodes, for a given channel and txpower, example:
-
-    1579880114.265313;m3-3;> channel 26
-    1579880114.265834;m3-2;> channel 26
-    1579880114.266399;m3-3;success: set channel on interface 3 to 26
-    1579880114.266750;m3-3;> 
-    1579880114.267048;m3-2;success: set channel on interface 3 to 26
-    1579880114.267398;m3-2;> 
-    1579880114.267775;m3-1;> channel 26
-    1579880114.268040;m3-1;success: set channel on interface 3 to 26
-    1579880114.268299;m3-1;> 
-    1579880114.270788;samr21-15;> channel 26
-    1579880114.271287;samr21-14;> channel 26
-    1579880114.271540;samr21-14;success: set channel on interface 3 to 26
-    1579880114.272031;samr21-13;> channel 26
-    1579880114.272267;samr21-13;success: set channel on interface 3 to 26
-
-### experiments/[id]/parsed/avg-ch[channel]-tx[txpower].log
-
-Contains, for each node in he set, the average of the links from all the other nodes. Can be useful to identify nodes that
-are in a bad spot (e.g. located near a Wifi AP on a channel close to the one we target)
-
-### experiments/[id]/parsed/merge-ch[channel]-tx[txpower].log
-
-Contains the PDR, LQI, RSSI of each link between two nodes
-Example line:
- 
-    m3-1,m3-2,100,100,-43,255
-    
-Describes the link between m3-1 and m3-2, 100 packets were seen, 100 packets were valid, the average RSSI and LQI 
-(as reported by the radio module) is -43 dBm and 255 (maximum value) respectively. You can ignore the lines where
-the second element (tx_node) is empty. 
-
-### experiments/[id]/parsed/link-[link_quality]-tx[txpower].log
-
-link_quality can be good, bad or unbalanced.
-
-Taking a threshold at 90% PDR:
-* a good link is a link that is good (PDR >= 90%) for all the channels.
-* a bad link is a link that is bad (PDR < 90%) for all the channels.
-* an unbalanced link is a link that is not consistently good or bad
- 
-### experiments/[id]/parsed/graph-tx[txpower].json
- 
-Roughly the same thing as the link-* file, but it's a `networkx`-loadable graph file in JSON format, which contains
-the graph of the links between the nodes, with PDR/LQI/RSSI in the edges' data
