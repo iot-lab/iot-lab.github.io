@@ -157,3 +157,65 @@ p  # type 'p+Enter'
 ```
 
 Every time you connect and disconnect, the serial_aggregator program will start and stop, so the connections will take a few seconds to get ready.
+
+### Use Serial aggregator as a Python library
+
+It's very easy to write a Python script that uses the serial aggregator tool as a library. Below you can find an example of Python script that runs Serial aggregator on all nodes (with tutorial firmware) of the current experiment and displays the output that is written to the serial ports with the temperature command. As the serial links are accessible on the frontend SSH you need to create and launch this script on your home directory.
+
+```bash
+$ ssh <login>@grenoble.iot-lab.info
+# edit and copy the content of the script
+<login>@grenoble:~$ vi serial_lib.py
+<login>@grenoble:~$ python serial_lib.py
+1589473705.352797;Aggregator started
+m3-13: Chip temperature measure: 3.6552082E1
+m3-11: Chip temperature measure: 3.8052082E1
+m3-10: Chip temperature measure: 3.7220833E1
+m3-10: Chip temperature measure: 3.7220833E1
+m3-11: Chip temperature measure: 3.809375E1
+# you can filter the nodes list serial links
+<login>@grenoble:~$ python serial_lib.py -l grenoble,m3,<list_ids>
+...
+```
+
+***Python script:***
+
+
+```python
+#!/usr/bin/env python
+
+from __future__ import print_function
+import argparse
+import time
+import iotlabaggregator.common
+from iotlabaggregator.serial import SerialAggregator
+
+
+def read_line(identifier, line):
+    print("{}: {}".format(identifier, line))
+
+
+def main():
+    """ Launch serial aggregator.
+    """
+    parser = argparse.ArgumentParser()
+    iotlabaggregator.common.add_nodes_selection_parser(parser)
+    opts = parser.parse_args()
+    opts.with_a8 = False # redirect a8-m3 serial port
+    nodes = SerialAggregator.select_nodes(opts)
+    with SerialAggregator(nodes, line_handler=read_line) as aggregator:
+        while True:
+            try:
+                # send 't' on all serial links
+                # if you want to specify a list of nodes use
+                # aggregator.send_nodes([m3-<id1>, m3-<id2>], 't')
+                aggregator.broadcast("t")
+                time.sleep(2)
+            except KeyboardInterrupt:
+                print("Interrupted by user ...")
+                break
+
+
+if __name__ == "__main__":
+    main()
+```
