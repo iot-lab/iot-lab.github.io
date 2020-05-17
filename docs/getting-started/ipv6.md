@@ -64,7 +64,7 @@ selected IPv6 prefix mapped to the chosen M3 node. Collision or usurpation
 between users experiments are also taken into account.
 
 The following figure shows the IPv6 infrastructure for M3 nodes on one IoT-LAB site:
-![ipv6-m3]({{ '/assets/images/getting-started/ipv6_m3.png' | relative_url }})
+![ipv6-m3]({{ '/assets/images/docs//ipv6-m3.png' | relative_url }})
 
 
 ### A8 nodes
@@ -116,4 +116,4 @@ or
 For all availables A8 prefixes, see [IoT-LAB IPv6 subnets]({{ '/docs/getting-started/ipv6-subnets/' | relative_url }}).
 
 The following figure shows the IPv6 infrastructure for A8 nodes on one IoT-LAB site:
-![ipv6-a8]({{ '/assets/images/getting-started/ipv6_a8.png' | relative_url }})
+![ipv6-a8]({{ '/assets/images/docs/ipv6-a8.png' | relative_url }})
