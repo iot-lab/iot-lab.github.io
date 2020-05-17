@@ -8,7 +8,7 @@ description: "On the Lille site, the nodes are deployed in our two buidlings at 
 <div class="col-lg-6" markdown="1">
 ## Resources
 * In the [A building](#topology-in-the-a-building):
-    * 256 fixed IoT-LAB M3
+    * 256 IoT-LAB M3
     * 11 Zolertia Firefly
 * A set of different boards in [Le Cube](#le-cube):
     * 5 BBC micro:bit
