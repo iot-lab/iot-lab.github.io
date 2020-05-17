@@ -50,7 +50,7 @@ It is also through this link that the usual physical interaction links with the 
 
 **For boards running an embedded Linux:**
 - an SSH access to the Open Node is available through the classic 22 TCP port;
-- the A8 directory present in the user's workspace on the SSH frontend is mounted through NFS and accessible in the Open Node filesystem at `~/A8`.
+- the `~/shared` directory present in the user's workspace on the SSH frontend is mounted through NFS and accessible in the Open Node filesystem at the same path.
 
 <div class="col col-lg-10 offset-lg-1" markdown="1">
 ![]({{ '/assets/images/docs/design-hard-linux.png' | relative_url }}){:.img-fluid}
