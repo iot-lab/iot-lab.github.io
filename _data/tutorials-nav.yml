@@ -1,12 +1,8 @@
-- title: Getting started
+- title: Contiki
   pages:
-    - title: The 1st tutorial for beginners
-    - title: CLI tools
-
-- title: Contiki-ng
-  pages:
-    - title: Getting started
-
-- title: RIOT
-  pages:
-    - title: Getting started
+    - title: Get and compile firmware for M3 and A8-M3 nodes
+      desc: Compile a sensors collecting firmware example.
+      page: contiki-compilation
+    - title: Second tutorial
+      desc: This is the second tutorial described.
+      page: contiki-second
