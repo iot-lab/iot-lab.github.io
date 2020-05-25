@@ -11,7 +11,7 @@
     {%- endif -%}
 
     <div class="nav-item{% unless active == nil %} {{ active }}{% endunless %}">
-        <a class="nav-link{% unless active == nil %} {{ active }}{% endunless %}" href="{{ site.baseurl }}/tutorials/{{ group_slug }}/{% if link_slug %}{{ link_slug }}/{% endif %}">
+        <a class="nav-link{% unless active == nil %} {{ active }}{% endunless %}" href="{{ site.baseurl }}/learn/tutorials/{{ group_slug }}/{% if link_slug %}{{ link_slug }}/{% endif %}">
             <strong>{{ group.title }}</strong>
         </a>
         <ul class="nav flex-column">
@@ -23,7 +23,7 @@
             {%- endif -%}
 
             <li class="nav-item{% unless active == nil %} {{ active }}{% endunless %}">
-                <a class="nav-link{% unless active == nil %} {{ active }}{% endunless %}" href="{{ site.baseurl }}/tutorials/{{ group_slug }}/{{ tuto.page }}">
+                <a class="nav-link{% unless active == nil %} {{ active }}{% endunless %}" href="{{ site.baseurl }}/learn/tutorials/{{ group_slug }}/{{ tuto.page }}">
                     {{ tuto.title }}
                 </a>
             </li>

@@ -21,7 +21,7 @@ defaults:
     values:
       layout: "docs-os"
   - scope:
-      path: "tutorials/*"
+      path: "learn/tutorials/*"
     values:
       layout: "tutorials"
   - scope:
