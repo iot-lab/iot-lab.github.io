@@ -1,9 +1,9 @@
 ---
-board: IoT-LAB WSN430
+title: IoT-LAB WSN430
 group: boards
 ---
 
-The WSN430 open node is a WSN430 node based on a low power MSP430-based platform, with a fully functional ISM radio interface and a set of standard sensors. Concerning the radio, two versions are developed: Version 1.3b presents an open 868MHz radio interface while version 1.4 has an IEEE 802.15.4 radio interface at 2.4GHz. 
+The WSN430 open node is a WSN430 node based on a low power MSP430-based platform, with a fully functional ISM radio interface and a set of standard sensors. Concerning the radio, two versions are developed: Version 1.3b presents an open 868MHz radio interface while version 1.4 has an IEEE 802.15.4 radio interface at 2.4GHz.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/wsn430/' | relative_url}}archiopenwsn.png" style="width:50%;"/>
@@ -28,7 +28,7 @@ In details, the hardware components are :
 option for an external SMA antenna (The SMA connector is not mounted, but pads exists). The type is selected thanks to 2 capacitors (C5, C25 on design board) mounted or not. Note that the PCB antenna is designed to be used with a Varta Polyex battery at the node bottom for right radio propagation.
 
 
-WSN430 nodes in version 1.4 have a 2.4GHz radio interface. The radio chip is the [TI CC2420](http://www.ti.com/product/cc2420) radio chipset, offering a IEEE802.15.4-compliant interface. The chosen antenna is an omnidirectional SMD chip (reference Fractus Compact Reach Xtend). 
+WSN430 nodes in version 1.4 have a 2.4GHz radio interface. The radio chip is the [TI CC2420](http://www.ti.com/product/cc2420) radio chipset, offering a IEEE802.15.4-compliant interface. The chosen antenna is an omnidirectional SMD chip (reference Fractus Compact Reach Xtend).
 
 **Serial Number** -  An EEPROM serial number is available thanks to a Maxim [<i class="far fa-file-pdf"/>&nbsp;DS2411](http://datasheets.maximintegrated.com/en/ds/DS2411.pdf) chip, giving each node a unique identifier, readable by the MPS430 firmware over a 1-Wire interface.
 
@@ -42,7 +42,7 @@ The SensLAB node hardware is described in details in an [<i class="far fa-file-p
 
 Here are the two WSN430 schematics, one for each of the radio chips:
   * [<i class="far fa-file-pdf"/>&nbsp;WSN430V1.3B schematics (CC1101 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.3b-schema.pdf)
-  * [<i class="far fa-file-pdf"/>&nbsp;WSN430V1.4 schematics (CC2420 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.4-schema.pdf) 
+  * [<i class="far fa-file-pdf"/>&nbsp;WSN430V1.4 schematics (CC2420 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.4-schema.pdf)
 
 ## Dock
 
