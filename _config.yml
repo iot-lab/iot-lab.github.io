@@ -25,9 +25,17 @@ defaults:
     values:
       layout: "tutorials"
   - scope:
+      type: archives
+    values:
+      layout: "archive"
+  - scope:
       path: ""
     values:
       layout: "default"
+
+collections:
+    archives:
+        output: true
 
 permalink: pretty
 
