@@ -16,11 +16,12 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     ssh &lt;login&gt;@grenoble.iot-lab.info
     # only once to store credentials on the SSH frontend
     &lt;login&gt;@grenoble~$ iotlab-auth -u &lt;login&gt;
-    &lt;login&gt;@grenoble~$ wget ??/assets/firmwares/learn/cli-tools/tutorial_m3.elf .
+    &lt;login&gt;@grenoble~$ wget {{ site.url }}{{ 'assets/firmwares/learn/cli-tools/tutorial_m3.elf' | relative_url}} .
     &lt;login&gt;@grenoble~$ iotlab-experiment submit -n first-exp -d 20 -l 2,archi=m3:at86rf231+site=grenoble,tutorial_m3.elf
     # wait until the experiment's state is <i>Running</i>
     &lt;login&gt;@grenoble~$ iotlab-experiment wait
     </pre>
+
 
 2. View the nodes that have been assigned to you by the scheduler.
 
