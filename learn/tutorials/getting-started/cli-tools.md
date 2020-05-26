@@ -53,7 +53,7 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     &lt;login&gt;@grenoble~$ nc m3-&lt;id2&gt; 20000
     </pre>
 
-4. Play with the firmware shell and read sensors value (e.g. type t+ENTER) or send radio packets (e.g. type s+ENTER). You can note that as the scheduler provides you some nodes with the same radio neighborhood, when you send a radio packet (eg. broadcast mode) from one node the other one should display good reception information on the serial port.
+4. Play with the firmware shell and read sensors value (e.g. type t+ENTER) or send radio packets (e.g. type s+ENTER). You can note that as the scheduler provides you some nodes with the same radio neighborhood, when you send a radio packet (i.e. broadcast mode) from one node the other one should display good reception information on the serial port.
 
     <pre class="highlight">
     &lt;login&gt;@grenoble~$ nc m3-&lt;id1&gt; 20000
@@ -73,7 +73,10 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     </pre>
 
 
+Go Further
 
+* Consult the [CLI-tools]({{ site.baseurl }}{% link docs/tools/cli.md %}) documentation.
+* Learn how to aggregate all the serial port links of your nodes with [Serial Aggregator]({{ site.baseurl }}{% link docs/tools/serial-aggregator.md %}) tool.
 
 
  
