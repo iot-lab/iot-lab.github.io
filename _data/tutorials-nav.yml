@@ -3,6 +3,15 @@
     - title: Get and compile firmware for M3 and A8-M3 nodes
       desc: Compile a sensors collecting firmware example.
       page: contiki-compilation
-    - title: Second tutorial
-      desc: This is the second tutorial described.
-      page: contiki-second
+    - title: Public IPv6 (6LoWPAN/RPL) network with M3 nodes
+      desc: Deploy an IPv6 network with Contiki and RPL on M3 nodes.
+      page: contiki-public-ipv6-m3
+    - title: Public IPv6 (6LoWPAN/RPL) network with A8-M3 nodes
+      desc: Deploy an IPv6 network with Contiki and RPL on A8 nodes.
+      page: contiki-public-ipv6-a8-m3
+    - title: CoAP server with public IPv6/RPL/6LoWPAN network
+      desc: Deploy CoAP over an IPv6 network with Contiki and RPL.
+      page: contiki-coap-m3
+    - title: CoAP server with public IPv6/TCSH network and M3 nodes
+      desc: Improve CoAP over an IPv6 network with TSCH.
+      page: contiki-coap-tsch-m3
