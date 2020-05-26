@@ -84,10 +84,10 @@ Let's submit an experiment with one rtl-sdr and one LoRa board in the Saclay
 site.
 
 To send LoRa radio messages with the LoRa board, we will a prebuilt firmware
-that can be downloaded from [here]({{ '/assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf' | relative_url}}):
+that can be downloaded from [here]({{ site.baseurl }}{% link assets/firmwares/rtl-sdr-lora.elf %}):
 
 ```bash
-$ wget {{ site.url }}{{ '/assets/firmwares/docs/rtl-sdr/rtl-sdr-lora.elf' | relative_url}}
+$ wget {{ site.url }}{{ '/assets/firmwares/rtl-sdr-lora.elf' | relative_url}}
 ```
 
 The experiment can be submitted as follows:
@@ -148,7 +148,7 @@ SSH tunnel:
 <login>@saclay:~$ nc st-lrwan1-<id> 20000
 main(): This is RIOT! (Version: 2020.04)
 Welcome to RIOT!
-> 
+>
 ```
 
 Using `ifconfig` command of the RIOT shell, check the radio configuration of
@@ -157,9 +157,9 @@ the LoRa interface on the board:
 ```
 > ifconfig
 ifconfig
-Iface  4  Frequency: 868299987Hz  BW: 125kHz  SF: 12  CR: 4/8 
-           TX-Power: 14dBm  State: SLEEP 
-          L2-PDU:6911 
+Iface  4  Frequency: 868299987Hz  BW: 125kHz  SF: 12  CR: 4/8
+           TX-Power: 14dBm  State: SLEEP
+          L2-PDU:6911
 ```
 
 The frequency is `868299987Hz` so it should be adapted to be within the GNU
@@ -171,9 +171,9 @@ ifconfig 4 set freq 868200000
 success: set frequency [in Hz] on interface 4 to 868200000
 > ifconfig
 ifconfig
-Iface  4  Frequency: 868199951Hz  BW: 125kHz  SF: 12  CR: 4/8 
-           TX-Power: 14dBm  State: SLEEP 
-          L2-PDU:6911 
+Iface  4  Frequency: 868199951Hz  BW: 125kHz  SF: 12  CR: 4/8
+           TX-Power: 14dBm  State: SLEEP
+          L2-PDU:6911
 ```
 
 Using the `txtsnd` command, you can send raw LoRa radio packets and see them

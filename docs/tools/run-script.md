@@ -115,10 +115,10 @@ echo "Launch serial_aggregator with exp_id==${EXP_ID}" >&2
 serial_aggregator -i ${EXP_ID} 2> /dev/null 1> ${OUTFILE}
 ```
 
-And here is the submit command using this script and the [sensors.elf]({{ '/assets/firmwares/docs/run-script/sensors.elf' | relative_url}}) firmware, which prints sensors values on the serial port, with 5 IoT-LAB M3 nodes on the Grenoble site.
+And here is the submit command using this script and the [riot-sensors.elf]({{ site.baseurl }}{% link assets/firmwares/riot-sensors.elf %}) firmware, which prints sensors values on the serial port, with 5 IoT-LAB M3 nodes on the Grenoble site.
 
 ``` bash
 iotlab-experiment submit -d 20 \
-    -l 5,archi=m3:at86rf231+site=grenoble,sensors.elf \
+    -l 5,archi=m3:at86rf231+site=grenoble,riot-sensors.elf \
     --site-association grenoble,script=serial_script.sh
 ```

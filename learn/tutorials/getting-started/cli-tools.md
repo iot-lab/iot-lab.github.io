@@ -16,7 +16,7 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     ssh &lt;login&gt;@grenoble.iot-lab.info
     # only once to store credentials on the SSH frontend
     &lt;login&gt;@grenoble~$ iotlab-auth -u &lt;login&gt;
-    &lt;login&gt;@grenoble~$ wget {{ site.url }}{{ 'assets/firmwares/learn/cli-tools/tutorial_m3.elf' | relative_url}} .
+    &lt;login&gt;@grenoble~$ wget {{ site.url }}{{ 'assets/firmwares/tutorial_m3.elf' | relative_url}} .
     &lt;login&gt;@grenoble~$ iotlab-experiment submit -n first-exp -d 20 -l 2,archi=m3:at86rf231+site=grenoble,tutorial_m3.elf
     # wait until the experiment's state is <i>Running</i>
     &lt;login&gt;@grenoble~$ iotlab-experiment wait
@@ -30,13 +30,13 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     {
     "items": [
             {
-            "archi": "m3:at86rf231", 
-            "network_address": "m3-1.grenoble.iot-lab.info", 
-            "site": "grenoble", 
+            "archi": "m3:at86rf231",
+            "network_address": "m3-1.grenoble.iot-lab.info",
+            "site": "grenoble",
             ...
             }
         ]
-    } 
+    }
 
     </pre>
 
@@ -57,7 +57,7 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
 
     <pre class="highlight">
     &lt;login&gt;@grenoble~$ nc m3-&lt;id1&gt; 20000
-    cmd > 
+    cmd >
 
     IoT-LAB Simple Demo program
     Type command
@@ -77,6 +77,3 @@ Go Further
 
 * Consult the [CLI-tools]({{ site.baseurl }}{% link docs/tools/cli.md %}) documentation.
 * Learn how to aggregate all the serial port links of your nodes with [Serial Aggregator]({{ site.baseurl }}{% link docs/tools/serial-aggregator.md %}) tool.
-
-
- 
