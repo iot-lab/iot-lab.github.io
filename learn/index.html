@@ -2,26 +2,33 @@
 layout: base
 ---
 <section>
-    <h1 class="display-4 mt-3">Getting started</h1>
-    <div class="d-flex">
-        <div class="m-1 p-4 flex-grow-1 bg-light">
-            <p>The <strong>Webportal</strong>, the easiest and fastest way for beginners to launch an experiment and interact with your node, explained in video.</p>
-            <a href="#"><img class="img-fluid mb-3" src="https://douglasgreen.com/wp-content/uploads/2014/03/video-play-btn-featured.png" alt=""></a>
+    <h1 class="display-4 mt-3">The first experiment for beginners</h1>
+    <div class="row mx-0 mt-3 border">
+        <div class="col-lg-9 lead p-4 bg-dark text-white">
+            <p>The <strong>Webportal</strong> is the easiest and fastest way for beginners to launch an experiment and interact with the node.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DzUPr2jTEw8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="m-1 p-4 bg-light">
-            <p>With <strong>CLI tools</strong>, use the testbed from a terminal, allowing more advanced usage and automation.</p>
-            <p>
-                <a href="{{ site.baseurl }}{% link learn/getting-started/cli-tools.md %}">
+        <div class="col lead p-4 bg-light">
+            <p>You can do exactly the same with the <strong>CLI tools</strong> from a terminal, allowing more advanced usage and automation.</p>
+            <p class="text-center">
+                <a href="{{ site.baseurl }}{% link learn/getting-started/cli-tools.md %}" class="btn btn-lg btn-dark">
                     <i class="fas fa-terminal fa-3x"></i><br>
-                    CLI tools with boards based on a microcontroller
+                    See instructions
                 </a>
             </p>
-            <p>
-                <a href="#">
-                    <i class="fas fa-terminal fa-3x"></i><br>
-                    CLI tools with boards running an embedded Linux
-                </a>
-            </p>
+        </div>
+    </div>
+    <div class="d-flex flex-row mt-3 border bg-light align-items-center">
+        <div class="p-4">
+            <a href="{{ site.baseurl }}{% link learn/getting-started/cli-tools.md %}" class="btn btn-lg btn-outline-dark">
+                <i class="fas fa-terminal fa-2x"></i><br>
+                See instructions
+            </a>
+        </div>
+        <div class="p-4 flex-grow-1">
+            Compared to boards based on a microcontroller, using boards running an embedded Linux is a bit different. Run a first experiment, using CLI Tools again, to give it a try.
         </div>
     </div>
 </section>
