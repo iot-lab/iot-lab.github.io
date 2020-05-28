@@ -6,7 +6,7 @@ title: CLI tools
 <i class="fas fa-grin-beam-sweat"></i> **Difficulty**: Easy  
 <i class="fas fa-stopwatch"></i> **Duration**: 20 minutes
 
-_**Prerequisites**: [Configure SSH Access]({{ site.baseurl }}{% link docs/getting-started/ssh-access.md %})_
+_**Prerequisites**: [IoT-LAB M3 board]({{ site.baseurl }}{% link docs/boards/iot-lab-m3.md %}) / [Configure SSH Access]({{ site.baseurl }}{% link docs/getting-started/ssh-access.md %})_
 
 _**Description**: The aim of this first tutorial is to discover the IoT-LAB testbed tools by creating and submitting your first experiment, and then interact with running nodes. You will book onto the SSH frontend with CLI tools two M3 nodes on the Grenoble site, set them up with a sample firmware file, and deploy it on them. Once deployed, you will interact with the firmware running on the nodes, read sensor values and send radio packets through a terminal._
 
