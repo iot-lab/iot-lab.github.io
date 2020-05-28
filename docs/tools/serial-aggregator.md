@@ -130,6 +130,24 @@ m3-<id>.grenoble.iot-lab.info [172.16.10.100] 20000 (?) : Connection refused
 
 ## Advanced usage
 
+
+### Run serial aggregator with Linux nodes and embed co-microcontroller
+
+As a prerequisite you should consult this [tutorial]({{ site.baseurl }}{% link learn/tutorials/getting-started/linux-cli-tools.md %}) to learn how to run an experiment with Linux nodes. It is possible to forward the serial port (i.e. UART) of the co-microcontroller with a TCP socket on port 20000. To do this an initd script is provided on the Linux nodes which uses the socat command.
+
+``` bash
+$ ssh <login>@grenoble.iot-lab.info
+<login>@grenoble:~$ ssh root@node-a8-1
+root@node-a8-1:~# /etc/init.d/serial_redirection start
+Starting serial_redirection: 0
+```
+Then you can use serial_aggregator with a Linux node like a standard microcontroller by specifying the following option
+
+
+``` bash
+<login>@grenoble:~$ serial_aggregator --with-a8
+```
+
 ### Run serial aggregator on your computer
 
 You can run the serial_aggregator directly from your computer using ssh tunnel. The input and output will be directly available on your computer.
