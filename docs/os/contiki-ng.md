@@ -58,4 +58,4 @@ sudo tunslip6.py -v2 -L -a <node-id> -p 20000 fd00::1/64
 ```
 
 - The usual `-s` option to specify the local device, is replaced by the `-a` and `-p` options to specify respectively server address and server port. It points at the TCP redirection of the border router serial link.
-- `fd00::1/64` is the default IPv6 prefix. It can be replaced by another local prefix, or even by a global prefix (see [IPv6]({{ '/docs/getting-started/ipv6' | relative_url }})).
+- `fd00::1/64` is the virtual network interface (i.e. TUN) IPv6 address. This address is of the form `<ipv6_prefix>::1`. The prefix can be replaced by another local prefix, or even by a global prefix (see [IPv6]({{ '/docs/getting-started/ipv6' | relative_url }})).
