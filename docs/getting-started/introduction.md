@@ -46,5 +46,4 @@ Upload your firmware(s). Select the nodes that you want to use, regarding their 
 
 ## Learn
 
-The documentation here will bring you a lot of information regarding the features and possibilities of the testbed. But we also added more practical examples through our [Tutorials]()
-and [Notebook trainings]().
+The documentation here will bring you a lot of information regarding the features and possibilities of the testbed. But we also added more practical examples. Visit the [Learn]({{ site.baseurl }}{% link learn/index.html %}) page.
