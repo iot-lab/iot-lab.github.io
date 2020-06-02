@@ -1,10 +1,5 @@
 ---
 -
-    name: IoT-LAB WSN430
-    board-id: wsn430
-    mcu-soc: TI MSP430
-    radio: [802.15.4]
--
     name: IoT-LAB M3
     board-id: m3
     mcu-soc: Cortex M3
