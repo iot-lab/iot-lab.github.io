@@ -1,18 +1,17 @@
 ---
 title: IoT-LAB WSN430
-group: boards
 ---
 
 The WSN430 open node is a WSN430 node based on a low power MSP430-based platform, with a fully functional ISM radio interface and a set of standard sensors. Concerning the radio, two versions are developed: Version 1.3b presents an open 868MHz radio interface while version 1.4 has an IEEE 802.15.4 radio interface at 2.4GHz.
 
 <div style="text-align:center">
-<img src="{{ '/assets/images/docs/boards/wsn430/' | relative_url}}archiopenwsn.png" style="width:50%;"/>
+<img src="{{ '/assets/images/archives/' | relative_url}}wsn430-archi.png" style="width:50%;"/>
 </div>
 
 ## Schematics and Datasheets
 
 <div style="text-align:center">
-<img src="{{ '/assets/images/docs/boards/wsn430/' | relative_url}}wsn430.png" style="width:50%;"/>
+<img src="{{ '/assets/images/archives/' | relative_url}}wsn430-impl.png" style="width:50%;"/>
 </div>
 
 In details, the hardware components are :
@@ -41,8 +40,8 @@ WSN430 nodes in version 1.4 have a 2.4GHz radio interface. The radio chip is the
 The SensLAB node hardware is described in details in an [<i class="far fa-file-pdf"/>&nbsp;ANR report](http://github.com/iot-lab/iot-lab/wiki/Docs/senslab-deliverable-d1.1a.pdf)  
 
 Here are the two WSN430 schematics, one for each of the radio chips:
-  * [<i class="far fa-file-pdf"/>&nbsp;WSN430V1.3B schematics (CC1101 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.3b-schema.pdf)
-  * [<i class="far fa-file-pdf"/>&nbsp;WSN430V1.4 schematics (CC2420 radio)](http://github.com/iot-lab/iot-lab/wiki/Docs/3-wsn430-v1.4-schema.pdf)
+  * [<i class="far fa-file-pdf"/> WSN430V1.3B schematics (CC1101 radio)]({{ site.baseurl }}{% link assets/misc/archives/wsn430-v1.3b-schema.pdf %})
+  * [<i class="far fa-file-pdf"/> WSN430V1.4 schematics (CC2420 radio)]({{ site.baseurl }}{% link assets/misc/archives/wsn430-v1.4-schema.pdf %})
 
 ## Dock
 
