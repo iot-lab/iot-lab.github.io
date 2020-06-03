@@ -8,17 +8,16 @@
             {% include navigation.html %}
         </header>
         <main role="main">
-        {% if layout.style == "fullwidth" or page.style == "fullwidth" %}
-            {{ content }}
-        {% elsif layout.style == "fluid" or page.style == "fluid" %}
-            <div class="container-fluid">
+        {% capture css-class %}
+            {% if layout.style == "fullwidth" or page.style == "fullwidth" %}
+            {% elsif layout.style == "fluid" or page.style == "fluid" %}container-fluid
+            {% elsif layout.style == "reduced" or page.style == "reduced" %}container container-reduced py-md-4
+            {% else %}container py-md-3
+            {% endif %}
+        {% endcapture %}
+            <div{% unless css-class == '' %} class="{{ css-class }}"{% endunless %}>
                 {{ content }}
             </div>
-        {% else %}
-            <div class="container py-md-3">
-                {{ content }}
-            </div>
-        {% endif %}
         </main>
         {% unless layout.nofooter %}
         <footer class="bg-dark text-light">
