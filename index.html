@@ -238,21 +238,28 @@ style: fullwidth
         <div class="card-columns mt-5">
         {% for os in site.data.oses %}
             <div class="card border-0 shadow m-3">
+                <a href="{{ '/docs/os/' | relative_url }}{{ os.name | slugify }}">
                 {% if os.img %}
                 <img class="card-img-top pt-3 px-3" src="{{ '/assets/images/oses/' | relative_url }}{{ os.img }}" class="card-img" title="{{ os.name }}" alt="{{ os.name }}">
                 {% else %}
                 <h4 class="pt-3 text-center">{{ os.name }}</h4>
                 {% endif %}
+                </a>
                 <div class="card-body">
                     <hr>
                     <p class="card-text">{{ os.short-desc }}</p>
                 </div>
-                {% assign iotlab-support = os.boards | where_exp:"item", "item contains 'IoT-LAB'" %}
+                <!-- {% assign iotlab-support = os.boards | where_exp:"item", "item contains 'IoT-LAB'" %}
                 {% if iotlab-support %}
+                {{ iotlab-support }} -->
                 <div class="card-footer w-100 badge badge-primary">
                     IoT-LAB board support
-                    {% for board in iotlab-support %}
-                    <span class="badge badge-light">{{ board | replace: "IoT-LAB ", "" }}</span>
+                    {% for board in site.data.boards %}
+                      {% if os.boards contains board.name and board.name contains "IoT-LAB" %}
+                        <a href="{{ '/docs/boards/' | relative_url }}{{ board.name | slugify }}">
+                          <span class="badge badge-light">{{ board.name }}</span>
+                        </a>
+                      {% endif %}
                     {% endfor %}
                 </div>
                 {% endif %}
