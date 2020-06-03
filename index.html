@@ -249,17 +249,14 @@ style: fullwidth
                     <hr>
                     <p class="card-text">{{ os.short-desc }}</p>
                 </div>
-                <!-- {% assign iotlab-support = os.boards | where_exp:"item", "item contains 'IoT-LAB'" %}
-                {% if iotlab-support %}
-                {{ iotlab-support }} -->
+                {% assign iotlab-support = os.boards | where_exp:"item", "item contains 'IoT-LAB'" %}
+                {% if iotlab-support.size > 0 %}
                 <div class="card-footer w-100 badge badge-primary">
                     IoT-LAB board support
-                    {% for board in site.data.boards %}
-                      {% if os.boards contains board.name and board.name contains "IoT-LAB" %}
-                        <a href="{{ '/docs/boards/' | relative_url }}{{ board.name | slugify }}">
-                          <span class="badge badge-light">{{ board.name }}</span>
-                        </a>
-                      {% endif %}
+                    {% for board in iotlab-support %}
+                    <a href="{{ '/docs/boards/' | relative_url }}{{ board | slugify }}">
+                      <span class="badge badge-light">{{ board }}</span>
+                    </a>
                     {% endfor %}
                 </div>
                 {% endif %}
