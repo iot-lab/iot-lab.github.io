@@ -23,7 +23,7 @@
     name: Zolertia Firefly
     board-id: firefly
     mcu-soc: Cortex M3
-    radio: [802.15.4, Sub-GhZ]
+    radio: [802.15.4, Sub-GHz]
 -
     name: ST B-L072Z-LRWAN1
     board-id: st-lrwan1
@@ -33,7 +33,7 @@
     name: ST B-L475E-IOT01A
     board-id: st-iotnode
     mcu-soc: Cortex M4
-    radio: [Sub-GhZ, wifi, BLE]
+    radio: [Sub-GHz, wifi, BLE]
 -
     name: Nordic nRF52DK
     board-id: nrf52dk
