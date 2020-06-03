@@ -73,7 +73,7 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     </pre>
 
 
-Go Further
+## Go Further
 
 * Consult the [CLI-tools]({{ site.baseurl }}{% link docs/tools/cli.md %}) documentation.
 * Learn how to aggregate all the serial port links of your nodes with [Serial Aggregator]({{ site.baseurl }}{% link docs/tools/serial-aggregator.md %}) tool.

@@ -137,7 +137,7 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     </pre>
 
 
-Go Further
+## Go Further
 
 * Consult the [SSH-CLI]({{ site.baseurl }}{% link docs/tools/ssh-cli.md %}) command-line tools documentation. It allows you to interact remotely with Linux nodes and automate actions such as waiting for the end of the boot, flashing a firmware on the co-microcontroller. 
 
