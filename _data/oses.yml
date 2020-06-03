@@ -1,34 +1,35 @@
 - name: RIOT
   website: http://www.riot-os.org/
   img: logo-riot.png
-  short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  short-desc: <strong>RIOT</strong> is a real-time multi-threading operating system that explicitly considers devices with minimal resources but eases development across the wide range of devices that are typically found in the Internet of Things.
   boards: [IoT-LAB WSN430, IoT-LAB M3, Arduino Zero, BBC micro bit, Microchip SAMR21, Microchip SAMR30, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, nRF52832-MDK, nRF52840-MDK, NXP FRDM-KW41Z, Phytec PhyNODE-KW2X, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A, Zolertia Firefly]
 
 - name: Contiki-NG
   website: http://www.contiki-ng.org
   img: logo-contiking.png
-  short-desc: <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  short-desc: <strong>Contiki-NG</strong> is an open-source, cross-platform operating system for Next-Generation IoT devices.
   boards: [IoT-LAB M3, Microchip SAMR21, Zolertia Firefly, ST B-L072Z-LRWAN1]
 
 - name: Zephyr
   website: https://www.zephyrproject.org
   img: logo-zephyr.png
-  short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  short-desc: <strong>Zephyr</strong>, a Linux Foundation hosted Collaboration Project, is an open source collaborative effort uniting leaders from across the industry to build a best-in-breed small, scalable, real-time operating system (RTOS) optimized for resource-constrained devices, across multiple architectures.
   boards: [Arduino Zero, BBC micro bit, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, NXP FRDM-KW41Z, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A]
 
 - name: FreeRTOS
   website: https://www.freertos.org
   img: logo-freertos.jpg
-  short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  short-desc: <strong>FreeRTOS</strong> is a real-time operating system for microcontrollers. Developed in partnership with the world’s leading chip companies over a 15-year period, and now downloaded every 175 seconds, FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors.
   boards: [IoT-LAB M3]
 
 - name: MicroPython
   website: http://micropython.org
   img: logo-micropython.jpg
+  short-desc: <strong>MicroPython</strong> is an implementation of the Python programming language designed for highly constrained hardware platforms such as microcontrollers.
   boards: [Pycom]
 
 - name: Yocto
   website: https://www.yoctoproject.org
   img: logo-yocto.png
-  short-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  short-desc: <strong>Yocto</strong> is an open-source project from the Linux Foundation which allows the creation of embedded Linux distributions.
   boards: [IoT-LAB A8-M3]
