@@ -25,6 +25,12 @@ defaults:
     values:
       layout: "tutorials"
   - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      style: "reduced"
+  - scope:
       type: archives
     values:
       layout: "archive"
