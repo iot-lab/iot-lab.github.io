@@ -3,7 +3,7 @@ group: riot
 title: Public IPv6 (6LoWPAN/RPL) network with M3 nodes
 ---
 
-<i class="fas fa-grin-beam-sweat"></i> **Difficulty**: High  
+<i class="fas fa-grin-beam-sweat"></i> **Difficulty**: Medium
 <i class="fas fa-stopwatch"></i> **Duration**: 45 minutes
 
 _**Prerequisites**: [Configure SSH Access]({{ site.baseurl }}{% link
