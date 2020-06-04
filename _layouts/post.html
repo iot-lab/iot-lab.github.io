@@ -9,7 +9,7 @@ layout: default
     <h2>Recent posts</h2>
     <ul>
     {% for post in site.posts limit:3  %}
-        <li><h4><a href="{{ post.url }}">{{ post.title }}</a> <small class="text-muted">{{ post.date | date_to_string }}</small></h4></li>
+        <li><h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <small class="text-muted">{{ post.date | date_to_string }}</small></h4></li>
     {% endfor %}
     </ul>
 </div>
