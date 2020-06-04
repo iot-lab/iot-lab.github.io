@@ -1,0 +1,19 @@
+---
+title: Blog
+description: "All IoT-LAB Blog posts by year"
+layout: base
+style: reduced
+---
+
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% for year in postsByYear %}
+<h2>{{ year.name }}</h2>
+<ul class="list-unstyled">
+{% for post in year.items %}
+    <li class="mb-2">
+      <span class="float-right text-muted">{{ post.date | date: '%d/%m/%Y' }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+{% endfor %}
+</ul>
+{% endfor %}
