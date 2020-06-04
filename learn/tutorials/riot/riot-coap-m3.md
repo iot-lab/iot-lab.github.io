@@ -28,19 +28,19 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
 
 3. Wait a moment until the experiment is launched (state is Running) and get
    the nodes list. For the next of this tutorial we suppose that you obtained
-   **m3-1.grenoble.iot-lab.info** and **m3-2.grenoble.iot-lab.info** nodes
+   **m3-1.saclay.iot-lab.info** and **m3-2.saclay.iot-lab.info** nodes
    ```
-    login@grenoble:~$ iotlab-experiment get -i <exp_id> -s
-    login@grenoble:~$ iotlab-experiment get -i <exp_id> -r
+    login@saclay:~$ iotlab-experiment get -i <exp_id> -s
+    login@saclay:~$ iotlab-experiment get -i <exp_id> -r
    ```
 
 4. Get the code of the 2020.04 release of [RIOT](https://github.com/riot-os/riot)
    from GitHub: 
    ```
-   login@grenoble:~$ mkdir -p ~/riot
-   login@grenoble:~$ cd ~/riot
-   login@grenoble:~/riot$ git clone https://github.com/RIOT-OS/RIOT.git -b 2020.04-branch
-   login@grenoble:~/riot$ cd RIOT
+   login@saclay:~$ mkdir -p ~/riot
+   login@saclay:~$ cd ~/riot
+   login@saclay:~/riot$ git clone https://github.com/RIOT-OS/RIOT.git -b 2020.04-branch
+   login@saclay:~/riot$ cd RIOT
    ```
 
    **Note:** you can also use the RIOT development code (e.g the master branch)
@@ -59,14 +59,14 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
      To do so, add **DEFAULT_CHANNEL=&lt;channel&gt;** option to the make commands.
 
    ```
-   login@grenoble:~/riot/RIOT/$ source /opt/riot.source
-   login@grenoble:~/riot/RIOT/$ make ETHOS_BAUDRATE=500000 DEFAULT_CHANNEL=<channel> BOARD=iotlab-m3 -C examples/gnrc_border_router clean all
+   login@saclay:~/riot/RIOT/$ source /opt/riot.source
+   login@saclay:~/riot/RIOT/$ make ETHOS_BAUDRATE=500000 DEFAULT_CHANNEL=<channel> BOARD=iotlab-m3 -C examples/gnrc_border_router clean all
    ```
 
 6. Use the CLI-Tools to flash the gnrc_border_router firmware that you have just
    built on the first M3 node. Here we use `m3-1` but it may change in your case: 
    ```
-   login@grenoble:~/riot/RIOT/$ iotlab-node --update examples/gnrc_border_router/bin/iotlab-m3/gnrc_border_router.elf -l grenoble,m3,1
+   login@saclay:~/riot/RIOT/$ iotlab-node --update examples/gnrc_border_router/bin/iotlab-m3/gnrc_border_router.elf -l saclay,m3,1
    ```
 
 7. Choose an available IPv6 prefix for the site you are experimenting on. For
@@ -75,12 +75,12 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
 8. Now you can configure the network of the border router on `m3-1` and propagate
    an IPv6 prefix with `ethos_uhcpd.py`.
    ```
-   login@grenoble:~$ sudo ethos_uhcpd.py m3-1 tap0 2001:660:5307:3100::1/64
+   login@saclay:~$ sudo ethos_uhcpd.py m3-1 tap0 2001:660:5307:3100::1/64
    ```
    **Important note1:** Check that tap0 network interface is not already used
    and in this case choose another number
    ```
-   login@grenoble:~$ ip addr show | grep tap
+   login@saclay:~$ ip addr show | grep tap
    1406: tap0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 500
    ```
    **Important note2:** If you have **an error "overlaps with routes"**, it’s
@@ -89,7 +89,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    <br/>
    You can view currently used IPv6 prefixes on the frontend SSH with this command
    ```
-   login@grenoble:~$ ip -6 route
+   login@saclay:~$ ip -6 route
    2001:660:5307:30fff::/64 dev eth0  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
    2001:660:5307:3100::/64 dev tun0  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
    fe80::/64 dev eth1  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
@@ -112,15 +112,15 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    server firmware used for the other node. RIOT [nanocoap_server](https://github.com/RIOT-OS/RIOT/tree/master/examples/nanocoap_server)
    example will be used for this purpose.
    ```
-   login@grenoble:~$ cd riot/RIOT
-   login@grenoble:~/riot/RIOT/$ source /opt/riot.source
-   login@grenoble:~/riot/RIOT/$ make DEFAULT_CHANNEL=<channel> BOARD=iotlab-m3 -C examples/microcoap_server clean all
+   login@saclay:~$ cd riot/RIOT
+   login@saclay:~/riot/RIOT/$ source /opt/riot.source
+   login@saclay:~/riot/RIOT/$ make DEFAULT_CHANNEL=<channel> BOARD=iotlab-m3 -C examples/microcoap_server clean all
    ```
    Use the CLI-Tools to flash the `nanoocoap_server` firmware that you have
    just built on the second M3 node. Here we use `m3-2` but it may change in
    your case:
    ```
-   login@grenoble:~/riot/RIOT/$ iotlab-node --update examples/microcoap_server/bin/iotlab-m3/microcoap_server.elf -l grenoble,m3,2
+   login@saclay:~/riot/RIOT/$ iotlab-node --update examples/microcoap_server/bin/iotlab-m3/microcoap_server.elf -l saclay,m3,2
    ```
 
 10. On the border router shell (eg. where you are running the `ethos_uhcpd.py`
@@ -153,7 +153,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    exposes only the board type to a CoAP `GET` request on `/riot/board`, let’s
    try it on the CoAP server node:
    ```
-   login@grenoble:~$ aiocoap-client coap://[2001:660:3207:4c1:1711:6b10:65fd:bd36]/riot/board
+   login@saclay:~$ aiocoap-client coap://[2001:660:3207:4c1:1711:6b10:65fd:bd36]/riot/board
    (2.05)	iotlab-m3
    ```
 
