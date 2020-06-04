@@ -28,7 +28,12 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    used in the commands shown below, `<exp_id>`. The requested experiment
    duration is **60 minutes**.
 
-3. Wait a moment until the experiment is launched (state is Running) and get
+3. Wait a moment until all nodes are up:
+  ```
+  login@saclay:~$ iotlab-ssh --verbose wait-for-boot
+  ```
+
+4. Wait a moment until the experiment is launched (state is Running) and get
    the nodes list. For the next of this tutorial we suppose that you obtained
    **a8-1.saclay.iot-lab.info** and **a8-2.saclay.iot-lab.info** nodes.
    ```
@@ -36,12 +41,12 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    login@saclay:~$ iotlab-experiment get -i <exp_id> -r
    ```
 
-4. Get the code of the 2020.04 release of [RIOT](https://github.com/riot-os/riot)
+5. Get the code of the 2020.04 release of [RIOT](https://github.com/riot-os/riot)
    from GitHub:
    ```
    login@saclay:~$ mkdir -p ~/A8/riot
    login@saclay:~$ cd ~/A8/riot
-   login@saclay:~/A8/riot$ git clone https://github.com/RIOT-OS/RIOT.git -b 2019.01-branch
+   login@saclay:~/A8/riot$ git clone https://github.com/RIOT-OS/RIOT.git -b 2020.04-branch
    login@saclay:~/A8/riot$ cd RIOT
    ```
    Note that you can also use the RIOT development code (e.g the master branch)
@@ -52,7 +57,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    channel (default is 26).<br>
    To do so, add **DEFAULT_CHANNEL=&lt;channel&gt;** option to the make commands.
 
-5. Build the required firmware for the border router node. The node `node-a8-1`
+6. Build the required firmware for the border router node. The node `node-a8-1`
    will act as the border router in this experiment. The border firmware is
    built using the RIOT
    [gnrc_border_router example](https://github.com/RIOT-OS/RIOT/tree/master/examples/gnrc_border_router)
@@ -62,7 +67,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    login@saclay:~/A8/riot/RIOT$ cp examples/gnrc_border_router/bin/iotlab-a8-m3/gnrc_border_router.elf ~/A8/.
    ```
 
-6. Build the required firmware for the node running the CoAP server. RIOT
+7. Build the required firmware for the node running the CoAP server. RIOT
    [nanocoap_server example]((https://github.com/RIOT-OS/RIOT/tree/master/examples/nanocoap_server))
    will be used for this purpose.
    ```
@@ -70,7 +75,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    login@saclay:~/A8/riot/RIOT$ cp examples/nanocoap_server/bin/iotlab-a8-m3/nanocoap_server.elf ~/A8/.
    ```
 
-7. Connect to the A8 of the M3 border router: `node-a8-1`.
+8. Connect to the A8 of the M3 border router: `node-a8-1`.
    ```
    login@saclay:~$ ssh root@node-a8-1
    ```
@@ -105,7 +110,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    INET6_ADDR=2001:0660:3207:0400::1/64
    ```
 
-8. Now, **in another terminal**, log on the remaining A8 node, `node-a8-2`, and
+9. Now, **in another terminal**, log on the remaining A8 node, `node-a8-2`, and
    flash the nanocoap_server firmware on the M3:
    ```
    my_computer$ ssh <login>@saclay.iot-lab.info
@@ -114,7 +119,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    root@node-a8-2:~# exit
    ```
 
-9. On the border router shell with the command `nib neigh` you can find the
+10. On the border router shell with the command `nib neigh` you can find the
    IPv6 of the node running nanocoap server. (type enter in the terminal of
    `node-a8-1` where you launched the `start_network.sh` script : you have
    access to the shell or RIOT) 
@@ -139,7 +144,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    2001:660:3207:401:3432:4833:46df:a902 dev #6 lladdr 15:11:6B:10:46:DF:A9:02  STALE REGISTERED
    ```
 
-10. On the SSH frontend, you can now use the preinstalled CoAP client to query
+11. On the SSH frontend, you can now use the preinstalled CoAP client to query
    the CoAP server node. By default, the nanocoap server example of RIOT
    exposes only the board type to a CoAP `GET` request on `/riot/board`.<br/>
    Let’s try it on the CoAP server node:
