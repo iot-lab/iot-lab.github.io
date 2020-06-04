@@ -25,7 +25,7 @@ An Ubuntu [virtual machine]({% link docs/getting-started/virtual-machine.md %}),
 
 ### Run an experiment
 
-<div class="row my-3">
+<div class="row my-3 d-flex justify-content-center">
     <div class="col-lg-5">
         <div class="mb-2 p-3 bg-info text-light text-center rounded">
             <h6 class="card-title m-0">1. Build your application</h6>
