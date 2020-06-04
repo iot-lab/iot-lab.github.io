@@ -18,7 +18,7 @@ code of MicroPython is [hosted on GitHub](https://github.com/micropython/micropy
 In IoT-LAB, the [Pycom boards]({{ site.baseurl }}{% link docs/boards/pycom-fipy.md %}) provides access to a MicroPython pre-installed
 firmware.
 
-Start an experiment with MicroPython using the Pycom Fipy board:
+Start an experiment with MicroPython using the Pycom FiPy board:
 
 ```bash
 $ iotlab-experiment submit -d 120 -l 1,site=saclay+archi=pycom:fipy
