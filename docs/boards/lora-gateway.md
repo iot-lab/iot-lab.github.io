@@ -3,8 +3,6 @@ board: LoRa gateway
 group: boards
 ---
 
-## Description
-
 The LoRa gateway device in IoT-LAB is built from the combination of a
 [Raspberry 3 model b](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
 and an [ic880a LoRa concentrator](https://wireless-solutions.de/products/lora/radio-modules/ic880a-spi/).
