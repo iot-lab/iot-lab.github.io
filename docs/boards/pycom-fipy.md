@@ -1,9 +1,7 @@
 ---
-board: Pycom
+board: Pycom FiPy
 group: boards
 ---
-
-## Presentation
 
 [Pycom](https://pycom.io/) is an a complete ecosystem for easy IoT development.
 The IoT-LAB testbed provides access to the
