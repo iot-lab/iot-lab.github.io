@@ -1,13 +1,17 @@
-
-html {
-  // Margin top by navbar height, used with .fixed-top navbar
-  padding-top: 4.5rem
-}
-
 :target {
   // Padding top bottom by navabar height, used with .fixed-top navbar
-  padding-top: 4.5rem;
-  margin-top: -4.5rem;
+  padding-top: 5rem;
+  margin-top: -5rem;
+}
+
+@media (min-width: 768px) {
+    @supports ((position: -webkit-sticky) or(position: sticky)) {
+        header {
+            /* position:-webkit-sticky; */position: sticky;
+            top: 0;
+            z-index:1071
+        }
+    }
 }
 
 header nav .navbar-brand img {
