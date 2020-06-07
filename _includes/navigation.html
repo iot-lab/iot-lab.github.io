@@ -1,12 +1,8 @@
-<nav class="navbar navbar-expand navbar-light bg-white border-bottom d-flex flex-wrap justify-content-center">
+<nav class="navbar navbar-expand navbar-light bg-white border-bottom d-flex flex-column flex-md-row justify-content-center">
         <div>
             <a class="navbar-brand" href="{{ "/" | relative_url "" }}">
                 <img src="{{ "/assets/images/logo-fit-iotlab.png" | relative_url }}" alt="FIT IoT-LAB">
             </a>
-        </div>
-        <div class="navbar-nav order-md-2 ml-auto">
-            <a href="#" class="nav-item nav-link">Right</a>
-            <a class="btn btn-primary" href="#" role="button">Access</a>
         </div>
         <div class="navbar-nav">
             {% for item in site.data.navigation %}
@@ -22,4 +18,9 @@
             </a>
             {% endfor%}
         </div>
+        <div class="navbar-nav ml-md-auto">
+            <a href="#" class="nav-item nav-link">Right</a>
+            <a class="btn btn-primary" href="#" role="button">Access</a>
+        </div>
+
 </nav>
