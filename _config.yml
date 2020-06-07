@@ -2,6 +2,9 @@ title: FIT IoT-LAB
 description: The Very Large Scale IoT Testbed
 url: https://iot-lab.github.io
 timezone: Europe/Paris
+permalink: pretty
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 defaults:
   - scope:
@@ -43,10 +46,9 @@ collections:
     archives:
         output: true
 
-permalink: pretty
-
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
   - jemoji
