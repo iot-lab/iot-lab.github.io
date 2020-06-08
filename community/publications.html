@@ -12,21 +12,38 @@ title: Publications
     {% include quote-iotlab.html %}
 
     <div>
-        {% for item in site.data.publications %}
-        <h3 class="border-bottom">{{ item.year }}</h3>
-        <ul>
-            {% for publi in item.publications %}
-            <li>
-                <blockquote class="blockquote">
-                    <p class="mb-0"><a href="{{ publi.link }}" target="_blank">{{ publi.title }}</a></p>
-                    <footer class="blockquote-footer">
-                        {{ publi.authors }}
-                        <br>in <cite title="Source Title">{{ publi.reference }}</cite>
-                    </footer>
-                </blockquote>
-            </li>
+        {% assign issued =  site.data.publications.references | map: 'issued' | uniq | compact %}
+        {% assign years =  issued | map: 'year' | sort | reverse %}
+        {% for year in years %}
+            <h3 class="border-bottom">{{ year }}</h3>
+            <ul>
+            {% for publi in site.data.publications.references %}
+                {% for publi_year in publi.issued %}
+                    {% if year == publi_year.year %}
+                    <li>
+                        <blockquote class="blockquote">
+                        <p class="mb-0">{{ publi.title }}</p>
+                        <footer class="blockquote-footer">
+                        {% for publi_authors in publi.author %}
+                            {{ publi_authors.family }} {{ publi_authors.given }}
+                            {% if forloop.last == true %}
+                            {% else %}
+                                ,&nbsp;
+                            {% endif %}
+                        {% endfor %}
+                        <br>in <cite title="Source Title">
+                                    {% if publi.container-title %}{{ publi.container-title }} {% endif %}
+                                    {% if publi.publisher %}{{ publi.publisher }} {% endif %}
+                                    {% if publi.page %}{{ publi.page }} {% endif %}
+                                    {% if publi.volume %}{{ publi.volume }}{% endif %}
+                                </cite>
+                        </footer>
+                        </blockquote>
+                    </li>
+                    {% endif %}
+                {% endfor %}
             {% endfor %}
-        </ul>
+            </ul>
         {% endfor %}
     </div>
 </section>
