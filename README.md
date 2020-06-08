@@ -24,7 +24,7 @@ You can also add livereload for hot-reloading the browser page when the sources 
 ## Update publications
 Publications are managed with a Google scholar public profile. To update them on Jekyll you have to export the list to Bibtex format on your computer:
 
-1. Log in to [Google Scholar](https://scholar.google.com){:target="_blank"} with IoT-LAB account
+1. Log in to [Google Scholar](https://scholar.google.com) with IoT-LAB account
 2. Click *My citations*
 3. Click the leftmost checkbox (i.e. *Title*) on the bar at the top of the list of citations
 4. Click *Export>BibTex>Export all my articles*
