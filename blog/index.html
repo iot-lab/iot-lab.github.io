@@ -14,9 +14,9 @@ style: reduced
 <!-- Pagination links -->
 <div class="btn-group btn-block" role="group">
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" role="button" class="btn btn-lg btn-outline-secondary">Older</a>
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" role="button" class="btn btn-lg btn-outline-secondary">Older</a>
   {% endif %}
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" role="button" class="btn btn-lg btn-outline-secondary">Newer</a>
+    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" role="button" class="btn btn-lg btn-outline-secondary">Newer</a>
   {% endif %}
 </div>
