@@ -1,13 +1,13 @@
 - name: cli-tools
-  description: The <a href="https://pypi.org/project/iotlabcli/">cli-tools</a> leverage the IoT-LAB REST API from a simple command line interface Python client.
+  description: The cli-tools leverage the IoT-LAB REST API from a simple command line interface Python client.
   repo: https://github.com/iot-lab/cli-tools
 
 - name: ssh-cli-tools
-  description: The <a href="https://pypi.org/project/iotlabsshcli/">ssh-cli-tools</a> provide a command line interface to interact remotely and easily with IoT-LAB Open Linux devices.
+  description: The ssh-cli-tools provide a command line interface to interact remotely and easily with IoT-LAB Open Linux devices.
   repo: https://github.com/iot-lab/ssh-cli-tools
 
 - name: ws-cli-tools
-  description: The <a href="https://pypi.org/project/iotlabwscli/">ws-cli-tools</a> use the websocket protocol to provide a command line to connect to the serial port of multiple devices on several sites, from a local computer.
+  description: The ws-cli-tools use the websocket protocol to provide a command line to connect to the serial port of multiple devices on several sites, from a local computer.
   repo: https://github.com/iot-lab/ws-cli-tools
 
 - name: iot-lab-yocto
