@@ -1,0 +1,27 @@
+- name: cli-tools
+  description: The <a href="https://pypi.org/project/iotlabcli/">cli-tools</a> leverage the IoT-LAB REST API from a simple command line interface Python client.
+  repo: https://github.com/iot-lab/cli-tools
+
+- name: ssh-cli-tools
+  description: The <a href="https://pypi.org/project/iotlabsshcli/">ssh-cli-tools</a> provide a command line interface to interact remotely and easily with IoT-LAB Open Linux devices.
+  repo: https://github.com/iot-lab/ssh-cli-tools
+
+- name: ws-cli-tools
+  description: The <a href="https://pypi.org/project/iotlabwscli/">ws-cli-tools</a> use the websocket protocol to provide a command line to connect to the serial port of multiple devices on several sites, from a local computer.
+  repo: https://github.com/iot-lab/ws-cli-tools
+
+- name: iot-lab-yocto
+  description: The IoT-LAB Yocto project aim to develop embedded Linux images that run on Open Linux devices.
+  repo: https://github.com/iot-lab/iot-lab-yocto
+
+- name: iot-lab-gateway
+  description: The IoT-LAB gateway project is the Python code that runs on the device management gateway in the FIT IoT-lab platform. It serves an API for starting, stopping experiments, flashing firmwares on devices.
+  repo: https://github.com/iot-lab/iot-lab-gateway
+
+- name: testbed-webportal
+  description: The testbed webportal is a single page web application that provides web access for submitting experiment, monitoring the status of the testbed and interacting with the devices.
+  repo: https://github.com/iot-lab/testbed-webportal
+
+- name: iot-lab-training
+  description: This project contains JupyterLab Notebooks that can be used to teach IoT.
+  repo: https://github.com/iot-lab/iot-lab-training

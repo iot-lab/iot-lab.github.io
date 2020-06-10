@@ -1,0 +1,39 @@
+---
+layout: base
+title: Contribute
+---
+{% include community.html %}
+
+<section>
+    <h2 id="education">Contribute</h2>
+
+    <div class="lead alert alert-success">
+        <p class="text-center">
+            Most of the software used to run the testbed is open-source and hosted under the <a href="https://github.com/iot-lab">IoT-LAB organization on Github</a>.
+            Any contributions on any of the IoT-LAB projects are very welcome.
+            <br>
+            So feel free to contribute to the codebase and join the effort to improve IoT-LAB!
+        </p>
+    </div>
+
+    <h3>Main open-source projects</h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Project name</th>
+                <th style="width: 50%">Description</th>
+                <th>Repository</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for project in site.data.projects %}
+            <tr>
+                <td>{{ project.name }} </td>
+                <td>{{ project.description }}</td>
+                <td><a href="{{ project.repo }}"><i class="fab fa-github"></i> {{ project.repo }}</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
