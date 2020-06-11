@@ -13,4 +13,4 @@ The first day will be dedicated to conference sessions; the second day to tutori
 
 Come to visit the platform and meet us.
 
-[Details and Presentations](https://www.iot-lab.info/workshop-iot-oct2015/ "Details and Presentation")
+[Details and Presentations](https://www.iot-lab.info/legacy/workshop-iot-oct2015/ "Details and Presentation")

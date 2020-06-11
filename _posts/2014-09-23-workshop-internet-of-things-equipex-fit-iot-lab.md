@@ -9,4 +9,4 @@ Workshop Internet Of Things (IoT)
 {: .lead}
 
 * Montbonnot, 6 & 7 November 2014
-* FIT IoT-LAB inauguration and tutorials, <a href="https://www.iot-lab.info/workshop-iot-nov2014/">More informations</a>.
+* FIT IoT-LAB inauguration and tutorials, <a href="https://www.iot-lab.info/legacy/workshop-iot-nov2014/">More informations</a>.
