@@ -13,7 +13,7 @@ We implemented new features linked to Control Nodes, that let’s you configure 
 
 #### New Linux kernel on A8 nodes
 
-Linux kernel of open A8 nodes have been updated to version 3.18.5. Read the [Linux nodes tutorial]({{ site.baseurl }}{% link learn/getting-started/linux-cli-tools.md %}) to discover usage and features.
+Linux kernel of open A8 nodes have been updated to version 3.18.5. Read the [Linux nodes tutorial]({{ site.baseurl }}{% link learn/getting-started/embedded-linux.md %}) to discover usage and features.
 
 #### CLI tools upgrade to version 1.5.3
 
