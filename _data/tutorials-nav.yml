@@ -2,19 +2,25 @@
   pages:
     - title: Get and compile firmware for M3 and A8-M3 nodes
       desc: Compile a sensors collecting firmware example.
-      page: contiki-compilation
+      link: https://www.iot-lab.info/legacy/tutorials/contiki-compilation/index.html
+    - title: Private IPv6 (6LoWPAN/RPL) network with M3 nodes
+      desc: Contiki uIP stack & tools, IPv6 basics for M3 nodes.
+      link: https://www.iot-lab.info/legacy/tutorials/contiki-private-ipv6-m3/index.html
     - title: Public IPv6 (6LoWPAN/RPL) network with M3 nodes
       desc: Deploy an IPv6 network with Contiki and RPL on M3 nodes.
-      page: contiki-public-ipv6-m3
+      link: https://www.iot-lab.info/legacy/tutorials/contiki-public-ipv6-m3/index.html
     - title: Public IPv6 (6LoWPAN/RPL) network with A8-M3 nodes
       desc: Deploy an IPv6 network with Contiki and RPL on A8 nodes.
-      page: contiki-public-ipv6-a8-m3
+      link: https://www.iot-lab.info/legacy/tutorials/contiki-public-ipv6-a8-m3/index.html
     - title: CoAP server with public IPv6/RPL/6LoWPAN network
       desc: Deploy CoAP over an IPv6 network with Contiki and RPL.
-      page: contiki-coap-m3
+      link: https://www.iot-lab.info/legacy/tutorials/contiki-coap-m3/index.html
     - title: CoAP server with public IPv6/TCSH network and M3 nodes
       desc: Improve CoAP over an IPv6 network with TSCH.
-      page: contiki-coap-tsch-m3
+      link: https://www.iot-lab.info/legacy/tutorials/contiki-coap-tsch-m3/index.html
+    - title: LwM2M client with public IPv6 network and M3 nodes
+      desc: LwM2M client example with Leshan server
+      link: https://www.iot-lab.info/legacy/tutorials/contiki-lwm2m-m3/index.html
 
 - title: RIOT
   pages:

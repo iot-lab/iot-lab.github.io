@@ -61,7 +61,20 @@ layout: base
         {%- for tuto in group.pages -%}
         <div class="card mb-3">
             <div class="card-body">
-                <a href="{{ '/learn/tutorials' | relative_url }}/{{ group_slug }}/{{ tuto.page }}"><h5 class="card-title">{{ tuto.title }}</h5></a>
+            {% if tuto.link %}
+                <a href="{{ tuto.link }}">
+                    <h5 class="card-title">
+                        <small><i class="fas fa-external-link-alt"></i></small>
+                        {{ tuto.title }}
+                    </h5>
+                </a>
+            {% else %}
+                <a href="{{ '/learn/tutorials' | relative_url }}/{{ group_slug }}/{{ tuto.page }}">
+                    <h5 class="card-title">
+                        {{ tuto.title }}
+                    </h5>
+                </a>
+            {% endif %}
                 <p class="card-text">{{ tuto.desc }}</p>
             </div>
         </div>
