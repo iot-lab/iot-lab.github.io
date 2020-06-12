@@ -99,9 +99,9 @@ $ iotlab-ssh --verbose run-cmd "uname -a" --frontend
 }
 ```
 
-### Copy file on frontend ~/A8/.iotlabsshcli directory
+### Copy file on frontend ~/shared/.iotlabsshcli directory
 
-The A8 directory on the frontend is mounted by A8 nodes during experiment. It's a simple way to access permanent files from the nodes without copy them. Indeed between two experiments the Linux image filesystem of the node is removed and rebuild from scratch.
+The `shared` directory on the frontend is mounted by A8 nodes during experiment. It's a simple way to access permanent files from the nodes without copy them. Indeed between two experiments the Linux image filesystem of the node is removed and rebuild from scratch.
 
 ``` bash 
 $ iotlab-ssh copy-file test.tar.gz

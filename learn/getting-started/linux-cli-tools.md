@@ -41,10 +41,10 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     </pre>
 
 
-3. Download the firmware file on the SSH frontend in the <strong>A8</strong> directory. This directory is automatically mounted by NFS by all Linux nodes during the experiment.
+3. Download the firmware file on the SSH frontend in the <strong>shared</strong> directory. This directory is automatically mounted by NFS by all Linux nodes during the experiment.
 
     <pre class="highlight">
-    &lt;login&gt;@saclay~$ wget {{ site.url }}{{ 'assets/firmwares/tutorial_a8_m3.elf' | relative_url}} -P A8
+    &lt;login&gt;@saclay~$ wget {{ site.url }}{{ 'assets/firmwares/tutorial_a8_m3.elf' | relative_url}} -P shared
     </pre>
 
 4. Connect by SSH to one A8 Linux node with root user. When your experiment is running, A8 Linux nodes still need some time to boot, it can take between 30 seconds and 2 minutes depending on the testbed activity. Another important point to understand is the name of the Linux node you have to use. You must prefix the name with the string <strong>node-</strong>. In the example above the scheduler has assigned you the node <strong>a8-1.saclay.iot-lab.info</strong> and the Linux A8 node will be accessible with the name <strong>node-a8-1.saclay.iot-lab.info</strong>.
@@ -75,7 +75,7 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
 6. Flash the firmware on the M3 co-microcontroller of both nodes. To do this we provide <i>iotlab_flash</i> script that interfaces with Open On-Chip Debugger (OpenOCD) to flash the firmware.
 
     <pre class="highlight">
-    root@node-a8-1:~# iotlab_flash A8/tutorial_a8_m3.elf 
+    root@node-a8-1:~# iotlab_flash shared/tutorial_a8_m3.elf
     Open On-Chip Debugger 0.10.0+dev-00554-g05e0d63-dirty (2019-09-23-09:35)
     Licensed under GNU GPL v2
     For bug reports, read
@@ -104,7 +104,7 @@ _**Description**: The aim of this first tutorial is to discover the IoT-LAB test
     <pre class="highlight">
     ssh &lt;login&gt;@saclay.iot-lab.info
     &lt;login&gt;@saclay~$ ssh root@<strong>node-a8-2</strong>
-    root@node-a8-2:~# iotlab_flash A8/tutorial_a8_m3.elf
+    root@node-a8-2:~# iotlab_flash shared/tutorial_a8_m3.elf
     ...
     </pre>
 
