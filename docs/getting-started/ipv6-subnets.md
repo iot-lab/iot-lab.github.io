@@ -4,7 +4,7 @@ group: getting-started
 description: Overview of the IPv6 subnets for all the IoT-LAB sites.
 ---
 
-## M3 nodes, Custom nodes
+## For boards based on a microcontroller
 
 <table class="table table-striped">
     <thead>
@@ -49,7 +49,7 @@ description: Overview of the IPv6 subnets for all the IoT-LAB sites.
     </tbody>
 </table>
 
-## A8 nodes
+## For IoT-LAB A8-M3 embedded Linux nodes
 
 <table class="table table-striped">
     <thead>

@@ -1,7 +1,7 @@
 ---
 title: IPv6
 group: getting-started
-description: IPv6 connectivity for the IoT-LAB testbed
+description: This page describes the public IPv6 support available on the IoT-LAB testbed. You will find out how to build a public IPV6 network with embedded boards.
 ---
 
 ## Overview
@@ -51,35 +51,30 @@ correspond to private addresses in IPv4 and are not routable.
 You will find all avaibles IPv6 prefixes per sites in
   [IoT-LAB IPv6 subnets]({{ '/docs/getting-started/ipv6-subnets/' | relative_url }}).
 
-### M3 nodes, Custom nodes
+### For boards based on a microcontroller
 
-[Dedicated subnets]({{ '/docs/getting-started/ipv6-subnets/' | relative_url }})
- for M3 nodes allow you to map a global IPv6 /64 prefix on a M3
-node acting as a border router (BR). All M3 subnets of a site can be used on any
-M3 node of the same site. Technically, the IPv6 traffic between the
-infrastructure and the BR radio interface is routed via a TUN/SLIP interface
-mounted inside the IoT-LAB server and attached to the serial port of the M3
-node. Our tunslip6.py script automatically creates TUN/SLIP interface with the
-selected IPv6 prefix mapped to the chosen M3 node. Collision or usurpation
-between users experiments are also taken into account.
+In order for an embedded board to communicate in IPv6 with a host on the Internet, it needs an IPv6 ***global*** unicast address. To do this, another embedded board play the role of `Border Router (i.e. BR)` and must be added in the network. It will be responsible for propagating an IPv6 global prefix and assign an address to the embedded board. We speak here of BR, because it's on the border between a radio network (e.g. 802.15.4) and a classic Ethernet network. So we provide a pool of [global IPv6 /64 prefixes]({{ '/docs/getting-started/ipv6-subnets/' | relative_url }}) per site that can be used to build an IPv6 network. Technically, the IPv6 traffic between the infrastructure (i.e. SSH frontend) and the BR radio interface is routed via a virtual network interface (ie.g. TUN or TAP interface) and the IPv6 traffic is encapsulated on the BR's serial link. For this we use  `ETHOS` (i.e. Ethernet Over Serial) for the [RIOT OS]({{ '/docs/os/riot#border-router-and-ipv6-networking-on-iot-lab' | relative_url }}) and `SLIP` (i.e. Serial Line Internet Protocol) for the [Contiki-NG OS]({{ '/docs/os/contiki-ng#border-router-and-ipv6-networking-on-iot-lab' | relative_url }}).
 
-The following figure shows the IPv6 infrastructure for M3 nodes on one IoT-LAB site:
+The following figure shows the IPv6 infrastructure for IoT-LAB M3 nodes on one IoT-LAB site:
 ![ipv6-m3]({{ '/assets/images/docs//ipv6-m3.png' | relative_url }})
 
 
-### A8 nodes
+### For boards running an embedded Linux
 
-A8 open nodes running embedded GNU/Linux have 2 interfaces:
+Nodes running [embedded Linux]({{ '/docs/os/yocto' | relative_url }}) have 2 interfaces:
 
 * 1x Ethernet interface
-* 1x Serial interface with M3 node
+* 1x Serial link interface with co-microcontroller
 
-The A8 open node is configured with:
+It's therefore quite possible to build an IPv6 network with the co-microcontroller acting as a Border Router and communicating with other nodes by radio (e.g. 802.15.4). Unlike setup with a microcontroller on the SSH frontend, the creation of the virtual network interface and IPV6 traffic encapsulation is done directly on the embedded Linux node with the co-microcontroller serial's link.
+
+We give you an example of an IPV6 configuration with IoT-LAB A8-M3 embedded Linux nodes:
+
 
 * **a global IPv6 address on the Ethernet interface** constructed as follows:
 
 ```
-[ Open A8 Prefixes 64 bits ] + [ node ID 64 bits = hexa(node ID) ] /128
+[ A8-M3 Prefixes 64 bits ] + [ node ID 64 bits = hexa(node ID) ] /128
 ```
 
 E.g. for node-a8-1 on Strasbourg site:
@@ -94,10 +89,10 @@ Finally, the shortened address:
   2001:660:4701:f080::1/128
 ```
 
-* **an IPv6 /64 subnet for its M3 node**, statically routed via the site server and defined as follows:
+* **an IPv6 /64 prefix for its M3 co-microcontroller**, statically routed via the site server and defined as follows:
 
 ```
-[ A8 prefix range start + hexa(node ID) ] ::/64
+[ A8-M3 prefix range start + hexa(node ID) ] ::/64
 ```
 
  E.g. associated M3 subnet for node-a8-1 on Strasbourg site:
@@ -113,7 +108,27 @@ or
   2001:660:4701:f081::/64 as IPv6
 ```
 
-For all availables A8 prefixes, see [IoT-LAB IPv6 subnets]({{ '/docs/getting-started/ipv6-subnets/' | relative_url }}).
+For all availables A8-M3 prefixes, see [IoT-LAB IPv6 subnets]({{ '/docs/getting-started/ipv6-subnets/' | relative_url }}).
 
-The following figure shows the IPv6 infrastructure for A8 nodes on one IoT-LAB site:
+
+You can note that during an experiment IoT-LAB A8-M3 nodes are directly accessible via SSH in IPv6 from Internet.
+
+```
+ssh -6 root@2001:660:4701:f080::1
+```
+
+In addition on the embedded LInux node you can display the IPV6 configuration with the following environment variables
+
+```
+root@node-a8-1:~# printenv
+...
+INET6_PREFIX_LEN=64
+INET6_PREFIX=2001:660:4701:f081
+GATEWAY6_ADDR=2001:660:4701:f080:ff::
+INET6_ADDR=2001:660:4701:f080::1/64
+...
+```
+
+The following figure shows the IPv6 infrastructure for IoT-LAB A8-M3 nodes on one IoT-LAB site:
+
 ![ipv6-a8]({{ '/assets/images/docs/ipv6-a8.png' | relative_url }})
