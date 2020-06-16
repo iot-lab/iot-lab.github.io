@@ -1,10 +1,8 @@
 ---
-title: The first experiment for beginners from the terminal
+title: First experiment with board based on a microcontroller
 description: Learn how to run an experiment and interact with the boards using the command line interface (CLI tools).
 style: reduced
 ---
-
-_Note: replace every `login` with your IoT-LAB login and site with the one you chose to run your experiment (e.g. grenoble, lille, saclay, etc.)._
 
 ## Access to the SSH frontend
 
@@ -50,13 +48,35 @@ Get the nodes list assigned to your experiment by the scheduler:
 iotlab-experiment get -n
 {
     "items": [
-            {
+        {
             "archi": "m3:at86rf231",
-            "network_address": "m3-1.grenoble.iot-lab.info",
+            "camera": null,
+            "mobile": "0",
+            "mobility_type": " ",
+            "network_address": "m3-101.grenoble.iot-lab.info",
+            "production": "YES",
             "site": "grenoble",
-            ...
-            }
-        ]
+            "state": "Alive",
+            "uid": "9181",
+            "x": "0.40",
+            "y": "24.63",
+            "z": "-0.04"
+        },
+        {
+            "archi": "m3:at86rf231",
+            "camera": null,
+            "mobile": "0",
+            "mobility_type": " ",
+            "network_address": "m3-102.grenoble.iot-lab.info",
+            "production": "YES",
+            "site": "grenoble",
+            "state": "Alive",
+            "uid": "a881",
+            "x": "1.00",
+            "y": "24.63",
+            "z": "-0.04"
+        }
+    ]
 }
 ```
 
@@ -67,7 +87,7 @@ Run the nc command replacing `<id>` with a value picked from your nodes list:
 nc m3-<id1> 20000
 ```
 
-The firmware is waiting to read characters to its serial link to do respectives actions.
+The firmware is waiting for reading characters to its serial link to do respectives actions.
 
 Here is its help:
 ```bash
@@ -96,4 +116,4 @@ nc m3-<id2> 20000
 ## Go Further
 
 * Consult the [CLI]({{ site.baseurl }}{% link docs/tools/cli.md %}) documentation.
-* Learn how to aggregate all the serial port links of your nodes with the [Serial Aggregator]({{ site.baseurl }}{% link docs/tools/serial-aggregator.md %}) tool.
+* Learn how to aggregate all the serial port links of your nodes with the [Serial aggregator]({{ site.baseurl }}{% link docs/tools/serial-aggregator.md %}) tool.
