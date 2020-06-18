@@ -21,7 +21,8 @@ In addition, the testbed offers an hosted environment on SSH frontends (one per 
 - access to devices serial link, debuger and radio sniffer.
 - and experiments results,
 
-An Ubuntu [virtual machine]({% link docs/getting-started/virtual-machine.md %}), based on VirtualBox, is available to bring the development environment on the user's computer.
+[Several workspaces]({% link docs/getting-started/workspaces.md %}) are available to facilitate the setup of the
+development environment for users and the interaction with the testbed.
 
 ### Run an experiment
 
