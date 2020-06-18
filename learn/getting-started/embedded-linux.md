@@ -1,147 +1,142 @@
 ---
-group: getting-started
-title: Linux CLI tools
+title: First experiment with board running an embedded Linux
+description: Learn how to run an experiment and interact with boards running an embedded Linux using the command line interface (CLI tools).
 ---
 
-<i class="fas fa-grin-beam-sweat"></i> **Difficulty**: Intermediate  
-<i class="fas fa-stopwatch"></i> **Duration**: 30 minutes
+## Access to the SSH frontend
 
-_**Prerequisites**: [IoT-LAB A8-M3 board]({{ site.baseurl }}{% link docs/boards/iot-lab-a8-m3.md %}) / [Configure SSH Access]({{ site.baseurl }}{% link docs/getting-started/ssh-access.md %})_
+The SSH frontend has all the tools and compilation toolchains already installed. They are also the place from where you can interact with the nodes.
 
-_**Description**: The aim of this first tutorial is to discover the IoT-LAB testbed tools by creating and submitting your first experiment, and then interact with running nodes. You will book onto the SSH frontend with CLI tools two A8-M3 nodes on the Saclay site. Once deployed, you will connect by SSH to the Linux nodes (i.e. A8 nodes) and interact with the embed M3 co-microcontroller. Thus you will learn how to flash a sample firmware file on it and read sensor values and send radio packets through the serial port link (i.e. UART)
+You need to [Configure your SSH Access]({{ site.baseurl }}{% link docs/getting-started/ssh-access.md %}) if it's not already done.
 
+Let's connect to the SSH frontend to use the CLI tools from there, by replacing `<login>` with your IoT-LAB login:
 
-1. Connect to the SSH frontend and launch your first experiment.
+```bash
+ssh <login>@grenoble.iot-lab.info
+```
 
-    <pre class="highlight">
-    ssh &lt;login&gt;@saclay.iot-lab.info
-    # only once to store credentials on the SSH frontend
-    &lt;login&gt;@saclay~$ iotlab-auth -u &lt;login&gt;
-    &lt;login&gt;@saclay~$ iotlab-experiment submit -n first-exp -d 20 -l 2,archi=a8:at86rf231+site=saclay
-    # wait until the experiment's state is <i>Running</i>
-    &lt;login&gt;@saclay~$ iotlab-experiment wait
-    </pre>
+If you never used the CLI tools from this SSH frontend, you need to store your credentials with the following command:
 
+```bash
+iotlab-auth -u <login>
+```
 
-2. View the nodes that have been assigned to you by the scheduler.
+Thus, you won't need to specify your login and password at each call to CLI tools.
 
-    <pre class="highlight">
-    &lt;login&gt;@saclay~$ iotlab-experiment get -n
-    {
+## Submit the experiment
+
+The board you will use here has a co-microcontroller, providing sensing and communication features. First, download the firmware you will use later for this co-microcontroller in your _~/shared_ directory:
+```bash
+wget {{ site.url }}{{ 'assets/firmwares/tutorial_a8_m3.elf' | relative_url}} -P shared
+```
+
+Then, submit a _20_-minutes experiment, named _first-exp_, using 2 IoT-LAB A8-M3 boards (_m3:at86rf231_) from the _grenoble_ site:
+```bash
+iotlab-experiment submit -n first-exp -d 20 -l 2,archi=a8:at86rf231+site=grenoble
+```
+
+Wait until the experiment's state is _Running_
+```bash
+iotlab-experiment wait
+```
+
+## Connect to the embedded Linux system
+
+Get the nodes list assigned to your experiment by the scheduler:
+```bash
+iotlab-experiment get -n
+{
     "items": [
-            {
-            "archi": "a8:at86rf231", 
-            "network_address": "a8-1.saclay.iot-lab.info", 
-            "site": "saclay", 
-            ...
-            }
-        ]
-    } 
+        {
+            "archi": "a8:at86rf231",
+            "camera": null,
+            "mobile": "0",
+            "mobility_type": " ",
+            "network_address": "a8-101.grenoble.iot-lab.info",
+            "production": "YES",
+            "site": "grenoble",
+            "state": "Alive",
+            "uid": "2587",
+            "x": "19.75",
+            "y": "4.50",
+            "z": "2.63"
+        },
+        {
+            "archi": "a8:at86rf231",
+            "camera": null,
+            "mobile": "0",
+            "mobility_type": " ",
+            "network_address": "a8-100.grenoble.iot-lab.info",
+            "production": "YES",
+            "site": "grenoble",
+            "state": "Alive",
+            "uid": "3185",
+            "x": "19.75",
+            "y": "3.90",
+            "z": "2.63"
+        }
+    ]
+}
+```
+Here, the experiment is running with the **a8-100** and the **a8-101** nodes in Grenoble.
 
-    </pre>
+Embedded Linux boards need between 30 seconds and 2 minutes to boot, depending on the testbed activity. Once it's done, they are accessible with a root access through SSH. The hostname to use is the node id prefixed by _node-_.
 
+```bash
+ssh root@node-a8-<id1>
+```
 
-3. Download the firmware file on the SSH frontend in the <strong>shared</strong> directory. This directory is automatically mounted by NFS by all Linux nodes during the experiment.
+From this minimal embedded Linux system, most unix commands are supported. For example you can test the network connectivity between your two boards:
+```bash
+ping node-a8-<id2>
+```
 
-    <pre class="highlight">
-    &lt;login&gt;@saclay~$ wget {{ site.url }}{{ 'assets/firmwares/tutorial_a8_m3.elf' | relative_url}} -P shared
-    </pre>
+## Flash the co-microcontroller
 
-4. Connect by SSH to one A8 Linux node with root user. When your experiment is running, A8 Linux nodes still need some time to boot, it can take between 30 seconds and 2 minutes depending on the testbed activity. Another important point to understand is the name of the Linux node you have to use. You must prefix the name with the string <strong>node-</strong>. In the example above the scheduler has assigned you the node <strong>a8-1.saclay.iot-lab.info</strong> and the Linux A8 node will be accessible with the name <strong>node-a8-1.saclay.iot-lab.info</strong>.
+The `~/shared` directory in which you downloaded the firmware previously is automatically mounted by NFS in the embedded Linux environment. Thus, you have an easy access to the firmware.
 
-    <pre class="highlight">
-    &lt;login&gt;@saclay~$ ssh root@<strong>node-a8-1</strong>.saclay.iot-lab.info
-    The authenticity of host 'node-a8-1.saclay.iot-lab.info (10.0.44.1)' can't be established.
-    RSA key fingerprint is 2b:a9:fc:bc:d5:77:27:24:06:fc:46:a2:87:17:e9:b0.
-    Are you sure you want to continue connecting (yes/no)? yes
-    Warning: Permanently added 'node-a8-1.saclay.iot-lab.info,10.0.44.1' (RSA) to the list of known hosts.
-    root@node-a8-1:~#
-    </pre>
+Use the _iotlab_flash_ script that interfaces with Open On-Chip Debugger (OpenOCD) to flash it:
+```bash
+iotlab_flash ~/shared/tutorial_a8_m3.elf
+```
 
-    > As you are handling a Linux node it is necessary to have an IP and a DNS name dedicated to it. The scheduler assigns you IoT-LAB nodes with the DNS name of the gateway (GW) which is a hardware (i.e. administration board not accessible by users) in charge of deploying the experiment with for example powering the Linux node. 
+> You can also find <i>iotlab_reset</i> script to reset the M3 co-microcontroller.
 
-5. A8 nodes are running a minimal embedded Linux system and most unix commands are supported. For example you can test test the network connectivity between from your two nodes or visualize the content of the A8 directory. In the example below we assume that the second node of the experiment is <strong>node-a8-2</strong>.
+## Interact with the co-microcontroller
 
-    <pre class="highlight">
-    root@node-a8-1:~# ping node-a8-2
-    PING node-a8-2 (10.0.44.2): 56 data bytes
-    64 bytes from 10.0.44.2: seq=0 ttl=64 time=5.616 ms
-    64 bytes from 10.0.44.2: seq=1 ttl=64 time=1.038 ms
-    64 bytes from 10.0.44.2: seq=2 ttl=64 time=0.977 ms
-    root@node-a8-1:~# ls A8
-    tutorial_a8_m3.elf
-    </pre>
+The co-microcontroller serial port link (i.e. UART) is available under /dev/ttyA8_M3. You can use the pySerial console application to access to it, using a baudrate speed of 500 kB/s:
 
-6. Flash the firmware on the M3 co-microcontroller of both nodes. To do this we provide <i>iotlab_flash</i> script that interfaces with Open On-Chip Debugger (OpenOCD) to flash the firmware.
+```bash
+miniterm.py --echo /dev/ttyA8_M3 500000
+```
 
-    <pre class="highlight">
-    root@node-a8-1:~# iotlab_flash shared/tutorial_a8_m3.elf
-    Open On-Chip Debugger 0.10.0+dev-00554-g05e0d63-dirty (2019-09-23-09:35)
-    Licensed under GNU GPL v2
-    For bug reports, read
-        http://openocd.org/doc/doxygen/bugs.html
-    debug_level: 0
-    adapter speed: 1000 kHz
-    adapter_nsrst_delay: 100
-    jtag_ntrst_delay: 100
-    none separate
-    cortex_m reset_config sysresetreq
-    trst_and_srst separate srst_nogate trst_push_pull srst_open_drain connect_assert_srst
-        TargetName         Type       Endian TapName            State       
-    --  ------------------ ---------- ------ ------------------ ------------
-    0* stm32f1x.cpu       cortex_m   little stm32f1x.cpu       reset
-    target halted due to debug-request, current mode: Thread 
-    xPSR: 0x01000000 pc: 0x080017f4 msp: 0x20010000
-    target halted due to debug-request, current mode: Thread 
-    xPSR: 0x01000000 pc: 0x080017f4 msp: 0x20010000
-    auto erase enabled
-    wrote 47104 bytes from file /home/root/A8/tutorial_a8_m3.elf in 2.152863s (21.367 KiB/s)
-    verified 46332 bytes in 0.757233s (59.752 KiB/s)
-    shutdown command invoked
-    flash OK
-    </pre>
+The firmware is waiting for reading characters to its serial link to do respectives actions.
 
-    <pre class="highlight">
-    ssh &lt;login&gt;@saclay.iot-lab.info
-    &lt;login&gt;@saclay~$ ssh root@<strong>node-a8-2</strong>
-    root@node-a8-2:~# iotlab_flash shared/tutorial_a8_m3.elf
-    ...
-    </pre>
+Here is its help:
+```bash
+IoT-LAB Simple Demo program
+Type command
+    h:	print this help
+    t:	temperature measure
+    l:	luminosity measure
+    p:	pressure measure
+    u:	print node uid
+    d:	read current date using control_node
+    s:	send a radio packet
+    b:	send a big radio packet
+    e:	toggle leds blinking
+cmd>
+```
 
-    > You can also find <i>iotlab_reset</i> script to reset the M3 co-microcontroller. 
+Test some actions by typing the corresponding character then Enter.
 
-7. Read the M3 co-microcontroller serial port link (i.e. UART). The UART filename is <i>/dev/ttyA8_M3</i> with a baudrate speed of 500 kB/s.
-
-    <pre class="highlight">
-    root@node-a8-1:~# miniterm.py --echo /dev/ttyA8_M3 500000
-    </pre>
-
-    <pre class="highlight">
-    root@node-a8-2:~# miniterm.py --echo /dev/ttyA8_M3 500000
-    </pre>
-
-8. Play with the firmware shell and send radio packets (e.g. type s+ENTER). You can note that as the scheduler provides you some nodes with the same radio neighborhood, when you send a radio packet (i.e. broadcast mode) from one node the other one should display good reception information on the serial port.
-
-    <pre class="highlight">
-    root@node-a8-1:~# miniterm.py /dev/ttyA8_M3 500000
-    cmd > 
-
-    IoT-LAB Simple Demo program
-    Type command
-	    h:	print this help
-	    u:	print node uid
-	    d:	read current date using control_node
-	    s:	send a radio packet
-	    b:	send a big radio packet
-	    e:	toggle leds blinking
-    </pre>
-
+If you want to see reception of radio packet by the second node, open a second terminal, and run this set of commands:
+```bash
+ssh <login>@grenoble.iot-lab.info
+ssh root@node-a8-<id2>
+miniterm.py --echo /dev/ttyA8_M3 500000
+```
 
 ## Go Further
 
-* Consult the [SSH-CLI]({{ site.baseurl }}{% link docs/tools/ssh-cli.md %}) command-line tools documentation. It allows you to interact remotely with Linux nodes and automate actions such as waiting for the end of the boot, flashing a firmware on the co-microcontroller. 
-
-
-
-
- 
+*  Learn how to interact remotely with embedded Linux boards and automate actions such as waiting for the end of the boot or flashing a firmware on the co-microcontroller by reading the [SSH-CLI]({{ site.baseurl }}{% link docs/tools/ssh-cli.md %}) documentation.
