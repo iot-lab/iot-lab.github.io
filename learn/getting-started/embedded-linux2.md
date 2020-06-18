@@ -1,7 +1,6 @@
 ---
 title: First experiment with board running an embedded Linux
 description: Learn how to run an experiment and interact with boards running an embedded Linux using the command line interface (CLI tools).
-style: reduced
 ---
 
 _**Description**: The aim of this first tutorial is to discover the IoT-LAB testbed tools by creating and submitting your first experiment, and then interact with running nodes. You will book onto the SSH frontend with CLI tools two A8-M3 nodes on the Saclay site. Once deployed, you will connect by SSH to the Linux nodes (i.e. A8 nodes) and interact with the embed M3 co-microcontroller. Thus you will learn how to flash a sample firmware file on it and read sensor values and send radio packets through the serial port link (i.e. UART)_
