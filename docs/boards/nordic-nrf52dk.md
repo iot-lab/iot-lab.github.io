@@ -3,14 +3,14 @@ board: Nordic nRF52DK
 group: boards
 ---
 
-The NRF52DK open node is a [<i class="far fa-file-pdf"/>&nbsp;Nordic nRF52DK](http://infocenter.nordicsemi.com/pdf/nRF52_DK_User_Guide_v1.2.pdf)
-This open node provides a BLE radio interface.
+The NRF52DK board is a [<i class="far fa-file-pdf"/>&nbsp;Nordic nRF52DK](http://infocenter.nordicsemi.com/pdf/nRF52_DK_User_Guide_v1.2.pdf)
+This board provides a BLE radio interface.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/nrf52dk/' | relative_url}}nrf52dk.png" style="width:20%;"/>
 </div>
 
-The nRF52DK Open Node can reset, debug and program the ARM Cortex M4 through
+The nRF52DK board can reset, debug and program the ARM Cortex M4 through
 the embedded debugger (OpenOCD) connected to the gateway USB port. This
 component also allows a UART connection to the M4. The input power source is
 configured through the power management.

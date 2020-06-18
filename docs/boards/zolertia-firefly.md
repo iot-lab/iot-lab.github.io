@@ -3,16 +3,16 @@ board: Zolertia Firefly
 group: boards
 ---
 
-The firefly open node is based on an
+The firefly board is based on an
 [Zolertia Firefly board](https://zolertia.io/product/firefly/)
-built on top of a TI CC2538 ARM Cortex M3 micro-controller. This open node
+built on top of a TI CC2538 ARM Cortex M3 micro-controller. This board
 provides 802.15.4 radio support.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/firefly/' | relative_url}}firefly.jpg" style="width:50%;"/>
 </div>
 
-The firefly Open Node can reset and program the ARM Cortex M3 through serial
+The firefly board can reset and program the ARM Cortex M3 through serial
 port connected to the gateway USB port.
 
 ## IoT-LAB special configuration

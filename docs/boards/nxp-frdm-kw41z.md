@@ -3,14 +3,14 @@ board: NXP FRDM-KW41Z
 group: boards
 ---
 
-The FRDM-KW41Z open node is a [<i class="far fa-file-pdf"/>&nbsp;NXP FRDM-KW41Z](https://www.nxp.com/docs/en/user-guide/FRDMKW41ZUG.pdf)
-This open node provides a BLE radio interface and a 802.15.4 radio interface.
+The FRDM-KW41Z board is a [<i class="far fa-file-pdf"/>&nbsp;NXP FRDM-KW41Z](https://www.nxp.com/docs/en/user-guide/FRDMKW41ZUG.pdf)
+This board provides a BLE radio interface and a 802.15.4 radio interface.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/frdm-kw41z/' | relative_url}}frdm-kw41z.png" style="width:50%;"/>
 </div>
 
-The FRDM-KW41Z Open Node can reset, debug and program the ARM Cortex M0+ through
+The FRDM-KW41Z board can reset, debug and program the ARM Cortex M0+ through
 the embedded debugger (OpenOCD) connected to the gateway USB port. This
 component also allows a UART connection to the M0. The input power source is
 configured through the power management.

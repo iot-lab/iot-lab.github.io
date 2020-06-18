@@ -4,7 +4,7 @@ title: Makerdiary nRF52840-MDK
 group: boards
 ---
 
-The `nrf52840-mdk` open node corresponds to the
+The `nrf52840-mdk` board corresponds to the
 [Makerdiary nRF52840-MDK](https://wiki.makerdiary.com/nrf52840-mdk/) board. It
 runs on an nRF52840 ARM CortexM4 microcontroller from Nordic with BLE and
 802.15.4 radio support.
@@ -13,7 +13,7 @@ runs on an nRF52840 ARM CortexM4 microcontroller from Nordic with BLE and
 <img src="{{ '/assets/images/docs/boards/nrf52840-mdk/' | relative_url}}nrf52840-mdk.jpg" style="width:50%;"/>
 </div>
 
-The `nrf52840-mdk` open node can reset, debug and program the ARM Cortex M4
+The `nrf52840-mdk` board can reset, debug and program the ARM Cortex M4
 through the embedded debugger (DapLink) connected to the gateway USB port. This
 component also allows a UART connection to the M4.
 

@@ -4,7 +4,7 @@ group: boards
 ---
 
 The [ST B-L475E-IOT01A](https://www.st.com/en/evaluation-tools/b-l475e-iot01a.html)
-open node is multi radio capable board running on an ARM CortexM4 STM32L475VG
+board is multi radio capable board running on an ARM CortexM4 STM32L475VG
 microcontroller.
 
 <div style="text-align:center">

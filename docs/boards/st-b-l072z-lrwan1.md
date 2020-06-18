@@ -4,7 +4,7 @@ group: boards
 ---
 
 The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html)
-open node is LoRa capable board running on ab ARM CortexM0+ STM32L072CZ
+board is LoRa capable board running on ab ARM CortexM0+ STM32L072CZ
 microcontroller.
 
 <div style="text-align:center">

@@ -4,16 +4,16 @@ title: Microchip SAMR21 Xplained Pro
 group: boards
 ---
 
-The SAMR21 open node is based on an
+The SAMR21 board is based on an
 [<i class="far fa-file-pdf"/>&nbsp;Microchip SAM R21 Xplained Pro evaluation kit](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42243-SAMR21-Xplained-Pro_User-Guide.pdf)
-built on top of an Microchip ARM Cortex M0 micro-controller. This new open node
-also contains an IEEE 802.15.4 Atmel radio interface at 2.4 GHz.
+built on top of an Microchip ARM Cortex M0 micro-controller. This board
+also provides an IEEE 802.15.4 Atmel radio interface at 2.4 GHz.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/samr21/' | relative_url}}samr21.jpg" style="width:50%;"/>
 </div>
 
-The SAMR21 Open Node can reset, debug and program the ARM Cortex M0 through the
+The SAMR21 board can reset, debug and program the ARM Cortex M0 through the
 embedded debugger (EDBG) connected to the gateway USB port. This component also
 allows a UART connection to the M0. The input power source is configured
 through the power management.

@@ -3,14 +3,14 @@ board: Nordic nRF52840DK
 group: boards
 ---
 
-The NRF52840DK open node is a [<i class="far fa-file-pdf"/>&nbsp;Nordic nRF52840DK](http://infocenter.nordicsemi.com/pdf/nRF52840_DK_User_Guide_v1.2.pdf)
-This open node provides a BLE radio interface and a 802.15.4 radio interface.
+The NRF52840DK board is a [<i class="far fa-file-pdf"/>&nbsp;Nordic nRF52840DK](http://infocenter.nordicsemi.com/pdf/nRF52840_DK_User_Guide_v1.2.pdf)
+This board provides a BLE radio interface and a 802.15.4 radio interface.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/nrf52840dk/' | relative_url}}nrf52840dk.png" style="width:20%;"/>
 </div>
 
-The nRF52840DK Open Node can reset, debug and program the ARM Cortex M4 through
+The nRF52840DK board can reset, debug and program the ARM Cortex M4 through
 the embedded debugger (OpenOCD) connected to the gateway USB port. This
 component also allows a UART connection to the M4. The input power source is
 configured through the power management.

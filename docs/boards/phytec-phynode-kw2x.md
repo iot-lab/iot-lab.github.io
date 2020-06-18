@@ -10,7 +10,7 @@ Kinetis KW21D256 microcontroller
 <img src="{{ '/assets/images/docs/boards/phynode-kw2x/' | relative_url}}phynode-kw2x.jpg" style="width:300px;"/>
 </div>
 
-The PhyNODE-KW2X Open Node can reset, debug and program the ARM Cortex M4+ through
+The PhyNODE-KW2X board can reset, debug and program the ARM Cortex M4+ through
 the embedded debugger (OpenOCD) connected to the gateway USB port. This
 component also allows a UART connection to the M4. The input power source is
 configured through the power management.

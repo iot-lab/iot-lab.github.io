@@ -3,7 +3,7 @@ board: BBC micro:bit
 group: boards
 ---
 
-The microbit open node corresponds to the official
+The microbit board is the official
 [BBC micro:bit](https://microbit.org/) board. It runs on an nRF51 ARM CortexM0
 microcontroller from Nordic with BLE radio.
 
@@ -11,7 +11,7 @@ microcontroller from Nordic with BLE radio.
 <img src="{{ '/assets/images/docs/boards/microbit/' | relative_url}}microbit.png" style="width:50%;"/>
 </div>
 
-The microbit open node can reset, debug and program the ARM Cortex M0 through the
+The microbit board can reset, debug and program the ARM Cortex M0 through the
 embedded debugger (DapLink) connected to the gateway USB port. This component also
 allows a UART connection to the M0.
 

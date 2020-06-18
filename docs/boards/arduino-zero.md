@@ -3,7 +3,7 @@ board: Arduino Zero
 group: boards
 ---
 
-The [Arduino Zero](https://store.arduino.cc/arduino-zero) open node is one the
+The [Arduino Zero](https://store.arduino.cc/arduino-zero) board is one the
 official Arduino boards and is running on a Microchip ARM Cortex M0
 micro-controller.
 
@@ -11,7 +11,7 @@ micro-controller.
 <img src="{{ '/assets/images/docs/boards/arduino-zero/' | relative_url}}arduino-zero.jpg" style="width:50%;"/>
 </div>
 
-The Arduino Zero open node can reset, debug and program the ARM Cortex M0 through the
+The Arduino Zero board can reset, debug and program the ARM Cortex M0 through the
 embedded debugger (EDBG) connected to the gateway USB port. This component also
 allows a UART connection to the M0.
 

@@ -5,7 +5,7 @@ group: boards
 ---
 
 
-The `nrf52832-mdk` open node corresponds to the
+The `nrf52832-mdk` board corresponds to the
 [Makerdiary nRF52832-MDK v2](https://wiki.makerdiary.com/nrf52832-mdk/) board. It
 runs on an nRF52832 ARM CortexM4 microcontroller from Nordic with BLE radio
 support.
@@ -14,7 +14,7 @@ support.
 <img src="{{ '/assets/images/docs/boards/nrf52832-mdk/' | relative_url}}nrf52832-mdk.jpeg" style="width:50%;"/>
 </div>
 
-The `nrf52832-mdk` open node can reset, debug and program the ARM Cortex M4
+The `nrf52832-mdk` board can reset, debug and program the ARM Cortex M4
 through the embedded debugger (DapLink) connected to the gateway USB port. This
 component also allows a UART connection to the M4.
 
