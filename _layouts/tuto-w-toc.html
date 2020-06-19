@@ -1,0 +1,18 @@
+---
+layout: base
+---
+<div class="row">
+    <nav class="d-none d-xl-block col-xl-2 py-3 sticky-top text-muted text-center doc-toc">
+        <a href="{{ site.baseurl}}{% link learn/index.html %}" class="text-reset lead"><i class="fas fa-chevron-left"></i> Learn</a>
+    </nav>
+    <div class="col-md-10 offset-md-1 col-xl-8 offset-xl-0">
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+
+        {{ content }}
+    </div>
+    <nav class="d-none d-xl-block col-xl-2 py-3 sticky-top doc-toc">
+        {% include toc.html html=content h_min=2 h_max=3 %}
+    </nav>
+
+</div>

@@ -1,4 +1,5 @@
 ---
+layout: tuto-w-toc
 title: First experiment with board based on a microcontroller
 description: Learn how to run an experiment and interact with the boards using the command line interface (CLI tools).
 ---
