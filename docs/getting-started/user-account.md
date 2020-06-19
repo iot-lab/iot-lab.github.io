@@ -9,7 +9,7 @@ description: IoT-LAB is an open testbed, but you need an account to have access 
 If you want to register on the IoT-LAB testbed you just have to fill the [Sign up form](https://www.iot-lab.info/testbed/signup).
 
 Some lightnings about some fields of the registration form:
-- **Email**: We ask for an academic or professional email address. <span class="text-warning">Why? Which forbidden domains ?</span>
+- **Email**: We ask for an academic or professional email address.
 - **User category / Organization / City / Country**: These information are asked for statistical purpose. We have to periodically provide these statistics about users to our funders, to understand if users are mainly from academic, with which proportion from companies, and from where. It helps to show that it is mainly adopted and to get new fundings.
 - **Motivations**: This information let us understand what users do or need.
 
@@ -29,7 +29,11 @@ Also note that backup/recovery of your home directories, in case of a hardware f
 
 ## Users mailing-list
 
-As a new user, you are automatically subscribed to the IoT-LAB users mailing-list (_users AT iot-lab.info_). This mailing list is mainly dedicated to maintenance announcements and questions about IoT-LAB usage. So keep an eye on it in order to stay informed of the testbed availability. You can manage your subscription from the webportal on the [Account](https://www.iot-lab.info/testbed/account) page, <i class="far fa-envelope"></i> **Mailing list** tab.
+As a new user, **you are automatically subscribed to the IoT-LAB users mailing-list** (_users AT iot-lab.info_). This mailing list is mainly dedicated to maintenance announcements and questions about IoT-LAB usage. So keep an eye on it in order to stay informed of the testbed availability. You can manage your subscription from the webportal on the [Account](https://www.iot-lab.info/testbed/account) page, <i class="far fa-envelope"></i> **Mailing list** tab or by clicking on the button below:
+
+<div class="text-center">
+<a href="https://sympa.inria.fr/sympa/info/iot-lab-users" class="btn btn-large btn-outline-danger " target="_blank"><strong>Unsubscribe </strong><i class="fas fa-link"></i></a>
+</div>
 
 ## Account expiration
 
