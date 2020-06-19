@@ -1,4 +1,5 @@
 ---
+layout: tuto-w-toc
 title: First experiment with board running an embedded Linux
 description: Learn how to run an experiment and interact with boards running an embedded Linux using the command line interface (CLI tools).
 ---
