@@ -29,11 +29,7 @@ Also note that backup/recovery of your home directories, in case of a hardware f
 
 ## Users mailing-list
 
-As a new user, **you are automatically subscribed to the IoT-LAB users mailing-list** (_users AT iot-lab.info_). This mailing list is mainly dedicated to maintenance announcements and questions about IoT-LAB usage. So keep an eye on it in order to stay informed of the testbed availability. You can manage your subscription from the webportal on the [Account](https://www.iot-lab.info/testbed/account) page, <i class="far fa-envelope"></i> **Mailing list** tab or by clicking on the button below:
-
-<div class="text-center">
-<a href="https://sympa.inria.fr/sympa/info/iot-lab-users" class="btn btn-large btn-outline-danger " target="_blank"><strong>Unsubscribe </strong><i class="fas fa-link"></i></a>
-</div>
+As a new user, **you are automatically subscribed to the IoT-LAB users mailing-list** (_users AT iot-lab.info_). This mailing list is mainly dedicated to maintenance announcements and questions about IoT-LAB usage. So keep an eye on it in order to stay informed of the testbed availability. You can manage your subscription from the webportal on the [Account](https://www.iot-lab.info/testbed/account) page, <i class="far fa-envelope"></i> **Mailing list** tab -- here is a direct link to [unsubscribe](https://sympa.inria.fr/sympa/signoff/iot-lab-users).
 
 ## Account expiration
 
