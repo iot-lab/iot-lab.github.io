@@ -4,7 +4,7 @@ style: fluid
 nofooter: yes
 ---
 <div class="row flex-xl-nowrap">
-    <div class="col-md-3 col-xl-2 py-md-3 sticky-top sidebar sidenav">
+    <div class="col-md-3 col-xl-2 sidebar sidenav border-bottom">
         {% include docs-sidebar.html %}
     </div>
 
@@ -12,7 +12,7 @@ nofooter: yes
         {% include toc.html html=content h_min=2 h_max=3 %}
     </nav>
 
-    <main class="col-md-9 col-xl-8 py-md-3 pl-md-5" role="main">
+    <main class="col-md-9 col-xl-8 py-3 pl-md-5" role="main">
         {{ content }}
     </main>
 </div>

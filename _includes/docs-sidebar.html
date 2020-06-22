@@ -1,4 +1,10 @@
-<nav class="nav flex-column">
+<div class="d-md-none d-flex align-items-center bg-light">
+    <button class="btn mr-2" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+    </button>
+    Navigate the docs
+</div>
+<nav id="docs-nav" class="d-md-block nav flex-column py-3 collapse">
     {%- assign page_slug = page.url | split: '/' | last -%}
     {%- for group in site.data.docs-nav -%}
     {%- assign link = group.pages | first -%}

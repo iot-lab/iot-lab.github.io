@@ -15,14 +15,14 @@
 }
 
 header nav .navbar-brand img {
-     height: 47px;
+    height: 47px;
 }
 
 footer {
-  font-size: 85%;
+    font-size: 85%;
 }
 footer .logo {
-  height: 70px;
+    height: 70px;
 }
 
 .container-reduced {
@@ -40,10 +40,15 @@ footer .logo {
 }
 
 /* Sidebar */
-.sidebar {
-    top: 4.5rem;
-    height: calc(100vh - 4.5rem);
-    overflow-y: auto;
+@media (min-width: 768px) {
+    @supports ((position: -webkit-sticky) or(position: sticky)) {
+        .sidebar {
+            /* position:-webkit-sticky; */position: sticky;
+            top: 4.5rem;
+            height: calc(100vh - 4.5rem);
+            overflow-y: auto;
+        }
+    }
 }
 
 /* Sidebar navigation */
