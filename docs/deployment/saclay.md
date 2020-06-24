@@ -142,25 +142,27 @@ The platform is distributed over the basement of the building and 2 rooms.
 
 ## Pictures
 
-<div class="container">
 <div class="row">
-    <div class="col">
-        <img class="pt-3 px-3" src="{{ '/assets/images/deployments/saclay/' | relative_url}}digiteo1.jpg" style="width:100%;">
+    <div class="col-4 pb-3">
+    <a href="{{ '/assets/images/deployments/saclay/' | relative_url}}digiteo1.jpg" data-toggle="lightbox" data-gallery="gallery">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/saclay/' | relative_url}}digiteo1.jpg">
+    </a>
     </div>
-    <div class="col">
-        <img class="pt-3 px-3" src="{{ '/assets/images/deployments/saclay/' | relative_url}}digiteo2.jpg" style="width:100%;">
+    <div class="col-4 pb-3">
+    <a href="{{ '/assets/images/deployments/saclay/' | relative_url}}digiteo2.jpg" data-toggle="lightbox" data-gallery="gallery">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/saclay/' | relative_url}}digiteo2.jpg">
+    </a>
     </div>
-    <div class="col">
-        <img class="pt-3 px-3" src="{{ '/assets/images/deployments/saclay/' | relative_url}}lora.jpg" style="width:100%;">
+    <div class="col-4 pb-3">
+    <a href="{{ '/assets/images/deployments/saclay/' | relative_url}}lora.jpg" data-toggle="lightbox" data-gallery="gallery">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/saclay/' | relative_url}}lora.jpg">
+    </a>
     </div>
-</div>
-<div class="row">
-    <div class="col"></div>
-    <div class="col">
-        <img class="pt-3 px-3" src="{{ '/assets/images/deployments/saclay/' | relative_url}}parking.jpg" style="width:100%;">
+    <div class="col-4 pb-3">
+    <a href="{{ '/assets/images/deployments/saclay/' | relative_url}}parking.jpg" data-toggle="lightbox" data-gallery="gallery">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/saclay/' | relative_url}}parking.jpg">
+    </a>
     </div>
-    <div class="col"></div>
-</div>
 </div>
 
 ## Live camera
