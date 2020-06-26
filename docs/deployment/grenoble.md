@@ -61,4 +61,41 @@ See the video and photos below to visit the deployment across the building.
 
 ## GPS
 
-TODO
+Some IoT-LAB A8-M3 boards deployed in Grenoble are equipped with a GPS chip. It allows to synchronize precisely data collection from these nodes together. They are located near the GPS antenna repeater at the corner of corridor J and F.
+
+Here is the list of these 32 nodes:
+
++ a8-1,
+a8-3,
+a8-4,
+a8-8,
++ a8-10,
+a8-11,
+a8-13,
+a8-15,
++ a8-16,
+a8-19,
+a8-20,
+a8-59,
++ a8-61,
+a8-63,
+a8-65,
+a8-68,
++ a8-70,
+a8-129,
+a8-130,
+a8-131,
++ a8-132,
+a8-134,
+a8-135,
+a8-136,
++ a8-137,
+a8-138,
+a8-139,
+a8-142,
++ a8-143,
+a8-144,
+a8-147,
+a8-148
+
+And its abbreviated form: `1+3-4+8+10-11+13+15-16+19-20+59+61+63+65+68+70+129-132+134-139+142-144+147-148`
