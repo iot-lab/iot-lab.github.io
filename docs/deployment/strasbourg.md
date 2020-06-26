@@ -4,32 +4,40 @@ group: deployment
 description: "The Strasbourg site is located at the ICube laboratory from the Strasbourg University. The nodes are deployed in a dedicated room following a regular 3D grid topology."
 ---
 
-<div class="row">
-<div class="col-lg-6" markdown="1">
-## Resources
-In the dedicated room, we offer a dense grid with a large number of nodes in order to test large scale IoT MAC layers and routing protocols:
-* 256 WSN430 open nodes
-* 74 M3 open nodes
-* 24 A8 open nodes
-</div>
-</div>
-
 ## Topology
-<div class="col-lg-6" markdown="1">
-![strasbourg-grid-m3]({{'/assets/images/deployments/strasbourg/strasbourg-grid-m3.png' | relative_url }}){: .img-fluid}
-<small class="text-muted">Strasbourg M3 and A8 grid</small>
+The dedicated room offers a dense grid with a large number of nodes in order to test large scale IoT MAC layers and routing protocols.
 
-![strasbourg-grid-wsn430]({{'/assets/images/deployments/strasbourg/strasbourg-grid-wsn430.jpeg' | relative_url }}){: .img-fluid}
-<small class="text-muted">Strasbourg WSN430 grid</small>
-
+<div class="row mb-3">
+    <div class="col-lg-6">
+        <a href="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-grid-m3.png" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-fluid" src="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-grid-m3.png">
+        </a>
+        <small class="text-muted">Strasbourg IoT-LAB M3 and A8-M3 grid</small>
+    </div>
+    <div class="col-lg-6">
+        <a href="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-grid-wsn430.jpeg" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-fluid" src="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-grid-wsn430.jpeg">
+        </a>
+        <small class="text-muted">Strasbourg IoT-LAB WSN430 grid</small>
+    </div>
+    <div class="col p-1">
+        <a href="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-iot-room1.jpeg" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-iot-room1.jpeg">
+        </a>
+    </div>
+    <div class="col p-1">
+        <a href="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-iot-room2.jpeg" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-iot-room2.jpeg">
+        </a>
+    </div>
+    <div class="col p-1">
+        <a href="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-iot-room3.jpeg" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/strasbourg/' | relative_url }}strasbourg-iot-room3.jpeg">
+        </a>
+    </div>
 </div>
 
-## Videos
+## Video Demo
 <div class="embed-responsive embed-responsive-16by9">
-<iframe width="320" src="https://www.youtube.com/embed/JC385RAqoiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/JC385RAqoiY" allowfullscreen></iframe>
 </div>
-
-## Photos
-![strasbourg-iot-room1]({{'/assets/images/deployments/strasbourg/strasbourg-iot-room1.jpeg' | relative_url }}){: .img-fluid}
-![strasbourg-iot-room2]({{'/assets/images/deployments/strasbourg/strasbourg-iot-room2.jpeg' | relative_url }}){: .img-fluid}
-![strasbourg-iot-room3]({{'/assets/images/deployments/strasbourg/strasbourg-iot-room3.jpeg' | relative_url }}){: .img-fluid}
