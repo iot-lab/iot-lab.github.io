@@ -31,25 +31,22 @@ The IoT-LAB A8-M3 embed a clone of the IoT-LAB M3 object. As a result, it featur
 ## GPS
 A sub-set of the IoT-LAB A8-M3 boards are equipped with a [<i class="far fa-file-pdf"/> MAX-6Q]({{ site.baseurl }}{% link assets/misc/docs/iot-lab-a8/MAX-6_DataSheet.pdf %}) GPS module as extra option. The GPS signal reception allows using the GPS clock as a precise time synchronization mechanism under the microsecond. This feature allows to precisely draw the events timeline between boards equipped with GPS.
 
+The M3 control node and the M3 co-microcontroller can read by interruption the GPS PPS (Pulse Per Second) signal. This PPS acquisition can be used to counterbalance the M3 clock drift very accurately each second.
+
+This local precise timer can be initialized by the A8 NTP time (Network Time Protocol) through the UART link, or by using the control node unix time through the I2C link.
+
+<div class="col col-lg-8 offset-lg-2" markdown="1">
+![]({{ '/assets/images/docs/boards/iot-lab-a8/' | relative_url }}libtimesynchro.png){: .img-fluid }
+</div>
+
 Current deployment:
- * 165 nodes on Saclay site (all open-a8 nodes)
- * 32 nodes on Grenoble site ([open-a8 list](https://github.com/iot-lab/iot-lab/wiki/Hardware_GPS_Gre))
+* 165 nodes on Saclay site (all open-a8 nodes)
+* 32 nodes on Grenoble site ([open-a8 list](https://github.com/iot-lab/iot-lab/wiki/Hardware_GPS_Gre))
 
 Both sites are equipped with an internal repeater GPS antenna.
 [Hanger Re-Radiating Kit - HNRRKIT](https://www.gpsnetworking.com/products/hnrrkit) (Used in Grenoble)
 
-### Usage for timing
-The M3 control node and the M3 associated to the A8 can read by interruption the GPS PPS (Pulse Per Second) signal. This PPS acquisition can be used to counterbalance the clock M3 drift very accurately each
-second.
-
-This local precise A8-M3 timer can be initialized by Open A8 NTP time (Network Time Protocol) through the uart link, or by using the control node unix time through the I2C link.
-
-An example is provided allowing a [GPS Synced Sniffer on A8 open-nodes](https://github.com/iot-lab/openlab/blob/master/appli/iotlab_examples/gps_synced_sniffer/README.md). It used open-a8 nodes GPS to precisely time sniffed radio packet.
-
-The hardware architecture diagram:
-<div class="col col-lg-8 offset-lg-2" markdown="1">
-![]({{ '/assets/images/docs/boards/iot-lab-a8/' | relative_url }}libtimesynchro.png){: .img-fluid }
-</div>
+See the [GPS Synced Sniffer]({{ site.baseurl }}{% link learn/tutorials/use-cases/gps-synced-sniffer.md %}) tutorial for an example using GPS of IoT-LAB A8-M3 board to precisely time sniffed radio packets.
 
 ## Ethernet
 The IoT-LAB A8 object features an Ethernet interface, enabling it to connect to a LAN and to communicate with the internet in IPv4/IPv6 via a standard router.
