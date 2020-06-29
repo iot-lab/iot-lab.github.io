@@ -9,11 +9,11 @@ description: IoT-LAB is an open testbed, but you need an account to have access 
 If you want to register on the IoT-LAB testbed you just have to fill the [Sign up form](https://www.iot-lab.info/testbed/signup).
 
 Some lightnings about some fields of the registration form:
-- **Email**: We ask for an academic or professional email address.
+- **Email**: We ask for an academic or professional email address. So classic emails such as `"@[gmail|aol|yahoo|hotmail].com"` are not accepted.
 - **User category / Organization / City / Country**: These information are asked for statistical purpose. We have to periodically provide these statistics about users to our funders, to understand if users are mainly from academic, with which proportion from companies, and from where. It helps to show that it is mainly adopted and to get new fundings.
 - **Motivations**: This information let us understand what users do or need.
 
-After submitting, you will receive an activation link by email, valid for 24 hours. Once activated, you will receive your credentials (login and password) by email. Of course, we recommend you to change your password on your first connection to the webportal.
+After submitting, you will receive an activation link by email, valid for 24 hours. Once activated, you will receive another email with your login information.
 
 If you don't have provided a SSH key at registration, you may want to configure your [SSH access]({{ '/docs/getting-started/ssh-access' | relative_url }}) to be able to connect to the different site servers.
 
