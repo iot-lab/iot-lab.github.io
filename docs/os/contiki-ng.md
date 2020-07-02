@@ -49,8 +49,9 @@ _Note: An ARM compiler (v.7) is available on the SSH frontends._{: .text-warning
 
 ## Border Router and IPv6 networking on IoT-LAB
 
-To connect to the serial link of your border router and propagate an IPv6 prefix through your network, Contiki-NG provides the `tunslip6` tool. It bridges the Contiki-NG border router (one of your experimentation node) to the host (SSH frontend) via a tun interface, using SLIP (Serial Line Internet Protocol) to encapsulate and pass IP traffic to and from the other side of the serial line.
+To connect to the serial link of your border router and propagate an IPv6 prefix through your network, Contiki-NG provides the `tunslip6` tool. It bridges the Contiki-NG border router (one of your experimentation node) to the host (SSH frontend or embedded Linux environment) via a tun interface, using SLIP (Serial Line Internet Protocol) to encapsulate and pass IP traffic to and from the other side of the serial line.
 
+### For boards based on a microcontroller
 Usually, Tunslip needs sudo privileges to be able to create a dedicated tun interface. Since the command has to be launched from the SSH frontend to have access to serial link, where you are not part of the sudoers, you have to use a wrapper we developed:
 
 ```bash
@@ -58,4 +59,27 @@ sudo tunslip6.py -v2 -L -a <node-id> -p 20000 fd00::1/64
 ```
 
 - The usual `-s` option to specify the local device, is replaced by the `-a` and `-p` options to specify respectively server address and server port. It points at the TCP redirection of the border router serial link.
-- `fd00::1/64` is the virtual network interface (i.e. TUN) IPv6 address. This address is of the form `<ipv6_prefix>::1`. The prefix can be replaced by another local prefix, or even by a global prefix (see [IPv6]({{ '/docs/getting-started/ipv6' | relative_url }})).
+- `fd00::1/64` is the virtual network interface (i.e. TUN) IPv6 address. This address is of the form `<ipv6_prefix>::1/64`. The prefix can be replaced by another local prefix, or even by a public prefix (see [IPv6]({{ '/docs/getting-started/ipv6' | relative_url }})).
+
+### For boards running an embedded Linux
+Get the Contiki-NG release onto the embedded Linux environment, either by the official repository or by the IoT-LAB's one. In the later case, don't forget to initialize submodules (see [Setup](#setup)). We recommend you to put it in your `~/shared` directory, you won't need to perform this download and the tunslip6 compilation again.
+
+Then, compile tunslip6 tool from the embedded environment:
+```bash
+cd <path-to-contiki-ng>/tools/serial-io
+make tunslip6
+```
+
+Launch `tunslip6` from the embedded node, using the serial link to the co-microcontroller, which has to run a border router firmware:
+```bash
+./tunslip6 -v2 -L -s <device> -B 500000 fd00::1/64
+```
+- the `-s` option specifies the local device; for example, for IoT-LAB A8-M3 boards the M3 co-microcontroller's serial link is `/dev/ttyA8_M3`
+- `fd00::1/64` is the virtual network interface (i.e. TUN) IPv6 address. This address is of the form `<ipv6_prefix>::1/64`. The prefix can be replaced by another local prefix, or even by a public prefix. In this later case, get it thanks to environment variables set in the embedded Linux environment:
+```bash
+root@node-a8-1:~# printenv
+...
+INET6_PREFIX_LEN=64
+INET6_PREFIX=2001:660:5307:3001
+...
+```
