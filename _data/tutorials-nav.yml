@@ -39,9 +39,3 @@
     - title: MQTT-SN with public IPv6 network and A8-M3 nodes
       desc: Play with MQTT-SN on A8-M3 nodes running RIOT OS
       page: riot-mqtt-sn-a8-m3
-
-- title: Use cases
-  pages:
-    - title: GPS Synced Sniffer
-      desc: Use GPS of IoT-LAB A8-M3 board to precisely time sniffed radio packets
-      page: gps-synced-sniffer
