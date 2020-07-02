@@ -1,7 +1,7 @@
 ---
 title: IPv6
 group: getting-started
-description: This page describes the public IPv6 support available on the IoT-LAB testbed. You will find out how to build a public IPv6 network with embedded boards.
+description: This page describes the public IPv6 support available on the IoT-LAB testbed. You will find out how to build a private or public IPv6 network.
 ---
 
 ## Introduction
@@ -55,7 +55,7 @@ In order for an embedded board to communicate in IPv6 with a host on the Interne
 ![ipv6-m3]({{ '/assets/images/docs//ipv6-micro.png' | relative_url }}){:.img-fluid}
 </div>
 
-To do so, we provide a pool of global IPv6 /64 prefixes per site that can be used to build an IPv6 network. They are listed in the table below:
+To do so, we provide a pool of public IPv6 /64 prefixes per site that can be used to build an IPv6 network. They are listed in the table below:
 
 | Site | Number of subnets| Prefixes, from |  to |
 | ---- | -----------------| -------------- | --- |
@@ -65,7 +65,7 @@ To do so, we provide a pool of global IPv6 /64 prefixes per site that can be use
 | Strasbourg | 32  | 2001:660:4701:f0a0::/64 | 2001:660:4701:f0bf::/64 |
 {: .table .table-striped}
 
-You can view currently used IPv6 prefixes on the frontend SSH with this command:
+Selecting an already used prefix may bring to an _“overlaps with routes”_ error while creating the IPv6 over serial interface. To see currently used IPv6 prefixes on a site, use this command from its SSH frontend:
 ```bash
 <login>@grenoble:~$ ip -6 route
 ...
@@ -74,7 +74,6 @@ You can view currently used IPv6 prefixes on the frontend SSH with this command:
 2001:660:5307:3107::/64 dev tap3  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
 ...
 ```
-Be sure to use a free one, otherwise you may get an _“overlaps with routes”_ error while creating the IPv6 over serial interface.
 
 See the dedicated section of the OS documentation to know how to use this feature:
 - with [RIOT]({{ '/docs/os/riot#border-router-and-ipv6-networking-on-iot-lab' | relative_url }}) using ETHOS (Ethernet Over Serial);
@@ -82,15 +81,14 @@ See the dedicated section of the OS documentation to know how to use this featur
 
 ## For boards running an embedded Linux
 
-During an experiment boards running an embedded Linux have an IPv6 address assigned to their Ethernet interface. They are directly accessible:
+During an experiment, boards running an embedded Linux have a public IPv6 address assigned to their Ethernet interface. They are directly accessible:
 - from any other embedded Linux board currently running,
 - from any board of the testbed based on a microcontroller having a public IPv6 address,
 - from any IoT-LAB SSH frontend,
 - and, on the whole, from any public IPv6 address on the Internet.
 
-Each site has a /64 IPv6 prefix assigned, in which each node will be assigned its static IPv6 address.
-
-This IPV6 configuration can be known with the following environment variables:
+Each site has a /64 IPv6 prefix, in which each embedded Linux node will get its static IPv6 address.
+Its IPV6 configuration can be known with the following environment variables:
 ```bash
 root@node-a8-1:~# printenv
 ...
@@ -109,7 +107,7 @@ In that case, it's therefore quite possible to build an IPv6 network with the co
 ![ipv6-a8]({{ '/assets/images/docs/ipv6-linux.png' | relative_url }}){:.img-fluid}
 </div>
 
-Each embedded Linux node has a defined /64 IPv6 prefix to build its IPv6 subnet. Each node based on a microcontroller will have a public IPv6 assigned to him with this prefix. It can be known with the following environment variables:
+Each embedded Linux node has a dedicated /64 IPv6 prefix to build its IPv6 subnet; each node based on a microcontroller will have a public IPv6 address assigned in this subnet. This configuration can be known with the following environment variables:
 ```bash
 root@node-a8-1:~# printenv
 ...
