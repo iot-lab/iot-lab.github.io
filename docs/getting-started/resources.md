@@ -65,8 +65,8 @@ From the [webportal](https://www.iot-lab.info/testbed), the Testbed Status page 
 
 <div class="col col-lg-10 offset-lg-1">
     <video autoplay muted loop class="embed-responsive-item" width="100%">
-      <source src="{{ 'assets/images/docs/' | relative_url }}resources-status.mp4" type="video/mp4">
-      <img src="{{ 'assets/images/docs/' | relative_url }}resources-status.png" class="img-thumbnail">
+      <source src="{{ 'assets/images/docs/' | relative_url }}resources-properties.mp4" type="video/mp4">
+      <img src="{{ 'assets/images/docs/' | relative_url }}resources-properties.png" class="img-thumbnail">
     </video>
 </div>
 
@@ -75,6 +75,14 @@ The **view on site map** link allows to show them also in an interactive 3D view
     <video autoplay muted loop playsinline class="embed-responsive-item" width="100%">
       <source src="{{ 'assets/images/docs/' | relative_url }}resources-3dmap.mp4" type="video/mp4">
       <img src="{{ 'assets/images/docs/' | relative_url }}resources-3dmap.png" class="img-thumbnail">
+    </video>
+</div>
+
+A second tab allows to show a Gantt chart representation of selected resources, helping to show experimentation scheduled and resources mobilized.
+<div class="col col-lg-10 offset-lg-1">
+    <video autoplay muted loop playsinline class="embed-responsive-item" width="100%">
+      <source src="{{ 'assets/images/docs/' | relative_url }}resources-activity.mp4" type="video/mp4">
+      <img src="{{ 'assets/images/docs/' | relative_url }}resources-activity.png" class="img-thumbnail">
     </video>
 </div>
 
