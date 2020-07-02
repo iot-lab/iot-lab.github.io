@@ -42,6 +42,7 @@ source /opt/riot.source
 
 To connect to the serial link of your border router and propagate an IPv6 prefix through your network, RIOT provides the `ethos_uhcpd` tool. It uses the serial interface, ethos (Ethernet Over Serial) and UHCP (micro Host Configuration Protocol). Ethos multiplexes serial data to separate ethernet packets from shell commands. UHCP is in charge of configuring the wireless interface prefix and routes on the Border Router.
 
+### For boards based on a microcontroller
 Usually, it needs sudo privileges to be able to create a dedicated tap interface. Since the command has to be launched from the SSH frontend to have access to serial link, where you are not part of the sudoers, you have to use a wrapper we developed:
 
 ```bash
@@ -57,3 +58,21 @@ To list tap interface currently in use, launch the following command on the SSH 
 <login>@<site>:~$ ip addr show | grep tap
 ```
 Choose one not in the list. You could use tap0 if there is not output.
+
+### For boards running an embedded Linux
+Get the RIOT release onto the embedded Linux environment.
+
+Start  the network from the embedded node, using the serial link to the co-microcontroller, which has to run a border router firmware:
+```bash
+cd <path-to-riot>/tools/ethos
+./start_network.sh <device> tap0 fd00::1/64
+```
+- <device> refers to the local device serial link; for example, for IoT-LAB A8-M3 boards the M3 co-microcontroller's serial link is `/dev/ttyA8_M3`
+- `fd00::1/64` is the default IPv6 prefix. It can be replaced by another local prefix, or even by a global prefix. In this later case, get it thanks to environment variables set in the embedded Linux environment:
+```bash
+root@node-a8-1:~# printenv
+...
+INET6_PREFIX_LEN=64
+INET6_PREFIX=2001:660:5307:3001
+...
+```
