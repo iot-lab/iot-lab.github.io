@@ -25,9 +25,6 @@ Good RIOT tutorials are also available on GitHub:
 
 ## Compilation from IoT-LAB SSH frontend
 
-// Do we set ARMv7 by default on SSH frontends?
-{: .text-warning }
-
 With recent versions of RIOT (2018.01+), the default version of the GNU
 Toolchain for ARM (4.9) doesn't work.
 
@@ -64,6 +61,8 @@ Get the RIOT release onto the embedded Linux environment.
 
 Start  the network from the embedded node, using the serial link to the co-microcontroller, which has to run a border router firmware:
 ```bash
+make -C <path-to-riot>/tools/uhcpd clean all
+make -C <path-to-riot>/tools/ethos clean all
 cd <path-to-riot>/tools/ethos
 ./start_network.sh <device> tap0 fd00::1/64
 ```
