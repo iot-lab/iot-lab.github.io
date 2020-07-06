@@ -1,5 +1,6 @@
-# www
-[WIP] new version of the FIT IoT-LAB website, based on Jekyll
+# IoT-LAB website
+
+Code and content of the IoT-LAB website published at https://www.iot-lab.info.
 
 ## Installation
 With Ruby setup, you can install Jekyll by running the following in your terminal:
@@ -17,6 +18,9 @@ You will be able to update your gem versions later with `bundle update`.
     bundle exec jekyll serve
 
 This restricts your Ruby environment to only use gems set in your `Gemfile`.
+
+To take drafts post into account, use the `--drafts` option.
+
 You can also add livereload for hot-reloading the browser page when the sources change:
 
     bundle exec jekyll serve --livereload
