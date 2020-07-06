@@ -49,19 +49,14 @@ Both sites are equipped with an internal repeater GPS antenna.
 See the [GPS Synced Sniffer]({{ site.baseurl }}{% link learn/tutorials/use-cases/gps-synced-sniffer.md %}) tutorial for an example using GPS of IoT-LAB A8-M3 board to precisely time sniffed radio packets.
 
 ## Ethernet
-The IoT-LAB A8 object features an Ethernet interface, enabling it to connect to a LAN and to communicate with the internet in IPv4/IPv6 via a standard router.
-
-Access through SSH ?
-{:.text-warning}
+The IoT-LAB A8-M3 board features an Ethernet interface, enabling it to connect to a LAN and to communicate with the internet. The boards are only accessible by SSH in IPV4 via the SSH frontend and in IPV6 from the Internet.
 
 ## Power supply
 Concerning the power consumption, only the global + 5 volts is monitored.
 
 ## Programming
-- which system for the A8 and how?
-- The TI SITARA can be debugged through a second FTDI device via the USB port on A8 open node connector
-- how to program the M3 co-microcontroller?
-{:.text-warning}
+
+The IoT-LAB A8-M3 board run an embedded Linux that is built with [Yocto]({{ site.baseurl }}{% link docs/os/yocto.md %}). You can reset, debug and program the M3 co-microcontroller (i.e. STM32) on JTAG through the FTDI2232H connected to the USB. We provide in the Linux image scripts to perform these operations (i.e. `iotlab_flash|reset|debug`). This component allows also a UART link to the STM32 (i.e. `/dev/ttyA8_M3` with baudrate 500000)
 
 
 ## Architecture
@@ -71,5 +66,6 @@ Concerning the power consumption, only the global + 5 volts is monitored.
 
 [<i class="far fa-file-pdf"/> Complete schematics]({{ site.baseurl }}{% link assets/misc/docs/iot-lab-a8/iot-lab-a8-schematics.pdf %})
 
-## Testbed integration
+<!--## Testbed integration
 The Open Node connector gives access to ...
+-->

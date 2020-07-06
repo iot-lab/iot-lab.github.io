@@ -60,7 +60,7 @@ Typical use cases for constrained connected objects often require the use of a b
 case of the STM32 MCU, consumption is reduced to 1 mA when in sleep mode, and remains below 1 μA in standby mode. The AT86RF231 radio chip supports the same type of features, with comparable energy savings.
 
 ## Programming
-You can reset, debug and program the STM32 on JTAG through the FTDI4232H connected to the USB. This component allows also a UART link to the STM32.
+You can reset, debug and program the STM32 on JTAG through the FTDI2232H connected to the USB. This component allows also a UART link to the STM32.
 
 ## Architecture
 
@@ -71,10 +71,11 @@ You can reset, debug and program the STM32 on JTAG through the FTDI4232H connect
 [<i class="far fa-file-pdf"/> Complete schematics](http://github.com/iot-lab/iot-lab/wiki/Docs/iot-lab-m3-schematics.pdf)<br>
 <small>* Note that the second UART on Open Node connector is not useable (wires RX an TX inversed).</small>
 
-## Testbed integration
+<!--## Testbed integration
 The Open Node connector gives access to 3 STM32/GPIO and the STM32/I2C. Two power lines are accessible on this connector :
   * a + 5.0 volts for the board power supply
   * a 3.3 volts for the consumption monitoring of the STM32, the RF component and the sensors
 
 interaction w/ Control Node?
 {: .text-warning }
+-->
