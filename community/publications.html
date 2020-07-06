@@ -7,43 +7,69 @@ title: Publications
 <section>
     {% include quote-iotlab.html %}
 
-    <h2 id="publications">Publications using/citing IoT-LAB</h2>
+    <h2 id="publications">Publications using/citing IoT-LAB <small><span class="badge badge-light float-right">{{ site.data.publications.references | size }}</span></small></h2>
 
     <p class="lead">We used Google Scholar to search and list the works that have used IoT-LAB (see <a href="https://scholar.google.com/citations?user=RLklob4AAAAJ">our profile</a>).</p>
 
-    <div>
-        {% assign issued =  site.data.publications.references | map: 'issued' | uniq | compact %}
-        {% assign years =  issued | map: 'year' | sort | reverse %}
-        {% for year in years %}
-            <h3 class="border-bottom">{{ year }}</h3>
-            <ul>
-            {% for publi in site.data.publications.references %}
-                {% for publi_year in publi.issued %}
-                    {% if year == publi_year.year %}
-                    <li>
-                        <blockquote class="blockquote">
-                        <p class="mb-0">{{ publi.title }}</p>
-                        <footer class="blockquote-footer">
-                        {% for publi_authors in publi.author %}
-                            {{ publi_authors.family }} {{ publi_authors.given }}
-                            {% if forloop.last == true %}
-                            {% else %}
-                                ,&nbsp;
-                            {% endif %}
-                        {% endfor %}
-                        <br>in <cite title="Source Title">
-                                    {% if publi.container-title %}{{ publi.container-title }} {% endif %}
-                                    {% if publi.publisher %}{{ publi.publisher }} {% endif %}
-                                    {% if publi.page %}{{ publi.page }} {% endif %}
-                                    {% if publi.volume %}{{ publi.volume }}{% endif %}
-                                </cite>
-                        </footer>
-                        </blockquote>
-                    </li>
-                    {% endif %}
+    {% assign issued =  site.data.publications.references | map: 'issued' | uniq | compact %}
+    {% assign years =  issued | map: 'year' | sort | reverse %}
+    {% assign cpt = 0 %}
+    {% for year in years %}
+        {% assign publis = site.data.publications.references | where_exp: "item", "item.issued.first.year == year" %}
+        {% assign cpt = cpt | plus: publis.size %}
+    <h3 class="border-bottom">{{ year }} <small><span class="badge badge-light float-right">{{ publis.size }}</span></small></h3>
+    <ul>
+        {% for publi in publis %}
+        <li>
+            <blockquote class="blockquote">
+                <p class="mb-0">{{ publi.title }}</p>
+                <footer class="blockquote-footer">
+                {% for author in publi.author %}
+                    {{ author.family }} {{ author.given }}{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
-            {% endfor %}
-            </ul>
+                    <br>
+                    {% if publi.container-title or publi.publisher or publi.page or publi.volume %}
+                    <cite title="Source Title">
+                        {{ publi.container-title }}
+                        {{ publi.publisher }}
+                        {{ publi.page }}
+                        {{ publi.volume }}
+                    </cite>
+                    {% endif %}
+                    <small><span class="badge badge-secondary"><i class="fas fa-tag"></i> {{ publi.type }}</span></small><br>
+                </footer>
+            </blockquote>
+        </li>
         {% endfor %}
-    </div>
+    </ul>
+    {% endfor %}
+
+    {% assign publis = site.data.publications.references | where_exp: "item", "item.issued == nil" %}
+    {% assign cpt = cpt | plus: publis.size %}
+    <h3 class="border-bottom">Undated <small><span class="badge badge-light float-right">{{ publis.size }}</span></small></h3>
+    <ul>
+        {% for publi in publis %}
+        <li>
+            <blockquote class="blockquote">
+                <p class="mb-0">{{ publi.title }}</p>
+                <footer class="blockquote-footer">
+                {% for author in publi.author %}
+                    {{ author.family }} {{ author.given }}{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+                    <br>
+                    {% if publi.container-title or publi.publisher or publi.page or publi.volume %}
+                    <cite title="Source Title">
+                        {{ publi.container-title }}
+                        {{ publi.publisher }}
+                        {{ publi.page }}
+                        {{ publi.volume }}
+                    </cite>
+                    {% endif %}
+                    <small><span class="badge badge-secondary"><i class="fas fa-tag"></i> {{ publi.type }}</span></small><br>
+                </footer>
+            </blockquote>
+        </li>
+        {% endfor %}
+    </ul>
+
 </section>
