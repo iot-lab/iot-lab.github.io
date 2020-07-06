@@ -52,7 +52,7 @@ The basic resource of the testbed is the node: a specific board deployed at a sp
         <tr>
             <th scope="row">x, y, z</th>
             <td>integer</td>
-            <td>Coordinates of the node (in meters) in a 3D cartesian coordinate system. <span class="text-warning">On the Deployment page of each site you can find where is located the origin (0, 0, 0).</span></td>
+            <td>Coordinates of the node (in meters) in a 3D cartesian coordinate system.</td>
         </tr>
     </tbody>
 </table>
