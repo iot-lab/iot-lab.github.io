@@ -5,11 +5,11 @@ title: Publications
 {% include community.html %}
 
 <section>
+    {% include quote-iotlab.html %}
+
     <h2 id="publications">Publications using/citing IoT-LAB</h2>
 
-    <p class="lead">This list is not exhaustive but regroups some papers shared by users.</p>
-
-    {% include quote-iotlab.html %}
+    <p class="lead">We used Google Scholar to search and list the works that have used IoT-LAB (see <a href="https://scholar.google.com/citations?user=RLklob4AAAAJ">our profile</a>).</p>
 
     <div>
         {% assign issued =  site.data.publications.references | map: 'issued' | uniq | compact %}
