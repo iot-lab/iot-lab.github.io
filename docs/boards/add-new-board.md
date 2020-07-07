@@ -22,5 +22,3 @@ Contact the [admin](mailto:admin@iot-lab.info) team to discuss this point.
 
 ## 3. Run
 Just proceed has usual. You just need to select these specific nodes while submitting your experiment.
-
-Learn how to: [Follow the tutorial](#)
