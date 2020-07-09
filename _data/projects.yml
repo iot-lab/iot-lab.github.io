@@ -25,3 +25,7 @@
 - name: iot-lab-training
   description: This project contains JupyterLab Notebooks that can be used to teach IoT.
   repo: https://github.com/iot-lab/iot-lab-training
+
+- name: iot-lab.github.io
+  description: The IoT-LAB Website based on the Jekyll static site generator and hosting with GitHub Pages.
+  repo: https://github.com/iot-lab/iot-lab.github.io
