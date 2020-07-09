@@ -1,6 +1,6 @@
 # IoT-LAB website
 
-Code and content of the IoT-LAB website published at https://www.iot-lab.info.
+Code and content of the IoT-LAB website published at https://www.iot-lab.info, licensed under [CC BY SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Installation
 With Ruby setup, you can install Jekyll by running the following in your terminal:
