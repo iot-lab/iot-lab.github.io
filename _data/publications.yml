@@ -431,6 +431,9 @@ references:
   title: 'Sharing is caring: A cooperation scheme for rpl network resilience and
     efficiency'
   title-short: Sharing is caring
+  container-title: 2019 ieee symposium on computers and communications (iscc)
+  publisher: IEEE
+  page: '1-6'
 
 - id: amdouni2018extensive
   type: article-journal
@@ -704,8 +707,8 @@ references:
   type: article-journal
   author:
   - family: Hosni
-    given: Ines
-  - family: Theoleyre
+    given: Inès
+  - family: Théoleyre
     given: Fabrice
   issued:
   - year: '2017'
@@ -1147,15 +1150,22 @@ references:
   publisher: IEEE
   page: '1-6'
 
-- id: theoleyrelocalized
-  type: article-journal
+- id: hosni2016localized
+  type: paper-conference
   author:
+  - family: Hosni
+    given: Inès
   - family: Théoleyre
     given: Fabrice
   - family: Hamdi
     given: Noureddine
+  issued:
+  - year: '2016'
   title: Localized scheduling for end-to-end delay constrained low power lossy networks
     with 6TiSCH
+  container-title: 2016 ieee symposium on computers and communication (iscc)
+  publisher: IEEE
+  page: '507-512'
 
 - id: hosni2016localized
   type: paper-conference
@@ -1491,8 +1501,9 @@ references:
   - year: '2014'
   title: Wireless sensor networks testbeds and state-of-the-art multimedia sensor
     nodes
-  container-title: Appl. Math. Inf. Sci
-  page: '935-940'
+  container-title: Applied Mathematics & Information Sciences
+  publisher: Natural Sciences Publishing Corp
+  page: '935'
   volume: '8'
   issue: '3'
 
@@ -1803,8 +1814,8 @@ references:
   issued:
   - year: '2013'
   title: Balancing energy consumption in clustered wireless sensor networks
-  container-title: ISRN Sensor Networks
-  publisher: Hindawi Publishing Corporation
+  container-title: International Scholarly Research Notices
+  publisher: Hindawi
   volume: '2013'
 
 - id: kuntz2013improving
@@ -2412,6 +2423,7 @@ references:
   issued:
   - year: '2015'
   title: Modeling and evaluation of the end-to-end delay in wireless sensor networks
+  publisher: Université de Lorraine
   genre: PhD thesis
 
 - id: bounceur2018detecting
@@ -2453,7 +2465,7 @@ references:
   - year: '2015'
   title: New real evaluation study of rpl routing protocol based on cortex m3 nodes
     of iot-lab test bed
-  container-title: Middle-East J. Sci. Res
+  container-title: Middle-East Journal of Scientific Research
   page: '1639-1651'
   volume: '23'
   issue: '8'
@@ -2576,7 +2588,7 @@ references:
   - year: '2015'
   title: Tests scenario on dtn for iot iii urbanet collaboration. inria-research centre
     grenoble–rhone-alpes
-  publisher: INRIA, Technical Report RT-0465
+  publisher: 'INRIA, Technical Report RT-0465, 2015.\[Online\]. Available: https://hal …'
 
 - id: donassolo2019fog
   type: paper-conference
@@ -2929,8 +2941,8 @@ references:
     given: Gianmarco
   - family: Cousin
     given: Philippe
-  - family: Matheu
-    given: Sara N
+  - family: Garcia
+    given: SNM
   - family: Skarmeta
     given: Antonio
   - family: Fourneret
@@ -2938,6 +2950,9 @@ references:
   - family: Legeard
     given: Bruno
   title: Large scale iot security testing, benchmarking and certification
+  container-title: 'Cognitive Hyperconnected Digital Transformation: Internet of
+    Things Intelligence Evolution, 1st ed.; Vermesan, O., Bacquet, J., Eds'
+  page: '189-220'
 
 - id: leao2019performance
   type: paper-conference
@@ -3185,6 +3200,7 @@ references:
   issued:
   - year: '2017'
   title: Enabling a mobility back-end as a robust service (embers)
+  publisher: River Publishers
 
 - id: matheu2019toward
   type: article-journal
@@ -4220,8 +4236,8 @@ references:
   title-short: IoT content object security with oscore and ndn
   container-title: arXiv preprint arXiv:2001.08023
 
-- id: jungdistributed
-  type: article-journal
+- id: jung2020distributed
+  type: paper-conference
   author:
   - family: Jung
     given: Jinhwan
@@ -4235,8 +4251,14 @@ references:
     given: Namjo
   - family: Yi
     given: Yung
+  issued:
+  - year: '2020'
   title: Distributed slot scheduling for qos guarantee over tsch-based iot networks
     via adaptive parameterization
+  container-title: 2020 19th acm/ieee international conference on information processing
+    in sensor networks (ipsn)
+  publisher: IEEE
+  page: '97-108'
 
 - id: sran2018structure
   type: article-journal
@@ -4449,6 +4471,9 @@ references:
   title: Distributed data access in industrial edge networks
   container-title: IEEE Journal on Selected Areas in Communications
   publisher: IEEE
+  page: '915-927'
+  volume: '38'
+  issue: '5'
 
 - id: lohs2016self
   type: paper-conference
@@ -4489,7 +4514,7 @@ references:
   page: '25-32'
 
 - id: lenders2019lesson
-  type: article-journal
+  type: paper-conference
   author:
   - family: Lenders
     given: Martine S
@@ -4499,8 +4524,10 @@ references:
     given: Matthias
   issued:
   - year: '2019'
-  title: A lesson in scaling 6LoWPAN-minimal fragment forwarding in lossy networks
-  container-title: arXiv preprint arXiv:1905.08089
+  title: A lesson in scaling 6LoWPAN–minimal fragment forwarding in lossy networks
+  container-title: 2019 ieee 44th conference on local computer networks (lcn)
+  publisher: IEEE
+  page: '438-446'
 
 - id: fanitabasi2020decentralized
   type: article-journal
@@ -4578,7 +4605,7 @@ references:
   title: 'Monitorage des réseaux des capteurs sans fils (wsn): Application [à]{.nocase}
     l’interopérabilité sécurisée'
   title-short: Monitorage des réseaux des capteurs sans fils (wsn)
-  publisher: Paris Saclay
+  publisher: Université Paris-Saclay (ComUE)
   genre: PhD thesis
 
 - id: papadopoulos2015improving
@@ -4632,7 +4659,11 @@ references:
     given: Fabrice
   issued:
   - year: '2019'
-  title: Is link-layer anycast scheduling relevant for ieee802. 15.4-tsch networks?
+  title: Is link-layer anycast scheduling relevant for ieee 802.15. 4-tsch networks?
+  container-title: 2019 ieee 44th lcn symposium on emerging topics in networking (lcn
+    symposium)
+  publisher: IEEE
+  page: '133-140'
 
 - id: samaniego2017wireless
   type: thesis
@@ -4784,6 +4815,7 @@ references:
   issued:
   - year: '2018'
   title: Ubiquitous networks for smart grids
+  publisher: Universite des Sciences et Technologies de Lille
   genre: PhD thesis
 
 - id: hermeto2019standard
@@ -4934,4 +4966,48 @@ references:
   title: 'DragonNet: Specification, implementation, experimentation and performance
     evaluation'
   title-short: DragonNet
+
+- id: audeoud2017experimental
+  type: paper-conference
+  author:
+  - family: Audéoud
+    given: Henry-Joseph
+  - family: Heusse
+    given: Martin
+  issued:
+  - year: '2017'
+  title: 'Experimental comparison of routing protocols for wireless sensors networks:
+    Routing overhead and asymmetric links'
+  title-short: Experimental comparison of routing protocols for wireless sensors networks
+  container-title: 2017 29th international teletraffic congress (itc 29)
+  publisher: IEEE
+  page: '55-62'
+  volume: '1'
+
+- id: naas2019placement
+  type: thesis
+  author:
+  - family: Naas
+    given: Mohammed Islam
+  issued:
+  - year: '2019'
+  title: Placement des données de l’internet des objets dans une infrastructure de
+    fog
+  genre: PhD thesis
+
+- id: ioannou2020experimentation
+  type: paper-conference
+  author:
+  - family: Ioannou
+    given: Christiana
+  - family: Vassiliou
+    given: Vasos
+  issued:
+  - year: '2020'
+  title: Experimentation with local intrusion detection in iot networks using supervised
+    learning
+  container-title: 2020 16th international conference on distributed computing in
+    sensor systems (dcoss)
+  publisher: IEEE
+  page: '423-428'
 ...
