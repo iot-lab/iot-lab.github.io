@@ -41,6 +41,8 @@ Wait until the experiment's state is _Running_
 iotlab-experiment wait
 ```
 
+You can note here that we have submitted an experiment by directly associating the firmware. It is also possible to submit the experiment without firmware and to flash the firmware on the nodes in a second step with the `$iotlab-node --update tutorial_m3.elf` command.
+
 ## Interact with the nodes
 
 Get the nodes list assigned to your experiment by the scheduler:
