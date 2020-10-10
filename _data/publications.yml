@@ -3140,7 +3140,7 @@ references:
   volume: '17'
   issue: '1'
 
-- id: audeoud2016vers
+- id: audeoud2017experimental
   type: paper-conference
   author:
   - family: Audéoud
@@ -3148,9 +3148,11 @@ references:
   - family: Heusse
     given: Martin
   issued:
-  - year: '2016'
-  title: Vers un protocole de routage de surcharge minimale dans les réseaux de capteurs
-    sans fils
+  - year: '2017'
+  title: 'Experimental comparison of routing protocols for wireless sensors networks:
+    Routing overhead and asymmetric links'
+  title-short: Experimental comparison of routing protocols for wireless sensors networks
+  container-title: 29th international teletraffic congress
 
 - id: hahm2015operating
   type: article-journal
@@ -5010,4 +5012,34 @@ references:
     sensor systems (dcoss)
   publisher: IEEE
   page: '423-428'
+
+- id: ioannouaccurate
+  type: article-journal
+  author:
+  - family: Ioannou
+    given: Christiana
+  - family: Vassiliou
+    given: Vasos
+  title: Accurate detection of sinkhole attacks in iot networks using local agents
+
+- id: rathod2020effective
+  type: paper-conference
+  author:
+  - family: Rathod
+    given: Vishal J
+  - family: Krishnam
+    given: Sanjana
+  - family: Kumar
+    given: Ayush
+  - family: Baraskar
+    given: Gauri
+  - family: Tahiliani
+    given: Mohit P
+  issued:
+  - year: '2020'
+  title: Effective rto estimation using eifel retransmission timer in coap
+  container-title: 2020 ieee international conference on electronics, computing and
+    communication technologies (conecct)
+  publisher: IEEE
+  page: '1-6'
 ...
