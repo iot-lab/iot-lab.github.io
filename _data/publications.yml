@@ -380,11 +380,9 @@ references:
     processing in sensor networks
   page: '121-132'
 
-- id: theoleyre2019blacklisting
+- id: kotsiou2019blacklisting
   type: article-journal
   author:
-  - family: Theoleyre
-    given: Fabrice
   - family: Kotsiou
     given: Vasileios
   - family: Papadopoulos
@@ -393,9 +391,15 @@ references:
     given: Dimitrios
   - family: Chatzimisios
     given: Periklis
+  - family: Theoleyre
+    given: Fabrice
   issued:
   - year: '2019'
   title: Blacklisting-based channel hopping approaches in low-power and lossy networks
+  container-title: IEEE Communications Magazine
+  page: '48-53'
+  volume: '57'
+  issue: '2'
 
 - id: kotsiou2019blacklisting
   type: article-journal
@@ -5013,14 +5017,20 @@ references:
   publisher: IEEE
   page: '423-428'
 
-- id: ioannouaccurate
-  type: article-journal
+- id: ioannou2020accurate
+  type: paper-conference
   author:
   - family: Ioannou
     given: Christiana
   - family: Vassiliou
     given: Vasos
+  issued:
+  - year: '2020'
   title: Accurate detection of sinkhole attacks in iot networks using local agents
+  container-title: 2020 mediterranean communication and computer networking conference
+    (medcomnet)
+  publisher: IEEE
+  page: '1-8'
 
 - id: rathod2020effective
   type: paper-conference
