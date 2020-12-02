@@ -56,7 +56,7 @@ at **mqtt.iot-lab.info**. This instance is public and only
   ...
   ```
 
-2. Download the certificate file from [here](https://raw.githubusercontent.com/wiki/iot-lab/iot-lab/downloads/iot-lab-ca.pem).
+2. Download the certificate file from [here]({{ site.baseurl }}{% link assets/misc/docs/mqtt/iot-lab-ca.pem %}).
 
 3. Connect to the broker using one of the mosquitto-clients command line:
   ```sh
