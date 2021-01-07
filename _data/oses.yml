@@ -33,3 +33,15 @@
   img: logo-yocto.png
   short-desc: <strong>Yocto</strong> is an open-source project from the Linux Foundation which allows the creation of embedded Linux distributions.
   boards: [IoT-LAB A8-M3]
+
+- name: Contiki
+  website: https://github.com/contiki-os/contiki
+  img: logo-contiki.png
+  short-desc: <strong>Contiki</strong> Contiki is an open source operating system that runs on tiny low-power microcontrollers and makes it possible to develop applications that make efficient use of the hardware while providing standardized low-power wireless communication for a range of hardware platforms.
+  boards: [Zigduino]
+
+- name: Arduino
+  website: https://www.arduino.cc
+  img: logo-arduino.png
+  short-desc: <strong>Arduino</strong> is an open-source electronics platform based on easy-to-use hardware and software.
+  boards: [Arduino Zero, Zigduino]

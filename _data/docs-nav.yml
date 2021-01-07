@@ -31,6 +31,7 @@
     - title: Pycom FiPy
     - title: LoRa gateway
     - title: RTL SDR
+    - title: Zigduino
     - title: Add new board
 
 - title: Deployment

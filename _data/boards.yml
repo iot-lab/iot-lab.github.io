@@ -94,3 +94,8 @@
     board-id: phynode
     mcu-soc:
     radio: [802.15.4]
+-
+    name: Zigduino
+    board-id: zigduino
+    mcu-soc: ATmega128RFA1
+    radio: [802.15.4]
