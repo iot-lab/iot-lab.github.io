@@ -35,16 +35,16 @@ the SSH frontend (or any Host with a global IPv6 address), using the
    the nodes list. For the next of this tutorial we suppose that you obtained
    **m3-1.saclay.iot-lab.info** and **m3-2.saclay.iot-lab.info** nodes
    ```
-   login@saclay:~$ iotlab-experiment get -i <exp_id> -s
-   login@saclay:~$ iotlab-experiment get -i <exp_id> -r
+   login@saclay:~$ iotlab-experiment get -i <exp_id> -p
+   login@saclay:~$ iotlab-experiment get -i <exp_id> -n
    ```
 
-4. Get the code of the 2020.04 release of [RIOT](https://github.com/RIOT-OS/RIOT)
+4. Get the code of the 2020.10 release of [RIOT](https://github.com/RIOT-OS/RIOT)
    from GitHub: 
    ```
    login@saclay:~$ mkdir -p ~/riot
    login@saclay:~$ cd ~/riot
-   login@saclay:~/riot$ git clone https://github.com/RIOT-OS/RIOT.git -b 2020.04-branch
+   login@saclay:~/riot$ git clone https://github.com/RIOT-OS/RIOT.git -b 2020.10-branch
    login@saclay:~/riot$ cd RIOT
    ```
   **Note:** you can also use the RIOT development code (e.g the master branch) but
@@ -72,7 +72,7 @@ the SSH frontend (or any Host with a global IPv6 address), using the
    just built on the first M3 node. Here we use m3-1 but it may  change in your
    case:
    ```
-   login>@saclay:~/riot/RIOT/$ iotlab-node --update examples/gnrc_border_router/bin/iotlab-m3/gnrc_border_router.elf -l saclay,m3,1
+   login>@saclay:~/riot/RIOT/$ iotlab-node --flash examples/gnrc_border_router/bin/iotlab-m3/gnrc_border_router.elf -l saclay,m3,1
    ```
 
 6. Now you can configure the network of the border router on `m3-1` and
@@ -126,7 +126,7 @@ the SSH frontend (or any Host with a global IPv6 address), using the
    Use the CLI-Tools to flash the gnrc_networking firmware that you have just
    built on the first M3 node. Here we use `m3-2` but it may change in your case:
    ```
-   login@saclay:~/riot/RIOT/$ iotlab-node --update examples/gnrc_networking/bin/iotlab-m3/gnrc_networking.elf -l saclay,m3,2
+   login@saclay:~/riot/RIOT/$ iotlab-node --flash examples/gnrc_networking/bin/iotlab-m3/gnrc_networking.elf -l saclay,m3,2
    ```
 
 8. You can now interact with the second M3 node. `m3-2` using `nc`.

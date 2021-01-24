@@ -37,16 +37,16 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    the nodes list. For the next of this tutorial we suppose that you obtained
    **a8-1.saclay.iot-lab.info** and **a8-2.saclay.iot-lab.info** nodes.
    ```
-   login@saclay:~$ iotlab-experiment get -i <exp_id> -s
-   login@saclay:~$ iotlab-experiment get -i <exp_id> -r
+   login@saclay:~$ iotlab-experiment get -i <exp_id> -p
+   login@saclay:~$ iotlab-experiment get -i <exp_id> -n
    ```
 
-5. Get the code of the 2020.04 release of [RIOT](https://github.com/riot-os/riot)
+5. Get the code of the 2020.10 release of [RIOT](https://github.com/riot-os/riot)
    from GitHub:
    ```
    login@saclay:~$ mkdir -p ~/A8/riot
    login@saclay:~$ cd ~/A8/riot
-   login@saclay:~/A8/riot$ git clone https://github.com/RIOT-OS/RIOT.git -b 2020.04-branch
+   login@saclay:~/A8/riot$ git clone https://github.com/RIOT-OS/RIOT.git -b 2020.10-branch
    login@saclay:~/A8/riot$ cd RIOT
    ```
    Note that you can also use the RIOT development code (e.g the master branch)
@@ -150,7 +150,7 @@ _**Description**: The goal of this tutorial is to discover the basics of CoAP wi
    Let’s try it on the CoAP server node:
    ```
    login@saclay:~$ aiocoap-client coap://[2001:660:3207:401:3432:4833:46df:a902]/riot/board
-   (2.05)	iotlab-a8-m3
+   iotlab-a8-m3
    ```
 
 If everything works as described, you can use CoAP with RIOT on IoT-LAB. **Congratulations !**
