@@ -24,7 +24,7 @@ We provide a way to clone Zephyr within the
 repository. Use the following commands:
 
 ```bash
-ssh <login>@saclay;.iot-lab.info
+ssh <login>@saclay.iot-lab.info
 <login>@saclay~$ git clone https://github.com/iot-lab/iot-lab.git
 Cloning into 'iot-lab'...
 ...
