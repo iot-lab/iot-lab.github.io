@@ -60,7 +60,7 @@ at **mqtt.iot-lab.info**. This instance is public and only
 
 3. Connect to the broker using one of the mosquitto-clients command line:
   ```sh
-  $ mosquitto_sub --cafile <path-to>/iot-lab-ca.pem -h mqtt.iot-lab.info -p 8883 -u <iotlab-login> -P <iotlab-passwd> -t iotlab/<io
+  $ mosquitto_sub --cafile <path-to>/iot-lab-ca.pem -h mqtt.iot-lab.info -p 8883 -u <iotlab-login> -P <iotlab-passwd> -t iotlab/<iotlab-login>/test
   ```
 
 ### From an SSH frontend
