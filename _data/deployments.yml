@@ -31,6 +31,7 @@
     - { board: LoRa gateway, number: 1}
     - { board: Pycom, number: 5}
     - { board: RTL SDR, number: 3}
+    - { board: Decawave DWM1001, number: 10}
 
 - site: Strasbourg
   deployment:

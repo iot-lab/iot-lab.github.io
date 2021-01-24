@@ -32,6 +32,7 @@
     - title: LoRa gateway
     - title: RTL SDR
     - title: Zigduino
+    - title: Decawave DWM1001
     - title: Add new board
 
 - title: Deployment
