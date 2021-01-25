@@ -59,10 +59,11 @@ is installed on each frontend in `/opt/gcc-arm-none-eabi-9-2020-q2-update/`.
 
 ### Zephyr
 
-Version 0.12.1 of the Zephyr SDK is now installed in `opt/zephyr-sdk-0.12.1`.
+[Version 0.12.1 of the Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.12.2)
+is now installed in `/opt/zephyr-sdk-0.12.1`.
 The way to build Zephyr firmwares on IoT-LAB has also been updated: now the
 [west meta-tool](https://docs.zephyrproject.org/latest/guides/west/index.html)
-is installed on the SSH frontends. `west` can be used to initialize a zephyr workspace,
-download the required hals and build a Zephyr firmware.
+is installed on the SSH frontends. `west` can be used to initialize a zephyr
+workspace, download the required hals and build a Zephyr firmware.
 The [Zephyr documentation page](https://www.iot-lab.info/docs/os/zephyr) was
 updated following this change.
