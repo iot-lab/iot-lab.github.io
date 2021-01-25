@@ -14,7 +14,7 @@
   website: https://www.zephyrproject.org
   img: logo-zephyr.png
   short-desc: <strong>Zephyr</strong>, a Linux Foundation hosted Collaboration Project, is an open source collaborative effort uniting leaders from across the industry to build a best-in-breed small, scalable, real-time operating system (RTOS) optimized for resource-constrained devices, across multiple architectures.
-  boards: [Arduino Zero, BBC micro bit, Decawave DWM1001, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, NXP FRDM-KW41Z, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A]
+  boards: [Arduino Zero, BBC micro bit, Decawave DWM1001, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, nRF52832-MDK, nRF52840-MDK, NXP FRDM-KW41Z, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A]
 
 - name: FreeRTOS
   website: https://www.freertos.org

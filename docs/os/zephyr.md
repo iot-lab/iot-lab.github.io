@@ -15,109 +15,43 @@ on the Zephyr project website.
 
 ## Use Zephyr on IoT-LAB
 
-### IoT-LAB setup
+### Get Zephyr
 
-**1. Clone the [<i class="fab fa-github"></i> iot-lab/iot-lab](https://github.com/iot-lab/iot-lab) repository**
-
-We provide a way to clone Zephyr within the
-[<i class="fab fa-github"></i> iot-lab/iot-lab](https://github.com/iot-lab/iot-lab)
-repository. Use the following commands:
+The Zephyr [west meta-tool](https://docs.zephyrproject.org/latest/guides/west/index.html)
+is already installed on the SSH frontend, use it to initialize the zephyrproject workspace:
 
 ```bash
 ssh <login>@saclay.iot-lab.info
-<login>@saclay~$ git clone https://github.com/iot-lab/iot-lab.git
-Cloning into 'iot-lab'...
-...
-<login>@saclay~$ cd iot-lab
+<login>@saclay~$ west init ~/zephyrproject
+<login>@saclay~$ cd ~/zephyrproject
+<login>@saclay:~/zephyrproject$ west update cmsis hal_nordic hal_stm32 hal_atmel
 ```
 
-The `make` command then shows the available targets:
-```bash
-<login>@saclay:~/iot-lab$ make
-
-  Welcome to the IoT-LAB development environment setup.
-
-  targets:
-	setup-aggregation-tools
-	setup-cli-tools
-	setup-contiki
-	setup-iot-lab.wiki
-	setup-oml-plot-tools
-	setup-openlab
-	setup-riot
-	setup-wsn430
-	setup-zephyr
-
-	pull
-```
-
-**2. Clone Zephyr**
-
-```bash
-<login>@saclay~$ make setup-zephyr
-make setup-zephyr
-git clone --depth https://github.com/zephyrproject-rtos/zephyr.git parts/zephyr
-Cloning into 'parts/zephyr'...
-...
-<login>@saclay:~/iot-lab$ cd parts/zephyr
-```
-
-The Zephyr code is located in the `~/iot-lab/parts/zephyr` directory.
-
-**3. Setup the Zephyr SDK**
-
-The Zephyr SDK, which is required to build the firmwares, is already installed
-on the SSH frontend of each IoT-LAB site. The SDK can be found in
-`/opt/zephyr-sdk-<version>`. Current version is 1.0.0.
-
-
-You can activate it by simply running:
-
-```sh
-$ source /opt/zephyr.source
-```
-
-This command will also update your `$PATH` variable in order to include a very
-recent version of CMake (>= 3.13), which is required by the Zephyr build
-system.
-
-**Note:** This command must be done in each new shell. To have the SDK setup everytime,
-the command above can be added at the end of your `~/.bashrc` file.
-
-**4. Setup the `ZEPHYR_BASE` environment variable** 
-
-```sh
-<login>@saclay:~/iot-lab/parts/zephyr$ source zephyr-env.sh
-```
-
-**Note:** this command must also be run in each new shell. To have `ZEPHYR_BASE`
-correctly setup everytime, the command above can be added at the end of
-your `~/.bashrc` file (use an absolute path to zephyr-env.sh). 
+This step is the same as the [Get Zephyr step](https://docs.zephyrproject.org/latest/getting_started/index.html#get-zephyr-and-install-python-dependencies)
+of the Zephyr [Getting started documentation](https://docs.zephyrproject.org/latest/getting_started/index.html) page.
 
 ### Build a Zephyr firmware
 
 Now that everything is in place, let’s build a hello_world firmware. This
-firmware is based on the sample provided in `parts/zephyr/samples/hello_world`.
+firmware is based on the sample provided in `zephyrproject/zephyr/samples/hello_world`.
 The sample will be built for the nRF52DK node, which corresponds to the board
-**nrf52_pca10040** in Zephyr.
+**nrf52dk_nrf52832** in Zephyr. The west meta-tool can also be used to build
+this application:
 
 ```bash
-<login>@saclay:~/iot-lab/parts/zephyr$ cd samples/hello_world
-<login>@saclay:~/iot-lab/parts/zephyr/samples/hello_world$ mkdir build-nrf52
-<login>@saclay:~/iot-lab/parts/zephyr/samples/hello_world$ cd build-nrf52
-<login>@saclay:~/iot-lab/parts/zephyr/samples/hello_world/build-nrf52$ cmake -DBOARD=nrf52_pca10040 ..
-<login>@saclay:~/iot-lab/parts/zephyr/samples/hello_world/build-nrf52$ make
+<login>@saclay:~/zephyrproject$ cd zephyr
+<login>@saclay:~/zephyrproject/zephyr$ west build -p auto -b nrf52dk_nrf52832 samples/hello_world
 ```
 
 The generated firmware is located in the
-`zephyr/samples/hello_world/build-nrf52/zephyr` directory:
+`~/zephyrproject/zephyr/build/zephyr` directory:
 
 ```bash
-<login>@saclay:~/iot-lab/parts/zephyr/samples/hello_world/build-nrf52$ ls zephyr/zephyr.{hex,bin,elf}
-zephyr/zephyr.bin  zephyr/zephyr.elf  zephyr/zephyr.hex
+<login>@saclay:~/zephyrproject/zephyr$ ls build/zephyr/zephyr.{hex,bin,elf}
+build/zephyr/zephyr.bin  build/zephyr/zephyr.elf  build/zephyr/zephyr.hex
 ```
 
-Use the `*.elf` file to flash the nodes using the IoT-LAB tools (webportal or
+Use the `*.elf` or `*.bin` file to flash the nodes using the IoT-LAB tools (webportal or
 cli-tools).
 
 ### IoT-LAB/Zephyr board name mapping
@@ -135,17 +69,27 @@ cli-tools).
     <tr>
         <td>nRF52DK</td>
         <td>nrf52dk</td>
-        <td>nrf52dk_pca10040</td>
+        <td>nrf52dk_nrf52832</td>
     </tr>
     <tr>
         <td>nRF52840DK</td>
         <td>nrf52840dk</td>
-        <td>nrf52840_pca10056</td>
+        <td>nrf52840dk_nrf52840</td>
+    </tr>
+    <tr>
+        <td>nRF52832-MDK</td>
+        <td>nrf52832-mdk</td>
+        <td>nrf52832_mdk</td>
+    </tr>
+    <tr>
+        <td>nRF52840-MDK</td>
+        <td>nrf52840-mdk</td>
+        <td>nrf52840_mdk</td>
     </tr>
     <tr>
         <td>nRF51DK</td>
         <td>nrf51dk</td>
-        <td>nrf51_pca10028</td>
+        <td>nrf51dk_nrf51422</td>
     </tr>
     <tr>
         <td>BBC micro:bit</td>
@@ -171,6 +115,11 @@ cli-tools).
         <td>ST B-L475E-IOT01A</td>
         <td>st-iotnode</td>
         <td>disco_l475_iot1</td>
+    </tr>
+    <tr>
+        <td>Decawave DWM1001</td>
+        <td>dwm1001</td>
+        <td>decawave_dwm1001_dev</td>
     </tr>
     </tbody>
 </table>
