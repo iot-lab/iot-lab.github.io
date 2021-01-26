@@ -12,22 +12,26 @@ layout: docs
   <tbody>
       <tr>
           <th>board ID</th>
-          <th>radio</th>
-          <th>OS support</th>
+	  {% if board.radio.size > 0 %}<th>radio</th>{% endif %}
+	  {% if os_support.size > 0 %}<th>OS support</th>{% endif %}
           <th>deployment</th>
       </tr>
       <tr>
           <td><span class="badge badge-primary text-monospace">{{ board.board-id }}</span></td>
+	  {% if board.radio.size > 0 %}
           <td>
               {% for radio in board.radio %}
               <span class="badge badge-pill badge-secondary">{{ radio }}</span>
               {% endfor %}
           </td>
+	  {% endif %}
+	  {% if os_support.size > 0 %}
           <td>
               {% for os in os_support %}
               <a class="badge badge-info" href="{{ '/docs/os/' | relative_url }}{{ os.name | slugify }}">{{ os.name }}</a>
               {% endfor %}
           </td>
+	  {% endif %}
           <td>
               {% for loc in site.data.deployments %}
               {% assign deployment = loc.deployment | where: "board", page.board | first %}
