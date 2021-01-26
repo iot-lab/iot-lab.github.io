@@ -167,7 +167,7 @@ You can note that it's possible to have a different monitoring configuration for
 With command-line tools use these commands:
 
 ``` bash
-$ wget ?????/assets/firmwares/tutorial_m3.elf .
+$ wget {{ site.url }}{{ '/assets/firmwares/tutorial_m3.elf' | relative_url}} .
 $ iotlab-experiment submit -d 20 -l 2,archi=m3:at86rf231+site=grenoble,tutorial_m3.elf,<profile_name>
 $ iotlab-experiment wait
 $ iotlab-experiment get -ni
