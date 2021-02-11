@@ -386,7 +386,7 @@ references:
   - family: Kotsiou
     given: Vasileios
   - family: Papadopoulos
-    given: Georgios
+    given: Georgios Z
   - family: Zorbas
     given: Dimitrios
   - family: Chatzimisios
@@ -4596,7 +4596,7 @@ references:
   type: thesis
   author:
   - family: Papadopoulos
-    given: Georgios
+    given: Georgios Z
   issued:
   - year: '2015'
   title: Improving medium access for dynamic wireless sensor networks
