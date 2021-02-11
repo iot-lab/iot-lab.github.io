@@ -401,28 +401,6 @@ references:
   volume: '57'
   issue: '2'
 
-- id: kotsiou2019blacklisting
-  type: article-journal
-  author:
-  - family: Kotsiou
-    given: Vasileios
-  - family: Papadopoulos
-    given: Georgios Z
-  - family: Zorbas
-    given: Dimitrios
-  - family: Chatzimisios
-    given: Periklis
-  - family: Theoleyre
-    given: Fabrice
-  issued:
-  - year: '2019'
-  title: Blacklisting-based channel hopping approaches in low-power and lossy networks
-  container-title: IEEE Communications Magazine
-  publisher: IEEE
-  page: '48-53'
-  volume: '57'
-  issue: '2'
-
 - id: foubert2019sharing
   type: paper-conference
   author:
