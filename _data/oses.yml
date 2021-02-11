@@ -2,7 +2,7 @@
   website: http://www.riot-os.org/
   img: logo-riot.png
   short-desc: <strong>RIOT</strong> is a real-time multi-threading operating system that explicitly considers devices with minimal resources but eases development across the wide range of devices that are typically found in the Internet of Things.
-  boards: [IoT-LAB M3, Arduino Zero, BBC micro bit, Decawave DWM1001, Microchip SAMR21, Microchip SAMR30, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, nRF52832-MDK, nRF52840-MDK, NXP FRDM-KW41Z, Phytec PhyNODE-KW2X, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A, Zolertia Firefly]
+  boards: [IoT-LAB M3, Arduino Zero, BBC micro bit, Decawave DWM1001, Microchip SAMR21, Microchip SAMR30, Nordic nRF51DK, Nordic nRF52DK, Nordic nRF52840DK, nRF52832-MDK, nRF52840-MDK, NXP FRDM-KW41Z, Phytec PhyNODE-KW2X, ST B-L072Z-LRWAN1, ST B-L475E-IOT01A, Zigduino, Zolertia Firefly]
 
 - name: Contiki-NG
   website: http://www.contiki-ng.org
