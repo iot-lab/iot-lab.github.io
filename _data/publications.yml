@@ -5030,4 +5030,19 @@ references:
     communication technologies (conecct)
   publisher: IEEE
   page: '1-6'
+
+- id: rathod2020geometric
+  type: paper-conference
+  author:
+  - family: Rathod
+    given: Vishal J
+  - family: Tahiliani
+    given: Mohit P
+  issued:
+  - year: '2020'
+  title: Geometric Sequence Technique for Effective RTO Estimation in CoAP
+  container-title: 2020 IEEE International Conference on Advanced Networks and 
+    Telecommunications Systems (ANTS)
+  publisher: IEEE
+  page: '1-6'
 ...
