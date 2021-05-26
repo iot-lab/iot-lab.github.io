@@ -43,3 +43,8 @@
   deployment:
     - { board: IoT-LAB M3, number: 18}
     - { board: IoT-LAB A8-M3, number: 11}
+
+- site: Paris
+  deployment:
+    - { board: IoT-LAB M3, number: 69}
+    - { board: IoT-LAB A8-M3, number: 62}

@@ -2,7 +2,7 @@
 title: Lyon
 group: deployment
 iotlab-site: lyon
-description: On the Lyon site, the nodes are deployed at the CITI laboratory building. The nodes are deployed in a classroom of the INSA engineering school. This site is very usefull for practical courses with INSA students.
+description: On the Lyon site, the nodes are deployed at the CITI laboratory building. The nodes are deployed in a classroom of the INSA engineering school. This site is very useful for practical courses with INSA students.
 ---
 
 ## Topology
