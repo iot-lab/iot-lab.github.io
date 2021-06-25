@@ -5102,4 +5102,47 @@ references:
   - year: 2016
   title: A case for time slotted channel hopping for ICN in the IoT
   container-title: arXiv preprint arXiv:1602.08591
+
+- id: kalita2021adaptive
+  type: article-journal
+  author:
+  - family: Kalita
+    given: Alakesh
+  - family: Khatua
+    given: Manas
+  issued:
+  - year: 2021
+  title: Adaptive Control Packet Broadcasting Scheme for Faster 6TiSCH Network Bootstrapping
+  container-title: IEEE Internet of Things Journal
+  publisher: IEEE
+
+- id: kalita2021autonomous
+  type: article-journal
+  author:
+  - family: Kalita
+    given: Alakesh
+  - family: Khatua
+    given: Manas
+  issued:
+  - year: 2021
+  title: Autonomous Allocation and Scheduling of Minimal Cell in 6TiSCH Network
+  container-title: IEEE Internet of Things Journal
+  publisher: IEEE
+
+- id: kalita2021opportunistic
+  type: article-journal
+  author:
+  - family: Kalita
+    given: Alakesh
+  - family: Khatua
+    given: Manas
+  issued:
+  - year: 2021
+  title: Opportunistic Transmission of Control Packets for Faster Formation of 6TiSCH
+    Network
+  container-title: ACM Transactions on Internet of Things
+  publisher: ACM New York, NY, USA
+  page: 1-29
+  volume: '2'
+  issue: '1'
 ...
