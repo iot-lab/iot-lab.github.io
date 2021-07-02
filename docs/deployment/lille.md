@@ -10,6 +10,7 @@ description: "On the Lille site, the nodes are deployed in our two buidlings at 
 * In the [A building](#topology-in-the-a-building):
     * 256 IoT-LAB M3
     * 11 Zolertia Firefly
+    * 14 Decawave DWM1001
 * A set of different boards in [Le Cube](#le-cube):
     * 5 BBC micro:bit
     * 5 IoT-LAB M3
@@ -36,7 +37,7 @@ Here is the distribution of nodes per floor:
 * Ground floor: <tt>m3-[1-45], firefly-[1-3]</tt>
 * First floor: <tt>m3-[46-111], firefly-[4-6]</tt>
 * Second floor: <tt>m3-[112-129], firefly-[7-8]</tt>
-* Dedicated room (2nd floor): <tt>m3-[130-256], firefly[9-11]</tt>
+* Dedicated room (2nd floor): <tt>m3-[130-256], firefly[9-11], dwm1001-[1-14]</tt>
 
 
 <div class="mb-3 embed-responsive embed-responsive-16by9">
@@ -77,6 +78,9 @@ Here is the distribution of nodes per floor:
 ## Le Cube
 
 There is an additional deployment in the B building, around 100 m from the other one, in a wooden structure called Le Cube. It's purpose, here, is not to experiment at a large scale, but rather to test network solutions, protocols or Operating Systems over different hardwares and radios. This deployment brings a practical way to experiment compatibility and interoperability scenarios.
+
+Here is the list of nodes present there: <tt>firefly[12-16], m3-[260-264], microbit-[1-5], samr21-[1-5], st-lrwam1-[1-5]</tt>
+
 
 <div class="row">
     <div class="col p-1">
