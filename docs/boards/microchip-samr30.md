@@ -14,7 +14,7 @@ also provides an SubGHz radio interface.
 </div>
 
 The SAMR30 board can reset, debug and program the ARM Cortex M0 through the
-embedded debugger (EDBG) connected to the gateway USB port. This component also
+embedded debugger (OpenOCD) connected to the gateway USB port. This component also
 allows a UART connection to the M0. The input power source is configured
 through the power management.
 
