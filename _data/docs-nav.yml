@@ -14,6 +14,7 @@
     - title: Overview
     - title: IoT-LAB M3
     - title: IoT-LAB A8-M3
+    - title: Microchip SAMD21
     - title: Microchip SAMR21
     - title: Microchip SAMR30
     - title: Arduino Zero
@@ -23,6 +24,7 @@
     - title: Nordic nRF52DK
     - title: Nordic nRF52840DK
     - title: Nordic nRF51DK
+    - title: Nucleo-F070RB
     - title: NXP FRDM-KW41Z
     - title: BBC micro:bit
     - title: nRF52832-MDK
@@ -40,6 +42,7 @@
     - title: Grenoble
     - title: Lille
     - title: Lyon
+    - title: Nantes
     - title: Paris
     - title: Saclay
     - title: Strasbourg
