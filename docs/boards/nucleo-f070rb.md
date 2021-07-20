@@ -9,11 +9,11 @@ The Nucleo F070RB board is based on an
 built on top of an STM32 micro-controller in LQFP64 package.
 
 <div style="text-align:center">
-<img src="{{ '/assets/images/docs/boards/nucleo-f070rb/' | relative_url}}nucleo-f070rb.jpg" style="width:50%;"/>
+<img src="{{ '/assets/images/docs/boards/nucleo-f070rb/' | relative_url}}nucleo-f070rb.jpg" style="width:40%;"/>
 </div>
 
 The Nucleo-F070RB board can reset, debug and program the STM32 through the
-embedded debugger (EDBG) connected to the gateway USB port. The input power source is configured
+embedded debugger (ST-LINK) connected to the gateway USB port. The input power source is configured
 through the power management.
 
 

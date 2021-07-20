@@ -13,7 +13,7 @@ built on top of an Microchip ARM Cortex M0 micro-controller.
 </div>
 
 The SAMD21 board can reset, debug and program the ARM Cortex M0 through the
-embedded debugger (EDBG) connected to the gateway USB port. This component also
+embedded debugger (OpenOCD) connected to the gateway USB port. This component also
 allows a UART connection to the M0. The input power source is configured
 through the power management.
 
@@ -25,7 +25,7 @@ In details, the main hardware components  contained in the node are :
 
 ## Extensions
 
-Nodes in **IETR Nantes** are equipped with wireless extensions.
+Nodes in **Nantes site** are equipped with wireless extensions.
 
 ### 802.15.4
 
