@@ -58,7 +58,7 @@
     name: Nucleo F070RB
     board-id: nucleo-f070rb
     mcu-soc: Cortex M0
-    radio: []
+    radio: [BLE]
 -
     name: NXP FRDM-KW41Z
     board-id: frdm-kw41z
