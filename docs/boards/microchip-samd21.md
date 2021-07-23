@@ -17,17 +17,19 @@ embedded debugger (OpenOCD) connected to the gateway USB port. This component al
 allows a UART connection to the M0. The input power source is configured
 through the power management.
 
+## IoT-LAB special configuration
+
+The serial connection baudrate should be configured at **115200 bauds** in the
+firmware.
 
 ## Schematics and Datasheets
 
 In details, the main hardware components  contained in the node are :
-  * [<i class="far fa-file-pdf"/>&nbsp;ATSAMD21J18A](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Atmel-42181-SAM-D21_Datasheet.pdf)
+  * [<i class="far fa-file-pdf"/>&nbsp;ATSAMD21J18A](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Atmel-42181-SAM-D21_Datasheet.pdf) (48 MHz, 32bits, 32kB RAM, 256kB flash)
 
 ## Extensions
 
 Nodes in **Nantes site** are equipped with wireless extensions.
-
-### 802.15.4
 
 The wireless extension is providing access to a
 [<i class="far fa-file-pdf"/>&nbsp;Wireless REB233-XPRO](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42188-REB233-XPRO-User-Guide.pdf)
