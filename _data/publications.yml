@@ -270,7 +270,7 @@ references:
 - id: vandaele2017large
   type: paper-conference
   author:
-  - family: Vandaële
+  - family: Vandaele
     given: Julien
   - family: Duquennoy
     given: Simon
@@ -1130,7 +1130,7 @@ references:
   author:
   - family: Hosni
     given: Inès
-  - family: Theoleyre
+  - family: Théoleyre
     given: Fabrice
   - family: Hamdi
     given: Noureddine
@@ -1147,7 +1147,7 @@ references:
   author:
   - family: Hosni
     given: Inès
-  - family: Theoleyre
+  - family: Théoleyre
     given: Fabrice
   - family: Hamdi
     given: Noureddine
@@ -2660,10 +2660,10 @@ references:
   publisher: IEEE
   page: 1-6
 
-- id: gundougran2018icn
+- id: gundougan2018icn
   type: paper-conference
   author:
-  - family: Gündoğran
+  - family: Gündoğan
     given: Cenk
   - family: Kietzmann
     given: Peter
@@ -2821,7 +2821,7 @@ references:
 - id: de2018optimization
   type: thesis
   author:
-  - family: De Araujo Marques Leão
+  - family: DE ARAUJO MARQUES LEãO
     given: Lucas
   issued:
   - year: 2018
@@ -3022,7 +3022,7 @@ references:
   author:
   - family: Orostica
     given: Boris
-  - family: Núñez
+  - family: Nunez
     given: Felipe
   issued:
   - year: 2018
@@ -3720,10 +3720,10 @@ references:
   publisher: IEEE
   page: 1-8
 
-- id: gundougran2018ndn
+- id: gundougan2018ndn
   type: paper-conference
   author:
-  - family: Gündoğran
+  - family: Gündoğan
     given: Cenk
   - family: Kietzmann
     given: Peter
@@ -3890,10 +3890,10 @@ references:
   author:
   - family: Pandey
     given: Navneet
-  - literal: others
   issued:
   - year: 2018
   title: Jitters in Operating Systems for the Internet of Things
+  publisher: University of Houston
   genre: thèse de doctorat
 
 - id: papadopoulos2016guard
@@ -4124,10 +4124,13 @@ references:
     given: Manas
   issued:
   - year: 2020
-  title: Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH
-    Network
+  title: Channel condition based dynamic beacon interval for faster formation of 6TiSCH
+    network
   container-title: IEEE Transactions on Mobile Computing
   publisher: IEEE
+  page: 2326-2337
+  volume: '20'
+  issue: '7'
 
 - id: la2016misbehavior
   type: paper-conference
@@ -4509,9 +4512,9 @@ references:
     given: Evangelos
   issued:
   - year: 2020
-  title: Decentralized Socio-technical Services and Applications for the Internet
-    of Things–A Testbed Self-Integration
-  container-title: arXiv preprint arXiv:2002.02219
+  title: Decentralized sociotechnical services and applications for the internet of
+    things-A testbed self-integration
+  container-title: CoRR, vol. abs/2002.02219
 
 - id: elsts2020empirical
   type: article-journal
@@ -4795,14 +4798,15 @@ references:
   genre: thèse de doctorat
 
 - id: le2016prototype
-  type: article-journal
+  type: thesis
   author:
   - family: Le Roux
     given: Solomon Petrus
-  - literal: others
   issued:
   - year: 2016
   title: A prototype animal borne behaviour monitoring system
+  publisher: 'Stellenbosch: Stellenbosch University'
+  genre: thèse de doctorat
 
 - id: watteyne2019internet
   type: thesis
@@ -4836,12 +4840,14 @@ references:
   title: Evaluación del protocolo HTTP/2 para internet de las cosas
   publisher: Universidad de Chile
 
-- id: guggemosdynamic
+- id: guggemos2018dynamic
   type: article-journal
   author:
   - family: Guggemos
     given: Tobias
   title: Dynamic Key Distribution for Secure Group Communications in Constrained Environments
+  container-title: 'Doctoral Consortium: Doctoral Consortium on e-Business and Telecommunications'
+  volume: '2018'
 
 - id: orostica2018algorithm
   type: article-journal
@@ -5145,4 +5151,37 @@ references:
   page: 1-29
   volume: '2'
   issue: '1'
+
+- id: kim2021a3
+  type: paper-conference
+  author:
+  - family: Kim
+    given: Seohyang
+  - family: Kim
+    given: Hyung-Sin
+  - family: Kim
+    given: Chong-kwon
+  issued:
+  - year: 2021
+  title: 'A3: Adaptive Autonomous Allocation of TSCH Slots'
+  container-title: Proceedings of the 20th International Conference on Information
+    Processing in Sensor Networks (co-located with CPS-IoT Week 2021)
+  page: 299-314
+
+- id: milani2021design
+  type: article-journal
+  author:
+  - family: Milani
+    given: Stefano
+  - family: Chatzigiannakis
+    given: Ioannis
+  issued:
+  - year: 2021
+  title: Design, Analysis, and Experimental Evaluation of a New Secure Rejoin Mechanism
+    for LoRaWAN Using Elliptic-Curve Cryptography
+  container-title: Journal of Sensor and Actuator Networks
+  publisher: Multidisciplinary Digital Publishing Institute
+  page: '36'
+  volume: '10'
+  issue: '2'
 ...
