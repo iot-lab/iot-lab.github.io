@@ -5184,4 +5184,21 @@ references:
   page: '36'
   volume: '10'
   issue: '2'
+
+- id: bettoumi2021efficient
+  type: paper-conference
+  author:
+  - family: Bettoumi
+    given: Balkis
+  - family: Bouallegue
+    given: Ridha
+  issued:
+  - year: 2021
+  title: Efficient Reduction of the Transmission Delay of the Authentication Based
+    Elliptic Curve Cryptography in 6LoWPAN Wireless Sensor Networks in the Internet
+    of Things
+  container-title: 2021 International Wireless Communications and Mobile Computing
+    (IWCMC)
+  publisher: IEEE
+  page: 1471-1476
 ...
