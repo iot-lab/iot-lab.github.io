@@ -53,5 +53,5 @@
 - site: Nantes
   deployment:
     - { board: Microchip SAMD21, number: 5}
-    - { board: Nucleo F070RB, number: 6 }
+    - { board: Nucleo F070RB, number: 8 }
 
