@@ -25,6 +25,7 @@ ssh <login>@saclay.iot-lab.info
 <login>@saclay~$ west init ~/zephyrproject
 <login>@saclay~$ cd ~/zephyrproject
 <login>@saclay:~/zephyrproject$ west update cmsis hal_nordic hal_stm32 hal_atmel
+<login>@saclay:~/zephyrproject$ west zephyr-export
 ```
 
 This step is the same as the [Get Zephyr step](https://docs.zephyrproject.org/latest/getting_started/index.html#get-zephyr-and-install-python-dependencies)
