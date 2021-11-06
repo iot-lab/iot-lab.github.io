@@ -34,9 +34,9 @@ In details, the main hardware components  contained in the node are :
 ## Extensions with sensors
 
 Nodes in **Saclay site (samr21-1 to samr21-15)** are equipped with
-[<i class="far fa-file-pdf"/>&nbsp;Microchip IO1 Xplained extension](http://ww1.microchip.com/downloads/en/devicedoc/atmel-8351-mcu_wireless-at86rf233_datasheet.pdf).
+[<i class="far fa-file-pdf"/>&nbsp;Microchip IO1 Xplained extension](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42078-IO1-Xplained-Pro_User-Guide.pdf).
 On those nodes, extra sensors are also available:
-  * a Light sensor [<i class="far fa-file-pdf"/>&nbsp;Vishay TEMT600](http://www.vishay.com/docs/81579/temt6000.pdf)
-  * a Temperature sensor [<i class="far fa-file-pdf"/>&nbsp;Atmel AT30TSE758](https://www.mouser.com/datasheet/2/36/doc8751-68941.pdf)
+  * a Light sensor [<i class="far fa-file-pdf"/>&nbsp;Vishay TEMT600](http://www.vishay.com/docs/81579/temt6000.pdf) 
+  * a Temperature sensor [<i class="far fa-file-pdf"/>&nbsp;Atmel AT30TSE758](https://www.mouser.com/datasheet/2/36/doc8751-68941.pdf) (I2C-Addr: 0x4f)
   * an extra LED (orange)
   * a microSD Card Connector
