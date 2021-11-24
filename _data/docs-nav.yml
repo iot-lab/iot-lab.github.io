@@ -17,6 +17,7 @@
     - title: Microchip SAMD21
     - title: Microchip SAMR21
     - title: Microchip SAMR30
+    - title: Microchip SAMR34
     - title: Arduino Zero
     - title: Zolertia Firefly
     - title: ST B-L072Z-LRWAN1
@@ -25,6 +26,7 @@
     - title: Nordic nRF52840DK
     - title: Nordic nRF51DK
     - title: Nucleo-F070RB
+    - title: Nucleo-WL55JC
     - title: NXP FRDM-KW41Z
     - title: BBC micro:bit
     - title: nRF52832-MDK

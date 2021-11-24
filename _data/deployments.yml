@@ -12,6 +12,8 @@
     - { board: IoT-LAB M3, number: 380}
     - { board: IoT-LAB A8-M3, number: 228}
     - { board: Raspberry Pi 3, number: 5}
+    - { board: Microchip SAMR34, number: 2}
+    - { board: Nucleo WL55JC, number: 5}
 
 - site: Saclay
   deployment:
