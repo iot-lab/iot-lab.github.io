@@ -62,7 +62,7 @@ To do so, we provide a pool of public IPv6 /64 prefixes per site that can be use
 | Grenoble   | 128 | 2001:660:5307:3100::/64 | 2001:660:5307:317f::/64 |
 | Lille      | 128 | 2001:660:4403:0480::/64 | 2001:660:4403:04ff::/64 |
 | Saclay     | 64  | 2001:660:3207:04c0::/64 | 2001:660:3207:04ff::/64 |
-| Strasbourg | 32  | 2001:660:4701:f0a0::/64 | 2001:660:4701:f0bf::/64 |
+| Strasbourg | 32  | 2a07:2e40:fffe:00e0::/64 | 2a07:2e40:fffe:00ff::/64 |
 {: .table .table-striped}
 
 Selecting an already used prefix may bring to an _“overlaps with routes”_ error while creating the IPv6 over serial interface. To see currently used IPv6 prefixes on a site, use this command from its SSH frontend:
@@ -92,8 +92,8 @@ Its IPV6 configuration can be known with the following environment variables:
 ```bash
 root@node-a8-1:~# printenv
 ...
-GATEWAY6_ADDR=2001:660:4701:f080:ff::
-INET6_ADDR=2001:660:4701:f080::1/64
+GATEWAY6_ADDR=2a07:2e40:fffe:00c0:ff::
+INET6_ADDR=2a07:2e40:fffe:00c0::1/64
 ...
 ```
 
@@ -112,7 +112,7 @@ Each embedded Linux node has a dedicated /64 IPv6 prefix to build its IPv6 subne
 root@node-a8-1:~# printenv
 ...
 INET6_PREFIX_LEN=64
-INET6_PREFIX=2001:660:4701:f081
+INET6_PREFIX=2a07:2e40:fffe:c1
 ...
 ```
 
