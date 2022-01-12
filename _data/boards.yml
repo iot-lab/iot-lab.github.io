@@ -114,3 +114,8 @@
     board-id: dwm1001
     mcu-soc: Cortex M4
     radio: [BLE, UWB]
+-
+    name: Raspberry Pi 3
+    board-id: rpi3
+    mcu-soc: 4x Cortex-A53
+    radio: [802.15.4, BLE, Wifi]
