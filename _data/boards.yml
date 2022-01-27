@@ -25,6 +25,11 @@
     mcu-soc: Cortex M0
     radio: [Sub-GhZ]
 -
+    name: Microchip SAMR34
+    board-id: samr34
+    mcu-soc: Cortex M0
+    radio: [LoRa]
+-
     name: Zolertia Firefly
     board-id: firefly
     mcu-soc: Cortex M3
@@ -59,6 +64,11 @@
     board-id: nucleo-f070rb
     mcu-soc: Cortex M0
     radio: [BLE]
+-
+    name: Nucleo WL55JC
+    board-id: nucleo-wl55jc
+    mcu-soc: Cortex M4/M0
+    radio: [LoRa]
 -
     name: NXP FRDM-KW41Z
     board-id: frdm-kw41z
