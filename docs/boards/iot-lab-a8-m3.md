@@ -56,7 +56,7 @@ Concerning the power consumption, only the global + 5 volts is monitored.
 
 ## Programming
 
-The IoT-LAB A8-M3 board run an embedded Linux that is built with [Yocto]({{ site.baseurl }}{% link docs/os/yocto.md %}). You can reset, debug and program the M3 co-microcontroller (i.e. STM32) on JTAG through the FTDI2232H connected to the USB. We provide in the Linux image scripts to perform these operations (i.e. `iotlab_flash|reset|debug`). This component allows also a UART link to the STM32 (i.e. `/dev/ttyA8_M3` with baudrate 500000)
+The IoT-LAB A8-M3 board run an embedded Linux that is built with [Yocto]({{ site.baseurl }}{% link docs/os/yocto.md %}). You can reset, debug and program the M3 co-microcontroller (i.e. STM32) on JTAG through the FTDI2232H connected to the USB. We provide in the Linux image scripts to perform these operations (i.e. `iotlab_flash|reset|debug`). This component allows also a UART link to the STM32 (i.e. `/dev/iotlab/ttyA8_M3` with baudrate 500000)
 
 
 ## Architecture

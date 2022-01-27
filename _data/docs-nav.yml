@@ -35,6 +35,7 @@
     - title: RTL SDR
     - title: Zigduino
     - title: Decawave DWM1001
+    - title: Raspberry Pi 3
     - title: Add new board
 
 - title: Deployment
