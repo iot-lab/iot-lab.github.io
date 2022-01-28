@@ -3336,7 +3336,10 @@ references:
   - year: 2018
   title: 'Internet of things (iot): Operating system, applications and protocols design,
     and validation techniques'
+  container-title: Future Generation Computer Systems
   publisher: Elsevier
+  page: 699-706
+  volume: '88'
 
 - id: wahlischold
   type: article-journal
@@ -5201,4 +5204,43 @@ references:
     (IWCMC)
   publisher: IEEE
   page: 1471-1476
+
+- id: kettouche2021bandwidth
+  type: paper-conference
+  author:
+  - family: Kettouche
+    given: Souhila
+  - family: Maimour
+    given: Moufida
+  - family: Derdouri
+    given: Lakhdar
+  issued:
+  - year: 2021
+  title: Bandwidth provision through disjoint multipath RPL in the IoMT
+  container-title: 2nd International Conference on Computer Science’s Complex Systems
+    and their Applications, ICCSA 2021
+
+- id: santi2021automated
+  type: paper-conference
+  author:
+  - family: Santi
+    given: Nina
+  - family: Grünblatt
+    given: Rémy
+  - family: Foubert
+    given: Brandon
+  - family: Hameed
+    given: Aroosa
+  - family: Violos
+    given: John
+  - family: Leivadeas
+    given: Aris
+  - family: Mitton
+    given: Nathalie
+  issued:
+  - year: 2021
+  title: Automated and Reproducible Application Traces Generation for IoT Applications
+  container-title: Proceedings of the 17th ACM Symposium on QoS and Security for Wireless
+    and Mobile Networks
+  page: 17-24
 ...
