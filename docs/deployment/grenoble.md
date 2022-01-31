@@ -7,14 +7,16 @@ description: On the Grenoble site, the nodes are deployed at Inria Grenoble – 
 
 ## Topology
 
-Grenoble testbed is deployed at a building scale, over the ground floor of Inria building, through corridors in the raised floors and dropped ceilings.
+Grenoble testbed is deployed at a building scale, over the ground floor of Inria building, through corridors in the raised floors and dropped ceilings. 
 
 * The nodes in the raised floors are fixed horizontally under the tiles.
 * The nodes in the dropped ceilings are fixed vertically to the wall at a height of 2.6 m and 3.2 m.
 
+We have also added an extension with a room (i.e. K on the plan) to plug in the new boards and manage LoRa deployment with a [The Things Network](https://www.thethingsnetwork.org/) gateway.
+
 <div class="row">
 <div class="col-lg-6" markdown="1">
-Here is the distribution of nodes by corridor:
+Here is the distribution of nodes:
 - **J corridor**
   - floor: <tt>m3-[1-69]</tt>
   - ceiling: <tt>m3-[359-380]</tt>, <tt>a8-[1-58]</tt>
@@ -32,8 +34,14 @@ Here is the distribution of nodes by corridor:
 - **G corridor**:
   - floor: <tt>m3-[290-358]</tt>
   - ceiling: <tt>a8-[149-228]</tt>
+- **K room**:
+  - <tt>nucleo-wl55jc-[1-5]</tt>
+  - <tt>samr34-[1-2]</tt>
+  - <tt>rpi3-[1-5]</tt>
 </div>
 <div class="col-lg-6">
+    <br>
+    <br>
     <a href="{{ '/assets/images/deployments/grenoble/' | relative_url }}plan.png" data-toggle="lightbox" data-gallery="gallery">
         <img class="img-fluid" src="{{ '/assets/images/deployments/grenoble/' | relative_url }}plan.png">
     </a>
