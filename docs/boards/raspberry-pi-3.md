@@ -17,9 +17,7 @@ To provide 802.15.4 connectivity all RPI3B(s) are deployed with a co-microcontro
 Nodes in **Grenoble site (rpi3-1 to rpi3-5)** are equipped with the [SAMR21 co-microcontroller]({{ site.baseurl }}{% link docs/boards/microchip-samr21.md %})
 
 ## Ethernet
-The Raspberry Pi 3 board features an Ethernet interface, enabling it to connect to a LAN and to communicate with the internet. The boards are only accessible by SSH in IPV4 via the SSH frontend.
-
-Please note that currently **RPI3 nodes do not have IPV6 support**.
+The Raspberry Pi 3 board features an Ethernet interface, enabling it to connect to a LAN and to communicate with the internet. The boards are only accessible by SSH in IPV4 via the SSH frontend and in IPV6 from the Internet.
 
 ## Power supply
 Concerning the power consumption, only the global + 5 volts is monitored.
