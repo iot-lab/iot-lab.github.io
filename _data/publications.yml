@@ -5243,4 +5243,40 @@ references:
   container-title: Proceedings of the 17th ACM Symposium on QoS and Security for Wireless
     and Mobile Networks
   page: 17-24
+
+- id: rathod2022geometric
+  type: article-journal
+  author:
+  - family: Rathod
+    given: Vishal
+  - family: Tahiliani
+    given: Mohit P
+  issued:
+  - year: 2022
+  title: Geometric Series based effective RTO estimation Technique for CoCoA
+  container-title: Ad Hoc Networks
+  publisher: Elsevier
+  page: '102801'
+  volume: '130'
+
+- id: donassolo2021online
+  type: article-journal
+  author:
+  - family: Donassolo
+    given: Bruno
+  - family: Legrand
+    given: Arnaud
+  - family: Mertikopoulos
+    given: Panayotis
+  - family: Fajjari
+    given: Ilhem
+  issued:
+  - year: 2021
+  title: 'Online Reconfiguration of IoT Applications in the Fog: The Information-Coordination
+    Trade-off'
+  container-title: IEEE Transactions on Parallel and Distributed Systems
+  publisher: IEEE
+  page: 1156-1172
+  volume: '33'
+  issue: '5'
 ...
