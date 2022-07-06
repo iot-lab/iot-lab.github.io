@@ -26,7 +26,7 @@
   website: http://micropython.org
   img: logo-micropython.jpg
   short-desc: <strong>MicroPython</strong> is an implementation of the Python programming language designed for highly constrained hardware platforms such as microcontrollers.
-  boards: [Pycom FiPy]
+  boards: [Pycom]
 
 - name: Yocto
   website: https://www.yoctoproject.org

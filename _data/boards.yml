@@ -90,7 +90,7 @@
     mcu-soc: Cortex M0
     radio: [BLE]
 -
-    name: Pycom FiPy
+    name: Pycom
     board-id: pycom
     mcu-soc: ESP32
     radio: [LoRa, BLE, Wifi]
