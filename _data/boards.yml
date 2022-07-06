@@ -129,3 +129,8 @@
     board-id: rpi3
     mcu-soc: 4x Cortex-A53
     radio: [802.15.4, BLE, Wifi]
+-
+    name: OpenMoteB
+    board-id: openmoteb
+    mcu-soc: Cortex M3
+    radio: [802.15.4, Sub-GHz]
