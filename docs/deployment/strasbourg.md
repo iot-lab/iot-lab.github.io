@@ -21,7 +21,6 @@ This environment is the original Strasbourg IoT-LAB deployment. It starts in 200
 * **Dense grid**: all nodes are **1 meter apart** spaced with regular 3D grid topology
 * Contains:
   * M3, A8 and Zigduino nodes interoperable with IEEE 802.15.4 radio technology
-  * Mobiles M3 nodes on top of Turblebot2 robots
 
 <div class="row mb-3">
     <div class="col-lg-6">
