@@ -39,7 +39,7 @@ Each Pycom board on Strasbourg site is plugged on the
 
 ## Troubleshooting
 
-Some the REPL doesn't respond after the experiment startup (e.g. no display of
+Sometimes the REPL doesn't respond after the experiment startup (e.g. no display of
 `>>>` prompt when sending `Enter` on the serial port).
 In this case, one way to recover the REPL is to perform a power cycle of the
 board:
