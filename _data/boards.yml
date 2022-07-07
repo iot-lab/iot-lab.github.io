@@ -55,11 +55,6 @@
     mcu-soc: Cortex M4
     radio: [802.15.4, BLE]
 -
-    name: Nordic nRF51DK
-    board-id: nrf51dk
-    mcu-soc: Cortex M0
-    radio: [BLE]
--
     name: Nucleo F070RB
     board-id: nucleo-f070rb
     mcu-soc: Cortex M0
@@ -69,21 +64,6 @@
     board-id: nucleo-wl55jc
     mcu-soc: Cortex M4/M0
     radio: [LoRa]
--
-    name: NXP FRDM-KW41Z
-    board-id: frdm-kw41z
-    mcu-soc: Cortex M0
-    radio: [802.15.4, BLE]
--
-    name: nRF52832-MDK
-    board-id: nrf52832mdk
-    mcu-soc: Cortex M4
-    radio: [BLE]
--
-    name: nRF52840-MDK
-    board-id: nrf52840mdk
-    mcu-soc: Cortex M4
-    radio: [802.15.4, BLE]
 -
     name: BBC micro:bit
     board-id: microbit
@@ -95,24 +75,9 @@
     mcu-soc: ESP32
     radio: [LoRa, BLE, Wifi]
 -
-    name: LoRa gateway
-    board-id: lora-gw
-    mcu-soc: BCM2837
-    radio: [LoRa]
--
-    name: RTL SDR
-    board-id: rtl-sdr
-    mcu-soc: R820T2
-    radio: []
--
     name: Arduino Zero
     board-id: arduino-zero
     mcu-soc: Cortex M0
-    radio: [802.15.4]
--
-    name: Phytec PhyNODE-KW2X
-    board-id: phynode
-    mcu-soc: Cortex M4
     radio: [802.15.4]
 -
     name: Zigduino
