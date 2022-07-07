@@ -18,23 +18,14 @@
 - site: Saclay
   deployment:
     - { board: IoT-LAB M3, number: 12}
-    - { board: IoT-LAB A8-M3, number: 155}
+    - { board: IoT-LAB A8-M3, number: 115}
     - { board: Microchip SAMR21, number: 15}
     - { board: Microchip SAMR30, number: 3}
     - { board: Arduino Zero, number: 3}
-    - { board: ST B-L072Z-LRWAN1, number: 25}
+    - { board: ST B-L072Z-LRWAN1, number: 20}
     - { board: Nordic nRF52DK, number: 10}
     - { board: Nordic nRF52840DK, number: 10}
-    - { board: Nordic nRF51DK, number: 5}
-    - { board: "BBC micro:bit", number: 1}
     - { board: ST B-L475E-IOT01A, number: 10}
-    - { board: NXP FRDM-KW41Z, number: 5}
-    - { board: nRF52840-MDK, number: 1}
-    - { board: nRF52832-MDK, number: 1}
-    - { board: Phytec PhyNODE-KW2X, number: 1}
-    - { board: LoRa gateway, number: 1}
-    - { board: RTL SDR, number: 3}
-    - { board: Decawave DWM1001, number: 10}
 
 - site: Strasbourg
   deployment:
