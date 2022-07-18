@@ -667,7 +667,7 @@ references:
   author:
   - family: Razafimandimby
     given: Cristanel
-  - family: Loscri
+  - family: Loscrı̀
     given: Valeria
   - family: Vegni
     given: Anna Maria
@@ -679,7 +679,7 @@ references:
   - year: 2017
   title: A Bayesian approach for an efficient data reduction in IoT
   container-title: Interoperability, Safety and Security in IoT
-  publisher: Springer
+  publisher: Springer, Cham
   page: 3-10
 
 - id: hosni2017self
@@ -1826,10 +1826,14 @@ references:
   page: 000795-000800
 
 - id: nazintroduction
-  type: article-journal
+  type: no-type
   author:
   - family: Naz
     given: André
+  - family: Bae
+    given: J
+  - family: Rousseau
+    given: F
   title: 'Introduction to Laboratory Research: Evaluation of a Distributed Key Certification
     using Accumulators in very Constrained Wireless Sensor Networks'
 
@@ -1954,8 +1958,8 @@ references:
   page: 15-23
   volume: '2'
 
-- id: burin2012senslab
-  type: article-journal
+- id: burin2011senslab
+  type: paper-conference
   author:
   - family: Burin des Rosiers
     given: Clément
@@ -1972,11 +1976,10 @@ references:
   - family: Noël
     given: Thomas
   issued:
-  - year: 2012
+  - year: 2011
   title: SensLAB
-  container-title: Testbeds and Research Infrastructure. Development of Networks and
-    Communities
-  publisher: Springer
+  container-title: International Conference on Testbeds and Research Infrastructures
+  publisher: Springer, Berlin, Heidelberg
   page: 239-254
 
 - id: ducrocq2010large
@@ -1999,11 +2002,11 @@ references:
   publisher: IEEE
   page: 751-753
 
-- id: des2011using
+- id: burin2011using
   type: paper-conference
   author:
-  - family: Des Roziers
-    given: Clément Burin
+  - family: Burin des Roziers
+    given: Clément
   - family: Chelius
     given: Guillaume
   - family: Ducrocq
@@ -2025,11 +2028,11 @@ references:
   title: Using senslab as a first class scientific tool for large scale wireless sensor
     network experiments
   container-title: International Conference on Research in Networking
-  publisher: Springer
+  publisher: Springer, Berlin, Heidelberg
   page: 147-159
 
 - id: des2011senslab
-  type: paper-conference
+  type: article-journal
   author:
   - family: Des Rosiers
     given: Clément Burin
@@ -2048,7 +2051,8 @@ references:
   issued:
   - year: 2011
   title: Senslab
-  container-title: International Conference on Testbeds and Research Infrastructures
+  container-title: Testbeds and Research Infrastructure. Development of Networks and
+    Communities
   publisher: Springer
   page: 239-254
 
@@ -2128,7 +2132,8 @@ references:
   - year: 2012
   title: Sécurisation par dynamiques chaotiques des réseaux locaux sans fil au niveau
     de la couche MAC
-  publisher: Université Toulouse le Mirail-Toulouse II
+  publisher: Université Toulouse le Mirail-Toulouse II; École nationale d’ingénieurs
+    de …
   genre: thèse de doctorat
 
 - id: chis2012methodes
@@ -2769,26 +2774,25 @@ references:
   volume: '12'
   issue: '3'
 
-- id: fuentes2019monitoring
+- id: samaniego2019monitoring
   type: article-journal
   author:
-  - family: Fuentes-Samaniego
-    given: Raul A
+  - family: Samaniego
+    given: Raul Armando Fuentes
   - family: La
     given: Vinh Hoa
   - family: Cavalli
     given: Ana Rosa
   - family: Nolazco-Flores
-    given: Juan A
-  - family: Ramirez-Velarde
-    given: Raul V
+    given: Juan Arturo
+  - family: Velarde
+    given: Raúl Valente Ramirez
   issued:
   - year: 2019
   title: A monitoring-based approach for WSN security using IEEE-802.15. 4/6LowPAN
     and DTLS communication
-  container-title: International Journal of Autonomous and Adaptive Communications
-    Systems
-  publisher: Inderscience Publishers (IEL)
+  container-title: International journal of autonomous and adaptive communications
+    systems
   page: 218-243
   volume: '12'
   issue: '3'
@@ -2906,7 +2910,7 @@ references:
     and Mobile Networks
   page: 123-130
 
-- id: ahmadlarge
+- id: ahmad2020large
   type: article-journal
   author:
   - family: Ahmad
@@ -2923,10 +2927,10 @@ references:
     given: Elizabeta
   - family: Legeard
     given: Bruno
+  issued:
+  - year: 2020
   title: Large scale IoT security testing, benchmarking and certification
-  container-title: 'Cognitive Hyperconnected Digital Transformation: Internet of Things
-    Intelligence Evolution, 1st ed.; Vermesan, O., Bacquet, J., Eds'
-  page: 189-220
+  container-title: Université de Bourgogne Franche-Comté, France
 
 - id: leao2019performance
   type: paper-conference
@@ -3153,7 +3157,7 @@ references:
   author:
   - family: Razafimandimby
     given: Cristanel
-  - family: Loscri
+  - family: Loscrı̀
     given: Valeria
   - family: Vegni
     given: Anna Maria
@@ -3275,7 +3279,7 @@ references:
     given: Roberto
   - family: Petrolo
     given: Riccardo
-  - family: Loscri
+  - family: Loscrı̀
     given: Valeria
   - family: Mitton
     given: Nathalie
@@ -3283,7 +3287,7 @@ references:
   - year: 2018
   title: 'LEGIoT: A lightweight edge gateway for the Internet of Things'
   container-title: Future Generation Computer Systems
-  publisher: Elsevier
+  publisher: North-Holland
   page: 1-15
   volume: '81'
 
@@ -3407,10 +3411,10 @@ references:
   - year: 2017
   title: 'LVWNet: an hybrid simulation architecture for wireless sensor networks'
   container-title: Design Automation for Embedded Systems
-  publisher: Springer
+  publisher: Springer US
   page: 139-155
   volume: '21'
-  issue: 3-4
+  issue: '3'
 
 - id: kietzmann2017need
   type: paper-conference
@@ -4280,14 +4284,12 @@ references:
     given: V
   - family: Bhuvaneswari
     given: PTV
-  - family: Priyadharshini
-    given: A Saraswathi
-  - family: Campus
-    given: MIT
+  - family: SaraswathiPriyadharshini
+    given: A
   issued:
   - year: 2018
-  title: Energy and Power Analysis of RPL under Topology Variations
-  container-title: Energy
+  title: Energy and power analysis of rpl under topology variations
+  container-title: Int J Adv Res Trends Eng Technol (IJARTET)
   volume: '5'
   issue: '4'
 
@@ -4698,11 +4700,11 @@ references:
   publisher: Université Lille 1-Sciences et Technologies
   genre: thèse de doctorat
 
-- id: coste2014continuous
+- id: azevedo2014continuous
   type: article-journal
   author:
-  - family: Coste
-    given: Christine Azevedo
+  - family: Azevedo Coste
+    given: Christine
   - family: Jovic
     given: Jovana
   - family: Pissard-Gibollet
@@ -4713,7 +4715,7 @@ references:
   - year: 2014
   title: Continuous gait cycle index estimation for electrical stimulation assisted
     foot drop correction
-  container-title: Journal of NeuroEngineering and Rehabilitation
+  container-title: Journal of neuroengineering and rehabilitation
   publisher: BioMed Central
   page: 1-10
   volume: '11'
@@ -4825,7 +4827,7 @@ references:
 - id: loscri2018toward
   type: thesis
   author:
-  - family: Loscri
+  - family: Loscrı̀
     given: Valeria
   issued:
   - year: 2018
@@ -5045,13 +5047,13 @@ references:
   author:
   - family: Shetty
     given: Spoorthi P
-  - family: Shenoy
-    given: Udaya Kumar K
+  - family: K Shenoy
+    given: Udaya Kumar
   issued:
   - year: 2021
   title: Performance of RPL Objective Functions Using FIT IoT Lab
   container-title: International Conference on Innovative Computing and Communications
-  publisher: Springer
+  publisher: Springer, Singapore
   page: 623-630
 
 - id: donassolo2019fog
@@ -5121,9 +5123,12 @@ references:
     given: Manas
   issued:
   - year: 2021
-  title: Adaptive Control Packet Broadcasting Scheme for Faster 6TiSCH Network Bootstrapping
+  title: Adaptive control packet broadcasting scheme for faster 6TiSCH network bootstrapping
   container-title: IEEE Internet of Things Journal
   publisher: IEEE
+  page: 17395-17402
+  volume: '8'
+  issue: '24'
 
 - id: kalita2021autonomous
   type: article-journal
@@ -5134,9 +5139,12 @@ references:
     given: Manas
   issued:
   - year: 2021
-  title: Autonomous Allocation and Scheduling of Minimal Cell in 6TiSCH Network
+  title: Autonomous allocation and scheduling of minimal cell in 6TiSCH network
   container-title: IEEE Internet of Things Journal
   publisher: IEEE
+  page: 12242-12250
+  volume: '8'
+  issue: '15'
 
 - id: kalita2021opportunistic
   type: article-journal
@@ -5279,4 +5287,15 @@ references:
   page: 1156-1172
   volume: '33'
   issue: '5'
+
+- id: runge2022network
+  type: thesis
+  author:
+  - family: Runge
+    given: Isabel Madeleine
+  issued:
+  - year: 2022
+  title: Network Coding for Reliable Data Dissemination in Wireless Sensor Networks
+  publisher: Universität Würzburg
+  genre: thèse de doctorat
 ...
