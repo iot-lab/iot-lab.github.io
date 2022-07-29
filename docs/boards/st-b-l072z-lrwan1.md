@@ -31,7 +31,7 @@ The cpu datasheet is available [<i class="far fa-file-pdf"/>&nbsp;here](https://
 Nodes are deployed with Sensor Expansion Board for STM32 Nucleo Board: [ST X-NUCLEO-IKS01A2](https://www.st.com/en/ecosystems/x-nucleo-iks01a2.html) & [ST X-NUCLEO-IKS01A3](https://www.st.com/en/ecosystems/x-nucleo-iks01a3.html)
 
 Nodes equipped with the **ST X-NUCLEO-IKS01A2**:
-* Saclay site (st-lrwan1-1 to st-lrwan1-25)
+* Saclay site (st-lrwan1-1 to st-lrwan1-20)
 * Lille site (st-lrwan1-1 to st-lrwan1-2)
 
 Nodes equipped with the **ST X-NUCLEO-IKS01A3**:
