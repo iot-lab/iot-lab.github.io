@@ -100,3 +100,19 @@ Here is the list of nodes present there: <tt>firefly[12-16], m3-[260-264], micro
     </div>
 </div>
 <small class="text-muted">© Inria / Photo J. Vandaele</small>
+
+----------
+
+_Le site IoT-LAB de Lille est cofinancé par l'Union Européenne avec le Fonds Européen de Développement Régional (FEDER) et par le Ministère de l'Education Nationale, de l'Enseignement Supérieur et de la Recherche._
+
+<div class="row justify-content-center">
+    <div class="col-2">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/lille/' | relative_url }}eu.jpg">
+    </div>
+    <div class="col-2">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/lille/' | relative_url }}feder.jpg">
+    </div>
+    <div class="col-2">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/lille/' | relative_url }}mesr.jpg">
+    </div>
+</div>
