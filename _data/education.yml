@@ -3,10 +3,20 @@
   title: <a href="http://www.ensea.fr/fr/huit-specialites-3e-annee-33">Électronique de Systèmes de Communication</a>
   teacher: Cedric Adjih & Alexandre Abadie
 
+- school: <a href="https://mdbi.fabiz.ase.ro/">Faculty of Business Administration in foreign languages</a>
+  year: 2022
+  title: <a href="https://mdbi.fabiz.ase.ro/course/internet-of-things-and-blockchain/">Internet of Things and Blockchain</a>
+  teacher: Akram Hakiri
+
 - school: <a href="https://www.fh-campuswien.ac.at/en/">FH Campus Wien</a>
   year: 2022-2016
   title: Mobile & Embedded Security <br> Internet of Things <br> from <a href="https://www.fh-campuswien.ac.at/en/studies/study-courses/detail/it-security-master.html">Master study programm "IT-Security"</a>
   teacher: <a href="https://www.fh-campuswien.ac.at/en/research/researchers-from-a-to-z/detail/silvia-schmidt.html">Silvia Schmidt</a>
+
+- school: <a href="https://polytech.univ-tours.fr">Polytech Tours</a>
+  year: 2022-2018
+  title: Plateforme MCU pour l’IoT
+  teacher: Alexis Rolland
 
 - school: <a href="http://en.uniroma1.it/">Sapienza University of Rome</a>
   year: 2022-2017
