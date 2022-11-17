@@ -1,3 +1,18 @@
+- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+  year: 2023-2022
+  title: Internet des Objets <br> from M2 SIRIS (UFR de mathématique et d'informatique), RIO 3A (Telecom Physique Strasbourg)
+  teacher: Amaury Bruniaux & Guillaume Schreiner
+
+- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+  year: 2023-2021
+  title: Protocoles de communication <br> from 2A TIS and 2A (Telecom Physique Strasbourg)
+  teacher: Guillaume Schreiner
+
+- school: <a href="https://polytech.univ-tours.fr">Polytech Tours</a>
+  year: 2023-2018
+  title: Plateforme MCU pour l’IoT
+  teacher: Alexis Rolland
+
 - school: <a href="http://www.ensea.fr/fr">ENSEA</a>
   year: 2022-2018
   title: <a href="http://www.ensea.fr/fr/huit-specialites-3e-annee-33">Électronique de Systèmes de Communication</a>
@@ -12,11 +27,6 @@
   year: 2022-2016
   title: Mobile & Embedded Security <br> Internet of Things <br> from <a href="https://www.fh-campuswien.ac.at/en/studies/study-courses/detail/it-security-master.html">Master study programm "IT-Security"</a>
   teacher: <a href="https://www.fh-campuswien.ac.at/en/research/researchers-from-a-to-z/detail/silvia-schmidt.html">Silvia Schmidt</a>
-
-- school: <a href="https://polytech.univ-tours.fr">Polytech Tours</a>
-  year: 2022-2018
-  title: Plateforme MCU pour l’IoT
-  teacher: Alexis Rolland
 
 - school: <a href="http://en.uniroma1.it/">Sapienza University of Rome</a>
   year: 2022-2017
@@ -37,6 +47,16 @@
   year: 2022-2018
   title: Software Foundations</a>
   teacher: <a href="mailto:daniele.puccinelli@supsi.ch">Daniele Puccinelli</a>
+
+- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+  year: 2022-2019
+  title: Internet des Objets <br> from M2 SIRIS (UFR de mathématique et d'informatique), RIO 3A (Telecom Physique Strasbourg)
+  teacher: Thomas Noël & Guillaume Schreiner
+
+- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+  year: 2022-2020
+  title: Réseaux Sans Fil <br> from M1 SIRIS (UFR de mathématique et d'informatique), RIO 2A (Telecom Physique Strasbourg)
+  teacher: Julien Montavont
 
 - school: <a href="http://www.rennes.centralesupelec.fr/">Centrale Supélec, Rennes</a>
   year: 2020
@@ -72,16 +92,6 @@
   year: 2020-2017
   title: Réseaux mobiles et Internet des objets <br>from <a href="https://synapses.telecom-paris.fr/catalogue/2017-2018/parcours/2004/rio-1718-filiere-reseaux-mobiles-et-internet-des-objets-rio-creneau-c">Filière RIO (Réseaux, Internet des objets)</a>
 
-- school: <a href="https://www.telecom-physique.fr/">Telecom Physique Strasbourg</a>
-  year: 2020-2019
-  title: Internet des Objets <br> from RIO 3A
-  teacher: Thomas Noël & Guillaume Schreiner
-
-- school: <a href="https://www.telecom-physique.fr/">Telecom Physique Strasbourg</a>
-  year: 2020-2019
-  title: Réseaux Sans Fil <br> from RIO 2A
-  teacher: Julien Montavont, Sebastian Sampayo
-
 - school: <a href="http://www.univ-lille.fr">Université de Lille</a>
   year: 2020-2018
   title: Internet des objets <br> from Master TII
@@ -89,12 +99,7 @@
 
 - school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
   year: 2020-2019
-  title: Internet des Objets <br> from M2 SIRIS
-  teacher: Thomas Noël & Guillaume Schreiner
-
-- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
-  year: 2020-2019
-  title: Réseaux Sans Fil <br> from M1 SIRIS
+  title: Réseaux Sans Fil <br> from M1 SIRIS (UFR de mathématique et d'informatique), RIO 2A (Telecom Physique Strasbourg)
   teacher: Julien Montavont, Sebastian Sampayo
 
 - school: <a href="https://www.captronic.fr/">CapTronic</a>
@@ -117,15 +122,12 @@
   title: Pervasive Systems
   teacher: <a href="http://ichatz.me">Ioannis Chatzigiannakis</a>
 
-- school: <a href="https://www.telecom-physique.fr/">Telecom Physique Strasbourg</a>
-  year: 2019-2015
-  title: Internet des Objets <br> from INOC 3A
-  teacher: Julien Montavont, Antoine Gallais, Guillaume Schreiner
-
 - school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
   year: 2019-2015
-  title: Internet des Objets <br> from Master 2 RISE
-  teacher: Julien Montavont, Antoine Gallais, Guillaume Schreiner
+  title: Internet des Objets <br> from Master 2 RISE (UFR de mathématique et
+    d'informatique), INOC 3A (Telecom Physique Strasbourg) 
+  teacher: Julien
+    Montavont, Antoine Gallais, Guillaume Schreiner
 
 - school: <a href="https://imt-nord-europe.fr/">Institut Mines Nord Europe</a>
   year: 2018
@@ -146,11 +148,6 @@
   year: 2015
   title: "ITS 6900 Emerging Topics in Networking: Internet of Things"
   teacher: <a href="https://www.ohio.edu/scripps-college/mcclure/people/faculty/arauz">Julio Arauz</a>
-
-- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
-  year: 2015
-  title: Internet des Objets <br> from Master 2 RISE
-  teacher: Julien Montavont
 
 - school: <a href="http://www.metu.edu.tr/">METU – Middle East Technical University</a>
   year: 2014
