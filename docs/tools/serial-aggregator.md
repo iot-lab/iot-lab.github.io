@@ -1,7 +1,7 @@
 ---
 title: Serial aggregator
 group: tools
-description: The serial aggregator is a great tool to aggregate serial port (UART) of your experiment nodes. Indeed during an experiment with embedded nodes like M3 nodes you have a direct access to the serial port communication (Read/Write).It's forward by the IoT-LAB node on the SSH frontend server with a TCP socket on port 20000. When you launch a large-scale experiment it would be boring to open a terminal for each node and read the serial port. We provide you a tool which allow to aggregate multiple serial communication channels at once. Thanks to the asynchore python library which provide an asynchronous socket handler.
+description: The serial aggregator is a great tool to aggregate serial port (UART) of your experiment nodes. Indeed during an experiment with embedded nodes like M3 nodes you have a direct access to the serial port communication (Read/Write). It's forward by the IoT-LAB node on each SSH frontend server with a TCP socket on port 20000. When you launch a large-scale experiment it would be boring to open a terminal for each node and read the serial port. We provide you a tool which allow to aggregate multiple serial communication channels at once. Thanks to the asynchore python library which provide an asynchronous socket handler.
 ---
 
 ## Play with serial aggregator
@@ -11,7 +11,7 @@ description: The serial aggregator is a great tool to aggregate serial port (UAR
 To illustrate the serial aggregator features we will launch an experiment with:
 
 * a duration of 30 minutes
-* three M3 nodes on Grenoble site
+* three M3 nodes on Grenoble site (you need to use the SSH server according to your site) 
 * a firmware with an interactive shell on the serial port
 
 In the Webortal go to the [New Experiment](https://www.iot-lab.info/testbed/experiment) page and select nodes by `node properties` and attach the preset firmware (iotlab_m3_tutorial).
@@ -27,7 +27,7 @@ $ iotlab-experiment get -ni
 ```
 ### Use serial_aggregator command
 
-Go to the frontend SSH server and launch the command
+Go to the corresponding frontend SSH server for your experiment (grenoble in this case) and launch the command
 
 ``` bash
 $ ssh <login>@grenoble.iot-lab.info
