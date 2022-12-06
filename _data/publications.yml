@@ -523,7 +523,7 @@ references:
     given: Rodrigo Teles
   - family: Gallais
     given: Antoine
-  - family: Laerhoven
+  - family: Van Laerhoven
     given: Kristof
   - family: Theoleyre
     given: Fabrice
@@ -1652,7 +1652,7 @@ references:
   volume: '15'
   issue: 1-3
 
-- id: ducrocq2014impact
+- id: ducrocq2013impact
   type: paper-conference
   author:
   - family: Ducrocq
@@ -1661,16 +1661,13 @@ references:
     given: Michaël
   - family: Mitton
     given: Nathalie
-  - family: Pizzi
-    given: Sara
   issued:
-  - year: 2014
-  title: 'On the impact of network topology on wireless sensor networks performances:
+  - year: 2013
+  title: 'On the impact of network topology on wireless sensornetworks performances:
     Illustration with geographic routing'
-  container-title: 2014 28th International Conference on Advanced Information Networking
-    and Applications Workshops
-  publisher: IEEE
-  page: 719-724
+  container-title: Proceedings of the 10th ACM symposium on Performance evaluation
+    of wireless ad hoc, sensor, & ubiquitous networks
+  page: 141-144
 
 - id: bildea2013link
   type: thesis
@@ -2262,7 +2259,7 @@ references:
   issued:
   - year: 2011
   title: Algorithms for Realistic Wireless Sensor Networks
-  publisher: Lille 1
+  publisher: INRIA Lille
   genre: thèse de doctorat
 
 - id: gallaismanala
@@ -2774,25 +2771,26 @@ references:
   volume: '12'
   issue: '3'
 
-- id: samaniego2019monitoring
+- id: fuentes2019monitoring
   type: article-journal
   author:
-  - family: Samaniego
-    given: Raul Armando Fuentes
+  - family: Fuentes-Samaniego
+    given: Raul A
   - family: La
     given: Vinh Hoa
   - family: Cavalli
     given: Ana Rosa
   - family: Nolazco-Flores
-    given: Juan Arturo
-  - family: Velarde
-    given: Raúl Valente Ramirez
+    given: Juan A
+  - family: Ramirez-Velarde
+    given: Raul V
   issued:
   - year: 2019
   title: A monitoring-based approach for WSN security using IEEE-802.15. 4/6LowPAN
     and DTLS communication
   container-title: International journal of autonomous and adaptive communications
     systems
+  publisher: Inderscience Publishers (IEL)
   page: 218-243
   volume: '12'
   issue: '3'
@@ -2833,7 +2831,7 @@ references:
   publisher: Bourgogne Franche-Comté
   genre: thèse de doctorat
 
-- id: verghelet2019towards
+- id: verghelet2020towards
   type: paper-conference
   author:
   - family: Verghelet
@@ -2841,11 +2839,11 @@ references:
   - family: Mocskos
     given: Esteban
   issued:
-  - year: 2019
+  - year: 2020
   title: Towards a Platform to Evaluate the Impact of Resource Information Distribution
     in IoT Environments
   container-title: Latin American High Performance Computing Conference
-  publisher: Springer
+  publisher: Springer, Cham
   page: 215-229
 
 - id: kotsiou2019whitelisting
@@ -5298,4 +5296,21 @@ references:
   title: Network Coding for Reliable Data Dissemination in Wireless Sensor Networks
   publisher: Universität Würzburg
   genre: thèse de doctorat
+
+- id: kettouche2022disjoint
+  type: article-journal
+  author:
+  - family: Kettouche
+    given: Souhila
+  - family: Maimour
+    given: Moufida
+  - family: Derdouri
+    given: Lakhdar
+  issued:
+  - year: 2022
+  title: Disjoint multipath RPL for QoE/QoS provision in the Internet of Multimedia
+    Things
+  container-title: Computing
+  publisher: Springer
+  page: 1-23
 ...
