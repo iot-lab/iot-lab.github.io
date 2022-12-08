@@ -1,65 +1,90 @@
-- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+- school: <a href="https://www.ensea.fr/en">ENSEA</a>
+  year: 2023-2018
+  title: <a href="http://www.ensea.fr/fr/huit-specialites-3e-annee-33">Électronique de Systèmes de Communication</a>
+  teacher: Cedric Adjih & Alexandre Abadie
+ 
+- school: <a href="https://www.ensta-paris.fr/en">ENSTA</a>
+  year: 2023-2020
+  title: "IC212: Réseaux sans fil et internet des Objets <br> IC221: Internet des objets et objets connectés"
+  teacher: <a href="mailto:keunwoo.lim@telecom-paris.fr">Keun-Woo Lim </a>
+
+- school: <a href="https://mdbi.fabiz.ase.ro/">Faculty of Business Administration in foreign languages</a>
+  year: 2023-2022
+  title: <a href="https://mdbi.fabiz.ase.ro/course/internet-of-things-and-blockchain/">Internet of Things and Blockchain</a>
+  teacher: Akram Hakiri
+ 
+- school: <a href="https://www.fh-campuswien.ac.at/en/">FH Campus Wien</a>
+  year: 2023-2016
+  title: Mobile & Embedded Security <br> Internet of Things <br> from <a href="https://www.fh-campuswien.ac.at/en/studies/study-courses/detail/it-security-master.html">Master study programm "IT-Security"</a>
+  teacher: <a href="https://www.fh-campuswien.ac.at/en/research/researchers-from-a-to-z/detail/silvia-schmidt.html">Silvia Schmidt</a>
+
+- school: <a href="https://www.frankfurt-university.de/en/">Frankfurt University of Applied Sciences</a>
+  year: 2023-2022
+  title: <a href="https://teaching.dahahm.de/teaching/project_ws22.html">IoT - From the Microcontroller to the Cloud</a>
+  teacher: <a href="https://teaching.dahahm.de">Oleg Hahm</a>
+
+- school: <a href="https://polytech.univ-tours.fr/english-version">Polytech Tours</a>
+  year: 2023-2018
+  title: Plateforme MCU pour l’IoT
+  teacher: Alexis Rolland
+ 
+- school: SPEIT, ParisTech Shanghaï JiaoTong University
+  year: 2023-2020
+  title: 802.15.4 et les systèmes embarqués
+  teacher: <a href="mailto:keunwoo.lim@telecom-paris.fr">Keun-Woo Lim </a>
+ 
+- school: <a href="http://en.uniroma1.it/">Sapienza University of Rome</a>
+  year: 2023-2018
+  title: <a href="http://ichatz.me/Site/InternetOfThings2022">Internet of Things</a>
+  teacher: <a href="http://ichatz.me">Ioannis Chatzigiannakis</a> & Andrea Vitaletti
+ 
+- school: <a href="https://www.telecom-paris.fr/en/home">Telecom Paris</a>
+  year: 2023-2017
+  title: Réseaux mobiles et Internet des objets <br>from <a href="https://synapses.telecom-paris.fr/catalogue/2017-2018/parcours/2004/rio-1718-filiere-reseaux-mobiles-et-internet-des-objets-rio-creneau-c">Filière RIO (Réseaux, Internet des objets)</a>
+  teacher: <a href="mailto:keunwoo.lim@telecom-paris.fr">Keun-Woo Lim </a>
+
+- school: <a href="https://www.telecom-sudparis.eu/en/">Telecom Sud Paris</a>
+  year: 2023-2019
+  title: TP Internet des objets (802.15.4 et LoRaWAN)
+  teacher: Alexandre Abadie
+
+- school: <a href="https://telecomunicaciones.utn.edu.ec/">Universidad Técnica del Norte</a>
+  year: 2023-2022
+  title: Internet of Things - Usage protocols 802.15.4g (2.4GHz-SubGHz), LoRa, BLE
+  teacher: <a href="https://orcid.org/0000-0002-1277-5001">Edgar Maya Olalla</a>
+
+- school: <a href="https://www.univ-grenoble-alpes.fr/english/">University of Grenoble Alpes</a>
+  year: 2023-2014
+  title: <a href="https://master-eecs.univ-grenoble-alpes.fr/programme/master-2-miscit/">Distributed Algorithms and Network Systems</a> <br> <a href="https://github.com/iot-lab/openlab/tree/master/appli/education/distributed_algorithm">Material</a>
+  teacher: <a href="http://necs.inrialpes.fr/people/garin/">Federica Garin</a> & Frederic Saint-Marcel
+
+- school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
   year: 2023-2022
   title: Internet des Objets <br> from M2 SIRIS (UFR de mathématique et d'informatique), RIO 3A (Telecom Physique Strasbourg)
   teacher: Amaury Bruniaux & Guillaume Schreiner
 
-- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+- school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
   year: 2023-2021
   title: Protocoles de communication <br> from 2A TIS and 2A (Telecom Physique Strasbourg)
   teacher: Guillaume Schreiner
 
-- school: <a href="https://polytech.univ-tours.fr">Polytech Tours</a>
-  year: 2023-2018
-  title: Plateforme MCU pour l’IoT
-  teacher: Alexis Rolland
-
-- school: <a href="http://www.ensea.fr/fr">ENSEA</a>
-  year: 2022-2018
-  title: <a href="http://www.ensea.fr/fr/huit-specialites-3e-annee-33">Électronique de Systèmes de Communication</a>
-  teacher: Cedric Adjih & Alexandre Abadie
-
-- school: <a href="https://mdbi.fabiz.ase.ro/">Faculty of Business Administration in foreign languages</a>
-  year: 2022
-  title: <a href="https://mdbi.fabiz.ase.ro/course/internet-of-things-and-blockchain/">Internet of Things and Blockchain</a>
-  teacher: Akram Hakiri
-
-- school: <a href="https://www.fh-campuswien.ac.at/en/">FH Campus Wien</a>
-  year: 2022-2016
-  title: Mobile & Embedded Security <br> Internet of Things <br> from <a href="https://www.fh-campuswien.ac.at/en/studies/study-courses/detail/it-security-master.html">Master study programm "IT-Security"</a>
-  teacher: <a href="https://www.fh-campuswien.ac.at/en/research/researchers-from-a-to-z/detail/silvia-schmidt.html">Silvia Schmidt</a>
-
-- school: <a href="http://en.uniroma1.it/">Sapienza University of Rome</a>
-  year: 2022-2017
-  title: Internet of Things
-  teacher: <a href="http://ichatz.me">Ioannis Chatzigiannakis</a>
-
-- school: <a href="https://www.telecom-sudparis.eu/">Télécom Sud Paris</a>
-  year: 2022-2019
-  title: TP Internet des objets (802.15.4 et LoRaWAN)
-  teacher: Alexandre Abadie
-
-- school: <a href="https://www.univ-grenoble-alpes.fr/english/">Université Grenoble Alpes</a>
-  year: 2022-2014
-  title: <a href="https://master-eecs.univ-grenoble-alpes.fr/programme/master-2-miscit/">Distributed Algorithms and Network Systems</a> <br> <a href="https://github.com/iot-lab/openlab/tree/master/appli/education/distributed_algorithm">Material</a>
-  teacher: <a href="http://necs.inrialpes.fr/people/garin/">Federica Garin</a> & Frederic Saint-Marcel
-
 - school: <a href="http://www.supsi.ch/home_en.html">University of Applied Sciences and Arts of Southern Switzerland</a>
-  year: 2022-2018
+  year: 2023-2018
   title: Software Foundations</a>
   teacher: <a href="mailto:daniele.puccinelli@supsi.ch">Daniele Puccinelli</a>
 
-- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+- school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
+  year: 2022-2020
+  title: Réseaux Sans Fil <br> from M1 SIRIS (UFR de mathématique et d'informatique), RIO 2A (Telecom Physique Strasbourg)
+  teacher: Julien Montavont
+ 
+- school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
   year: 2022-2019
   title: Internet des Objets <br> from M2 SIRIS (UFR de mathématique et d'informatique), RIO 3A (Telecom Physique Strasbourg)
   teacher: Thomas Noël & Guillaume Schreiner
 
-- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
-  year: 2022-2020
-  title: Réseaux Sans Fil <br> from M1 SIRIS (UFR de mathématique et d'informatique), RIO 2A (Telecom Physique Strasbourg)
-  teacher: Julien Montavont
-
-- school: <a href="http://www.rennes.centralesupelec.fr/">Centrale Supélec, Rennes</a>
-  year: 2020
+- school: <a href="http://www.rennes.centralesupelec.fr/en">Centrale Supélec, Rennes</a>
+  year: 2021-2020
   title: Systèmes Embarqués et Internet des objets, session Introduction à RIOT
   teacher: Alexandre Abadie
 
@@ -67,13 +92,8 @@
   year: 2020-2019
   title: Informatique sans fil et internet des objets
   teacher: <a href="http://researchers.lille.inria.fr/~mitton/">Nathalie Mitton</a>
-
-- school: <a href="https://www.ensta-paristech.fr">ENSTA</a>
-  year: 2020
-  title: "IC212: Réseaux sans fil et internet des Objets <br> IC221: Internet des objets et objets connectés"
-  teacher: Keun-Woo Lim
-
-- school: <a href="https://imt-nord-europe.fr/">IMT Nord Europe</a> & <a href="http://www.univ-lille.fr">Université de Lille</a>
+ 
+- school: <a href="https://imt-nord-europe.fr/en/">IMT Nord Europe</a> & <a href="https://international.univ-lille.fr/en/">University of Lille</a>
   year: 2020-2015
   title: Réseaux sans fil et réseaux de capteurs
   teacher: <a href="http://researchers.lille.inria.fr/~mitton/">Nathalie Mitton</a>
@@ -83,21 +103,17 @@
   title: IoT et énergie
   teacher: Philippe Martins
 
-- school: SPEIT, ParisTech Shanghaï JiaoTong University
-  year: 2020
-  title: 802.15.4 et les systèmes embarqués
-  teacher: Keun-Woo Lim
+- school: <a href="https://www.telecom-sudparis.eu/en/">Télécom Sud Paris</a>
+  year: 2020-2019
+  title: TP Internet des objets (802.15.4 et LoRaWAN)
+  teacher: Cédric Adjih & Alexandre Abadie
 
-- school: <a href="https://www.telecom-paris.fr">Télécom Paris</a>
-  year: 2020-2017
-  title: Réseaux mobiles et Internet des objets <br>from <a href="https://synapses.telecom-paris.fr/catalogue/2017-2018/parcours/2004/rio-1718-filiere-reseaux-mobiles-et-internet-des-objets-rio-creneau-c">Filière RIO (Réseaux, Internet des objets)</a>
-
-- school: <a href="http://www.univ-lille.fr">Université de Lille</a>
+- school: <a href="https://international.univ-lille.fr/en/">University of Lille</a>
   year: 2020-2018
   title: Internet des objets <br> from Master TII
   teacher: <a href="http://researchers.lille.inria.fr/~mitton/">Nathalie Mitton</a>
 
-- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+- school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
   year: 2020-2019
   title: Réseaux Sans Fil <br> from M1 SIRIS (UFR de mathématique et d'informatique), RIO 2A (Telecom Physique Strasbourg)
   teacher: Julien Montavont, Sebastian Sampayo
@@ -107,49 +123,44 @@
   title: Formation professionnelle d'Initiation à RIOT <br> <a href="https://github.com/riot-os/riot-course">Material</a>
   teacher: Alexandre Abadie
 
-- school: <a href="https://www.telecom-paris.fr/">Télécom Paris</a>
+- school: <a href="https://www.telecom-paris.fr/en/home">Télécom Paris</a>
   year: 2019-2018
   title: Réseaux mobiles et Internet des objets (RIO)
   teacher: Alexandre Abadie
 
-- school: <a href="https://www.telecom-sudparis.eu/">Télécom Sud Paris</a>
-  year: 2019
-  title: TP Internet des objets (802.15.4 et LoRaWAN)
-  teacher: Cédric Adjih & Alexandre Abadie
-
-- school: <a href="http://en.uniroma1.it/">Sapienza University of Roma</a>
-  year: 2019-2018
-  title: Pervasive Systems
-  teacher: <a href="http://ichatz.me">Ioannis Chatzigiannakis</a>
-
-- school: <a href="http://www.unistra.fr/">Université de Strasbourg</a>
+- school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
   year: 2019-2015
   title: Internet des Objets <br> from Master 2 RISE (UFR de mathématique et
     d'informatique), INOC 3A (Telecom Physique Strasbourg) 
   teacher: Julien
     Montavont, Antoine Gallais, Guillaume Schreiner
 
-- school: <a href="https://imt-nord-europe.fr/">Institut Mines Nord Europe</a>
-  year: 2018
+- school: <a href="https://imt-nord-europe.fr/en/">Institut Mines Nord Europe</a>
+  year: 2019-2018
   title: Internet des objets <br> from Master 2 Réseau et Telecom
   teacher: <a href="http://researchers.lille.inria.fr/~mitton/">Nathalie Mitton</a>
 
+- school: <a href="http://en.uniroma1.it/">Sapienza University of Roma</a>
+  year: 2018-2016
+  title: <a href="http://ichatz.me/Site/PervasiveSystems2018">Pervasive Systems</a>
+  teacher: <a href="http://ichatz.me">Ioannis Chatzigiannakis</a>
+
 - school: <a href="https://www.chalmers.se/en/">Chalmers University of Technology</a>
-  year: 2017
+  year: 2018-2017
   title: Developing applications and network protocols for IoT
   teacher: Beshr Al Nahas & Olaf Landsiedel
 
-- school: <a href="https://www.telecom-paris.fr/">Telecom Paris</a>
-  year: 2017
+- school: <a href="https://www.telecom-paris.fr/en/home">Telecom Paris</a>
+  year: 2018-2017
   title: Wireless networks and IoT
   teacher: Philippe Martins
 
 - school: <a href="http://www.ohio.edu/mcclure">ITS School from Ohio University</a>
-  year: 2015
+  year: 2016-2015
   title: "ITS 6900 Emerging Topics in Networking: Internet of Things"
   teacher: <a href="https://www.ohio.edu/scripps-college/mcclure/people/faculty/arauz">Julio Arauz</a>
 
 - school: <a href="http://www.metu.edu.tr/">METU – Middle East Technical University</a>
-  year: 2014
+  year: 2015-2014
   title: CENG530 Computer Networks and Communications (graduate course)
   teacher: <a href="https://eonur.ceng.metu.edu.tr/">Ertan Onur</a>
