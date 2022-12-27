@@ -1955,7 +1955,7 @@ references:
   page: 15-23
   volume: '2'
 
-- id: burin2011senslab
+- id: burin2012senslab
   type: paper-conference
   author:
   - family: Burin des Rosiers
@@ -1973,7 +1973,7 @@ references:
   - family: Noël
     given: Thomas
   issued:
-  - year: 2011
+  - year: 2012
   title: SensLAB
   container-title: International Conference on Testbeds and Research Infrastructures
   publisher: Springer, Berlin, Heidelberg
@@ -2908,8 +2908,8 @@ references:
     and Mobile Networks
   page: 123-130
 
-- id: ahmad2020large
-  type: article-journal
+- id: ahmad2022large
+  type: chapter
   author:
   - family: Ahmad
     given: Abbas
@@ -2926,9 +2926,11 @@ references:
   - family: Legeard
     given: Bruno
   issued:
-  - year: 2020
+  - year: 2022
   title: Large scale IoT security testing, benchmarking and certification
-  container-title: Université de Bourgogne Franche-Comté, France
+  container-title: Cognitive Hyperconnected Digital Transformation
+  publisher: River Publishers
+  page: 189-220
 
 - id: leao2019performance
   type: paper-conference
@@ -3901,8 +3903,8 @@ references:
   publisher: University of Houston
   genre: thèse de doctorat
 
-- id: papadopoulos2016guard
-  type: chapter
+- id: papadopoulos2017guard
+  type: paper-conference
   author:
   - family: Papadopoulos
     given: Georgios Z
@@ -3917,11 +3919,12 @@ references:
   - family: Oikonomou
     given: George
   issued:
-  - year: 2016
+  - year: 2017
   title: Guard time optimisation for energy efficiency in IEEE 802.15. 4-2015 TSCH
     links
-  container-title: Interoperability, Safety and Security in IoT
-  publisher: Springer
+  container-title: International Conference on Safety and Security in IoT, International
+    Conference on Interoperability in IoT
+  publisher: Springer, Cham
   page: 56-63
 
 - id: piechocki2017guard
@@ -4309,7 +4312,7 @@ references:
   publisher: IEEE
   page: 1-7
 
-- id: leao2018latency
+- id: leao2019latency
   type: paper-conference
   author:
   - family: Leão
@@ -4317,11 +4320,11 @@ references:
   - family: Felea
     given: Violeta
   issued:
-  - year: 2018
+  - year: 2019
   title: Latency and network lifetime trade-off in geographic multicast routing for
     multi-sink wireless sensor networks
   container-title: International Conference on Mobile, Secure, and Programmable Networking
-  publisher: Springer
+  publisher: Springer, Cham
   page: 294-310
 
 - id: vilajosana20196tisch
@@ -5313,4 +5316,389 @@ references:
   container-title: Computing
   publisher: Springer
   page: 1-23
+
+- id: zandberg2022femto
+  type: paper-conference
+  author:
+  - family: Zandberg
+    given: Koen
+  - family: Baccelli
+    given: Emmanuel
+  - family: Yuan
+    given: Shenghao
+  - family: Besson
+    given: Frédéric
+  - family: Talpin
+    given: Jean-Pierre
+  issued:
+  - year: 2022
+  title: 'Femto-Containers: Lightweight virtualization and fault isolation for small
+    software functions on low-power IoT microcontrollers'
+  container-title: Proceedings of the 23rd conference on 23rd ACM/IFIP International
+    Middleware Conference
+  page: 161-173
+
+- id: banegas2021quantum
+  type: article-journal
+  author:
+  - family: Banegas
+    given: Gustavo
+  - family: Zandberg
+    given: Koen
+  - family: Herrmann
+    given: Adrian
+  - family: Baccelli
+    given: Emmanuel
+  - family: Smith
+    given: Benjamin
+  issued:
+  - year: 2021
+  title: Quantum-resistant security for software updates on low-power networked embedded
+    devices
+  container-title: arXiv preprint arXiv:2106.05577
+
+- id: dagher2021open
+  type: paper-conference
+  author:
+  - family: Dagher
+    given: Roudy
+  - family: Molina
+    given: Francois-Xavier
+  - family: Abadie
+    given: Alexandre
+  - family: Mitton
+    given: Nathalie
+  - family: Baccelli
+    given: Emmanuel
+  issued:
+  - year: 2021
+  title: An Open Experimental Platform for Ranging, Proximity and Contact Event Tracking
+    using Ultra-Wide-Band and Bluetooth Low-Energy
+  container-title: IEEE INFOCOM 2021-IEEE Conference on Computer Communications Workshops
+    (INFOCOM WKSHPS)
+  publisher: IEEE
+  page: 1-6
+
+- id: alamos2022dsme
+  type: article-journal
+  author:
+  - family: Álamos
+    given: José
+  - family: Kietzmann
+    given: Peter
+  - family: Schmidt
+    given: Thomas C
+  - family: Wählisch
+    given: Matthias
+  issued:
+  - year: 2022
+  title: 'DSME-LoRa: Seamless Long-range Communication between Arbitrary Nodes in
+    the Constrained IoT'
+  container-title: ACM Transactions on Sensor Networks
+  publisher: ACM New York, NY
+  page: 1-43
+  volume: '18'
+  issue: '4'
+
+- id: fuhrer2022digital
+  type: paper-conference
+  author:
+  - family: Führer
+    given: Matas
+  - family: Heinrich
+    given: Roland
+  - family: Mabrouk
+    given: Abdelwadoud
+  - family: Piller
+    given: Tobias Christian
+  - family: Khelil
+    given: Abdelmajid
+  - family: Yildiz
+    given: Kubilay
+  issued:
+  - year: 2022
+  title: Digital Lab for Basic and Advanced Features of Message Queuing Telemetry
+    Transport (MQTT)
+  container-title: Proceedings of the 8th International Conference on e-Society, e-Learning
+    and e-Technologies
+  page: 7-13
+
+- id: kalita20226tisch
+  type: article-journal
+  author:
+  - family: Kalita
+    given: Alakesh
+  - family: Khatua
+    given: Manas
+  issued:
+  - year: 2022
+  title: '6TiSCH–IPv6 Enabled Open Stack IoT Network Formation: A Review'
+  container-title: ACM Transactions on Internet of Things
+  publisher: ACM New York, NY
+
+- id: verghelet2019first
+  type: paper-conference
+  author:
+  - family: Verghelet
+    given: Paula
+  - family: Mocskos
+    given: Esteban
+  issued:
+  - year: 2019
+  title: First steps in creating a methodology to develop and test scheduling policies
+    for internet of things
+  container-title: 2019 Winter Simulation Conference (WSC)
+  publisher: IEEE
+  page: 2629-2640
+
+- id: sachidananda2017let
+  type: paper-conference
+  author:
+  - family: Sachidananda
+    given: Vinay
+  - family: Siboni
+    given: Shachar
+  - family: Shabtai
+    given: Asaf
+  - family: Toh
+    given: Jinghui
+  - family: Bhairav
+    given: Suhas
+  - family: Elovici
+    given: Yuval
+  issued:
+  - year: 2017
+  title: 'Let the cat out of the bag: A holistic approach towards security analysis
+    of the internet of things'
+  container-title: Proceedings of the 3rd ACM International Workshop on IoT Privacy,
+    Trust, and Security
+  page: 3-10
+
+- id: amalfitano2017towards
+  type: paper-conference
+  author:
+  - family: Amalfitano
+    given: Domenico
+  - family: Amatucci
+    given: Nicola
+  - family: De Simone
+    given: Vincenzo
+  - family: Riccio
+    given: Vincenzo
+  - family: Rita
+    given: Fasolino Anna
+  issued:
+  - year: 2017
+  title: Towards a Thing-In-the-Loop approach for the verification and validation
+    of IoT systems
+  container-title: Proceedings of the 1st ACM Workshop on the Internet of Safe Things
+  page: 57-63
+
+- id: wu2021edgelstm
+  type: article-journal
+  author:
+  - family: Wu
+    given: Di
+  - family: Xu
+    given: He
+  - family: Jiang
+    given: Zhongkai
+  - family: Yu
+    given: Weiren
+  - family: Wei
+    given: Xuetao
+  - family: Lu
+    given: Jiwu
+  issued:
+  - year: 2021
+  title: 'EdgeLSTM: Towards Deep and Sequential Edge Computing for IoT Applications'
+  container-title: IEEE/ACM Transactions on Networking
+  publisher: IEEE
+  page: 1895-1908
+  volume: '29'
+  issue: '4'
+
+- id: pontes2018izinto
+  type: paper-conference
+  author:
+  - family: Pontes
+    given: Pedro Martins
+  - family: Lima
+    given: Bruno
+  - family: Faria
+    given: João Pascoal
+  issued:
+  - year: 2018
+  title: 'Izinto: A pattern-based iot testing framework'
+  container-title: Companion Proceedings for the ISSTA/ECOOP 2018 Workshops
+  page: 125-131
+
+- id: hashemian2019wotbench
+  type: paper-conference
+  author:
+  - family: Hashemian
+    given: Raoufeh
+  - family: Carlsson
+    given: Niklas
+  - family: Krishnamurthy
+    given: Diwakar
+  - family: Arlitt
+    given: Martin
+  issued:
+  - year: 2019
+  title: 'Wotbench: A benchmarking framework for the web of things'
+  container-title: Proceedings of the 9th International Conference on the Internet
+    of Things
+  page: 1-4
+
+- id: lee2020distributed
+  type: article-journal
+  author:
+  - family: Lee
+    given: Tim Van Der
+  - family: Exarchakos
+    given: Georgios
+  - family: Groot
+    given: Sonia Heemstra De
+  issued:
+  - year: 2020
+  title: Distributed reliable and energy-efficient scheduling for lr-wpans
+  container-title: ACM Transactions on Sensor Networks (TOSN)
+  publisher: ACM New York, NY, USA
+  page: 1-20
+  volume: '16'
+  issue: '4'
+
+- id: cheng2021atria
+  type: paper-conference
+  author:
+  - family: Cheng
+    given: Xia
+  - family: Sha
+    given: Mo
+  issued:
+  - year: 2021
+  title: 'ATRIA: Autonomous Traffic-Aware Scheduling for Industrial Wireless Sensor-Actuator
+    Networks'
+  container-title: 2021 IEEE 29th International Conference on Network Protocols (ICNP)
+  publisher: IEEE
+  page: 1-12
+
+- id: cheng2022autonomous
+  type: article-journal
+  author:
+  - family: Cheng
+    given: Xia
+  - family: Sha
+    given: Mo
+  issued:
+  - year: 2022
+  title: Autonomous Traffic-Aware Scheduling for Industrial Wireless Sensor-Actuator
+    Networks
+  container-title: ACM Transactions on Sensor Networks (TOSN)
+  publisher: ACM New York, NY
+
+- id: pope2016distributed
+  type: paper-conference
+  author:
+  - family: Pope
+    given: James
+  - family: Simon
+    given: Robert
+  issued:
+  - year: 2016
+  title: A distributed algorithm for maximizing linear tree density for one to many
+    wireless communication
+  container-title: Proceedings of the 13th ACM Symposium on Performance Evaluation
+    of Wireless Ad Hoc, Sensor, & Ubiquitous Networks
+  page: 73-82
+
+- id: theoleyre2021duocast
+  type: paper-conference
+  author:
+  - family: Theoleyre
+    given: Fabrice
+  issued:
+  - year: 2021
+  title: 'Duocast for Wireless Industrial Networks: an Experimental Study'
+  container-title: Proceedings of the 24th International ACM Conference on Modeling,
+    Analysis and Simulation of Wireless and Mobile Systems
+  page: 99-107
+
+- id: jacob2019dataset
+  type: paper-conference
+  author:
+  - family: Jacob
+    given: Romain
+  - family: Forno
+    given: Reto Da
+  - family: Trüb
+    given: Roman
+  - family: Biri
+    given: Andreas
+  - family: Thiele
+    given: Lothar
+  issued:
+  - year: 2019
+  title: 'Dataset: Wireless link quality estimation on flocklab-and beyond'
+  container-title: Proceedings of the 2nd Workshop on Data Acquisition To Analysis
+  page: 57-60
+
+- id: salaht2020overview
+  type: article-journal
+  author:
+  - family: Salaht
+    given: Farah Ait
+  - family: Desprez
+    given: Frédéric
+  - family: Lebre
+    given: Adrien
+  issued:
+  - year: 2020
+  title: An overview of service placement problem in fog and edge computing
+  container-title: ACM Computing Surveys (CSUR)
+  publisher: ACM New York, NY, USA
+  page: 1-35
+  volume: '53'
+  issue: '3'
+
+- id: sun2022recent
+  type: article-journal
+  author:
+  - family: Sun
+    given: Zehua
+  - family: Yang
+    given: Huanqi
+  - family: Liu
+    given: Kai
+  - family: Yin
+    given: Zhimeng
+  - family: Li
+    given: Zhenjiang
+  - family: Xu
+    given: Weitao
+  issued:
+  - year: 2022
+  title: 'Recent advances in lora: A comprehensive survey'
+  container-title: ACM Transactions on Sensor Networks
+  publisher: ACM New York, NY
+  page: 1-44
+  volume: '18'
+  issue: '4'
+
+- id: hessel2022lorawan
+  type: article-journal
+  author:
+  - family: Hessel
+    given: Frank
+  - family: Almon
+    given: Lars
+  - family: Hollick
+    given: Matthias
+  issued:
+  - year: 2022
+  title: 'LoRaWAN Security: An Evolvable Survey on Vulnerabilities, Attacks and their
+    Systematic Mitigation'
+  container-title: ACM Transactions on Sensor Networks (TOSN)
+  publisher: ACM New York, NY
 ...
