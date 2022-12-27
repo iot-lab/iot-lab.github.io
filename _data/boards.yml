@@ -10,11 +10,6 @@
     mcu-soc: Cortex A8
     radio: [802.15.4]
 -
-    name: Microchip SAMD21
-    board-id: samd21
-    mcu-soc: Cortex M0
-    radio: [802.15.4]
--
     name: Microchip SAMR21
     board-id: samr21
     mcu-soc: Cortex M0
@@ -54,11 +49,6 @@
     board-id: nrf52840dk
     mcu-soc: Cortex M4
     radio: [802.15.4, BLE]
--
-    name: Nucleo F070RB
-    board-id: nucleo-f070rb
-    mcu-soc: Cortex M0
-    radio: [BLE]
 -
     name: Nucleo WL55JC
     board-id: nucleo-wl55jc

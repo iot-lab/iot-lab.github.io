@@ -14,7 +14,6 @@
     - title: Overview
     - title: IoT-LAB M3
     - title: IoT-LAB A8-M3
-    - title: Microchip SAMD21
     - title: Microchip SAMR21
     - title: Microchip SAMR30
     - title: Microchip SAMR34
@@ -24,7 +23,6 @@
     - title: ST B-L475E-IOT01A
     - title: Nordic nRF52DK
     - title: Nordic nRF52840DK
-    - title: Nucleo-F070RB
     - title: Nucleo-WL55JC
     - title: BBC micro:bit
     - title: OpenMoteB
@@ -38,7 +36,6 @@
   pages:
     - title: Grenoble
     - title: Lille
-    - title: Nantes
     - title: Paris
     - title: Saclay
     - title: Strasbourg
