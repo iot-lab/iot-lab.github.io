@@ -33,9 +33,9 @@ microcontroller.
 
 ## Calibration of Antenna Delays
 
-The boards are precalibrated. The antenna delays for TX and RX (symmetric) are as follows:
+The boards are precalibrated. The antenna delays (stored in OTP memory) for TX and RX (symmetric) are as follows:
 
-| Node                          	| Device UID 	| Hex  	| Decimal 	|
+| Node                          	| Device UID 	| Delay Hex  	| Delay Decimal 	|
 |-------------------------------	|------------	|------	|---------	|
 | dwm1001-1.lille.iot-lab.info  	| 122E       	| 404A 	| 16458   	|
 | dwm1001-2.lille.iot-lab.info  	| 0420       	| 404B 	| 16459   	|
