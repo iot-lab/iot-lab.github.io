@@ -5,10 +5,7 @@ group: boards
 ---
 
 
-The `dwm1001` board corresponds to the
-[Decawave DWM1001-DEV](https://www.decawave.com/product/dwm1001-development-board/) board. It
-runs on an nRF52832 ARM CortexM4 microcontroller from Nordic with BLE and UWB (Ultra-Wide Band) radio
-support.
+The `dwm1001` board corresponds to the Decawave DWM1001C from a [MDEK1001 Kit](https://www.qorvo.com/products/p/MDEK1001). It is a factory-calibrated version of the [Decawave DWM1001](https://www.decawave.com/product/dwm1001-development-board/) board and runs on an nRF52832 ARM CortexM4 microcontroller from Nordic with BLE and UWB (Ultra-Wide Band) radio support.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/dwm1001/' | relative_url}}dwm1001.jpeg" style="width:30%;"/>
@@ -33,7 +30,7 @@ microcontroller.
 
 ## Calibration of Antenna Delays
 
-The boards are precalibrated. The antenna delays (stored in OTP memory) for TX and RX (symmetric) are as follows:
+The boards are factory-calibrated by Decawave/Qorvo. The antenna delays (stored in OTP memory) for TX and RX (symmetric) are as follows:
 
 | Node                          	| Device UID 	| Delay Hex  	| Delay Decimal 	|
 |-------------------------------	|------------	|------	|---------	|
