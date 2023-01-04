@@ -32,20 +32,22 @@ microcontroller.
 
 The boards are factory-calibrated by Decawave/Qorvo. The antenna delays (stored in OTP memory) for TX and RX (symmetric) are as follows:
 
-| Node                          	| Device UID 	| Delay Hex  	| Delay Decimal 	|
-|-------------------------------	|------------	|------	|---------	|
-| dwm1001-1.lille.iot-lab.info  	| 122E       	| 404A 	| 16458   	|
-| dwm1001-2.lille.iot-lab.info  	| 0420       	| 404B 	| 16459   	|
-| dwm1001-3.lille.iot-lab.info  	| 0C28       	| 4049 	| 16457   	|
-| dwm1001-4.lille.iot-lab.info  	| 0BA1       	| 4058 	| 16472   	|
-| dwm1001-5.lille.iot-lab.info  	| DB27       	| 404D 	| 16461   	|
-| dwm1001-6.lille.iot-lab.info  	| 0295       	| 404E 	| 16462   	|
-| dwm1001-7.lille.iot-lab.info  	| 8E2B       	| 4049 	| 16457   	|
-| dwm1001-8.lille.iot-lab.info  	| 8089       	| 4058 	| 16472   	|
-| dwm1001-9.lille.iot-lab.info  	| 08A6       	| 4058 	| 16472   	|
-| dwm1001-10.lille.iot-lab.info 	| D6B0       	| 4058 	| 16472   	|
-| dwm1001-11.lille.iot-lab.info 	| D1B6       	| 4034 	| 16436   	|
-| dwm1001-12.lille.iot-lab.info 	| DC19       	| 4039 	| 16441   	|
-| dwm1001-13.lille.iot-lab.info 	| 4827       	| 404B 	| 16459   	|
-| dwm1001-14.lille.iot-lab.info 	| D4B6       	| 4035 	| 16437   	|
+
+| Node                          | Device UID | Delay Hex | Delay Decimal |
+| :---:                         | :---:      | :---:     | :---:         |
+| dwm1001-1.lille.iot-lab.info  | 122E       | 404A      | 16458         |
+| dwm1001-2.lille.iot-lab.info  | 0420       | 404B      | 16459         |
+| dwm1001-3.lille.iot-lab.info  | 0C28       | 4049      | 16457         |
+| dwm1001-4.lille.iot-lab.info  | 0BA1       | 4058      | 16472         |
+| dwm1001-5.lille.iot-lab.info  | DB27       | 404D      | 16461         |
+| dwm1001-6.lille.iot-lab.info  | 0295       | 404E      | 16462         |
+| dwm1001-7.lille.iot-lab.info  | 8E2B       | 4049      | 16457         |
+| dwm1001-8.lille.iot-lab.info  | 8089       | 4058      | 16472         |
+| dwm1001-9.lille.iot-lab.info  | 08A6       | 4058      | 16472         |
+| dwm1001-10.lille.iot-lab.info | D6B0       | 4058      | 16472         |
+| dwm1001-11.lille.iot-lab.info | D1B6       | 4034      | 16436         |
+| dwm1001-12.lille.iot-lab.info | DC19       | 4039      | 16441         |
+| dwm1001-13.lille.iot-lab.info | 4827       | 404B      | 16459         |
+| dwm1001-14.lille.iot-lab.info | D4B6       | 4035      | 16437         |
+{:.table-bordered}
  
