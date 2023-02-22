@@ -7411,16 +7411,6 @@ references:
   page: '3'
   volume: '270'
 
-- id: ors2021data
-  type: thesis
-  author:
-  - family: Örs
-    given: Faik Kerem
-  issued:
-  - year: 2021
-  title: Data driven intrusion detection for 6LoWPAN based IoT systems
-  genre: thèse de doctorat
-
 - id: mnasri20183d
   type: paper-conference
   author:
@@ -10275,4 +10265,18 @@ references:
   title: Attack and Intrusion Detection on the IoT
   publisher: Universidade de Coimbra
   genre: thèse de doctorat
+
+- id: ors2023data
+  type: article-journal
+  author:
+  - family: Örs
+    given: Faik Kerem
+  - family: Levi
+    given: Albert
+  issued:
+  - year: 2023
+  title: Data driven intrusion detection for 6LoWPAN based IoT systems
+  container-title: Ad Hoc Networks
+  publisher: Elsevier
+  page: '103120'
 ...
