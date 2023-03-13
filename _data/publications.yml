@@ -10279,4 +10279,19 @@ references:
   container-title: Ad Hoc Networks
   publisher: Elsevier
   page: '103120'
+
+- id: urke2023experimental
+  type: article-journal
+  author:
+  - family: Urke
+    given: Andreas R
+  - family: Kure
+    given: Øivind
+  - family: Øvsthus
+    given: Knut
+  issued:
+  - year: 2023
+  title: Experimental evaluation of Layered flow-based autonomous TSCH scheduler
+  container-title: IEEE Access
+  publisher: IEEE
 ...
