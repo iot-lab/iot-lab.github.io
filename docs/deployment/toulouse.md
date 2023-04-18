@@ -2,7 +2,7 @@
 title: Toulouse
 group: deployment
 iotlab-site: toulouse
-description: The Toulouse site is part of the <a href='https://locura4iot.irit.fr'>LocURa4IoT testbed</a>. The nodes are located at IUT Blagnac (IRIT/UT2J). They are spread across offices and demonstration room on the first floor of building C. This site is catered toward indoor localisation and time synchronisation experiments.
+description: The Toulouse site is part of the <a href='https://locura4iot.irit.fr'>LocURa4IoT testbed</a>. The nodes are located at IUT Blagnac (IRIT/UT2J). They are spread across offices and demonstration room on the first floor of building C. This site is catered toward indoor localisation, but can host experiments on other topics such as time synchronisation.
 ---
 
 
