@@ -2,23 +2,16 @@
 title: Toulouse
 group: deployment
 iotlab-site: toulouse
-description: On the Toulouse site, the nodes are deployed at IUT Blagnac, IRIT/UT2J. They are spread across offices and demonstration room on the first floor of building C. This site is catered toward indoor localisation and time synchronisation experiments.
+description: The Toulouse site is part of the <a href='https://locura4iot.irit.fr'>LocURa4IoT testbed</a>. The nodes are located at IUT Blagnac (IRIT/UT2J). They are spread across offices and demonstration room on the first floor of building C. This site is catered toward indoor localisation and time synchronisation experiments.
 ---
 
-## Resources
-* 43 Decawave <a href="https://www.iot-lab.info/hardware/dwm1001/">DWM1001</a>
+
 
 ## Topology
 
 Toulouse testbed is deployed at a building scale, over the first floor of building C of IUT Blagnac. 
-
-* Most of the nodes are fixed at a height of 2.65m and 30cm away from the walls and ceilings on dedicated plastic mounts.
-* Some nodes are located on the floor or at an intermediate height to enable 3D localisation experiments.
-* The walls are either load-bearing bricks walls or drywalls.
-
-
-<div class="row">
-    <div class="col-lg-6">
+<div class="row mb-3">
+    <div class="col">
         <br>
         <br>
         <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}locura_iotlab_map.png" data-toggle="lightbox" data-gallery="gallery-A">
@@ -26,4 +19,39 @@ Toulouse testbed is deployed at a building scale, over the first floor of buildi
         </a>
     </div>
 </div>
+
+<div class="row mb-3">
+    <div class="col p-1">
+        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}mount.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}mount.jpg">
+        </a>
+    </div>
+    <div class="col p-1">
+        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}demo_room.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}demo_room.jpg">
+        </a>
+    </div>
+</div>
+
+## Node mounting
+
+* Most of the nodes are fixed at a height of 2.65m and at least 30cm away from the walls and ceilings on dedicated plastic mounts.
+* Some nodes are located on the floor or at an intermediate height (1,65m) to enable 3D localisation experiments.
+* The walls are either load-bearing bricks walls or drywalls.
+* Node positions are estimated to be known within 2cm of precision \[<a href="https://ut3-toulouseinp.hal.science/hal-03466307">Bossche2022</a>\].
+
+<div class="row mb-3">
+    <div class="col p-1">
+        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}matrix_1.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}matrix_1.jpg">
+        </a>
+    </div>
+    <div class="col p-1">
+        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}pole_2.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}pole_2.jpg">
+        </a>
+    </div>
+</div>
+
+
 
