@@ -10,46 +10,78 @@ description: The Toulouse site is part of the <a href='https://locura4iot.irit.f
 ## Topology
 
 Toulouse testbed is deployed at a building scale, over the first floor of building C of IUT Blagnac. 
-<div class="row mb-3">
-    <div class="col">
-        <br>
-        <br>
-        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}locura_iotlab_map.png" data-toggle="lightbox" data-gallery="gallery-A">
-            <img class="img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}locura_iotlab_map.png">
-        </a>
-    </div>
-</div>
-
-<div class="row mb-3">
-    <div class="col p-1">
-        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}mount.jpg" data-toggle="lightbox" data-gallery="gallery">
-            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}mount.jpg">
-        </a>
-    </div>
-    <div class="col p-1">
-        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}demo_room.jpg" data-toggle="lightbox" data-gallery="gallery">
-            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}demo_room.jpg">
-        </a>
-    </div>
-</div>
-
-## Node mounting
-
 * Most of the nodes are fixed at a height of 2.65m and at least 30cm away from the walls and ceilings on dedicated plastic mounts.
 * Some nodes are located on the floor or at an intermediate height (1,65m) to enable 3D localisation experiments.
-* The walls are either load-bearing bricks walls or drywalls.
+* The walls are either load-bearing bricks walls, wood pannel walls or drywalls.
 * Node positions are estimated to be known within 2cm of precision \[<a href="https://ut3-toulouseinp.hal.science/hal-03466307">Bossche2022</a>\].
+
+<div class="row justify-content-center">
+    <div class="col-9">
+        <figure>
+            <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}locura_iotlab_map.png" data-toggle="lightbox" data-gallery="gallery-A">
+                <img class="img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}locura_iotlab_map.png">
+            </a>
+            <figcaption>Testbed map</figcaption>
+        </figure>
+    </div>
+</div>
+
+## Views of node setup
 
 <div class="row mb-3">
     <div class="col p-1">
-        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}matrix_1.jpg" data-toggle="lightbox" data-gallery="gallery">
-            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}matrix_1.jpg">
-        </a>
+        <figure>
+            <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}demo_room.jpg" data-toggle="lightbox" data-gallery="gallery">
+                <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}demo_room.jpg">
+            </a>
+            <figcaption>Demo room</figcaption>
+        </figure>
     </div>
     <div class="col p-1">
-        <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}pole_2.jpg" data-toggle="lightbox" data-gallery="gallery">
-            <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}pole_2.jpg">
-        </a>
+        <figure>
+            <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}line.jpg" data-toggle="lightbox" data-gallery="gallery">
+                <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}line.jpg">
+            </a>
+            <figcaption>high-density mount in demo room</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col p-1">
+        <figure>
+            <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}wall_mount.jpg" data-toggle="lightbox" data-gallery="gallery">
+                <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}wall_mount.jpg">
+            </a>
+            <figcaption>Wall mount</figcaption>
+        </figure>
+    </div>
+    <div class="col p-1">
+        <figure>
+            <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}floor.jpg" data-toggle="lightbox" data-gallery="gallery">
+                <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}floor.jpg">
+            </a>
+            <figcaption>Floor node</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col p-1">
+        <figure>
+            <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}single_mount.jpg" data-toggle="lightbox" data-gallery="gallery">
+                <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}single_mount.jpg">
+            </a>
+            <figcaption>Close-up of node mount</figcaption>
+        </figure>
+    </div>
+    <div class="col p-1">
+        <figure>
+            <a href="{{ '/assets/images/deployments/toulouse/' | relative_url }}cabinet.jpg" data-toggle="lightbox" data-gallery="gallery">
+                <img class="img-thumbnail img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}cabinet.jpg">
+            </a>
+            <figcaption>Cabinet mount in an office</figcaption>
+        </figure>
     </div>
 </div>
 
