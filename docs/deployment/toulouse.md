@@ -53,5 +53,16 @@ Toulouse testbed is deployed at a building scale, over the first floor of buildi
     </div>
 </div>
 
+----------
 
+_Toulouse IoT-LAB site is co-funded by the CNRS and University Toulouse Jean Jaurès_
+
+<div class="row justify-content-center">
+    <div class="col-2">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}LOGO_CNRS.png">
+    </div>
+    <div class="col-6">
+        <img class="img-fluid" src="{{ '/assets/images/deployments/toulouse/' | relative_url }}LOGO_UT2J.png">
+    </div>
+</div>
 
