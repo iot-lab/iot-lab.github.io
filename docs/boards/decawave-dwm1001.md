@@ -30,7 +30,7 @@ microcontroller.
 
 ## Calibration of Antenna Delays
 
-Some parameters (notably the antenna delays) of the boards are factory-calibrated by Decawave/Qorvo. The calibration parameters can be read by the firmware from the One-Time Programmable memory (OTP) of the DW1000 chip.
+Some parameters (notably the antenna delays) of the boards are factory-calibrated by Decawave/Qorvo. The calibration parameters can be read by the firmware from the One-Time Programmable memory (OTP) of the DW1000 chip (see section 6.3 of [DW1000 user manual](https://www.qorvo.com/products/d/da007967]).
 
 The antenna delays for some of IoT-LAB boards are as follows:
 
