@@ -6,14 +6,14 @@ description: "We started by design and deploy our own boards. Since 2018, we hav
 ---
 <p>Here is a table summarizing tech specs of boards. It shows notably communications possibilities between the boards.</p>
 
-{% assign radios = "802.15.4, Sub-GhZ, BLE, LoRa" | split: ", " %}
+{% assign radios = "802.15.4, Sub-GhZ, BLE, LoRa, UWB" | split: ", " %}
 <table class="table table-hover">
   <thead>
       <tr>
           <th rowspan="2" scope="col">Board</th>
           <th rowspan="2" scope="col">IoT-LAB name</th>
           <th rowspan="2" scope="col">MCU / SoC</th>
-          <th colspan="4" scope="colgroup" class="text-center">Radio</th>
+          <th colspan="5" scope="colgroup" class="text-center">Radio</th>
       </tr>
       <tr>
       {% for radio in radios %}

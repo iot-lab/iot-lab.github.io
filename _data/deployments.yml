@@ -40,3 +40,6 @@
     - { board: IoT-LAB M3, number: 69}
     - { board: IoT-LAB A8-M3, number: 62}
 
+- site: Toulouse
+  deployment:
+    - { board: Decawave DWM1001, number: 43}

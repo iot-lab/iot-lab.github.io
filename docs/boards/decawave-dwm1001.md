@@ -5,7 +5,7 @@ group: boards
 ---
 
 
-The `dwm1001` board corresponds to the Decawave DWM1001C from a [MDEK1001 Kit](https://www.qorvo.com/products/p/MDEK1001). It is a factory-calibrated version of the [Decawave DWM1001](https://www.decawave.com/product/dwm1001-development-board/) board and runs on an nRF52832 ARM CortexM4 microcontroller from Nordic with BLE and UWB (Ultra-Wide Band) radio support.
+The `dwm1001` board available in IoT-LAB are Decawave [DWM1001-DEV](https://www.decawave.com/product/dwm1001-development-board/) boards. They are build around a [DWM1001C module](https://www.qorvo.com/products/p/DWM1001C) which contains a nRF52832 ARM CortexM4 microcontroller from Nordic with BLE and a [DW1000](https://www.qorvo.com/products/p/DW1000) UWB (Ultra-Wide Band) transceiver.
 
 <div style="text-align:center">
 <img src="{{ '/assets/images/docs/boards/dwm1001/' | relative_url}}dwm1001.jpeg" style="width:30%;"/>
@@ -30,7 +30,9 @@ microcontroller.
 
 ## Calibration of Antenna Delays
 
-The boards are factory-calibrated by Decawave/Qorvo. The antenna delays (stored in OTP memory) for TX and RX (symmetric) are as follows:
+Some parameters (notably the antenna delays) of the boards are factory-calibrated by Decawave/Qorvo. The calibration parameters can be read by the firmware from the One-Time Programmable memory (OTP) of the DW1000 chip (see section 6.3 of [DW1000 user manual](https://www.qorvo.com/products/d/da007967]).
+
+The antenna delays for some of IoT-LAB boards are as follows:
 
 
 | Node                          | Device UID | Delay Hex | Delay Decimal |
