@@ -14,6 +14,7 @@ Toulouse testbed is deployed at a building scale, over the first floor of buildi
 * Some nodes are located on the floor or at an intermediate height (1,65m) to enable 3D localisation experiments.
 * The walls are either load-bearing bricks walls, wood pannel walls or drywalls.
 * Node positions are estimated to be known within 2cm of precision \[<a href="https://ut3-toulouseinp.hal.science/hal-03466307">Bossche2022</a>\].
+* The node positions are available as a JSON file <a href="{{ 'assets/misc/docs/deployments/toulouse/' | relative_url }}positions.json">here</a>.
 * Note : the node ids are not contiguous because some ids are provisioned for future use.
 
 <div class="row justify-content-center">
