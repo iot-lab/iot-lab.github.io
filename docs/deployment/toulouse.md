@@ -2,7 +2,7 @@
 title: Toulouse
 group: deployment
 iotlab-site: toulouse
-description: The Toulouse site is part of the <a href='https://locura4iot.irit.fr'>LocURa4IoT testbed</a>. The nodes are located at IUT Blagnac (IRIT/UT2J). They are spread across offices and demonstration room on the first floor of building C. This site is catered towards indoor localisation, but can host experiments on other topics such as time synchronisation.
+description: The Toulouse site is part of the <a href='https://locura4iot.irit.fr'>LocURa4IoT testbed</a>. The nodes are located at IUT Blagnac (IRIT/UT2J). They are spread across offices and demonstration room on the first floor of building C. This site focuses on Ultra-Wide Band (UWB) technology and is catered towards indoor localisation, but can also host experiments on other available technologies such as BLE and other topics such as time synchronisation .
 ---
 
 
@@ -10,6 +10,7 @@ description: The Toulouse site is part of the <a href='https://locura4iot.irit.f
 ## Topology
 
 Toulouse testbed is deployed at a building scale, over the first floor of building C of IUT Blagnac. 
+* All the nodes are currently <a href="{{ 'docs/boards/' | relative_url }}decawave-dwm1001">Qorvo's DWM1001</a>.
 * Most of the nodes are fixed at a height of 2.65m and at least 30cm away from the walls and ceilings on dedicated plastic mounts.
 * Some nodes are located on the floor or at an intermediate height (1,65m) to enable 3D localisation experiments.
 * The walls are either load-bearing bricks walls, wood pannel walls or drywalls.
