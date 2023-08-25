@@ -10294,4 +10294,17 @@ references:
   title: Experimental evaluation of Layered flow-based autonomous TSCH scheduler
   container-title: IEEE Access
   publisher: IEEE
+
+- id: fawwaz2023adaptive
+  type: article-journal
+  author:
+  - family: Fawwaz
+    given: Dzaky Zakiyal
+  - family: Chung
+    given: Sang-Hwa
+  issued:
+  - year: 2023
+  title: Adaptive Trickle Timer for Efficient 6TiSCH Network Formation using Q-Learning
+  container-title: IEEE Access
+  publisher: IEEE
 ...
