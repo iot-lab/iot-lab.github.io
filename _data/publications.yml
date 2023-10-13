@@ -4811,7 +4811,7 @@ references:
   publisher: Université de Lyon
   genre: thèse de doctorat
 
-- id: cobarzan2015internet
+- id: cobârzan2015internet
   type: thesis
   author:
   - family: Cobârzan
@@ -10307,4 +10307,21 @@ references:
   title: Adaptive Trickle Timer for Efficient 6TiSCH Network Formation using Q-Learning
   container-title: IEEE Access
   publisher: IEEE
+
+- id: tofaily2023quantifying
+  type: paper-conference
+  author:
+  - family: Tofaily
+    given: Salma
+  - family: Raı̈s
+    given: Issam
+  - family: Anshus
+    given: Otto
+  issued:
+  - year: 2023
+  title: Quantifying the Variability of Power and Energy Consumption for IoT Edge
+    Nodes
+  container-title: 2023 19th International Conference on Distributed Computing in
+    Smart Systems and the Internet of Things (DCOSS-IoT)
+  page: 577-584
 ...
