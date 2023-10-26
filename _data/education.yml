@@ -3,6 +3,16 @@
   title: <a href="https://opas.peppi.oulu.fi/en/course/521043S/7770">Internet of Things</a>
   teacher: Abhishek Kumar
 
+- school: <a href="https://polytech.univ-tours.fr/english-version">Polytech Tours</a>
+  year: 2024-2018
+  title: Plateforme MCU pour l’IoT
+  teacher: Alexis Rolland
+
+- school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
+  year: 2024-2022
+  title: Internet des Objets <br> from M2 SIRIS (UFR de mathématique et d'informatique), RIO 3A (Telecom Physique Strasbourg)
+  teacher: Amaury Bruniaux & Guillaume Schreiner
+
 - school: <a href="https://www.ensea.fr/en">ENSEA</a>
   year: 2023-2018
   title: <a href="http://www.ensea.fr/fr/huit-specialites-3e-annee-33">Électronique de Systèmes de Communication</a>
@@ -28,11 +38,6 @@
   title: <a href="https://teaching.dahahm.de/teaching/project_ws22.html">IoT - From the Microcontroller to the Cloud</a>
   teacher: <a href="https://teaching.dahahm.de">Oleg Hahm</a>
 
-- school: <a href="https://polytech.univ-tours.fr/english-version">Polytech Tours</a>
-  year: 2023-2018
-  title: Plateforme MCU pour l’IoT
-  teacher: Alexis Rolland
- 
 - school: SPEIT, ParisTech Shanghaï JiaoTong University
   year: 2023-2020
   title: 802.15.4 et les systèmes embarqués
@@ -62,11 +67,6 @@
   year: 2023-2014
   title: <a href="https://master-eecs.univ-grenoble-alpes.fr/programme/master-2-miscit/">Distributed Algorithms and Network Systems</a> <br> <a href="https://github.com/iot-lab/openlab/tree/master/appli/education/distributed_algorithm">Material</a>
   teacher: <a href="http://necs.inrialpes.fr/people/garin/">Federica Garin</a> & Frederic Saint-Marcel
-
-- school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
-  year: 2023-2022
-  title: Internet des Objets <br> from M2 SIRIS (UFR de mathématique et d'informatique), RIO 3A (Telecom Physique Strasbourg)
-  teacher: Amaury Bruniaux & Guillaume Schreiner
 
 - school: <a href="https://en.unistra.fr/">University of Strasbourg</a>
   year: 2023-2021
