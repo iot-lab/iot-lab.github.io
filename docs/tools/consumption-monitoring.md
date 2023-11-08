@@ -20,7 +20,7 @@ With command-line tools use these commands:
 
 ``` bash
 $ iotlab-auth -u <login> # optionally store your credentials if you haven't done it before.
-$ iotlab-profile addm3 -n <profile_name> -p -voltage -current -power -period 8244 -avg 4
+$ iotlab-profile addm3 -n <profile_name> -voltage -current -power -period 8244 -avg 4
 ```
 
 ## Launch an experiment
