@@ -10324,4 +10324,40 @@ references:
   container-title: 2023 19th International Conference on Distributed Computing in
     Smart Systems and the Internet of Things (DCOSS-IoT)
   page: 577-584
+
+- id: urke2023autonomous
+  type: article-journal
+  author:
+  - family: Urke
+    given: Andreas R
+  - family: Kure
+    given: ØIvind
+  - family: Øvsthus
+    given: Knut
+  issued:
+  - year: 2023
+  title: 'Autonomous Flow-Based TSCH Scheduling for Heterogeneous Traffic Patterns:
+    Challenges, Design, Simulation and Testbed Evaluation'
+  container-title: IEEE Open Journal of the Communications Society
+  publisher: IEEE
+
+- id: salmarepresenting
+  type: paper-conference
+  author:
+  - family: Salma Tofaily
+    given: Otto Anshus
+    suffix: Issam Raı̈s
+  title: Representing Power Variability of an Idle Edge Node in the Power State Model
+  container-title: CPSCom2023
+
+- id: salma2023representing
+  type: paper-conference
+  author:
+  - family: Salma Tofaily
+    given: Otto Anshus
+    suffix: Issam Raı̈s
+  issued:
+  - year: 2023
+  title: Representing Power Variability of an Idle Edge Node in the Power State Model
+  container-title: CPSCom2023
 ...
