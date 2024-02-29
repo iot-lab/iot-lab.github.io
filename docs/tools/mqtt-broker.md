@@ -32,7 +32,7 @@ at **mqtt.iot-lab.info**. This instance is public and only
 
 **Important things:**
 
-> Any FIT IoT-LAB user can connect to mqtt.iot-lab.info with its personal
+> Any FIT IoT-LAB user can connect to mqtt4.iot-lab.info with its personal
 > FIT IoT-LAB credentials and a certificate file that is available either here
 > or on each SSH frontend in /opt/iot-lab-ca.pem.
 > Authenticated FIT IoT-LAB users can only have access to `iotlab/<login>`
