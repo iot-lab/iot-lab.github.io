@@ -9,7 +9,6 @@ description: This document shows how to exchange simple messages using the MQTT 
 MQTT (MQ Telemetry Transport) is a protocol designed on top of TCP/IP and based
 on a publish/subscribe principle.
 
-
 <figure style="text-align:center">
   <img src="{{ '/assets/images/docs/mqtt/' | relative_url}}pub-sub-model.png" style="width:500px;"/><br/>
   <figcaption>The MQTT publish subscribe model (<a href="https://www.researchgate.net/publication/327661439_The_Addition_of_Geolocation_to_Sensor_Networks">Source</a>)</figcaption>
@@ -24,21 +23,22 @@ The [Eclipse mosquitto project](https://mosquitto.org/) provide an open-source
 MQTT broker as well as a C library for implementing clients and the
 `mosquitto_pub` and `mosquitto_sub` command line interface clients.
 
-The FIT IoT-LAB testbed provides an instance of the Eclipse mosquitto broker
-at **mqtt.iot-lab.info**. This instance is public and only
-**port 8883 with TLS encryption** can be used.
+The FIT IoT-LAB testbed provides an instance of the Eclipse mosquitto broker. This instance is public and only **port 8883 with TLS encryption** can be used.
 
 ## Connect to the IoT-LAB MQTT broker
 
 **Important things:**
 
-> Any FIT IoT-LAB user can connect to mqtt4.iot-lab.info with its personal
+> Any FIT IoT-LAB user can connect to MQTT broker with its personal
 > FIT IoT-LAB credentials and a certificate file that is available either here
 > or on each SSH frontend in /opt/iot-lab-ca.pem.
 > Authenticated FIT IoT-LAB users can only have access to `iotlab/<login>`
 > topics and sub-topics. This ensures confidentiality between users when
 > exchanging MQTT messages. Only TLS encryption on port 8883 is allowed on the
 > broker.
+
+* MQTT broker is accessible on IPv4 at **mqtt4.iot-lab.info** on port 8883
+* MQTT broker is accessible on IPv6 at **mqtt6.iot-lab.info** on port 8883
 
 ### From your local computer
 
@@ -58,9 +58,9 @@ at **mqtt.iot-lab.info**. This instance is public and only
 
 2. Download the certificate file from [here]({{ site.baseurl }}{% link assets/misc/docs/mqtt/iot-lab-ca.pem %}).
 
-3. Connect to the broker using one of the mosquitto-clients command line:
+3. Connect to the broker via IPv4 using one of the mosquitto-clients command line:
   ```sh
-  $ mosquitto_sub --cafile <path-to>/iot-lab-ca.pem -h mqtt.iot-lab.info -p 8883 -u <iotlab-login> -P <iotlab-passwd> -t iotlab/<iotlab-login>/test
+  $ mosquitto_sub --cafile <path-to>/iot-lab-ca.pem -h mqtt4.iot-lab.info -p 8883 -u <iotlab-login> -P <iotlab-passwd> -t iotlab/<iotlab-login>/test
   ```
 
 ### From an SSH frontend
@@ -89,9 +89,9 @@ at **mqtt.iot-lab.info**. This instance is public and only
   To encrypt the communication with the broker, the certificate file is located
   in `/opt/iot-lab-ca.pem`.
 
-3. Connect to the broker using one of the mosquitto-clients command line:
+3. Connect to the broker via IPv4 using one of the mosquitto-clients command line:
   ```sh
-  login@saclay:~$ mosquitto_sub --cafile /opt/iot-lab-ca.pem -h mqtt.iot-lab.info -p 8883 -t iotlab/<iotlab-login>/test
+  login@saclay:~$ mosquitto_sub --cafile /opt/iot-lab-ca.pem -h mqtt4.iot-lab.info -p 8883 -t iotlab/<iotlab-login>/test
   ```
   **Note:** you don’t need to provide your credentials on the command line
   because they are retrieved from the config files you previously edited.
@@ -120,7 +120,7 @@ MQTT messages between the Saclay SSH frontend and your local computer.
 1. From your local computer, run `mosquitto_sub` to subscribe to the
 `iotlab/<iotlab-login>/test` topic:
   ```
-  $ mosquitto_sub --cafile <path-to>/iot-lab-ca.pem -h mqtt.iot-lab.info -p 8883 -u <iotlab-login> -P <iotlab-passwd> -t iotlab/<iotlab-login>/test
+  $ mosquitto_sub --cafile <path-to>/iot-lab-ca.pem -h mqtt4.iot-lab.info -p 8883 -u <iotlab-login> -P <iotlab-passwd> -t iotlab/<iotlab-login>/test
   ```
   The command is now waiting for any messages published on the
   `iotlab/<iotlab-login>/test` topic. **Keep it open**
@@ -133,12 +133,12 @@ MQTT messages between the Saclay SSH frontend and your local computer.
   `mosquitto_pub`:
   - Send one message at a time:
     ```
-    login@saclay:~$ mosquitto_pub --cafile /opt/iot-lab-ca.pem -h mqtt.iot-lab.info -p 8883 -t iotlab/<iotlab-login>/test -m "Hello FIT IoT-LAB"
+    login@saclay:~$ mosquitto_pub --cafile /opt/iot-lab-ca.pem -h mqtt4.iot-lab.info -p 8883 -t iotlab/<iotlab-login>/test -m "Hello FIT IoT-LAB"
     ```
     You should see the message arrive in the `mosquitto_sub` command running on your local computer.
   - Run `mosquitto_pub` in interactive mode using the `-l` option:
     ```
-    login@saclay:~$ mosquitto_pub --cafile /opt/iot-lab-ca.pem -h mqtt.iot-lab.info -p 8883 -t iotlab/<iotlab-login>/test -l
+    login@saclay:~$ mosquitto_pub --cafile /opt/iot-lab-ca.pem -h mqtt4.iot-lab.info -p 8883 -t iotlab/<iotlab-login>/test -l
     Hello FIT IoT-LAB
     ```
     All messages typed in the terminal are sent after pressing Enter to the
