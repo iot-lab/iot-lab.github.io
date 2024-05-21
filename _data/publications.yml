@@ -10349,15 +10349,4 @@ references:
     suffix: Issam Raı̈s
   title: Representing Power Variability of an Idle Edge Node in the Power State Model
   container-title: CPSCom2023
-
-- id: salma2023representing
-  type: paper-conference
-  author:
-  - family: Salma Tofaily
-    given: Otto Anshus
-    suffix: Issam Raı̈s
-  issued:
-  - year: 2023
-  title: Representing Power Variability of an Idle Edge Node in the Power State Model
-  container-title: CPSCom2023
 ...
