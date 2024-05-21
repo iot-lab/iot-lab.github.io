@@ -9291,8 +9291,7 @@ references:
   issued:
   - year: 2020
   title: Lessons learned from the chameleon testbed
-  container-title: Proceedings of the 2020 USENIX Conference on Usenix Annual Technical
-    Conference
+  container-title: 2020 USENIX annual technical conference (USENIX ATC 20)
   page: 219-233
 
 - id: nguyen2022digital
@@ -10341,12 +10340,17 @@ references:
   container-title: IEEE Open Journal of the Communications Society
   publisher: IEEE
 
-- id: salmarepresenting
+- id: tofaily2023representing
   type: paper-conference
   author:
-  - family: Salma Tofaily
-    given: Otto Anshus
-    suffix: Issam Raı̈s
+  - family: Tofaily
+    given: Salma
+  - family: Raı̈s
+    given: Issam
+  - family: Anshus
+    given: Otto
+  issued:
+  - year: 2023
   title: Representing Power Variability of an Idle Edge Node in the Power State Model
   container-title: CPSCom2023
 ...
