@@ -70,7 +70,16 @@ content: text
 1.341448        1       3       1379945918      312317  0.053384        3.272500        0.016322
 ```
 
-We provide an OML plotting tool which helps you to analyse monitoring data.
+We provide an OML plotting tool which helps you to analyse monitoring data. To use the plotting tool on MacOS you have to install XQuartz. Make sure to reboot your machine after the installation is complete.
+
+``` bash
+# ONLY for MacOS user
+
+$ brew install --cask xquartz
+$ sudo reboot
+# Connect using -X option to enable X11 forwarding
+$ ssh -X <login>@grenoble.iot-lab.info
+```
 
 ``` bash
 <login>@grenoble:~$ plot_oml_consum -p -i ~/.iot-lab/last/consumption/m3_<id>.oml
