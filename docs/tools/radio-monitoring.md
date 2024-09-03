@@ -104,7 +104,16 @@ content: text
 
 RSSI stands for Received Signal Strength Indication. It is the relative received signal strength in a wireless environment. In IoT-LAB, measured RSSI values provide an indication of the radio power level received by the antenna of the `Control Node` hardware. The RSSI value is expressed in dBm (Decibel-milliwatts), and represents the power ratio in decibels (dB) of the measured power referenced to one milliwatt (mW). A power level of 0 dBm corresponds to 1mW.
 
-We provide an OML plotting tool which helps you to analyse monitoring data.
+We provide an OML plotting tool which helps you to analyse monitoring data. To use the plotting tool on MacOS you have to install XQuartz. Make sure to reboot your machine after the installation is complete.
+
+``` bash
+# ONLY for MacOS user
+
+$ brew install --cask xquartz
+$ sudo reboot
+# Connect using -X option to enable X11 forwarding
+$ ssh -X <login>@grenoble.iot-lab.info
+```
 
 ``` bash
 <login>@grenoble:~$ plot_oml_radio -a -i ~/.iot-lab/last/radio/m3_<id>.oml
