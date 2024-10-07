@@ -16,6 +16,7 @@ Toulouse testbed is deployed at a building scale, over the first floor of buildi
 * The walls are either load-bearing bricks walls, wood pannel walls or drywalls.
 * Node positions are estimated to be known within 2cm of precision \[<a href="https://ut3-toulouseinp.hal.science/hal-03466307">Bossche2022</a>\].
 * The node positions are available as a JSON file <a href="{{ 'assets/misc/docs/deployments/toulouse/' | relative_url }}positions.json">here</a>.
+* Node 60 is on a motorised rail, hence its position is not fixed.
 * Note : the node ids are not contiguous because some ids are provisioned for future use.
 
 <div class="row justify-content-center">
