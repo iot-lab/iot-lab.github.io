@@ -42,4 +42,4 @@
 
 - site: Toulouse
   deployment:
-    - { board: Decawave DWM1001, number: 43}
+    - { board: Decawave DWM1001, number: 44}
