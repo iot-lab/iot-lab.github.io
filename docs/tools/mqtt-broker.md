@@ -1,10 +1,13 @@
 ---
-title: MQTT
+title: MQTT broker
 group: tools
 description: This document shows how to exchange simple messages using the MQTT broker deployed in IoT-LAB and the mosquitto CLI clients installed on the SSH frontends. In this document, you will learn how to connect to the broker and then, you will subscribe to an MQTT topic and publish messages to an MQTT topic.
 ---
 
+This page descibes the MQTT protocol, and IoT-LAB's broker. See [this page]({% link docs/tools/mqtt-serial-bridge.md %}) for a tool designed to bridge a node serial output to MQTT.
+
 ## Introduction
+
 
 MQTT (MQ Telemetry Transport) is a protocol designed on top of TCP/IP and based
 on a publish/subscribe principle.

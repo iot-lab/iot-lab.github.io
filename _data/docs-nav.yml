@@ -63,4 +63,5 @@
     - title: On-chip debugging
     - title: Radio characterization
     - title: MQTT broker
+    - title: MQTT serial bridge
     - title: Leshan broker
