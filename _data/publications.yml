@@ -10426,4 +10426,80 @@ references:
   page: 1-30
   volume: '4'
   issue: '3'
+
+- id: rathje2023aladin
+  type: paper-conference
+  author:
+  - family: Rathje
+    given: Patrick
+  - family: Landsiedel
+    given: Olaf
+  issued:
+  - year: 2023
+  title: 'ALADIn: Autonomous Linear Antenna Delay Inference on Resource-Constrained
+    Ultra-Wideband Devices'
+  container-title: Proceedings of the 2023 INTERNATIONAL CONFERENCE ON EMBEDDED WIRELESS
+    SYSTEMS AND NETWORKS
+  page: 181-191
+
+- id: kim2024quick6tisch
+  type: paper-conference
+  author:
+  - family: Kim
+    given: Hongchan
+  - family: Lee
+    given: Geonhee
+  - family: Shin
+    given: Juhun
+  - family: Paek
+    given: Jeongyeup
+  - family: Bahk
+    given: Saewoong
+  issued:
+  - year: 2024
+  title: 'Quick6TiSCH: Accelerating Formation of 6TiSCH Networks with TSCH and RPL'
+  container-title: 2024 IEEE 21st International Conference on Mobile Ad-Hoc and Smart
+    Systems (MASS)
+  publisher: IEEE
+  page: 66-74
+
+- id: kim2024slot
+  type: article-journal
+  author:
+  - family: Kim
+    given: Hongchan
+  - family: Lee
+    given: Geonhee
+  - family: Shin
+    given: Juhun
+  - family: Paek
+    given: Jeongyeup
+  - family: Bahk
+    given: Saewoong
+  issued:
+  - year: 2024
+  title: Slot-Size Adaptation and Utility-Based Packet Aggregation for IEEE 802.15.
+    4e Time-Slotted Communication Networks
+  container-title: IEEE Internet of Things Journal
+  publisher: IEEE
+
+- id: shin2023eca
+  type: paper-conference
+  author:
+  - family: Shin
+    given: Juhun
+  - family: Kim
+    given: Hongchan
+  - family: Paek
+    given: Jeongyeup
+  - family: Bahk
+    given: Saewoong
+  issued:
+  - year: 2023
+  title: 'Eca: Exclusive cell allocation for autonomous scheduling in time-slotted
+    channel hopping'
+  container-title: 2023 IEEE 20th International Conference on Mobile Ad Hoc and Smart
+    Systems (MASS)
+  publisher: IEEE
+  page: 350-358
 ...
