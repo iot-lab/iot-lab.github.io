@@ -10356,7 +10356,7 @@ references:
   author:
   - family: Salma Tofaily
     given: Otto Anshus
-    suffix: Issam Raïs
+    suffix: Issam Ra"ıs
   title: Representing Power Variability of an Idle Edge Node in the Power State Model
   container-title: CPSCom2023
 
@@ -10473,4 +10473,90 @@ references:
   container-title: 2022 IEEE 47th Conference on Local Computer Networks (LCN)
   publisher: IEEE
   page: 258-260
+
+- id: huang2023u
+  type: paper-conference
+  author:
+  - family: Huang
+    given: Zhaolan
+  - family: Zandberg
+    given: Koen
+  - family: Schleiser
+    given: Kaspar
+  - family: Baccelli
+    given: Emmanuel
+  issued:
+  - year: 2023
+  title: 'U-TOE: Universal TinyML On-Board Evaluation Toolkit for Low-Power IoT'
+  container-title: 2023 12th IFIP/IEEE International Conference on Performance Evaluation
+    and Modeling in Wired and Wireless Networks (PEMWN)
+  publisher: IEEE
+  page: 1-6
+
+- id: huang2024riot
+  type: article-journal
+  author:
+  - family: Huang
+    given: Zhaolan
+  - family: Zandberg
+    given: Koen
+  - family: Schleiser
+    given: Kaspar
+  - family: Baccelli
+    given: Emmanuel
+  issued:
+  - year: 2024
+  title: 'RIOT-ML: toolkit for over-the-air secure updates and performance evaluation
+    of TinyML models'
+  container-title: Annals of Telecommunications
+  publisher: Springer
+  page: 1-15
+
+- id: gulati2024tdmil
+  type: article-journal
+  author:
+  - family: Gulati
+    given: Mayank
+  - family: Zandberg
+    given: Koen
+  - family: Huang
+    given: Zhaolan
+  - family: Wunder
+    given: Gerhard
+  - family: Adjih
+    given: Cedric
+  - family: Baccelli
+    given: Emmanuel
+  issued:
+  - year: 2024
+  title: 'TDMiL: Tiny Distributed Machine Learning for Microcontroller-Based Interconnected
+    Devices'
+  container-title: IEEE Access
+  publisher: IEEE
+
+- id: molina2023pepper
+  type: paper-conference
+  author:
+  - family: Molina
+    given: François-Xavier
+  - family: Roca
+    given: Vincent
+  - family: Dagher
+    given: Roudy
+  - family: Baccelli
+    given: Emmanuel
+  - family: Mitton
+    given: Nathalie
+  - family: Boutet
+    given: Antoine
+  - family: Cunche
+    given: Mathieu
+  issued:
+  - year: 2023
+  title: 'PEPPER: Precise Privacy-Preserving Contact Tracing with Cheap, BLE/UWB Capable
+    Tokens'
+  container-title: 2023 IEEE 24th International Symposium on a World of Wireless,
+    Mobile and Multimedia Networks (WoWMoM)
+  publisher: IEEE
+  page: 290-299
 ...
