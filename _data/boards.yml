@@ -80,6 +80,11 @@
     mcu-soc: Cortex M4
     radio: [BLE, UWB]
 -
+    name: Qorvo DWM3001
+    board-id: dwm3001
+    mcu-soc: Cortex M4
+    radio: [BLE, UWB]
+-
     name: Raspberry Pi 3
     board-id: rpi3
     mcu-soc: 4x Cortex-A53
