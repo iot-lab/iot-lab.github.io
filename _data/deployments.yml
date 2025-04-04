@@ -2,7 +2,7 @@
   deployment:
     - { board: IoT-LAB M3, number: 264}
     - { board: Zolertia Firefly, number: 16}
-    - { board: Decawave DWM1001, number: 14}
+    - { board: Qorvo DWM1001, number: 14}
     - { board: "BBC micro:bit", number: 5}
     - { board: Microchip SAMR21, number: 5}
     - { board: ST B-L072Z-LRWAN1, number: 5}
@@ -42,4 +42,4 @@
 
 - site: Toulouse
   deployment:
-    - { board: Decawave DWM1001, number: 44}
+    - { board: Qorvo DWM1001, number: 44}

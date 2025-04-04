@@ -75,7 +75,7 @@
     mcu-soc: ATmega128RFA1
     radio: [802.15.4]
 -
-    name: Decawave DWM1001
+    name: Qorvo DWM1001
     board-id: dwm1001
     mcu-soc: Cortex M4
     radio: [BLE, UWB]

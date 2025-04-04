@@ -118,7 +118,7 @@ cli-tools).
         <td>disco_l475_iot1</td>
     </tr>
     <tr>
-        <td>Decawave DWM1001</td>
+        <td>Qorvo DWM1001</td>
         <td>dwm1001</td>
         <td>decawave_dwm1001_dev</td>
     </tr>

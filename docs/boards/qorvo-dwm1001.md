@@ -1,5 +1,5 @@
 ---
-board: Decawave DWM1001
+board: Qorvo DWM1001
 title: Decawave DWM1001
 group: boards
 ---

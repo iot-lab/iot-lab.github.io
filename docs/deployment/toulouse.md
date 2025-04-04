@@ -10,7 +10,7 @@ description: The Toulouse site is part of the <a href='https://locura4iot.irit.f
 ## Topology
 
 Toulouse testbed is deployed at a building scale, over the first floor of building C of IUT Blagnac. 
-* All the nodes are currently <a href="{{ 'docs/boards/' | relative_url }}decawave-dwm1001">Qorvo's DWM1001</a>.
+* All the nodes are currently <a href="{{ 'docs/boards/' | relative_url }}qorvo-dwm1001">Qorvo's DWM1001</a>.
 * Most of the nodes are fixed at a height of 2.65m and at least 30cm away from the walls and ceilings on dedicated plastic mounts.
 * Some nodes are located on the floor or at an intermediate height (1,65m) to enable 3D localisation experiments.
 * The walls are either load-bearing bricks walls, wood pannel walls or drywalls.

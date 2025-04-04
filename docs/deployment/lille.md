@@ -10,7 +10,7 @@ description: "On the Lille site, the nodes are deployed in our two buidlings at 
 * In the [A building](#topology-in-the-a-building):
     * 256 IoT-LAB M3
     * 11 Zolertia Firefly
-    * 14 Decawave DWM1001
+    * 14 Qorvo DWM1001
 * A set of different boards in [Le Cube](#le-cube):
     * 5 BBC micro:bit
     * 5 IoT-LAB M3
