@@ -18,7 +18,7 @@ also allows a UART connection to the M4.
 ## IoT-LAB special configuration
 
 The serial connection baudrate should be configured at **115200 bauds** in the
-firmware and use `USART2` on pins `PB7` (RX) and `PB6` (TX).
+firmware and use `USART1` on pins `PB7` (RX) and `PB6` (TX).
 
 ## Schematics and Datasheets
 
