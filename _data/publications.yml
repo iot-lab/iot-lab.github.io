@@ -4198,7 +4198,7 @@ references:
   publisher: IEEE
   page: 1-7
 
-- id: leao2019latency
+- id: leao2018latency
   type: paper-conference
   author:
   - family: Leão
@@ -4206,13 +4206,11 @@ references:
   - family: Felea
     given: Violeta
   issued:
-  - year: 2019
+  - year: 2018
   title: Latency and network lifetime trade-off in geographic multicast routing for
     multi-sink wireless sensor networks
-  container-title: 'Mobile, Secure, and Programmable Networking: 4th International
-    Conference, MSPN 2018, Paris, France, June 18-20, 2018, Revised Selected Papers
-    4'
-  publisher: Springer International Publishing
+  container-title: International Conference on Mobile, Secure, and Programmable Networking
+  publisher: Springer International Publishing Cham
   page: 294-310
 
 - id: vilajosana20196tisch
@@ -6320,7 +6318,7 @@ references:
   publisher: IEEE
   page: 1-6
 
-- id: muchtar2019mobility
+- id: muchtar2018mobility
   type: paper-conference
   author:
   - family: Muchtar
@@ -6332,12 +6330,11 @@ references:
   - family: Kumar
     given: Yugal
   issued:
-  - year: 2019
+  - year: 2018
   title: 'Mobility in MANET Using Robot: A Review'
-  container-title: 'Futuristic Trends in Network and Communication Technologies: First
-    International Conference, FTNCT 2018, Solan, India, February 9–10, 2018, Revised
-    Selected Papers 1'
-  publisher: Springer Singapore
+  container-title: International Conference on Futuristic Trends in Network and Communication
+    Technologies
+  publisher: Springer Singapore Singapore
   page: 304-324
 
 - id: migault2017diet
@@ -10392,8 +10389,9 @@ references:
   issued:
   - year: 2023
   title: 'ALADIn: Autonomous Linear Antenna Delay Inference on Resource-Constrained
-    Ultra-Wideband Devices.'
-  container-title: EWSN
+    Ultra-Wideband Devices'
+  container-title: Proceedings of the 2023 INTERNATIONAL CONFERENCE ON EMBEDDED WIRELESS
+    SYSTEMS AND NETWORKS
   page: 181-191
 
 - id: kim2024quick6tisch
@@ -10516,32 +10514,6 @@ references:
     Devices'
   container-title: IEEE Access
   publisher: IEEE
-
-- id: molina2023pepper
-  type: paper-conference
-  author:
-  - family: Molina
-    given: François-Xavier
-  - family: Roca
-    given: Vincent
-  - family: Dagher
-    given: Roudy
-  - family: Baccelli
-    given: Emmanuel
-  - family: Mitton
-    given: Nathalie
-  - family: Boutet
-    given: Antoine
-  - family: Cunche
-    given: Mathieu
-  issued:
-  - year: 2023
-  title: 'Pepper: Precise privacy-preserving contact tracing with cheap, ble/uwb capable
-    tokens'
-  container-title: 2023 IEEE 24th International Symposium on a World of Wireless,
-    Mobile and Multimedia Networks (WoWMoM)
-  publisher: IEEE
-  page: 290-299
 
 - id: kalita2024time
   type: article-journal
@@ -11111,4 +11083,231 @@ references:
   page: 204-207
   volume: '5'
   issue: '4'
+
+- id: mahmod2025programmable
+  type: paper-conference
+  author:
+  - family: Mahmod
+    given: Ahmad
+  - family: Montavont
+    given: Julien
+  - family: Noel
+    given: Thoms
+  issued:
+  - year: 2025
+  title: 'Programmable Solutions for Low-Power Lossy Wireless Networks: A Study of
+    SDN and Femto Containers'
+  container-title: International Conference on Advanced Information Networking and
+    Applications
+  page: 46-57
+  volume: '247'
+
+- id: si2025data
+  type: paper-conference
+  author:
+  - family: Si-Mohammed
+    given: Samir
+  - family: Theoleyre
+    given: Fabrice
+  issued:
+  - year: 2025
+  title: Data-Driven Prediction Models for Wireless Network Configuration
+  container-title: International Conference on Advanced Information Networking and
+    Applications
+  page: 442-453
+  volume: '246'
+
+- id: herthel2025evaluation
+  type: thesis
+  author:
+  - family: Herthel
+    given: Rene
+  issued:
+  - year: 2025
+  title: Evaluation der Eigenschaften von SRAM PUF in einem Testbed unter Verwendung
+    von RIOT mit Low Power Modes
+  publisher: Hamburg University of Applied Sciences
+  genre: thèse de doctorat
+
+- id: stenzel2025raced
+  type: thesis
+  author:
+  - family: Stenzel
+    given: Marcel
+  issued:
+  - year: 2025
+  title: RACED-A RIOT OS integration of the ACE-OAuth DTLS profile
+  publisher: Hamburg University of Applied Sciences
+  genre: thèse de doctorat
+
+- id: perroux2025taylors
+  type: paper-conference
+  author:
+  - family: Perroux
+    given: Benoı̂t
+  - family: Ermont
+    given: Jérôme
+  - family: Jaffrès-Runser
+    given: Katia
+  issued:
+  - year: 2025
+  title: 'TAYLORS : Converger plus vite vers un état synchrone résilient'
+  title-short: TAYLORS
+  container-title: CORES 2025 - 10èmes Rencontres Francophones sur la Conception de
+    Protocoles, l’Evaluation de Performances et l’Expérimentation des Réseaux de Communication
+
+- id: mohamed2025buffer
+  type: article-journal
+  author:
+  - family: Mohamed
+    given: Remli
+  - family: Demigha
+    given: Oualid
+  - family: Yachir
+    given: Ali
+  issued:
+  - year: 2025
+  title: Buffer management approach for efficient 6TiSCH network formation
+  container-title: International Journal of Sensor Networks
+  page: 199-213
+  volume: '47'
+  issue: '4'
+
+- id: hakiri2023hyper
+  type: paper-conference
+  author:
+  - family: Hakiri
+    given: Akram
+  - family: Yahia
+    given: Sadok Ben
+  - family: Gokhale Aniruddha
+    given: S
+  issued:
+  - year: 2023
+  title: 'Hyper-5G: A Cross-Atlantic Digital Twin Testbed for Next Generation 5G IoT
+    Networks and Beyond'
+  container-title: IEEE 26th International Symposium on Real-Time Distributed Computing
+    (ISORC)
+  page: 230-235
+
+- id: alharbi2023checkpoint
+  type: paper-conference
+  author:
+  - family: Alharbi
+    given: Jawaher
+  - family: Palossi
+    given: Daniele
+  issued:
+  - year: 2023
+  title: 'To Checkpoint or Not to Checkpoint: That is the Question'
+  container-title: Proceedings of the 2023 International Conference on Embedded Wireless
+    Systems and Networks
+  page: 124-131
+
+- id: verderame2023pariot
+  type: article-journal
+  author:
+  - family: Verderame
+    given: Luca
+  - family: Ruggia
+    given: Antonio
+  - family: Merlo
+    given: Alessio
+  issued:
+  - year: 2023
+  title: 'PARIOT: Anti-repackaging for IoT firmware integrity'
+  container-title: Journal of Network and Computer Applications
+  page: '103699'
+  volume: '217'
+
+- id: alharbi2023towards
+  type: paper-conference
+  author:
+  - family: Alharbi
+    given: Jawaher
+  - family: Chester
+    given: Adam
+  - family: Jhumka
+    given: Arshad
+  issued:
+  - year: 2023
+  title: Towards Understanding Checkpointing in Transiently Powered IoT Networks
+  container-title: 2023 IEEE 22nd International Conference on Trust, Security and
+    Privacy in Computing and Communications (TrustCom)
+  page: 559-568
+
+- id: tofaily2023representing
+  type: paper-conference
+  author:
+  - family: Tofaily
+    given: Salma
+  - family: Raı̈s
+    given: Issam
+  - family: Anshus
+    given: Otto
+  issued:
+  - year: 2023
+  title: Representing Power Variability of an Idle IoT Edge Node in the Power State
+    Model
+  container-title: 2023 IEEE International Conferences on Internet of Things (iThings)
+    and IEEE Green Computing & Communications (GreenCom) and IEEE Cyber, Physical
+    & Social Computing (CPSCom) and IEEE Smart Data (SmartData) and IEEE Congress
+    on Cybermatics (Cybermatic
+  page: 540-546
+
+- id: baldini2023trusted
+  type: chapter
+  author:
+  - family: Baldini
+    given: Matheu Garcia
+    suffix: G.
+  issued:
+  - year: 2023
+  title: Trusted IoT and Testing
+  container-title: Springer Handbook of Internet of Things
+  page: 317-337
+
+- id: molina2023pepper
+  type: paper-conference
+  author:
+  - family: Molina
+    given: François-Xavier
+  - family: Roca
+    given: Vincent
+  - family: Dagher
+    given: Roudy
+  - family: Baccelli
+    given: Emmanuel
+  - family: Mitton
+    given: Nathalie
+  - family: Boutet
+    given: Antoine
+  - family: Cunche
+    given: Mathieu
+  issued:
+  - year: 2023
+  title: 'PEPPER: Precise Privacy-Preserving Contact Tracing with Cheap, BLE/UWB Capable
+    Tokens'
+  container-title: 2023 IEEE 24th International Symposium on a World of Wireless,
+    Mobile and Multimedia Networks (WoWMoM)
+  page: 290-299
+
+- id: boukhechem2023fully
+  type: paper-conference
+  author:
+  - family: Boukhechem
+    given: Nadhir
+  - family: Vey
+    given: Quentin
+  - family: Val
+    given: Thierry
+  - family: Badache
+    given: Nadjib
+  issued:
+  - year: 2023
+  title: A Fully Distributed Heuristic Method to Select the ROOT Node in Wireless
+    Sensor Networks
+  container-title: 2023 12th IFIP/IEEE International Conference on Performance Evaluation
+    and Modeling in Wired and Wireless Networks (PEMWN)
+  page: 1-6
 ...
