@@ -34,6 +34,7 @@
     - { board: Pycom, number: 30}
     - { board: OpenMoteB, number: 40}
     - { board: Zigduino, number: 102}
+    - { board: Qorvo DWM1001, number: 20}
 
 - site: Paris
   deployment:
