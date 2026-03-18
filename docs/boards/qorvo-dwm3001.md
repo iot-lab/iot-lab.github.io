@@ -11,7 +11,7 @@ The `dwm3001` boards available in IoT-LAB are Qorvo [DWM3001-CDK](https://www.qo
 <img src="{{ '/assets/images/docs/boards/dwm3001/' | relative_url}}DWM3001CDK.png" style="width:30%;"/>
 </div>
 
-The `dwm1001` board can reset, debug and program the ARM Cortex M4
+The `dwm3001` board can reset, debug and program the ARM Cortex M4
 through the embedded debugger (JLink) connected to the gateway USB port. This
 component also allows a UART connection to the M4.
 

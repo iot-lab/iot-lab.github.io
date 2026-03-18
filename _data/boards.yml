@@ -83,7 +83,7 @@
     name: Qorvo DWM3001
     board-id: dwm3001
     mcu-soc: Cortex M4
-    radio: [BLE, UWB]
+    radio: [BLE, UWB, 802.15.4]
 -
     name: Raspberry Pi 3
     board-id: rpi3

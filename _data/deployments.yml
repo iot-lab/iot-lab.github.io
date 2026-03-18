@@ -43,4 +43,5 @@
 
 - site: Toulouse
   deployment:
-    - { board: Qorvo DWM1001, number: 44}
+    - { board: Qorvo DWM1001, number: 48}
+    - { board: Qorvo DWM3001, number: 42}
