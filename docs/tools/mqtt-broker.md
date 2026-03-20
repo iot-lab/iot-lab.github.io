@@ -146,3 +146,7 @@ MQTT messages between the Saclay SSH frontend and your local computer.
     ```
     All messages typed in the terminal are sent after pressing Enter to the
     `mosquitto_sub` command running on your local computer.
+    
+    
+## Node position
+Some sites (e.g. Toulouse) publish the location of their nodes on specific read-only topics accesible by everyone : `localisation/<site>/<node-id>`
