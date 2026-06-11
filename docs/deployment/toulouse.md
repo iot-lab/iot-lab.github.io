@@ -18,7 +18,7 @@ Toulouse testbed is deployed at a building scale, over the first floor of buildi
 * Node positions are estimated to be known within 2cm of precision \[<a href="https://ut3-toulouseinp.hal.science/hal-03466307">Bossche2022</a>\].
   * **Note** : a 3D LIDAR scan with sub-cm accuracy is scheduled. This page will be updated once this is done.
 * **DEPRECATED** ~~The node positions are available as a JSON file <a href="{{ 'assets/misc/docs/deployments/toulouse/' | relative_url }}positions.json">deprecated file left for reference</a>.~~
-* Nodes dwm1001-60 and dwm3001-23 are on a motorised rail, hence their position are not fixed. Their positions are published live on <a href="{{ 'docs/tools/ | relative_url }}mqtt-broker">IoT-LAB's MQTT broker</a>, on the topic `localisation/toulouse/<node-id>/mobile`
+* Nodes dwm1001-60 and dwm3001-23 are on a motorised rail, hence their position are not fixed. Their positions are published live on <a href="{{ 'docs/tools/' | relative_url }}mqtt-broker">IoT-LAB's MQTT broker</a>, on the topic `localisation/toulouse/<node-id>/mobile`
 
 
 <div class="row justify-content-center">
