@@ -40,9 +40,7 @@ references:
   issued:
   - year: 2015
   title: 'OneLab: Major Computer Networking Testbeds for IoT and Wireless Experimentation'
-  container-title: Proceedings of the 21st Annual International Conference on Mobile
-    Computing and Networking
-  page: 199-200
+  container-title: MobiCom 2015
 
 - id: fambon2014fit
   type: article-journal
@@ -110,7 +108,8 @@ references:
   issued:
   - year: 2016
   title: 'ICN over TSCH: potentials for link-layer adaptation in the IoT'
-  container-title: Proceedings of the 3rd ACM Conference on Information-Centric Networking
+  container-title: ACM-ICN’16 Proceedings of the 3rd ACM Conference on Information-Centric
+    Networking
   page: 195-196
 
 - id: papadopoulos2016importance
@@ -145,11 +144,9 @@ references:
     given: Antonia
   issued:
   - year: 2014
-  title: 'Scientific experiments with the large scale open testbed iot-LAB: Broadcast
-    with network coding'
-  container-title: 2014 IEEE 11th International Conference on Mobile Ad Hoc and Sensor
-    Systems
-  publisher: IEEE
+  title: 'Scientific Experiments with the Large Scale Open Testbed IoT-LAB: Broadcast
+    with Network Coding.'
+  container-title: MASS
   page: 535-536
 
 - id: papadopoulos2017thorough
@@ -649,7 +646,6 @@ references:
     Valencia, Spain, November 6-7, 2017, Proceedings'
   publisher: Springer
   page: '3'
-  volume: '242'
 
 - id: hermeto2017impact
   type: article-journal
@@ -734,8 +730,12 @@ references:
   issued:
   - year: 2017
   title: 'CAEsAR: Making the RPL Routing Protocol Context-Aware'
-  container-title: Infocommunications
-  page: '1'
+  container-title: INFOCOMMUNICATIONS JOURNAL
+  publisher: SCIENTIFIC ASSOC INFOCOMMUNICATIONS KOSSUTH LAJOS SQUARE 6-8, BUDAPEST,
+    1055 …
+  page: 1-11
+  volume: '9'
+  issue: '1'
 
 - id: van2018enabling
   type: article-journal
@@ -879,7 +879,7 @@ references:
   - family: Wahlisch
     given: Matthias
   - family: Adjih
-    given: Cédric
+    given: Cedric
   issued:
   - year: 2016
   title: A named data network approach to energy efficiency in IoT
@@ -1019,7 +1019,7 @@ references:
     Wireless Healthcare
   page: 11-16
 
-- id: baron2016onelab
+- id: baron2016demand
   type: paper-conference
   author:
   - family: Baron
@@ -1035,12 +1035,12 @@ references:
   - family: Fdida
     given: S
   - family: Saint-Marcel
-    given: F
+    given: F OneLab
   issued:
   - year: 2016
-  title: 'OneLab: On-demand deployment of MANET over IPv6 Infrastructure as a service
-    for IEEE INFOCOM community'
-  container-title: IEEE Infocom
+  title: On-demand deployment of IoT over IPv6 Infrastructure as a service for IEEE
+    INFOCOM community
+  container-title: Proceedings of the IEEE Infocom
 
 - id: hahm2016designing
   type: paper-conference
@@ -1479,7 +1479,7 @@ references:
     given: Julien
   - family: Gallais
     given: Antoine
-  - family: Noël
+  - family: Noel
     given: Thomas
   issued:
   - year: 2014
@@ -1938,7 +1938,7 @@ references:
     given: Thomas
   issued:
   - year: 2011
-  title: 'SensLAB: Very Large Scale Open Wireless Sensor Network Testbed'
+  title: 'Senslab: Very large scale open wireless sensor network testbed'
   container-title: International Conference on Testbeds and Research Infrastructures
   publisher: Springer Berlin Heidelberg Berlin, Heidelberg
   page: 239-254
@@ -2055,7 +2055,7 @@ references:
   issued:
   - year: 2012
   title: Performance evaluation of mobile ipv6 over 6lowpan
-  container-title: Proceedings of the 9th ACM symposium on Performance evaluation
+  container-title: Proceedings of the 9th ACM symposium on performance evaluation
     of wireless ad hoc, sensor, and ubiquitous networks
   page: 77-84
 
@@ -2294,7 +2294,7 @@ references:
   publisher: INRIA
   genre: thèse de doctorat
 
-- id: beaudaux2010casino
+- id: beaudaux2010demo
   type: paper-conference
   author:
   - family: Beaudaux
@@ -2315,9 +2315,9 @@ references:
     given: Erkan
   issued:
   - year: 2010
-  title: 'Casino: creating alea with a sensor-based interactive network'
-  container-title: Proceedings of the 8th ACM Conference on Embedded Networked Sensor
-    Systems
+  title: 'Demo Abstract: CASINO: Creating Alea with a Sensor-based Interactive Network'
+  container-title: ACM Conference on Embedded Networked Sensor Systems (SenSys 2010)
+  publisher: ACM Press
   page: 381-382
 
 - id: mitton2011internet
@@ -2871,7 +2871,7 @@ references:
 - id: leao2019performance
   type: paper-conference
   author:
-  - family: Leão
+  - family: Leao
     given: Lucas
   - family: Felea
     given: Violeta
@@ -3353,10 +3353,8 @@ references:
   issued:
   - year: 2019
   title: Simulating a 6TiSCH Network using Connectivity Traces from Testbeds
-  container-title: IEEE INFOCOM 2019-IEEE Conference on Computer Communications Workshops
-    (INFOCOM WKSHPS)
-  publisher: IEEE
-  page: 921-922
+  container-title: CNERT-IEEE INFOCOM Workshop on Computer and Networking Experimental
+    Research using Testbeds
 
 - id: confais2018improving
   type: paper-conference
@@ -4070,7 +4068,7 @@ references:
     given: Franck
   issued:
   - year: 2016
-  title: Security certification and labelling in internet of things
+  title: Security certification and labelling in Internet of Things
   container-title: 2016 IEEE 3rd World Forum on Internet of Things (WF-IoT)
   publisher: IEEE
   page: 627-632
@@ -4110,9 +4108,11 @@ references:
     given: Yung
   issued:
   - year: 2020
-  title: Distributed Slot Scheduling for QoS Guarantee over TSCH-based IoT Networks
-    via Adaptive Parameterization.
-  container-title: IPSN
+  title: Distributed slot scheduling for QoS guarantee over TSCH-based IoT networks
+    via adaptive parameterization
+  container-title: 2020 19th ACM/IEEE International Conference on Information Processing
+    in Sensor Networks (IPSN)
+  publisher: IEEE
   page: 97-108
 
 - id: sran2018structure
@@ -4464,8 +4464,8 @@ references:
     given: Georgios
   issued:
   - year: 2015
-  title: Improving medium access for dynamic wireless sensor networks
-  publisher: Université de Strasbourg
+  title: Improving Medium Access in Dynamic Wireless Sensor Networks
+  publisher: Universite de Strasbourg
   genre: thèse de doctorat
 
 - id: sheikh2017scheduling
@@ -5231,8 +5231,8 @@ references:
 - id: alamos2022dsme
   type: article-journal
   author:
-  - family: Álamos
-    given: José
+  - family: Alamos
+    given: Jose
   - family: Kietzmann
     given: Peter
   - family: Schmidt
@@ -5398,7 +5398,7 @@ references:
     given: Martin
   issued:
   - year: 2019
-  title: 'WoTbench: A benchmarking framework for the web of things'
+  title: 'Wotbench: A benchmarking framework for the web of things'
   container-title: Proceedings of the 9th International Conference on the Internet
     of Things
   page: 1-4
@@ -5695,7 +5695,7 @@ references:
   issued:
   - year: 2022
   title: An effective channel selection solution for reliable scheduling in industrial
-    iot networks
+    IoT networks
   container-title: Journal of Network and Systems Management
   publisher: Springer US New York
   page: '59'
@@ -5949,7 +5949,9 @@ references:
   issued:
   - year: 2018
   title: A scalable and virtualized testbed for iot experiments
-  container-title: TRIDENTCOM
+  container-title: Proceedings of the 12th EAI International Conference on Testbeds
+    and Research Infrastructures for the Development of Networks & Communities
+  page: 24-33
 
 - id: sebastian2017seamless
   type: paper-conference
@@ -7276,7 +7278,7 @@ references:
   issued:
   - year: 2018
   title: 'On the use of information and infrastructure technologies for the smart
-    city research in europe: A survey'
+    city research in Europe: A survey'
   container-title: IEICE Transactions on Communications
   publisher: The Institute of Electronics, Information; Communication Engineers
   page: 2-15
@@ -7344,6 +7346,7 @@ references:
   - year: 2021
   title: 'SyntIoT: Privacy and security experimentation in consumer-oriented IoT ecosystems.'
   container-title: EAI Endorsed Transactions on Security & Safety
+  page: '1'
   volume: '8'
   issue: '27'
 
@@ -7521,7 +7524,7 @@ references:
     given: Fumio
   issued:
   - year: 2022
-  title: 6TiSCH scheduling function design suite founded on Contiki-NG
+  title: 6tisch scheduling function design suite founded on contiki-ng
   container-title: Journal of information processing
   publisher: Information Processing Society of Japan
   page: 669-678
@@ -7568,6 +7571,7 @@ references:
   container-title: IEEE Access
   publisher: IEEE
   page: 63570-63583
+  volume: '6'
 
 - id: vuvcinic2019openbenchmark
   type: paper-conference
@@ -7722,6 +7726,8 @@ references:
   issued:
   - year: 2020
   title: Cybersecurity Certification in IoT Environments
+  container-title: SECURITY RISK MANAGEMENT
+  page: '178'
 
 - id: mnasri2020iot
   type: article-journal
@@ -7969,7 +7975,7 @@ references:
     given: Angelos
   issued:
   - year: 2021
-  title: 'Iotier: A virtual testbed to evaluate systems for iot environments'
+  title: 'IOTier: A Virtual Testbed to evaluate systems for IoT environments'
   container-title: 2021 IEEE/ACM 21st International Symposium on Cluster, Cloud and
     Internet Computing (CCGrid)
   publisher: IEEE
@@ -8060,7 +8066,7 @@ references:
   - family: Moualla
     given: Ghada
   - family: Bolle
-    given: Sébastien
+    given: Sebastien
   - family: Douet
     given: Marc
   - family: Rutten
@@ -8283,19 +8289,21 @@ references:
   volume: '3'
   issue: '3'
 
-- id: xhafa2020fog
-  type: article-journal
+- id: confais2020fog
+  type: chapter
   author:
-  - family: Xhafa
-    given: F
-  - family: Sangaiah
-    given: AK
+  - family: Confais
+    given: Bastien
+  - family: Lebre
+    given: Adrien
+  - family: Parrein
+    given: Benoı̂t
   issued:
   - year: 2020
   title: A fog storage software architecture for the Internet of Things
   container-title: 'Advances in edge computing: massive parallel processing and applications'
-  publisher: SAGE Publications Limited
-  page: '61'
+  publisher: SAGE Publications 1 Oliver’s Yard, 55 City Road, London, EC1Y 1SP
+  page: 61-105
 
 - id: kritsis2018tutorial
   type: article-journal
@@ -8519,10 +8527,10 @@ references:
     given: Rajesh S
   issued:
   - year: 2021
-  title: Semantic internet of things (iot) interoperability using software defined
-    network (sdn) and network function virtualization (nfv)
-  container-title: 'Semantic IoT: Theory and Applications: Interoperability, Provenance
-    and Beyond'
+  title: Semantic Internet of Things (IoT) interoperability using software defined
+    network (SDN) and network function virtualization (NFV)
+  container-title: 'Semantic IoT: theory and applications: interoperability, provenance
+    and beyond'
   publisher: Springer International Publishing Cham
   page: 399-415
 
@@ -8656,8 +8664,8 @@ references:
   issued:
   - year: 2018
   title: A survey on Internet of Things architectures
-  container-title: Journal of King Saud University-Computer and Information Sciences
-  publisher: Elsevier
+  container-title: Journal of King Saud University Computer and Information Sciences
+  publisher: Springer International Publishing Cham
   page: 291-319
   volume: '30'
   issue: '3'
@@ -8881,8 +8889,8 @@ references:
   issued:
   - year: 2021
   title: 'Edgenet: the global kubernetes cluster testbed'
-  container-title: IEEE INFOCOM 2021-IEEE Conference on Computer Communications Workshops
-    (INFOCOM WKSHPS)
+  container-title: IEEE INFOCOM International Workshop on Computer and Networking
+    Experimental Research using Testbeds (CNERT), extended abstract, demo
   publisher: IEEE
   page: 1-2
 
@@ -8917,8 +8925,8 @@ references:
     given: Marco
   issued:
   - year: 2015
-  title: A novel smart object-driven UI generation approach for mobile devices in
-    the Internet of Things
+  title: A novel smart object-driven ui generation approach for mobile devices in
+    the internet of things
   container-title: Proceedings of the 1st international workshop on experiences with
     the design and implementation of smart objects
   page: 1-6
@@ -9136,7 +9144,7 @@ references:
   - year: 2019
   title: 'Aspects of quality in Internet of Things (IoT) solutions: A systematic mapping
     study'
-  container-title: IEEE Access
+  container-title: IEEe Access
   publisher: IEEE
   page: 13758-13780
   volume: '7'
@@ -9487,7 +9495,7 @@ references:
   issued:
   - year: 2015
   title: Survey and benchmark of lightweight block ciphers for MSP430 16-bit microcontroller
-  container-title: Security and Communication Networks
+  container-title: Security and communication networks
   page: 3564-3579
   volume: '8'
   issue: '18'
@@ -9605,7 +9613,7 @@ references:
     given: Sebastian L
   - family: Montavont
     given: Julien
-  - family: Noël
+  - family: Noel
     given: Thomas
   issued:
   - year: 2021
@@ -9693,7 +9701,6 @@ references:
   - year: 2021
   title: Fragment forwarding in lossy networks
   container-title: IEEE access
-  publisher: IEEE
   page: 143969-143987
   volume: '9'
 
@@ -9820,7 +9827,7 @@ references:
   - year: 2022
   title: 'Dynamic service placement in multi-access edge computing: A systematic literature
     review'
-  container-title: IEEE Access
+  container-title: Ieee Access
   publisher: IEEE
   page: 32639-32688
   volume: '10'
@@ -10058,14 +10065,13 @@ references:
   genre: thèse de doctorat
 
 - id: 정승범2019design
-  type: thesis
+  type: article-journal
   author:
   - family: 정승범
   issued:
   - year: 2019
   title: Design of Adaptive Duty-cycled Protocols in Low-power and Lossy Networks
   publisher: 서울대학교 대학원
-  genre: thèse de doctorat
 
 - id: hasan2017iotbed
   type: paper-conference
@@ -10293,8 +10299,8 @@ references:
     given: Knut
   issued:
   - year: 2023
-  title: 'Autonomous Flow-Based TSCH Scheduling for Heterogeneous Traffic Patterns:
-    Challenges, Design, Simulation, and Testbed Evaluation'
+  title: 'Autonomous flow-based TSCH scheduling for heterogeneous traffic patterns:
+    Challenges, design, simulation, and testbed evaluation'
   container-title: IEEE Open Journal of the Communications Society
   publisher: IEEE
   page: 2357-2372
@@ -10322,7 +10328,7 @@ references:
   - year: 2023
   title: A comprehensive performance comparison of IEEE 802.15. 4 DSME and TSCH in
     a realistic IoT scenario for industrial applications
-  container-title: ACM Transactions on Internet of Things
+  container-title: ACM transactions on internet of things
   publisher: ACM New York, NY
   page: 1-30
   volume: '4'
@@ -11348,6 +11354,9 @@ references:
   - year: 2026
   title: 'FINE-STACK: Flexible architecture for low-power lossy IoT Networks with
     programmablE network STACK and semantic runtime updates'
+  container-title: Ad Hoc Networks
+  publisher: Elsevier
+  page: '104312'
 
 - id: mahmod2025pensil
   type: article-journal
@@ -11360,9 +11369,22 @@ references:
     given: Thomas
   issued:
   - year: 2025
-  title: 'PENSIL: ProgrammablE Network Stack for low-power lossy IoT networks using
-    Lightweight-virtualization'
+  title: 'PENSIL: Programmable network stack for low-power lossy IoT networks using
+    lightweight-virtualization'
   container-title: Internet of Things
   publisher: Elsevier
   page: '101829'
+
+- id: krentz2026less
+  type: paper-conference
+  author:
+  - family: Krentz
+    given: Konrad-Felix
+  - family: Eckel
+    given: Michael
+  issued:
+  - year: 2026
+  title: Is Less More? Comparing TSCH and CSL on the FIT IoT-LAB
+  container-title: 23rd International Conference on Embedded Wireless Systems and
+    Networks (EWSN 2026)
 ...
