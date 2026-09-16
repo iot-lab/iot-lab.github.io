@@ -11,9 +11,27 @@ The Strasbourg testbed offers two types of environment in order to test large sc
 * **Experiment Room**: a semi-controlled environment inside a dedicated room with limited radio interferences
 * **Smart Building**: a realistic environment inside a large building close to real deployment
 
-### Experiment Room
+## Hardware history
 
-This environment is the original Strasbourg IoT-LAB deployment. It starts in 2008 with the SensLAB project with a dense grid of 256 wsn430 nodes. In 2014 with the IoT-LAB project, we add A8 and M3 nodes. Some of the nodes on top of mobile robots provide also reproductible mobility with predefined trajectories. In 2020, we remove the wsn430 nodes and introduce Zigduino nodes. The main topology characteristics are:
+* 2026:
+  * Add 5 ESP32 C6C1 nodes (Cortecs - University of Strasbourg)
+* 2025:
+  * Add 20 Qorvo DWM1001 nodes (Cortecs - University of Strasbourg)
+* 2020:
+  * Add 30 ESP32 Lopy4 (Equipex FIT)
+  * Add 40 OpenMoteB (Equipex FIT)
+  * add 112 Zigduino (Equipex FIT)
+  * dismantling of the 256 wsn430 nodes
+  * dismantling of the 10 M3 mobiles nodes
+* 2014: 
+  * add 14 A8 nodes (Equipex FIT)
+  * add 64 M3 nodes (Equipex FIT)
+  * add 10 M3 nodes mobiles with turtlebot2 (Equipex FIT)
+* 2008: add 256 wsn430 nodes (ANR SensLAB)
+
+## Experiment Room deployment
+
+This environment is the original Strasbourg IoT-LAB deployment.
 
 * **Semi-controled environment**: a dedicated room of 200m2
 * **Limited radio interferences**: an isolated room inside the basement of the building
@@ -53,7 +71,7 @@ This environment is the original Strasbourg IoT-LAB deployment. It starts in 200
 <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/JC385RAqoiY" allowfullscreen></iframe>
 </div>
 
-### Smart Building
+## Smart Building deployment
 
 This environment is named **iBat** for **i**ntelligent **Bat**iment. Started in 2016, iBat is an extension of the original Strasbourg IoT-LAB deployment in order to add the following topology characteristics:
 

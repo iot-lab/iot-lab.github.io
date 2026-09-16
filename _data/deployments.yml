@@ -31,9 +31,10 @@
   deployment:
     - { board: IoT-LAB A8-M3, number: 14}
     - { board: IoT-LAB M3, number: 64}
-    - { board: Pycom, number: 30}
+    - { board: ESP32 LoPy4, number: 30}
+    - { board: ESP32-C6-DevKitC-1, number: 5}
     - { board: OpenMoteB, number: 40}
-    - { board: Zigduino, number: 102}
+    - { board: Zigduino, number: 112}
     - { board: Qorvo DWM1001, number: 20}
 
 - site: Paris

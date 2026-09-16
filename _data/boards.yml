@@ -60,11 +60,6 @@
     mcu-soc: Cortex M0
     radio: [BLE]
 -
-    name: Pycom
-    board-id: pycom
-    mcu-soc: ESP32
-    radio: [LoRa, BLE, Wifi]
--
     name: Arduino Zero
     board-id: arduino-zero
     mcu-soc: Cortex M0
@@ -94,3 +89,14 @@
     board-id: openmoteb
     mcu-soc: Cortex M3
     radio: [802.15.4, Sub-GHz]
+-
+    name: ESP32 LoPy4
+    board-id: lopy4
+    mcu-soc: ESP32
+    radio: [LoRa, BLE, Wifi]
+
+-
+    name: ESP32-C6-DevKitC-1
+    board-id: esp32-c6c1
+    mcu-soc: ESP32
+    radio: [Wifi, BLE, 802.15.4]

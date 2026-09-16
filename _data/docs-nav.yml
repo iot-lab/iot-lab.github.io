@@ -26,11 +26,12 @@
     - title: Nucleo-WL55JC
     - title: BBC micro:bit
     - title: OpenMoteB
-    - title: Pycom
     - title: Zigduino
     - title: Qorvo DWM3001
     - title: Qorvo DWM1001
     - title: Raspberry Pi 3
+    - title: ESP32 LoPy4
+    - title: ESP32-C6-DevKitC-1
     - title: Add new board
 
 - title: Deployment

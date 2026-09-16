@@ -5,6 +5,8 @@ group: os
 
 ## Description
 
+**Note**: MicroPython on LoPy4 board is not actively supported by IoT-LAB.
+
 [MicroPython](https://micropython.org/) is an implementation of the
 [Python](https://python.org) programming language designed for highly
 constrained hardware platforms such as microcontrollers.
@@ -15,48 +17,19 @@ code of MicroPython is [hosted on GitHub](https://github.com/micropython/micropy
 
 ## Basic usage with IoT-LAB
 
-In IoT-LAB, the [Pycom boards]({{ site.baseurl }}{% link docs/boards/pycom.md %}) provides access to a MicroPython pre-installed
-firmware.
+In IoT-LAB, the [ESP32 LoPy4 boards]({{ site.baseurl }}{% link docs/boards/esp32-lopy4.md %}) can run MicroPython firmware.
 
-Start an experiment with MicroPython using the Pycom FiPy board:
-
-```bash
-$ iotlab-experiment submit -d 120 -l 1,site=saclay+archi=pycom:fipy
-$ iotlab-experiment wait
-```
-
-You can list the node assigned to your experiment with the following command:
-```bash
-$ iotlab-experiment get --print
-{
-    "associations": null, 
-    "deploymentresults": {
-        "0": [
-            "pycom-<id>.saclay.iot-lab.info"
-        ]
-    }, 
-    "duration": 120, 
-    "firmwareassociations": null, 
-    "mobilities": null, 
-    "name": null, 
-    "nodes": [
-        "pycom-<id>.saclay.iot-lab.info"
-    ], 
-}
-```
-
-The MicroPython REPL can be accessed as usual via the serial redirection
-mechanism (just press `Enter` once to get the REPL `>>>` prompt):
+Once you run and flash MicroPython firmware, start  using MicroPython the Pycom via the remote serial port of the board. The MicroPython REPL can be accessed as usual via the serial redirection mechanism (just press `Enter` once to get the REPL `>>>` prompt):
 - from the SSH frontend:
   ```bash
-  <login>@saclay:~$ nc pycom-<id> 20000
+  <login>@saclay:~$ nc lopy4-<id> 20000
 
   >>>
   ```
 
 - from your local computer using an SSH tunnel:
   ```bash
-  $ ssh -L 20000:pycom-<id>:20000 <login>@saclay.iot-lab.info
+  $ ssh -L 20000:lopy4-<id>:20000 <login>@strasbourg.iot-lab.info
   ```
   Then, **in another terminal**, connect to `localhost:20000` with `nc`:
   ```bash
@@ -83,7 +56,7 @@ and using local tools instead:
 1. Open the SSH tunnel:
 
 ```bash
-$ ssh -L 20000:pycom-<id>:20000 <login>@saclay.iot-lab.info
+$ ssh -L 20000:lopy4-<id>:20000 <login>@strasbourg.iot-lab.info
 ```
 
 2. Start the `socat` TCP to file redirection:
