@@ -107,6 +107,13 @@ The room 1 is 48 m2 (12 m x 4 m)  and contains the following boards:
             <td>802.15.4 + BLE</td>
             <td></td>
         </tr>
+        <tr>
+            <td><a href="{{ site.baseurl}}/docs/boards/raspberry-pico-wh">Raspberry Pico WH</a></td>
+            <td>rpi-pico</td>
+            <td>10</td>
+            <td>WiF + BLE + 802.15.4</td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
 
