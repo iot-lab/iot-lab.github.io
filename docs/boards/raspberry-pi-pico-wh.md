@@ -11,8 +11,8 @@ The board includes an Infineon CYW43439 wireless chip providing
 The Pico WH is the Raspberry Pi Pico W variant with pre-soldered headers.
 
 <div style="text-align:center"> 
-<img src="{{ '/assets/images/docs/boards/raspberry-pico-wh/' | relative_url}}
-raspberry-pico-wh.png" style="width:20%;"/> 
+<img src="{{ '/assets/images/docs/boards/raspberry-pi-pico-wh/' | relative_url}}
+raspberry-pi-pico-wh.png" style="width:20%;"/> 
 </div>
 
 ## IoT-LAB special configuration
