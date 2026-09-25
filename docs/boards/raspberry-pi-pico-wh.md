@@ -1,5 +1,5 @@
 ---
-board: Raspberry Pico WH
+board: Raspberry Pi Pico WH
 group: boards
 ---
 

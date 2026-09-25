@@ -26,7 +26,7 @@
     - { board: Nordic nRF52DK, number: 10}
     - { board: Nordic nRF52840DK, number: 10}
     - { board: ST B-L475E-IOT01A, number: 10}
-    - { board: Raspberry Pico WH, number: 10}
+    - { board: Raspberry Pi Pico WH, number: 10}
 
 - site: Strasbourg
   deployment:

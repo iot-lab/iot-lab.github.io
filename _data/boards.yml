@@ -101,7 +101,7 @@
     mcu-soc: ESP32
     radio: [Wifi, BLE, 802.15.4]
 -
-    name: Raspberry Pico WH
+    name: Raspberry Pi Pico WH
     board-id: rpi-pico
     mcu-soc: RP2040
     radio: [Wifi, BLE, 802.15.4]
